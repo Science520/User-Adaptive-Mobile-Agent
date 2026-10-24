@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "variants_per_screen": 32,
+  "max_screens_per_source": 48,
+  "max_screens_per_app": 3,
+  "width_px": 720,
+  "height_px": 1280,
+  "ppi": 326,
+  "font_sizes_px": [14, 22, 32, 44],
+  "distance_mm": [250, 350, 450, 550],
+  "foreground_gray": [35, 140, 190],
+  "element_counts": [6, 12, 24, 36],
+  "angle_threshold_deg": 0.3,
+  "contrast_threshold": 3.0,
+  "density_count_threshold": 24,
+  "distance_noise_sd_mm": 30,
+  "preview_count": 12
+}

@@ -1,0 +1,854 @@
+{
+  "evidence_tier": "synthetic_proxy",
+  "n": 1632,
+  "seed": 42,
+  "input_sha256": "68b292b09f1ee8dbc1f0f6699aaccc0926779965e1ead477b2ac05fcf890e75c",
+  "feature_sets": {
+    "S": [
+      "glyph_height_px",
+      "contrast_ratio",
+      "element_count",
+      "target_x",
+      "target_y"
+    ],
+    "A": [
+      "elapsed_s",
+      "clicks",
+      "backs"
+    ],
+    "U": [
+      "distance_estimate_mm",
+      "head_yaw_deg",
+      "head_pitch_deg"
+    ]
+  },
+  "model": "RandomForest(100 trees, depth<=12, leaf>=5); fixed settings, grouped OOF",
+  "H2_status": "synthetic_mechanism_only_not_real_validation",
+  "H3_status": "synthetic_rule_only_not_real_validation",
+  "limitations": [
+    "User distance is simulated and the proxy label explicitly depends on it: gain is designed into the task.",
+    "Screen features are renderer metadata, not predictions of a trained GUI image encoder.",
+    "No random pairing of public faces and screens, no real camera action stream.",
+    "No evidence of intervention effectiveness; zoom/hint/none are heuristic labels.",
+    "PPI and thresholds are experiment parameters, not calibrated human perceptual thresholds.",
+    "Random Forest probability ECE is reported without calibration; no validation-set tuning."
+  ],
+  "difficulty": {
+    "target": "difficulty",
+    "class_counts": {
+      "visual": 1127,
+      "navigation_proxy": 247,
+      "none": 258
+    },
+    "metrics": {
+      "S": {
+        "macro_f1": 0.8190678648404083,
+        "balanced_accuracy": 0.8977643007877846,
+        "auroc_ovr": 0.9733745635596178,
+        "ece_10_bins": 0.0637447669866779,
+        "labels": [
+          "navigation_proxy",
+          "none",
+          "visual"
+        ],
+        "confusion_matrix": [
+          [
+            226,
+            0,
+            21
+          ],
+          [
+            0,
+            253,
+            5
+          ],
+          [
+            98,
+            130,
+            899
+          ]
+        ]
+      },
+      "S+A": {
+        "macro_f1": 0.8273081206943917,
+        "balanced_accuracy": 0.8989164299913366,
+        "auroc_ovr": 0.9711120150401212,
+        "ece_10_bins": 0.06711030694060408,
+        "labels": [
+          "navigation_proxy",
+          "none",
+          "visual"
+        ],
+        "confusion_matrix": [
+          [
+            226,
+            0,
+            21
+          ],
+          [
+            0,
+            250,
+            8
+          ],
+          [
+            90,
+            121,
+            916
+          ]
+        ]
+      },
+      "S+U": {
+        "macro_f1": 0.9607872633393231,
+        "balanced_accuracy": 0.9821652803475408,
+        "auroc_ovr": 0.998374693653025,
+        "ece_10_bins": 0.10760279874113611,
+        "labels": [
+          "navigation_proxy",
+          "none",
+          "visual"
+        ],
+        "confusion_matrix": [
+          [
+            246,
+            0,
+            1
+          ],
+          [
+            0,
+            256,
+            2
+          ],
+          [
+            26,
+            21,
+            1080
+          ]
+        ]
+      },
+      "S+A+U": {
+        "macro_f1": 0.9583379821600088,
+        "balanced_accuracy": 0.9781742353528239,
+        "auroc_ovr": 0.9980625462475624,
+        "ece_10_bins": 0.10837238954574333,
+        "labels": [
+          "navigation_proxy",
+          "none",
+          "visual"
+        ],
+        "confusion_matrix": [
+          [
+            244,
+            0,
+            3
+          ],
+          [
+            0,
+            255,
+            3
+          ],
+          [
+            26,
+            21,
+            1080
+          ]
+        ]
+      },
+      "S+A+shuffled_U": {
+        "macro_f1": 0.8275754027500328,
+        "balanced_accuracy": 0.8887302544334407,
+        "auroc_ovr": 0.9712637344533972,
+        "ece_10_bins": 0.06645105955767722,
+        "labels": [
+          "navigation_proxy",
+          "none",
+          "visual"
+        ],
+        "confusion_matrix": [
+          [
+            224,
+            0,
+            23
+          ],
+          [
+            0,
+            241,
+            17
+          ],
+          [
+            79,
+            118,
+            930
+          ]
+        ]
+      },
+      "majority": {
+        "macro_f1": 0.27232088921106684,
+        "balanced_accuracy": 0.3333333333333333,
+        "auroc_ovr": 0.45943400828391706,
+        "ece_10_bins": 0.01860337885154053,
+        "labels": [
+          "navigation_proxy",
+          "none",
+          "visual"
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            247
+          ],
+          [
+            0,
+            0,
+            258
+          ],
+          [
+            0,
+            0,
+            1127
+          ]
+        ]
+      }
+    },
+    "paired_comparisons": {
+      "S+A+U minus S+A": {
+        "metric": "macro_f1(left)-macro_f1(right)",
+        "resampling_unit": "held-out group",
+        "groups": 23,
+        "repetitions": 500,
+        "ci95": [
+          0.10994572863515721,
+          0.15263549319356196
+        ],
+        "limitation": "OOF cluster bootstrap is descriptive; training is not repeated per bootstrap",
+        "point_difference": 0.13102986146561701
+      },
+      "S+A+U minus S+A+shuffled_U": {
+        "metric": "macro_f1(left)-macro_f1(right)",
+        "resampling_unit": "held-out group",
+        "groups": 23,
+        "repetitions": 500,
+        "ci95": [
+          0.11020851389945863,
+          0.15226928302205678
+        ],
+        "limitation": "OOF cluster bootstrap is descriptive; training is not repeated per bootstrap",
+        "point_difference": 0.13076257940997593
+      }
+    },
+    "folds": [
+      {
+        "fold": 0,
+        "train_groups": [
+          "FunUI:funui_alipay",
+          "FunUI:funui_baidumap",
+          "FunUI:funui_baidusearch",
+          "FunUI:funui_bilibili",
+          "FunUI:funui_dianping",
+          "FunUI:funui_douyin",
+          "FunUI:funui_eleme",
+          "FunUI:funui_gaodemap",
+          "FunUI:funui_jd",
+          "FunUI:funui_kuaishou",
+          "FunUI:funui_kugomusic",
+          "FunUI:funui_meituan",
+          "FunUI:funui_qqlive",
+          "FunUI:funui_qqsearch",
+          "FunUI:funui_taobao",
+          "FunUI:funui_weibo",
+          "FunUI:funui_weixin",
+          "FunUI:funui_xhs"
+        ],
+        "test_groups": [
+          "FunUI:funui_ctrip",
+          "FunUI:funui_iqiyi",
+          "FunUI:funui_pdd",
+          "FunUI:funui_qunar",
+          "MobileViews:com.xero.projects"
+        ],
+        "train_classes": {
+          "visual": 882,
+          "navigation_proxy": 199,
+          "none": 199
+        },
+        "test_classes": {
+          "visual": 245,
+          "navigation_proxy": 48,
+          "none": 59
+        }
+      },
+      {
+        "fold": 1,
+        "train_groups": [
+          "FunUI:funui_alipay",
+          "FunUI:funui_baidumap",
+          "FunUI:funui_baidusearch",
+          "FunUI:funui_ctrip",
+          "FunUI:funui_douyin",
+          "FunUI:funui_eleme",
+          "FunUI:funui_gaodemap",
+          "FunUI:funui_iqiyi",
+          "FunUI:funui_kuaishou",
+          "FunUI:funui_kugomusic",
+          "FunUI:funui_meituan",
+          "FunUI:funui_pdd",
+          "FunUI:funui_qunar",
+          "FunUI:funui_taobao",
+          "FunUI:funui_weibo",
+          "FunUI:funui_weixin",
+          "FunUI:funui_xhs",
+          "MobileViews:com.xero.projects"
+        ],
+        "test_groups": [
+          "FunUI:funui_bilibili",
+          "FunUI:funui_dianping",
+          "FunUI:funui_jd",
+          "FunUI:funui_qqlive",
+          "FunUI:funui_qqsearch"
+        ],
+        "train_classes": {
+          "visual": 881,
+          "navigation_proxy": 197,
+          "none": 202
+        },
+        "test_classes": {
+          "visual": 246,
+          "navigation_proxy": 50,
+          "none": 56
+        }
+      },
+      {
+        "fold": 2,
+        "train_groups": [
+          "FunUI:funui_alipay",
+          "FunUI:funui_baidusearch",
+          "FunUI:funui_bilibili",
+          "FunUI:funui_ctrip",
+          "FunUI:funui_dianping",
+          "FunUI:funui_eleme",
+          "FunUI:funui_gaodemap",
+          "FunUI:funui_iqiyi",
+          "FunUI:funui_jd",
+          "FunUI:funui_kugomusic",
+          "FunUI:funui_meituan",
+          "FunUI:funui_pdd",
+          "FunUI:funui_qqlive",
+          "FunUI:funui_qqsearch",
+          "FunUI:funui_qunar",
+          "FunUI:funui_taobao",
+          "FunUI:funui_weibo",
+          "MobileViews:com.xero.projects"
+        ],
+        "test_groups": [
+          "FunUI:funui_baidumap",
+          "FunUI:funui_douyin",
+          "FunUI:funui_kuaishou",
+          "FunUI:funui_weixin",
+          "FunUI:funui_xhs"
+        ],
+        "train_classes": {
+          "visual": 896,
+          "navigation_proxy": 194,
+          "none": 190
+        },
+        "test_classes": {
+          "navigation_proxy": 53,
+          "visual": 231,
+          "none": 68
+        }
+      },
+      {
+        "fold": 3,
+        "train_groups": [
+          "FunUI:funui_alipay",
+          "FunUI:funui_baidumap",
+          "FunUI:funui_bilibili",
+          "FunUI:funui_ctrip",
+          "FunUI:funui_dianping",
+          "FunUI:funui_douyin",
+          "FunUI:funui_gaodemap",
+          "FunUI:funui_iqiyi",
+          "FunUI:funui_jd",
+          "FunUI:funui_kuaishou",
+          "FunUI:funui_meituan",
+          "FunUI:funui_pdd",
+          "FunUI:funui_qqlive",
+          "FunUI:funui_qqsearch",
+          "FunUI:funui_qunar",
+          "FunUI:funui_taobao",
+          "FunUI:funui_weixin",
+          "FunUI:funui_xhs",
+          "MobileViews:com.xero.projects"
+        ],
+        "test_groups": [
+          "FunUI:funui_baidusearch",
+          "FunUI:funui_eleme",
+          "FunUI:funui_kugomusic",
+          "FunUI:funui_weibo"
+        ],
+        "train_classes": {
+          "visual": 935,
+          "navigation_proxy": 199,
+          "none": 210
+        },
+        "test_classes": {
+          "visual": 192,
+          "navigation_proxy": 48,
+          "none": 48
+        }
+      },
+      {
+        "fold": 4,
+        "train_groups": [
+          "FunUI:funui_baidumap",
+          "FunUI:funui_baidusearch",
+          "FunUI:funui_bilibili",
+          "FunUI:funui_ctrip",
+          "FunUI:funui_dianping",
+          "FunUI:funui_douyin",
+          "FunUI:funui_eleme",
+          "FunUI:funui_iqiyi",
+          "FunUI:funui_jd",
+          "FunUI:funui_kuaishou",
+          "FunUI:funui_kugomusic",
+          "FunUI:funui_pdd",
+          "FunUI:funui_qqlive",
+          "FunUI:funui_qqsearch",
+          "FunUI:funui_qunar",
+          "FunUI:funui_weibo",
+          "FunUI:funui_weixin",
+          "FunUI:funui_xhs",
+          "MobileViews:com.xero.projects"
+        ],
+        "test_groups": [
+          "FunUI:funui_alipay",
+          "FunUI:funui_gaodemap",
+          "FunUI:funui_meituan",
+          "FunUI:funui_taobao"
+        ],
+        "train_classes": {
+          "navigation_proxy": 199,
+          "visual": 914,
+          "none": 231
+        },
+        "test_classes": {
+          "visual": 213,
+          "navigation_proxy": 48,
+          "none": 27
+        }
+      }
+    ]
+  },
+  "intervention": {
+    "target": "intervention",
+    "class_counts": {
+      "hint": 797,
+      "zoom": 577,
+      "none": 258
+    },
+    "metrics": {
+      "S": {
+        "macro_f1": 0.8514578505694139,
+        "balanced_accuracy": 0.8713293353742021,
+        "auroc_ovr": 0.9769232461062157,
+        "ece_10_bins": 0.03349190057744979,
+        "labels": [
+          "hint",
+          "none",
+          "zoom"
+        ],
+        "confusion_matrix": [
+          [
+            742,
+            0,
+            55
+          ],
+          [
+            0,
+            233,
+            25
+          ],
+          [
+            34,
+            93,
+            450
+          ]
+        ],
+        "unnecessary_intervention_rate": 0.09689922480620156
+      },
+      "S+A": {
+        "macro_f1": 0.8675379113419512,
+        "balanced_accuracy": 0.8813573259878419,
+        "auroc_ovr": 0.9773442321490808,
+        "ece_10_bins": 0.06397793568102235,
+        "labels": [
+          "hint",
+          "none",
+          "zoom"
+        ],
+        "confusion_matrix": [
+          [
+            749,
+            0,
+            48
+          ],
+          [
+            0,
+            230,
+            28
+          ],
+          [
+            34,
+            74,
+            469
+          ]
+        ],
+        "unnecessary_intervention_rate": 0.10852713178294573
+      },
+      "S+U": {
+        "macro_f1": 0.9749444651396882,
+        "balanced_accuracy": 0.9762902116889225,
+        "auroc_ovr": 0.998283882689735,
+        "ece_10_bins": 0.12107605887248601,
+        "labels": [
+          "hint",
+          "none",
+          "zoom"
+        ],
+        "confusion_matrix": [
+          [
+            782,
+            0,
+            15
+          ],
+          [
+            0,
+            253,
+            5
+          ],
+          [
+            11,
+            8,
+            558
+          ]
+        ],
+        "unnecessary_intervention_rate": 0.01937984496124031
+      },
+      "S+A+U": {
+        "macro_f1": 0.9709226137246557,
+        "balanced_accuracy": 0.9742381780300616,
+        "auroc_ovr": 0.9981551684990695,
+        "ece_10_bins": 0.12611830037497682,
+        "labels": [
+          "hint",
+          "none",
+          "zoom"
+        ],
+        "confusion_matrix": [
+          [
+            784,
+            0,
+            13
+          ],
+          [
+            0,
+            253,
+            5
+          ],
+          [
+            10,
+            14,
+            553
+          ]
+        ],
+        "unnecessary_intervention_rate": 0.01937984496124031
+      },
+      "S+A+shuffled_U": {
+        "macro_f1": 0.8591852329487457,
+        "balanced_accuracy": 0.8748431520238071,
+        "auroc_ovr": 0.9771266804227859,
+        "ece_10_bins": 0.06742225376030492,
+        "labels": [
+          "hint",
+          "none",
+          "zoom"
+        ],
+        "confusion_matrix": [
+          [
+            750,
+            0,
+            47
+          ],
+          [
+            0,
+            230,
+            28
+          ],
+          [
+            38,
+            82,
+            457
+          ]
+        ],
+        "unnecessary_intervention_rate": 0.10852713178294573
+      },
+      "majority": {
+        "macro_f1": 0.2187457115411006,
+        "balanced_accuracy": 0.3333333333333333,
+        "auroc_ovr": 0.46123738882604615,
+        "ece_10_bins": 0.0005098914565827006,
+        "labels": [
+          "hint",
+          "none",
+          "zoom"
+        ],
+        "confusion_matrix": [
+          [
+            797,
+            0,
+            0
+          ],
+          [
+            258,
+            0,
+            0
+          ],
+          [
+            577,
+            0,
+            0
+          ]
+        ],
+        "unnecessary_intervention_rate": 1.0
+      }
+    },
+    "paired_comparisons": {
+      "S+A+U minus S+A": {
+        "metric": "macro_f1(left)-macro_f1(right)",
+        "resampling_unit": "held-out group",
+        "groups": 23,
+        "repetitions": 500,
+        "ci95": [
+          0.08747431709657515,
+          0.11959673505210287
+        ],
+        "limitation": "OOF cluster bootstrap is descriptive; training is not repeated per bootstrap",
+        "point_difference": 0.10338470238270447
+      },
+      "S+A+U minus S+A+shuffled_U": {
+        "metric": "macro_f1(left)-macro_f1(right)",
+        "resampling_unit": "held-out group",
+        "groups": 23,
+        "repetitions": 500,
+        "ci95": [
+          0.09293800431456675,
+          0.1317992422590206
+        ],
+        "limitation": "OOF cluster bootstrap is descriptive; training is not repeated per bootstrap",
+        "point_difference": 0.11173738077591
+      }
+    },
+    "folds": [
+      {
+        "fold": 0,
+        "train_groups": [
+          "FunUI:funui_alipay",
+          "FunUI:funui_baidumap",
+          "FunUI:funui_baidusearch",
+          "FunUI:funui_bilibili",
+          "FunUI:funui_dianping",
+          "FunUI:funui_douyin",
+          "FunUI:funui_eleme",
+          "FunUI:funui_gaodemap",
+          "FunUI:funui_jd",
+          "FunUI:funui_kuaishou",
+          "FunUI:funui_kugomusic",
+          "FunUI:funui_meituan",
+          "FunUI:funui_qqlive",
+          "FunUI:funui_qqsearch",
+          "FunUI:funui_taobao",
+          "FunUI:funui_weibo",
+          "FunUI:funui_weixin",
+          "FunUI:funui_xhs"
+        ],
+        "test_groups": [
+          "FunUI:funui_ctrip",
+          "FunUI:funui_iqiyi",
+          "FunUI:funui_pdd",
+          "FunUI:funui_qunar",
+          "MobileViews:com.xero.projects"
+        ],
+        "train_classes": {
+          "hint": 620,
+          "zoom": 461,
+          "none": 199
+        },
+        "test_classes": {
+          "hint": 177,
+          "none": 59,
+          "zoom": 116
+        }
+      },
+      {
+        "fold": 1,
+        "train_groups": [
+          "FunUI:funui_alipay",
+          "FunUI:funui_baidumap",
+          "FunUI:funui_baidusearch",
+          "FunUI:funui_ctrip",
+          "FunUI:funui_douyin",
+          "FunUI:funui_eleme",
+          "FunUI:funui_gaodemap",
+          "FunUI:funui_iqiyi",
+          "FunUI:funui_kuaishou",
+          "FunUI:funui_kugomusic",
+          "FunUI:funui_meituan",
+          "FunUI:funui_pdd",
+          "FunUI:funui_qunar",
+          "FunUI:funui_taobao",
+          "FunUI:funui_weibo",
+          "FunUI:funui_weixin",
+          "FunUI:funui_xhs",
+          "MobileViews:com.xero.projects"
+        ],
+        "test_groups": [
+          "FunUI:funui_bilibili",
+          "FunUI:funui_dianping",
+          "FunUI:funui_jd",
+          "FunUI:funui_qqlive",
+          "FunUI:funui_qqsearch"
+        ],
+        "train_classes": {
+          "hint": 636,
+          "zoom": 442,
+          "none": 202
+        },
+        "test_classes": {
+          "zoom": 135,
+          "hint": 161,
+          "none": 56
+        }
+      },
+      {
+        "fold": 2,
+        "train_groups": [
+          "FunUI:funui_alipay",
+          "FunUI:funui_baidusearch",
+          "FunUI:funui_bilibili",
+          "FunUI:funui_ctrip",
+          "FunUI:funui_dianping",
+          "FunUI:funui_eleme",
+          "FunUI:funui_gaodemap",
+          "FunUI:funui_iqiyi",
+          "FunUI:funui_jd",
+          "FunUI:funui_kugomusic",
+          "FunUI:funui_meituan",
+          "FunUI:funui_pdd",
+          "FunUI:funui_qqlive",
+          "FunUI:funui_qqsearch",
+          "FunUI:funui_qunar",
+          "FunUI:funui_taobao",
+          "FunUI:funui_weibo",
+          "MobileViews:com.xero.projects"
+        ],
+        "test_groups": [
+          "FunUI:funui_baidumap",
+          "FunUI:funui_douyin",
+          "FunUI:funui_kuaishou",
+          "FunUI:funui_weixin",
+          "FunUI:funui_xhs"
+        ],
+        "train_classes": {
+          "hint": 633,
+          "zoom": 457,
+          "none": 190
+        },
+        "test_classes": {
+          "hint": 164,
+          "zoom": 120,
+          "none": 68
+        }
+      },
+      {
+        "fold": 3,
+        "train_groups": [
+          "FunUI:funui_alipay",
+          "FunUI:funui_baidumap",
+          "FunUI:funui_bilibili",
+          "FunUI:funui_ctrip",
+          "FunUI:funui_dianping",
+          "FunUI:funui_douyin",
+          "FunUI:funui_gaodemap",
+          "FunUI:funui_iqiyi",
+          "FunUI:funui_jd",
+          "FunUI:funui_kuaishou",
+          "FunUI:funui_meituan",
+          "FunUI:funui_pdd",
+          "FunUI:funui_qqlive",
+          "FunUI:funui_qqsearch",
+          "FunUI:funui_qunar",
+          "FunUI:funui_taobao",
+          "FunUI:funui_weixin",
+          "FunUI:funui_xhs",
+          "MobileViews:com.xero.projects"
+        ],
+        "test_groups": [
+          "FunUI:funui_baidusearch",
+          "FunUI:funui_eleme",
+          "FunUI:funui_kugomusic",
+          "FunUI:funui_weibo"
+        ],
+        "train_classes": {
+          "hint": 660,
+          "zoom": 474,
+          "none": 210
+        },
+        "test_classes": {
+          "zoom": 103,
+          "hint": 137,
+          "none": 48
+        }
+      },
+      {
+        "fold": 4,
+        "train_groups": [
+          "FunUI:funui_baidumap",
+          "FunUI:funui_baidusearch",
+          "FunUI:funui_bilibili",
+          "FunUI:funui_ctrip",
+          "FunUI:funui_dianping",
+          "FunUI:funui_douyin",
+          "FunUI:funui_eleme",
+          "FunUI:funui_iqiyi",
+          "FunUI:funui_jd",
+          "FunUI:funui_kuaishou",
+          "FunUI:funui_kugomusic",
+          "FunUI:funui_pdd",
+          "FunUI:funui_qqlive",
+          "FunUI:funui_qqsearch",
+          "FunUI:funui_qunar",
+          "FunUI:funui_weibo",
+          "FunUI:funui_weixin",
+          "FunUI:funui_xhs",
+          "MobileViews:com.xero.projects"
+        ],
+        "test_groups": [
+          "FunUI:funui_alipay",
+          "FunUI:funui_gaodemap",
+          "FunUI:funui_meituan",
+          "FunUI:funui_taobao"
+        ],
+        "train_classes": {
+          "hint": 639,
+          "zoom": 474,
+          "none": 231
+        },
+        "test_classes": {
+          "hint": 158,
+          "zoom": 103,
+          "none": 27
+        }
+      }
+    ]
+  }
+}

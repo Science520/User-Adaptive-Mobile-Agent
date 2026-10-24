@@ -1,0 +1,11 @@
+{
+  "task": "FunUI positive grounding",
+  "eligible": 81,
+  "missing_predictions_counted_wrong": 0,
+  "point_accuracy": 0.024691358024691357,
+  "model": "screen center sanity baseline",
+  "excluded": "negative/nonbox answers, invalid/outside boxes, and questions containing bounding box coordinates",
+  "unknown_prediction_ids": [],
+  "external_predictions_scored": false,
+  "note": "Center baseline checks scoring only. Raw QA/referring/summarization are preserved but not model-evaluated."
+}

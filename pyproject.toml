@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "usercamera-validation"
+version = "0.1.0"
+description = "Public-data and synthetic validation of user-facing camera signals for GUI difficulty"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.24,<3", "scipy>=1.10,<2", "scikit-learn>=1.3,<2", "Pillow>=10,<13"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+usercamera = "usercamera.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["usercamera*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
