@@ -2,7 +2,30 @@
 
 本项目是 `thought2.md` / `thought3.md` 的第一阶段实验实现。原文档保留不变，文档里的完整 Agent、招募、后训练等设想没有作为本次开发指令执行。本次范围是：真实公开数据取样、质量检查、图像基线、合成代理任务、分组消融和可复现报告。
 
-**当前优先：MPIIFaceGaze Camera–Screen Geometry Validation。** 查看[最新结果](reports/RESULTS.md)和[30 个真实样本可视化](reports/mpii_geometry/visualizations/index.html)。原始第一阶段 H1/报告归档于 `reports/archive_phase1/`；H2/H3 合成预测与结果原文件保留。
+**当前优先：MPIIFaceGaze 越界审计、严格 LOSO 模型对照与粗粒度 user-state 评估。** 查看[本轮结果](reports/MPII_NEXT_RESULTS.md)、[越界审计](reports/mpii_audit/outlier_summary.md)；此前[几何结果](reports/RESULTS.md)和[30 个真实样本可视化](reports/mpii_geometry/visualizations/index.html)保留。原始第一阶段 H1/报告归档于 `reports/archive_phase1/`；H2/H3 合成预测与结果原文件保留。
+
+## 本轮执行入口
+
+复用本地 360 张图像、15 人完整标注/calibration、已缓存 ImageNet 权重；默认不下载数据。四步共享 `reports/mpii_next/splits.json`：15折 LOSO，每折训练13人、验证1人、测试1人；所有 scaler/PCA 与超参选择仅使用训练/验证人。
+
+```bash
+cd /Users/audrey/Desktop/Phone
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m usercamera mpii-audit-outliers
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m usercamera mpii-compare-cleaning
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m usercamera mpii-strong-baselines --max-epochs 12
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m usercamera mpii-coarse-eval
+PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 .venv/bin/python -m pytest -q
+```
+
+`mpii-audit-outliers` 从全部原始 txt 独立重算边界、subject/day、几何一致性；输出 `reports/mpii_audit/{outliers.jsonl,outliers_by_day.csv,outlier_summary.md,figures/}`。连续屏幕边界与像素中心边界单独统计，不改官方标签。外部 pperle 源码固定版本保存在 `reference/`，其按图片位置对齐标注的假设不适用本地稀疏图像。
+
+`mpii-compare-cleaning` 用 ID manifest 定义 Original / On-screen / Day-filtered；分别比较清理训练集与限制测试集。现有图片 A/B=360、C=350，没有越界标签照片，不能测试直接移除243条的收益。默认仅生成扩展计划：额外360张预计约42.59MiB，字节预算为硬上限。只有显式传 `--allow-download --download-budget-mib 64 --expansion-dir data/expansions/mpii_v1` 才请求新数据；新目录拒绝覆盖。扩展manifest尚未接入模型训练，本轮没有下载。
+
+`mpii-strong-baselines` 保留低分辨率 Ridge；新增冻结224px face/eye Ridge、oracle/predicted pose诊断、known hardware calibration、64px matched frozen head与layer4微调。微调最多12 epoch、内部验证early stopping，两组lr/weight decay；156/312训练样本学习曲线均来自已有360张。各折缓存按源码、输入、训练/验证标签、配置指纹复用，测试标签在训练函数中置NaN。所有CNN仍使用**标注landmark crops**；oracle pose与预测pose分开，未实现全自动landmark检测。
+
+`mpii-coarse-eval` 输出2×2/3×3/4×4与左中右Macro-F1、balanced accuracy、prior/chance基线、逐人表现，另测head pose和静态距离proxy。汇总写入 `reports/MPII_NEXT_RESULTS.md`。gaze zone不是困难标签；没有时间序列或真实困难识别结论。
+
+全部新结果在 `reports/mpii_next/`。`strong/strong_results.json` 包含逐人指标/超参选择/成本，`prediction_errors.jsonl`、`invalid_rays.jsonl`、`worst20.jsonl`保留异常预测。ray使用预测origin，不用测试官方face center冒充预测；无效ray保留并报告覆盖率/失败惩罚，绝不只给有效子集平均。没有几何loss消融、完整骨干微调、gaze-specific架构或手机同步困难实验；局限和实际运行结果见本轮报告。
 
 ## 当前几何验证入口
 

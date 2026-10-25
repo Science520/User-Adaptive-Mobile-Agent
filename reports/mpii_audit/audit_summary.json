@@ -1,0 +1,519 @@
+{
+  "n_valid_format": 37667,
+  "invalid": [],
+  "subjects": {
+    "p00": {
+      "n": 2927,
+      "outside": 0,
+      "outside_fraction": 0.0,
+      "bad_days": []
+    },
+    "p01": {
+      "n": 2904,
+      "outside": 0,
+      "outside_fraction": 0.0,
+      "bad_days": []
+    },
+    "p02": {
+      "n": 2916,
+      "outside": 5,
+      "outside_fraction": 0.0017146776406035665,
+      "bad_days": [
+        {
+          "subject_id": "p02",
+          "day": "day21",
+          "n": 99,
+          "outside": 5,
+          "outside_fraction": 0.050505050505050504,
+          "screen_width_px": 1280.0,
+          "screen_height_px": 800.0,
+          "x_min": 6.0,
+          "x_max": 2809.0,
+          "y_min": 4.0,
+          "y_max": 910.0,
+          "max_excess_px": 1529.0
+        }
+      ]
+    },
+    "p03": {
+      "n": 2929,
+      "outside": 0,
+      "outside_fraction": 0.0,
+      "bad_days": []
+    },
+    "p04": {
+      "n": 2860,
+      "outside": 0,
+      "outside_fraction": 0.0,
+      "bad_days": []
+    },
+    "p05": {
+      "n": 2870,
+      "outside": 0,
+      "outside_fraction": 0.0,
+      "bad_days": []
+    },
+    "p06": {
+      "n": 2877,
+      "outside": 0,
+      "outside_fraction": 0.0,
+      "bad_days": []
+    },
+    "p07": {
+      "n": 2843,
+      "outside": 228,
+      "outside_fraction": 0.08019697502638058,
+      "bad_days": [
+        {
+          "subject_id": "p07",
+          "day": "day02",
+          "n": 24,
+          "outside": 11,
+          "outside_fraction": 0.4583333333333333,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 153.0,
+          "x_max": 1698.0,
+          "y_min": 9.0,
+          "y_max": 1050.0,
+          "max_excess_px": 258.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day04",
+          "n": 82,
+          "outside": 6,
+          "outside_fraction": 0.07317073170731707,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 20.0,
+          "x_max": 1807.0,
+          "y_min": 49.0,
+          "y_max": 1042.0,
+          "max_excess_px": 367.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day06",
+          "n": 57,
+          "outside": 16,
+          "outside_fraction": 0.2807017543859649,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 15.0,
+          "x_max": 1899.0,
+          "y_min": 1.0,
+          "y_max": 1078.0,
+          "max_excess_px": 459.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day07",
+          "n": 24,
+          "outside": 5,
+          "outside_fraction": 0.20833333333333334,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 21.0,
+          "x_max": 1857.0,
+          "y_min": 33.0,
+          "y_max": 974.0,
+          "max_excess_px": 417.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day11",
+          "n": 36,
+          "outside": 15,
+          "outside_fraction": 0.4166666666666667,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 73.0,
+          "x_max": 1827.0,
+          "y_min": 3.0,
+          "y_max": 1024.0,
+          "max_excess_px": 387.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day12",
+          "n": 98,
+          "outside": 28,
+          "outside_fraction": 0.2857142857142857,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 22.0,
+          "x_max": 1906.0,
+          "y_min": 1.0,
+          "y_max": 1063.0,
+          "max_excess_px": 466.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day13",
+          "n": 13,
+          "outside": 5,
+          "outside_fraction": 0.38461538461538464,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 40.0,
+          "x_max": 1850.0,
+          "y_min": 192.0,
+          "y_max": 846.0,
+          "max_excess_px": 410.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day14",
+          "n": 27,
+          "outside": 8,
+          "outside_fraction": 0.2962962962962963,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 70.0,
+          "x_max": 1796.0,
+          "y_min": 21.0,
+          "y_max": 1041.0,
+          "max_excess_px": 356.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day15",
+          "n": 48,
+          "outside": 18,
+          "outside_fraction": 0.375,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 48.0,
+          "x_max": 1897.0,
+          "y_min": 24.0,
+          "y_max": 1041.0,
+          "max_excess_px": 457.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day17",
+          "n": 23,
+          "outside": 9,
+          "outside_fraction": 0.391304347826087,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 69.0,
+          "x_max": 1897.0,
+          "y_min": 24.0,
+          "y_max": 1057.0,
+          "max_excess_px": 457.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day19",
+          "n": 81,
+          "outside": 17,
+          "outside_fraction": 0.20987654320987653,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 37.0,
+          "x_max": 1861.0,
+          "y_min": 15.0,
+          "y_max": 1062.0,
+          "max_excess_px": 421.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day21",
+          "n": 13,
+          "outside": 4,
+          "outside_fraction": 0.3076923076923077,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 146.0,
+          "x_max": 1712.0,
+          "y_min": 137.0,
+          "y_max": 816.0,
+          "max_excess_px": 272.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day23",
+          "n": 22,
+          "outside": 9,
+          "outside_fraction": 0.4090909090909091,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 241.0,
+          "x_max": 1901.0,
+          "y_min": 16.0,
+          "y_max": 1028.0,
+          "max_excess_px": 461.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day38",
+          "n": 88,
+          "outside": 31,
+          "outside_fraction": 0.3522727272727273,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 25.0,
+          "x_max": 1906.0,
+          "y_min": 17.0,
+          "y_max": 1054.0,
+          "max_excess_px": 466.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day47",
+          "n": 145,
+          "outside": 11,
+          "outside_fraction": 0.07586206896551724,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 2.0,
+          "x_max": 1786.0,
+          "y_min": 10.0,
+          "y_max": 1065.0,
+          "max_excess_px": 346.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day50",
+          "n": 84,
+          "outside": 16,
+          "outside_fraction": 0.19047619047619047,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 3.0,
+          "x_max": 1883.0,
+          "y_min": 16.0,
+          "y_max": 1079.0,
+          "max_excess_px": 443.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day55",
+          "n": 86,
+          "outside": 8,
+          "outside_fraction": 0.09302325581395349,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 19.0,
+          "x_max": 1726.0,
+          "y_min": 15.0,
+          "y_max": 1068.0,
+          "max_excess_px": 286.0
+        },
+        {
+          "subject_id": "p07",
+          "day": "day56",
+          "n": 34,
+          "outside": 11,
+          "outside_fraction": 0.3235294117647059,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 27.0,
+          "x_max": 1846.0,
+          "y_min": 18.0,
+          "y_max": 978.0,
+          "max_excess_px": 406.0
+        }
+      ]
+    },
+    "p08": {
+      "n": 2767,
+      "outside": 0,
+      "outside_fraction": 0.0,
+      "bad_days": []
+    },
+    "p09": {
+      "n": 2719,
+      "outside": 0,
+      "outside_fraction": 0.0,
+      "bad_days": []
+    },
+    "p10": {
+      "n": 2194,
+      "outside": 10,
+      "outside_fraction": 0.004557885141294439,
+      "bad_days": [
+        {
+          "subject_id": "p10",
+          "day": "day05",
+          "n": 360,
+          "outside": 10,
+          "outside_fraction": 0.027777777777777776,
+          "screen_width_px": 1440.0,
+          "screen_height_px": 900.0,
+          "x_min": 1.0,
+          "x_max": 3035.0,
+          "y_min": 0.0,
+          "y_max": 1157.0,
+          "max_excess_px": 1595.0
+        }
+      ]
+    },
+    "p11": {
+      "n": 2262,
+      "outside": 0,
+      "outside_fraction": 0.0,
+      "bad_days": []
+    },
+    "p12": {
+      "n": 1601,
+      "outside": 0,
+      "outside_fraction": 0.0,
+      "bad_days": []
+    },
+    "p13": {
+      "n": 1498,
+      "outside": 0,
+      "outside_fraction": 0.0,
+      "bad_days": []
+    },
+    "p14": {
+      "n": 1500,
+      "outside": 0,
+      "outside_fraction": 0.0,
+      "bad_days": []
+    }
+  },
+  "outside_n": 243,
+  "boundary_closed_ids": [
+    "Data/p00/day15/0062.jpg",
+    "Data/p00/day27/0288.jpg",
+    "Data/p00/day28/0114.jpg",
+    "Data/p00/day29/0302.jpg",
+    "Data/p00/day37/0367.jpg",
+    "Data/p01/day23/0031.jpg",
+    "Data/p01/day23/0100.jpg",
+    "Data/p01/day37/0357.jpg",
+    "Data/p01/day41/0364.jpg",
+    "Data/p01/day45/0017.jpg",
+    "Data/p02/day16/0651.jpg",
+    "Data/p02/day17/0124.jpg",
+    "Data/p03/day02/0060.jpg",
+    "Data/p03/day12/0606.jpg",
+    "Data/p03/day21/0100.jpg",
+    "Data/p03/day33/0277.jpg",
+    "Data/p03/day38/0062.jpg",
+    "Data/p03/day40/0648.jpg",
+    "Data/p03/day54/0506.jpg",
+    "Data/p03/day57/0541.jpg",
+    "Data/p03/day65/0054.jpg",
+    "Data/p04/day10/0500.jpg",
+    "Data/p04/day18/0311.jpg",
+    "Data/p04/day23/0921.jpg",
+    "Data/p05/day07/0863.jpg",
+    "Data/p05/day17/0200.jpg",
+    "Data/p05/day18/0282.jpg",
+    "Data/p05/day26/0801.jpg",
+    "Data/p06/day25/0434.jpg",
+    "Data/p08/day21/0379.jpg",
+    "Data/p08/day21/0386.jpg",
+    "Data/p08/day39/0437.jpg",
+    "Data/p08/day40/0426.jpg",
+    "Data/p08/day41/0104.jpg",
+    "Data/p08/day46/0130.jpg",
+    "Data/p09/day02/0151.jpg",
+    "Data/p09/day02/0278.jpg",
+    "Data/p09/day03/0824.jpg",
+    "Data/p09/day03/1215.jpg",
+    "Data/p09/day08/0978.jpg",
+    "Data/p09/day10/0009.jpg",
+    "Data/p09/day17/0076.jpg",
+    "Data/p09/day18/0233.jpg",
+    "Data/p10/day03/0111.jpg",
+    "Data/p10/day05/0434.jpg",
+    "Data/p10/day09/0080.jpg",
+    "Data/p11/day01/0311.jpg",
+    "Data/p11/day04/0063.jpg",
+    "Data/p11/day05/0119.jpg",
+    "Data/p11/day07/0055.jpg",
+    "Data/p11/day12/0158.jpg",
+    "Data/p12/day02/0384.jpg",
+    "Data/p12/day03/0101.jpg",
+    "Data/p12/day04/0062.jpg",
+    "Data/p12/day06/0012.jpg",
+    "Data/p13/day01/0159.jpg",
+    "Data/p13/day10/0053.jpg",
+    "Data/p13/day10/0090.jpg",
+    "Data/p14/day03/0052.jpg"
+  ],
+  "on_closed_but_outside_pixel_centers_ids": [],
+  "pixel_center_outside_n": 243,
+  "axis_counts": {
+    "y": 74,
+    "x": 143,
+    "x+y": 26
+  },
+  "excess_sign_counts": {
+    "has_left_or_top_excess": 0,
+    "has_right_or_bottom_excess": 243
+  },
+  "outlier_coordinate_extents": {
+    "p02": {
+      "x_min": 296.0,
+      "x_max": 2809.0,
+      "y_min": 391.0,
+      "y_max": 910.0
+    },
+    "p07": {
+      "x_min": 25.0,
+      "x_max": 1906.0,
+      "y_min": 9.0,
+      "y_max": 1079.0
+    },
+    "p10": {
+      "x_min": 14.0,
+      "x_max": 3035.0,
+      "y_min": 153.0,
+      "y_max": 1157.0
+    }
+  },
+  "view_sizes": {
+    "Original": 37667,
+    "On-screen": 37424,
+    "Day-filtered": 36223
+  },
+  "pperle": {
+    "source_commit": {
+      "sha": "6e4e2a5ca355680721798556fa671e8266de5705",
+      "url": "https://github.com/pperle/gaze-tracking/commit/6e4e2a5ca355680721798556fa671e8266de5705"
+    },
+    "numeric_predicate_n": 243,
+    "same_numeric_predicate_ids": true,
+    "published_csv": {
+      "n": 243,
+      "same_ids": true,
+      "ours_only": [],
+      "published_only": [],
+      "coordinate_or_size_mismatch_ids": [],
+      "sha256": "a0bce93f9a76d5e33507bad8f7fb67add277763391ebacb40975fc6f013c9633",
+      "source_url": "https://drive.google.com/uc?export=download&id=1Cq25df9124q8vkdsJO1BiqjuLSWlXz1r",
+      "source_readme_commit": "6e4e2a5ca355680721798556fa671e8266de5705"
+    },
+    "ours_only": [],
+    "reference_predicate_only": [],
+    "literal_sparse_directory_ids": [
+      "Data/p07/day47/0671.jpg",
+      "Data/p07/day50/0241.jpg"
+    ],
+    "literal_false_ids": [
+      "Data/p07/day47/0671.jpg",
+      "Data/p07/day50/0241.jpg"
+    ],
+    "positional_id_mismatches_on_sparse_tree": 360,
+    "readme_rates_percent": {
+      "p02": 0.043,
+      "p07": 8.79,
+      "p10": 0.39
+    },
+    "note": "Script assumes every annotation row corresponds to next sorted image. Predicate comparison on all labels is not a claim to execute original full-image dataset."
+  },
+  "hypotheses": {
+    "screen_configuration_change": "unresolved: one participant-level calibration, no dated screen config log",
+    "label_generation_error": "unresolved: 2D/3D consistency can share same calibration error",
+    "one_pixel_boundary_convention": "testable separately; boundary-only ID list is explicit",
+    "fractional_integer_truncation": "original coordinates checked; predicate agreement recorded"
+  },
+  "local_images_for_outliers": 0
+}

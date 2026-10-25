@@ -15,6 +15,22 @@ DEFAULT_CONFIG = Path(__file__).resolve().parents[1] / "configs/synthetic.json"
 
 
 def run_mpii_command(args):
+    if args.command == "mpii-audit-outliers":
+        from .mpii_outlier_audit import audit_outliers
+        return audit_outliers(args.data, args.output)
+    if args.command == "mpii-compare-cleaning":
+        from .mpii_cleaning import compare_cleaning
+        return compare_cleaning(args.data, args.output, args.splits, args.extra_per_subject,
+                                args.allow_download, args.download_budget_mib, args.expansion_dir)
+    if args.command == "mpii-strong-baselines":
+        from .mpii_strong import strong_baselines
+        return strong_baselines(args.data, args.output, args.splits, args.max_epochs, not args.no_neural)
+    if args.command == "mpii-coarse-eval":
+        from .mpii_coarse import coarse_eval
+        from .mpii_next_report import generate_next_report
+        result = coarse_eval(args.data, args.output, args.strong_output, args.splits)
+        result['research_report'] = generate_next_report(args.audit_output, args.cleaning_output, args.strong_output, args.output)
+        return result
     from .camera_screen_geometry import validate_geometry
     from .mpii_models import evaluate_models, prepare_weights, MAIN_MODEL
     from .mpii_report import generate_report
@@ -111,6 +127,27 @@ def main(argv=None):
             p.add_argument("--no-cnn", action="store_true")
         if name in ("mpii-visualize", "mpii-run"):
             p.add_argument("--count", type=int, default=30)
+    for name, directory in [("mpii-audit-outliers", "reports/mpii_audit"),
+                            ("mpii-compare-cleaning", "reports/mpii_next/cleaning"),
+                            ("mpii-strong-baselines", "reports/mpii_next/strong"),
+                            ("mpii-coarse-eval", "reports/mpii_next/coarse")]:
+        p = sub.add_parser(name, help="Immutable MPII audit / shared LOSO research evaluation")
+        p.add_argument("--data", default="data")
+        p.add_argument("--output", default=directory)
+        if name != "mpii-audit-outliers":
+            p.add_argument("--splits", default="reports/mpii_next/splits.json")
+        if name == "mpii-compare-cleaning":
+            p.add_argument("--extra-per-subject", type=int, default=24)
+            p.add_argument("--allow-download", action="store_true")
+            p.add_argument("--download-budget-mib", type=float, default=64)
+            p.add_argument("--expansion-dir", default="data/expansions/mpii_v1")
+        if name == "mpii-strong-baselines":
+            p.add_argument("--max-epochs", type=int, default=12)
+            p.add_argument("--no-neural", action="store_true")
+        if name == "mpii-coarse-eval":
+            p.add_argument("--strong-output", default="reports/mpii_next/strong")
+            p.add_argument("--audit-output", default="reports/mpii_audit")
+            p.add_argument("--cleaning-output", default="reports/mpii_next/cleaning")
     p = sub.add_parser("pilot", help="Validate/score future synchronized feature windows")
     p.add_argument("path")
     p.add_argument("--validate-only", action="store_true")
