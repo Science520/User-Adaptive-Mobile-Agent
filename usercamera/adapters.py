@@ -10,7 +10,8 @@ from PIL import Image
 from scipy.io import loadmat
 
 from .geometry import gaze_vector
-from .io import write_json, write_jsonl
+from .io import write_json, write_jsonl, sha256
+from .camera_screen_geometry import load_calibration
 
 
 def bbox(value):
@@ -91,26 +92,42 @@ def prepare_mpii(root):
     folder = root / "raw/mpiifacegaze"
     manifest = json.loads((folder / "manifest.json").read_text())
     wanted = set(manifest["selected_images"])
-    rows, errors = [], []
+    source_mismatches = [r["member"] for r in manifest.get("files", [])
+                         if not (folder/r["member"]).is_file() or sha256(folder/r["member"]) != r["sha256"]]
+    if source_mismatches:
+        raise ValueError(f"Original MPII files changed or missing: {source_mismatches}")
+    rows, errors, calibrations, annotation_audit = [], [], {}, {}
     for annotation in sorted(folder.rglob("p[0-9][0-9].txt")):
         subject = annotation.stem
         cal = annotation.parent / "Calibration"
-        sizes = list(cal.glob("*creenSize.mat"))
-        if len(sizes) != 1:
-            raise ValueError(f"Missing screen calibration for {subject}")
-        screen = loadmat(sizes[0])
-        width, height = [float(np.asarray(screen[k]).squeeze()) for k in ("width_pixel", "height_pixel")]
-        camera = loadmat(cal / "Camera.mat")
+        calibration = load_calibration(cal, subject)
+        calibrations[subject] = calibration
+        width, height = [calibration["screen"][key] for key in ("width_pixel", "height_pixel")]
+        full_counts, full_invalid, outside_labels = Counter(), [], []
         for line_no, line in enumerate(annotation.read_text().splitlines(), 1):
             if not line.strip():
                 continue
             parts = line.split()
             relative = str(annotation.parent.relative_to(folder) / parts[0])
+            full_counts["annotation_rows"] += 1
+            try:
+                if len(parts) != 28 or parts[27] not in ("left", "right"):
+                    raise ValueError("Expected 28 columns and left/right eye flag")
+                check = np.asarray(parts[1:27], dtype=float)
+                if not np.isfinite(check).all():
+                    raise ValueError("Nonfinite full annotation row")
+                if not (0 <= check[0] <= width and 0 <= check[1] <= height):
+                    outside_labels.append({"id": relative, "gaze_screen_px": check[:2].tolist(), "line": line_no})
+                full_counts["valid_format_rows"] += 1
+            except ValueError as exc:
+                full_invalid.append({"line": line_no, "reason": str(exc), "id": relative})
             if relative not in wanted:
                 continue
             try:
                 if len(parts) != 28:
                     raise ValueError(f"Expected 28 columns, got {len(parts)}")
+                if parts[27] not in ("left", "right"):
+                    raise ValueError("Expected left/right eye subset flag")
                 values = np.asarray(parts[1:27], dtype=float)
                 if not np.isfinite(values).all():
                     raise ValueError("Nonfinite annotations")
@@ -129,15 +146,28 @@ def prepare_mpii(root):
                              "head_translation_mm": translation.tolist(), "face_center_mm": center.tolist(),
                              "gaze_target_mm": target.tolist(), "gaze_direction": gaze_vector(center, target).tolist(),
                              "face_camera_distance_proxy_mm": float(np.linalg.norm(center)),
-                             "camera_matrix": camera["cameraMatrix"].tolist(), "eye_subset": parts[27],
+                             "camera_matrix": calibration["camera"]["K"], "eye_subset": parts[27],
+                             "calibration": calibration, "schema_version": "mpii-sample-v2",
+                             "head_pose_convention": "Rodrigues rvec radians, head-model to camera; translation mm; model origin differs from face center",
                              "label_provenance": "gaze target annotation; estimated head pose/face center",
                              "temporal": False})
             except (ValueError, OSError) as exc:
                 errors.append({"subject": subject, "line": line_no, "reason": str(exc)})
+        annotation_audit[subject] = {**full_counts, "invalid": full_invalid, "outside_display_labels": outside_labels,
+                                   "scope": "all local annotation rows; images exist only for selected sample"}
     write_jsonl(root / "processed/mpii.jsonl", rows)
+    write_json(root / "processed/mpii_calibrations.json", calibrations)
+    write_json(root / "processed/mpii_annotation_audit.json", annotation_audit)
     audit = {"rows": len(rows), "subjects": dict(Counter(r["subject_id"] for r in rows)), "invalid": errors,
              "missing_selected_images": sorted(wanted - {r["id"] for r in rows}),
              "distance_is_ground_truth": False, "real_temporal_stream": False}
+    audit.update(calibration_subjects=len(calibrations), schema_version="mpii-sample-v2",
+                 original_manifest_files_sha256_verified=len(manifest.get("files", [])),
+                 original_manifest_file_mismatches=source_mismatches,
+                 total_local_annotation_rows=sum(x["annotation_rows"] for x in annotation_audit.values()),
+                 full_annotation_format_errors=sum(len(x["invalid"]) for x in annotation_audit.values()),
+                 full_annotation_outside_display=sum(len(x["outside_display_labels"]) for x in annotation_audit.values()))
+    write_json(root / "processed/mpii_audit.json", audit)
     return audit
 
 

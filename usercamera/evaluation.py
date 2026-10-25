@@ -213,6 +213,11 @@ def grounding(root, output, predictions_path=None):
 
 def make_report(root, output):
     output = Path(output)
+    if (output / "mpii_geometry/geometry_consistency.json").exists() and (output / "mpii_geometry/h1_models.json").exists():
+        from .mpii_report import generate_report
+        path = generate_report(root, output / "mpii_geometry")
+        (output / "RESULTS.md").write_bytes(Path(path).read_bytes())
+        return str(output / "RESULTS.md")
     for report_name, input_name in [("h1_public.json", "processed/mpii.jsonl"),
                                     ("h2_h3_synthetic.json", "synthetic/scenarios.jsonl")]:
         report_path, input_path = output / report_name, Path(root) / input_name

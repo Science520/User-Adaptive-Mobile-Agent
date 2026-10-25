@@ -2,9 +2,58 @@
 
 本项目是 `thought2.md` / `thought3.md` 的第一阶段实验实现。原文档保留不变，文档里的完整 Agent、招募、后训练等设想没有作为本次开发指令执行。本次范围是：真实公开数据取样、质量检查、图像基线、合成代理任务、分组消融和可复现报告。
 
-**最先阅读实际结果：[reports/RESULTS.md](reports/RESULTS.md)。合成增益不能证明真实摄像头有用。**
+**当前优先：MPIIFaceGaze Camera–Screen Geometry Validation。** 查看[最新结果](reports/RESULTS.md)和[30 个真实样本可视化](reports/mpii_geometry/visualizations/index.html)。原始第一阶段 H1/报告归档于 `reports/archive_phase1/`；H2/H3 合成预测与结果原文件保留。
 
-## 运行
+## 当前几何验证入口
+
+现有数据全部复用，无需执行 `download`。本机隔离环境已安装 PyTorch 2.2.2 / torchvision 0.17.2，ImageNet ResNet18 权重已缓存。
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m usercamera mpii-run
+PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 .venv/bin/python -m pytest -q
+```
+
+该命令只执行 MPII 解析、几何一致性、participant-disjoint 模型、可视化和报告，不下载数据、不重跑 H2/H3、不训练 GUI Agent 或 GRPO。模型评估不会隐式下载权重；缺少 checkpoint 时明确报错。
+
+分步命令：
+
+```bash
+.venv/bin/python -m usercamera mpii-prepare
+.venv/bin/python -m usercamera mpii-geometry
+.venv/bin/python -m usercamera mpii-models
+.venv/bin/python -m usercamera mpii-visualize --count 30
+.venv/bin/python -m usercamera mpii-report
+```
+
+仅在新环境首次准备依赖和 **模型权重**（不是数据集）：
+
+```bash
+python3 -m venv --system-site-packages .venv
+.venv/bin/python -m pip install 'torch==2.2.2' 'torchvision==0.17.2'
+.venv/bin/python -m usercamera mpii-weights
+```
+
+也可 `pip install -e '.[geometry,test]'`。`mpii-weights` 检查现有 checkpoint 并复用，使用官方 ImageNet 权重以避免 gaze 专用预训练权重可能包含测试参与者。CNN backbone 冻结，只拟合小型线性头，crop 使用给定六点；这不是端到端自动 gaze tracker。
+
+新增实现与输出：
+
+| 文件 | 内容 |
+| --- | --- |
+| `usercamera/camera_screen_geometry.py` | 标定 schema、坐标变换、射线求交、全标注一致性与错误约定诊断 |
+| `usercamera/mpii_models.py` | 保留 32×24 Ridge；landmark/head pose、冻结 face/eye CNN、appearance+pose+calibration 对照 |
+| `usercamera/visualize_mpii.py` | 30 个真实样本四面板、15 名参与者分布、HTML 索引 |
+| `data/processed/mpii_calibrations.json` | 15 组 K、畸变、屏幕 R/t、物理/像素尺寸、变换矩阵与源文件哈希 |
+| `reports/mpii_geometry/geometry_consistency.json` | 360 照片子集及完整 37,667 行标注的几何残差；不是模型预测精度 |
+| `reports/mpii_geometry/h1_models.json` | 10 个对照的 3D angular、2D px/mm、射线覆盖率、逐参与者与模态贡献 |
+| `reports/mpii_geometry/annotation_warnings.jsonl` | 243 个越界标签，保留原值及是否有本地图片 |
+| `reports/mpii_geometry/model_worst20.jsonl` | 预先指定融合模型的最大预测误差样本，未用于调参 |
+| `reports/mpii_geometry/run_manifest.json` | 实际命令、成功模型、代码/数据/权重哈希与 H2/H3 保留校验 |
+
+屏幕坐标约定是 `Xc=Rsc@Xs+tsc`，mm、Rodrigues radians、有效显示区左上原点、x 右/y 下。`monitorPose.mat` 真实字段为 `rvects`；`Camera.mat` 的多组 rvecs/tvecs 是棋盘姿态，不能用作屏幕外参。屏幕像素连续换算不加减 1、不手工翻转。全部 37,667 行几何一致，但 243 个标签越过声明的屏幕范围，这两类检查不能混淆。
+
+主 2D 预测指标来自独立 screen 回归头；另外分别保存“预测 face center 的射线”和“给定 face center 的条件射线”。后者不能称作完全由图像得到的定位精度。参与者分组之外还需手机域独立采集；本数据是笔记本场景，三维 face center/pose 是估计标签。
+
+## 第一阶段原始流程（保留，不是本轮默认入口）
 
 Python 3.9+，无需 GPU、API Key 或付费模型。当前电脑已有所需运行库；可直接在 `Phone/` 中运行：
 
@@ -52,7 +101,7 @@ python3 -m usercamera report
 | H2：User 信息能补充 Screen + Actions 吗？ | 合成几何参数 + UI 因子，比较 S / S+A / S+U / S+A+U / S+A+shuffled-U / prior 基线 | 随机公开人脸与 GUI 的真实同步关系，或真实用户上的增益 |
 | H3：能判断 zoom / hint / none 吗？ | 单独训练与评估合成干预类别，报告无须干预样本上的错误干预率 | 干预改善了真实任务成功率或用户负担 |
 
-H1 使用低分辨率像素 Ridge 作为可解释、CPU 可运行的诊断基线，没有复现 SOTA gaze encoder，也没有使用标注 gaze、头姿或距离作为输入。头姿和 face center 本身是数据集提供的估计标注。MPIIFaceGaze 是笔记本域；抽样图像不是连续视频。
+第一阶段 H1 使用低分辨率像素 Ridge，原结果归档保留；新增 H1 对照见上面的几何入口。原始 Ridge 没有使用标注 gaze、头姿或距离作为输入。新增 pose 类对照会使用估计的 head pose，CNN crop 使用标注 landmarks；两者均明确标注辅助条件。MPIIFaceGaze 是笔记本域；抽样图像不是连续视频。
 
 GUI 侧实现三件事：FunUI 四类中文原始任务读取；grounding 合法性与泄漏检查；MobileViews hierarchy 中的文本、bounds、可点击区域、屏幕密度提取。这里尚未训练 UI-Hawk 或 VLM。`grounding` 默认是**屏幕中心点的评分管道检查**，不代表 GUI 理解能力。
 

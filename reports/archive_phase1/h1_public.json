@@ -1,0 +1,178 @@
+{
+  "hypothesis": "H1",
+  "evidence_tier": "public_unimodal_baseline",
+  "n": 360,
+  "subjects": {
+    "p00": 24,
+    "p01": 24,
+    "p02": 24,
+    "p03": 24,
+    "p04": 24,
+    "p05": 24,
+    "p06": 24,
+    "p07": 24,
+    "p08": 24,
+    "p09": 24,
+    "p10": 24,
+    "p11": 24,
+    "p12": 24,
+    "p13": 24,
+    "p14": 24
+  },
+  "model": "32x24 grayscale pixels -> StandardScaler -> multioutput Ridge(alpha=100)",
+  "input_features": "image pixels only; no annotated landmarks/pose/distance/gaze target",
+  "metrics": {
+    "gaze_angular_error_deg": {
+      "image_ridge_mean": 14.635079641534377,
+      "train_mean_baseline": 12.370231338086048,
+      "image_ridge_median": 12.95898201274695
+    },
+    "head_rotation_error_deg_estimated_label": {
+      "image_ridge_mean": 21.96282147581432,
+      "train_mean_baseline": 16.186970878647188,
+      "image_ridge_median": 18.11582095870493
+    },
+    "face_camera_distance_proxy_absolute_error_mm": {
+      "image_ridge_mean": 80.37764291055358,
+      "train_mean_baseline": 74.96721973537501,
+      "image_ridge_median": 54.08458744961517
+    },
+    "normalized_xy_error_unit_square_diagonal": {
+      "image_ridge_mean": 0.35016025429265246,
+      "train_mean_baseline": 0.2719090489396258,
+      "image_ridge_median": 0.312700518526284
+    }
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_subjects": [
+        "p00",
+        "p01",
+        "p02",
+        "p03",
+        "p05",
+        "p06",
+        "p07",
+        "p08",
+        "p10",
+        "p11",
+        "p12",
+        "p13"
+      ],
+      "test_subjects": [
+        "p04",
+        "p09",
+        "p14"
+      ],
+      "train_n": 288,
+      "test_n": 72
+    },
+    {
+      "fold": 1,
+      "train_subjects": [
+        "p00",
+        "p01",
+        "p02",
+        "p04",
+        "p05",
+        "p06",
+        "p07",
+        "p09",
+        "p10",
+        "p11",
+        "p12",
+        "p14"
+      ],
+      "test_subjects": [
+        "p03",
+        "p08",
+        "p13"
+      ],
+      "train_n": 288,
+      "test_n": 72
+    },
+    {
+      "fold": 2,
+      "train_subjects": [
+        "p00",
+        "p01",
+        "p03",
+        "p04",
+        "p05",
+        "p06",
+        "p08",
+        "p09",
+        "p10",
+        "p11",
+        "p13",
+        "p14"
+      ],
+      "test_subjects": [
+        "p02",
+        "p07",
+        "p12"
+      ],
+      "train_n": 288,
+      "test_n": 72
+    },
+    {
+      "fold": 3,
+      "train_subjects": [
+        "p00",
+        "p02",
+        "p03",
+        "p04",
+        "p05",
+        "p07",
+        "p08",
+        "p09",
+        "p10",
+        "p12",
+        "p13",
+        "p14"
+      ],
+      "test_subjects": [
+        "p01",
+        "p06",
+        "p11"
+      ],
+      "train_n": 288,
+      "test_n": 72
+    },
+    {
+      "fold": 4,
+      "train_subjects": [
+        "p01",
+        "p02",
+        "p03",
+        "p04",
+        "p06",
+        "p07",
+        "p08",
+        "p09",
+        "p11",
+        "p12",
+        "p13",
+        "p14"
+      ],
+      "test_subjects": [
+        "p00",
+        "p05",
+        "p10"
+      ],
+      "train_n": 288,
+      "test_n": 72
+    }
+  ],
+  "input_sha256": "ca0b143f2daf7ef5754be461c7b9cad1fdf54bedd49c5a05b2086982b4a5f7fc",
+  "limitations": [
+    "Small public sample, laptop camera domain; this is not a mobile-camera reliability validation.",
+    "Head pose and face center labels are estimates, not independent ground truth.",
+    "Face-camera distance is not phone-eye distance; no temporal changes are tested.",
+    "Low-resolution Ridge is a diagnostic baseline, not a reproduced state-of-the-art gaze encoder."
+  ],
+  "H1_status": "baseline_measured_not_established",
+  "H2_status": "not_tested",
+  "H3_status": "not_tested"
+}

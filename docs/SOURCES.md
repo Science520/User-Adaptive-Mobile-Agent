@@ -14,3 +14,11 @@ MPIIFaceGaze 的 28 列（按 1 开始）：1 图像路径；2–3 屏幕 gaze p
 本次没有下载 GazeCapture、AitW、COAS2W、ElderBench、OpenPhone 或 DMD。它们仍可作为后续资源，但本文没有复核或承诺其当前获取条件，也未把设计文档中的访问描述当作已验证事实。
 
 本实现为实验代码；使用数据及其派生物时保留各自许可、署名与引用义务，不能因为项目代码可用就假定所有源数据许可相同。
+
+## Camera–Screen Geometry 扩展
+
+2026-10-24：直接读取已有本地官方 README、28 列文本和全部 15 组 MAT 文件，没有重新下载数据集。README 仅说明 monitorPose 为屏幕在相机中的姿态，并未逐项写清轴方向与原点；本实现采用固定 Rodrigues 列向量约定，使用全部 37,667 行 2D/3D 标签检查方向、mm 比例和连续像素换算。真实文件字段 `rvects` 与文字中的 `rvecs` 不同，解析器兼容两者。
+
+预训练模型采用 [torchvision 官方 ResNet18](https://docs.pytorch.org/vision/main/models/generated/torchvision.models.resnet18.html) 的 `IMAGENET1K_V1`，checkpoint 来自 [PyTorch 官方模型服务器](https://download.pytorch.org/models/resnet18-f37072fd.pth)，SHA-256 为 `f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec`。只用冻结 appearance 特征，不引入可能已用 MPIIFaceGaze 测试参与者训练的 gaze checkpoint。默认 ImageNet resize/center-crop/normalization 由匹配版本 torchvision 提供。数据来源、模型预训练域和派生图像许可独立记录。
+
+旋转实现遵循 [SciPy `Rotation.from_rotvec`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.transform.Rotation.from_rotvec.html) 的默认弧度约定；外参列向量形式及相机多视图标定姿态参考 [OpenCV Camera Calibration](https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html)。这些库约定不是对真实硬件标定的独立测量；MPII 的屏幕原点与方向另外由全标注重建一致性检查支持。

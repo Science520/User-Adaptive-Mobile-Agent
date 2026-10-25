@@ -1,0 +1,264 @@
+{
+  "input_sha256": "bceb5b390aac75c403fdf138a27a03754aeeecd60b559dbd2d54965cee808765",
+  "real_samples": 30,
+  "selection": "seed42 participant-round-robin, independent of errors",
+  "samples": [
+    {
+      "id": "Data/p00/day08/0091.jpg",
+      "subject_id": "p00",
+      "image": "visualizations/sample_00_p00.png",
+      "original_image_sha256": "ab00def3c8b634395071c34fe23ddbcf81f1b079e06cc35c98c998d687b41ba0",
+      "fold": 4,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p01/day45/0379.jpg",
+      "subject_id": "p01",
+      "image": "visualizations/sample_01_p01.png",
+      "original_image_sha256": "8be20c2cd811032f627f93ff0aea0097a5957e0b03ce1a22b913ba770d5a1f96",
+      "fold": 3,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p02/day15/0328.jpg",
+      "subject_id": "p02",
+      "image": "visualizations/sample_02_p02.png",
+      "original_image_sha256": "ee1f8defe7b80110b7accd96e7b8ac7d31a5629b2e3e0084eb5df7b824c03595",
+      "fold": 2,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p03/day62/0636.jpg",
+      "subject_id": "p03",
+      "image": "visualizations/sample_03_p03.png",
+      "original_image_sha256": "cb638ac48da9ceffafae2bcc886dac1ad561b66d54982ce3ce1beb15177bf386",
+      "fold": 1,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p04/day08/0858.jpg",
+      "subject_id": "p04",
+      "image": "visualizations/sample_04_p04.png",
+      "original_image_sha256": "8195917a1f98166b13454c76371d4fc0f11b3a775b8197afa72b340a5d1a46cd",
+      "fold": 0,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p05/day04/0321.jpg",
+      "subject_id": "p05",
+      "image": "visualizations/sample_05_p05.png",
+      "original_image_sha256": "7d6c91dba6456b0b3ffe67b0063908baca141fa0e8d99365b26a07a5e3ecaa8c",
+      "fold": 4,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p06/day57/0152.jpg",
+      "subject_id": "p06",
+      "image": "visualizations/sample_06_p06.png",
+      "original_image_sha256": "b0efd1cbf2b51435218ef12dc23044f9b379bc522e21ca15be5c0ca9f8a69fb1",
+      "fold": 3,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p07/day01/0008.jpg",
+      "subject_id": "p07",
+      "image": "visualizations/sample_07_p07.png",
+      "original_image_sha256": "35d7bf405d881c32c3a7aaa44bc1a4666480ca309ec0a45b565f212ab31f4132",
+      "fold": 2,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p08/day47/0074.jpg",
+      "subject_id": "p08",
+      "image": "visualizations/sample_08_p08.png",
+      "original_image_sha256": "4dd60dba0ee67290fe01b05333af190feb5e795d10aa7a30e44d70e5ba7687e9",
+      "fold": 1,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p09/day18/0008.jpg",
+      "subject_id": "p09",
+      "image": "visualizations/sample_09_p09.png",
+      "original_image_sha256": "847cc36d3d6ad8441571013277a1bf8f74b13534aa3d6079a58b2b5cffe24296",
+      "fold": 0,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p10/day11/0025.jpg",
+      "subject_id": "p10",
+      "image": "visualizations/sample_10_p10.png",
+      "original_image_sha256": "80d4d4d2c679c656997cc8d9dd0120c34dee7b85e508062a676f6b3ae001e66e",
+      "fold": 4,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p11/day01/0265.jpg",
+      "subject_id": "p11",
+      "image": "visualizations/sample_11_p11.png",
+      "original_image_sha256": "9813c384330575f948dc98fa44d1b93490c99ab6ec3e0cf1b81bbbf508d4beb0",
+      "fold": 3,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p12/day05/0413.jpg",
+      "subject_id": "p12",
+      "image": "visualizations/sample_12_p12.png",
+      "original_image_sha256": "b61d21eab4a7f8458ceeec0849508e10d3673cd79f0fe50349323df602857b3b",
+      "fold": 2,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p13/day01/0117.jpg",
+      "subject_id": "p13",
+      "image": "visualizations/sample_13_p13.png",
+      "original_image_sha256": "2d82633a3ad6147a7c07a802307082e138855f37133be9034076a30b52305144",
+      "fold": 1,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p14/day06/0031.jpg",
+      "subject_id": "p14",
+      "image": "visualizations/sample_14_p14.png",
+      "original_image_sha256": "58ab34570eb315b0b6349515692145788f547bd0b923e3dfd5c9c5198a5c7c1c",
+      "fold": 0,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p00/day14/0093.jpg",
+      "subject_id": "p00",
+      "image": "visualizations/sample_15_p00.png",
+      "original_image_sha256": "2b1b1b258b3a5b9eb429e2c65882b3a0b238dd248022dc3c9b77caba236e79fc",
+      "fold": 4,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p01/day67/0068.jpg",
+      "subject_id": "p01",
+      "image": "visualizations/sample_16_p01.png",
+      "original_image_sha256": "2dc4954b9cbc354f15d7526d632723ac64fad18a14337571a75c03c04bec6829",
+      "fold": 3,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p02/day30/0328.jpg",
+      "subject_id": "p02",
+      "image": "visualizations/sample_17_p02.png",
+      "original_image_sha256": "d1b33601b9c5c43ad526bc58b0897db560dd81b2664f6eaa1bb56d747583dd15",
+      "fold": 2,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p03/day62/0107.jpg",
+      "subject_id": "p03",
+      "image": "visualizations/sample_18_p03.png",
+      "original_image_sha256": "9d48b3051deabdbe6366bc149238bf032cdbfc31ffd804eade272219e98d32ea",
+      "fold": 1,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p04/day12/0108.jpg",
+      "subject_id": "p04",
+      "image": "visualizations/sample_19_p04.png",
+      "original_image_sha256": "fe316f4cab9a802b6bd1d80c6711c687c16f77ab632be3e25bda20ce8c5e6d3b",
+      "fold": 0,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p05/day18/0253.jpg",
+      "subject_id": "p05",
+      "image": "visualizations/sample_20_p05.png",
+      "original_image_sha256": "f1fce511347557c59a8f5975b05c1ae81997d5c26ca505a2bae983406f9eeecc",
+      "fold": 4,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p06/day51/0043.jpg",
+      "subject_id": "p06",
+      "image": "visualizations/sample_21_p06.png",
+      "original_image_sha256": "231e47bce7d547d950433f118e3642c41818207214303479e958473c15ae9fe7",
+      "fold": 3,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p07/day07/0084.jpg",
+      "subject_id": "p07",
+      "image": "visualizations/sample_22_p07.png",
+      "original_image_sha256": "73657300600964ada35b47c88461291ddfde4e3d7a4eb7b57407d6cb6a718888",
+      "fold": 2,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p08/day35/0086.jpg",
+      "subject_id": "p08",
+      "image": "visualizations/sample_23_p08.png",
+      "original_image_sha256": "0d087a059725757a7e1fb2410a0efb4c9860b29b476e4da787b721838cd73a50",
+      "fold": 1,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p09/day07/0471.jpg",
+      "subject_id": "p09",
+      "image": "visualizations/sample_24_p09.png",
+      "original_image_sha256": "924480c9c917a87b69170021f6088587839647948da528c0ce75e714cf846c02",
+      "fold": 0,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p10/day04/0034.jpg",
+      "subject_id": "p10",
+      "image": "visualizations/sample_25_p10.png",
+      "original_image_sha256": "0da1431189f9232d23b95a3963ac11f6a7945cacd447425af06fa8d279b9f4f8",
+      "fold": 4,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p11/day15/0047.jpg",
+      "subject_id": "p11",
+      "image": "visualizations/sample_26_p11.png",
+      "original_image_sha256": "098545d0426f49e8a36fe385ee2b62b8e78a0ba8287465ab9ec1bfeba1f8ac46",
+      "fold": 3,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p12/day02/0389.jpg",
+      "subject_id": "p12",
+      "image": "visualizations/sample_27_p12.png",
+      "original_image_sha256": "46b23a6505dbfe5fbcae05f1562f05e46cc704ec0fdbf6a44fb93d9546d00fc8",
+      "fold": 2,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p13/day08/0066.jpg",
+      "subject_id": "p13",
+      "image": "visualizations/sample_28_p13.png",
+      "original_image_sha256": "3d3a0ef9fced5145de641d08b234f3dc51cd9184a91286c2abc5d3415d9f0b14",
+      "fold": 1,
+      "model": "appearance_head_pose_calibration_ridge"
+    },
+    {
+      "id": "Data/p14/day04/0071.jpg",
+      "subject_id": "p14",
+      "image": "visualizations/sample_29_p14.png",
+      "original_image_sha256": "9983c8587629732e0c13f29bba85976aefb1233aa7705b099f3ca022949ea3d0",
+      "fold": 0,
+      "model": "appearance_head_pose_calibration_ridge"
+    }
+  ],
+  "distributions": [
+    "visualizations/distribution_p00.png",
+    "visualizations/distribution_p01.png",
+    "visualizations/distribution_p02.png",
+    "visualizations/distribution_p03.png",
+    "visualizations/distribution_p04.png",
+    "visualizations/distribution_p05.png",
+    "visualizations/distribution_p06.png",
+    "visualizations/distribution_p07.png",
+    "visualizations/distribution_p08.png",
+    "visualizations/distribution_p09.png",
+    "visualizations/distribution_p10.png",
+    "visualizations/distribution_p11.png",
+    "visualizations/distribution_p12.png",
+    "visualizations/distribution_p13.png",
+    "visualizations/distribution_p14.png"
+  ]
+}

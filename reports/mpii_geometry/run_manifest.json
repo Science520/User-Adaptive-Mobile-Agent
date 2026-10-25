@@ -1,0 +1,58 @@
+{
+  "completed_at": "2026-10-24T20:55:00.225367+08:00",
+  "command": "/Users/audrey/Desktop/Phone/.venv/bin/python -m usercamera mpii-run",
+  "dataset_downloads": 0,
+  "raw_manifest_sha256": "e52d6d3c5e66a17f9fa08e24b640afc411ed0fd5082db6432d4fb6fdb8dbae97",
+  "input_sha256": "bceb5b390aac75c403fdf138a27a03754aeeecd60b559dbd2d54965cee808765",
+  "python": "3.9.6",
+  "numpy": "1.24.3",
+  "scipy": "1.11.2",
+  "sklearn": "1.3.0",
+  "pillow": "11.3.0",
+  "cnn_runtime": {
+    "torch": "2.2.2",
+    "torchvision": "0.17.2"
+  },
+  "checkpoint_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "original_raw_files_sha256_verified": 465,
+  "successful_models": [
+    "train_mean",
+    "pixels32x24_ridge",
+    "landmarks_only_ridge",
+    "head_pose_only_ridge",
+    "landmarks_head_pose_ridge",
+    "calibration_only_ridge",
+    "face_cnn_ridge",
+    "face_eye_cnn_ridge",
+    "appearance_head_pose_ridge",
+    "appearance_head_pose_calibration_ridge"
+  ],
+  "sample_n": 360,
+  "geometry_all_labels": 37667,
+  "visualizations": {
+    "real_sample_figures": 30,
+    "participant_distributions": 15,
+    "index": "reports/mpii_geometry/visualizations/index.html"
+  },
+  "legacy_H2_H3_sha256_unchanged": {
+    "reports/h2_h3_synthetic.json": "b12d7dcb0ce84bf83b13399dd860c6f527fcd9cc203ea48ba8fb9d02626093e6",
+    "reports/synthetic_predictions.jsonl": "c8e20e6ba195b2b66b4fbc36dc73142015d2be4899ad3a060efd21e8b473f7d5"
+  },
+  "code_sha256": {
+    "__init__.py": "6e47d9e85f83561ac88d93d44f490b213432ee0cfdb2cb47d1851f9fafebdda2",
+    "__main__.py": "7afeadd4522552160b4980dc798d62c6351e23026023c4dc3f40ef0a286a8f3d",
+    "adapters.py": "588bc1543f5f99e37e526b85d629b3aec089a35e6311dc2fc09268ac3fe7df61",
+    "camera_screen_geometry.py": "9d8e8cfe0173d5bcaaa0310dac6d8a955a2b64d950f3ae938895f91c288a5157",
+    "cli.py": "4fb3ca6344edbf35917a7b101d36d3de605fbde8548763fe419a94dfc555878b",
+    "download.py": "8b616941131e18d25d8b8d3dd6dbed5f4aa7f85674dc66d6cff3f1e9e1b5da50",
+    "evaluation.py": "3c6069eb1aaedffc8f20754334207e3f1f25d51aec463b43a47682807c40b6a6",
+    "geometry.py": "64d9adfab6028b2064bae9d3c60ec123dc995bca5b06b3cac63b88ee446b74c7",
+    "io.py": "e2d18be009379d39a73478963b76e515ce78c9c0ef1aac82ace2b105741ffb08",
+    "metrics.py": "dd4ca66935541e9cafd0eef04abe4a56891303ac95b5caf4faa8a7b9a3fda4dc",
+    "mpii_models.py": "ea8e4f75015f8a0078bfe48ae6b9d191378fd219aaa2a4a52353b0974206692f",
+    "mpii_report.py": "4d8e11066b88c567b73bbd29f383f3b81da61eb8ed21e3ae03f54abce0627ab5",
+    "pilot.py": "0e8181a19e9a026daa8d3b077876d67d003864a3e586e27c4b6a7ff4e9c2a822",
+    "synthetic.py": "ab11761d09a778dfce9961259410a4e056767ed86c3943dadbe5eeb301aee6c5",
+    "visualize_mpii.py": "b5fc92e74d40a8e4c7816200c81fe651b002f356f7bf27454155ce4a46b5794d"
+  }
+}
