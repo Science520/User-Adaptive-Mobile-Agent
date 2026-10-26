@@ -1,0 +1,868 @@
+{
+  "trial": {
+    "trial_id": "B_005",
+    "task": "visual_search",
+    "page_id": "medical",
+    "base_size_px": [
+      1080,
+      1920
+    ],
+    "instruction": "请找到并点击「健康档案」",
+    "target_element_id": "service_05",
+    "timeout_ms": 30000,
+    "correct_action_path": [
+      "service_05"
+    ],
+    "conditions": {
+      "factor_levels": {
+        "glyph": 1,
+        "button": 0,
+        "count": 0,
+        "eccentricity": 0,
+        "contrast": 0,
+        "semantic_similarity": 1,
+        "information_density": 1,
+        "target_side": 0
+      },
+      "domain": "medical",
+      "glyph_height_px": 28,
+      "button_size_px": [
+        220,
+        80
+      ],
+      "element_count": 12,
+      "target_eccentricity_normalized": 0.12573136735163232,
+      "contrast_ratio": 15.716827493476563,
+      "semantic_similarity": 1,
+      "information_density": 1,
+      "target_location_px": [
+        414.0,
+        870.0
+      ]
+    },
+    "elements": [
+      {
+        "element_id": "service_00",
+        "text": "用药咨询",
+        "text_lines": [
+          "用药咨询",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          52.0,
+          476.66666666666663,
+          272.0,
+          556.6666666666666
+        ],
+        "clickable_region_px": [
+          52.0,
+          476.66666666666663,
+          272.0,
+          556.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "medical",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_01",
+        "text": "检查预约",
+        "text_lines": [
+          "检查预约",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          304.0,
+          476.66666666666663,
+          524.0,
+          556.6666666666666
+        ],
+        "clickable_region_px": [
+          304.0,
+          476.66666666666663,
+          524.0,
+          556.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "medical",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_02",
+        "text": "门诊预约",
+        "text_lines": [
+          "门诊预约",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          556.0,
+          476.66666666666663,
+          776.0,
+          556.6666666666666
+        ],
+        "clickable_region_px": [
+          556.0,
+          476.66666666666663,
+          776.0,
+          556.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "medical",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_03",
+        "text": "体检报告",
+        "text_lines": [
+          "体检报告",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          808.0,
+          476.66666666666663,
+          1028.0,
+          556.6666666666666
+        ],
+        "clickable_region_px": [
+          808.0,
+          476.66666666666663,
+          1028.0,
+          556.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "medical",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_04",
+        "text": "体检预约",
+        "text_lines": [
+          "体检预约",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          52.0,
+          830.0,
+          272.0,
+          910.0
+        ],
+        "clickable_region_px": [
+          52.0,
+          830.0,
+          272.0,
+          910.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "medical",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_05",
+        "text": "健康档案",
+        "text_lines": [
+          "健康档案",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          304.0,
+          830.0,
+          524.0,
+          910.0
+        ],
+        "clickable_region_px": [
+          304.0,
+          830.0,
+          524.0,
+          910.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "target",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "medical",
+        "navigation_transition": "task_complete"
+      },
+      {
+        "element_id": "service_06",
+        "text": "发票申请",
+        "text_lines": [
+          "发票申请",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          556.0,
+          830.0,
+          776.0,
+          910.0
+        ],
+        "clickable_region_px": [
+          556.0,
+          830.0,
+          776.0,
+          910.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "medical",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_07",
+        "text": "就诊指南",
+        "text_lines": [
+          "就诊指南",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          808.0,
+          830.0,
+          1028.0,
+          910.0
+        ],
+        "clickable_region_px": [
+          808.0,
+          830.0,
+          1028.0,
+          910.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "medical",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_08",
+        "text": "我的处方",
+        "text_lines": [
+          "我的处方",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          52.0,
+          1183.3333333333335,
+          272.0,
+          1263.3333333333335
+        ],
+        "clickable_region_px": [
+          52.0,
+          1183.3333333333335,
+          272.0,
+          1263.3333333333335
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "medical",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_09",
+        "text": "医疗缴费",
+        "text_lines": [
+          "医疗缴费",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          304.0,
+          1183.3333333333335,
+          524.0,
+          1263.3333333333335
+        ],
+        "clickable_region_px": [
+          304.0,
+          1183.3333333333335,
+          524.0,
+          1263.3333333333335
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "medical",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_10",
+        "text": "疫苗接种",
+        "text_lines": [
+          "疫苗接种",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          556.0,
+          1183.3333333333335,
+          776.0,
+          1263.3333333333335
+        ],
+        "clickable_region_px": [
+          556.0,
+          1183.3333333333335,
+          776.0,
+          1263.3333333333335
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "medical",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_11",
+        "text": "出院小结",
+        "text_lines": [
+          "出院小结",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          808.0,
+          1183.3333333333335,
+          1028.0,
+          1263.3333333333335
+        ],
+        "clickable_region_px": [
+          808.0,
+          1183.3333333333335,
+          1028.0,
+          1263.3333333333335
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "medical",
+        "navigation_transition": null
+      }
+    ],
+    "template_id": "c9194a634da3cc7e8f842d2e1a62c86651b0a822b3e51eaaa319c8a8bb78c809"
+  },
+  "rendered_elements": [
+    {
+      "element_id": "service_00",
+      "text": "用药咨询",
+      "text_lines": [
+        "用药咨询",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        52.0,
+        476.66666666666663,
+        272.0,
+        556.6666666666666
+      ],
+      "clickable_region_px": [
+        52.0,
+        476.66666666666663,
+        272.0,
+        556.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "medical",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          104.0,
+          486.16666666666663,
+          220.0,
+          514.1666666666666
+        ],
+        [
+          104.0,
+          519.1666666666666,
+          220.0,
+          547.1666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_01",
+      "text": "检查预约",
+      "text_lines": [
+        "检查预约",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        304.0,
+        476.66666666666663,
+        524.0,
+        556.6666666666666
+      ],
+      "clickable_region_px": [
+        304.0,
+        476.66666666666663,
+        524.0,
+        556.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "medical",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          354.0,
+          486.16666666666663,
+          474.0,
+          514.1666666666666
+        ],
+        [
+          354.0,
+          519.1666666666666,
+          474.0,
+          548.1666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_02",
+      "text": "门诊预约",
+      "text_lines": [
+        "门诊预约",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        556.0,
+        476.66666666666663,
+        776.0,
+        556.6666666666666
+      ],
+      "clickable_region_px": [
+        556.0,
+        476.66666666666663,
+        776.0,
+        556.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "medical",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          606.0,
+          486.16666666666663,
+          726.0,
+          514.1666666666666
+        ],
+        [
+          606.0,
+          519.1666666666666,
+          726.0,
+          548.1666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_03",
+      "text": "体检报告",
+      "text_lines": [
+        "体检报告",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        808.0,
+        476.66666666666663,
+        1028.0,
+        556.6666666666666
+      ],
+      "clickable_region_px": [
+        808.0,
+        476.66666666666663,
+        1028.0,
+        556.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "medical",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          858.0,
+          486.16666666666663,
+          978.0,
+          514.1666666666666
+        ],
+        [
+          858.0,
+          519.1666666666666,
+          978.0,
+          548.1666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_04",
+      "text": "体检预约",
+      "text_lines": [
+        "体检预约",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        52.0,
+        830.0,
+        272.0,
+        910.0
+      ],
+      "clickable_region_px": [
+        52.0,
+        830.0,
+        272.0,
+        910.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "medical",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          102.0,
+          839.5,
+          222.0,
+          867.5
+        ],
+        [
+          102.0,
+          872.5,
+          222.0,
+          901.5
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_05",
+      "text": "健康档案",
+      "text_lines": [
+        "健康档案",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        304.0,
+        830.0,
+        524.0,
+        910.0
+      ],
+      "clickable_region_px": [
+        304.0,
+        830.0,
+        524.0,
+        910.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "target",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "medical",
+      "navigation_transition": "task_complete",
+      "actual_glyph_height_px": 29,
+      "ink_bounding_boxes_px": [
+        [
+          354.0,
+          839.5,
+          474.0,
+          868.5
+        ],
+        [
+          354.0,
+          872.5,
+          474.0,
+          901.5
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_06",
+      "text": "发票申请",
+      "text_lines": [
+        "发票申请",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        556.0,
+        830.0,
+        776.0,
+        910.0
+      ],
+      "clickable_region_px": [
+        556.0,
+        830.0,
+        776.0,
+        910.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "medical",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          608.0,
+          839.5,
+          724.0,
+          867.5
+        ],
+        [
+          608.0,
+          872.5,
+          724.0,
+          900.5
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_07",
+      "text": "就诊指南",
+      "text_lines": [
+        "就诊指南",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        808.0,
+        830.0,
+        1028.0,
+        910.0
+      ],
+      "clickable_region_px": [
+        808.0,
+        830.0,
+        1028.0,
+        910.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "medical",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          858.0,
+          839.5,
+          978.0,
+          867.5
+        ],
+        [
+          858.0,
+          872.5,
+          978.0,
+          901.5
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_08",
+      "text": "我的处方",
+      "text_lines": [
+        "我的处方",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        52.0,
+        1183.3333333333335,
+        272.0,
+        1263.3333333333335
+      ],
+      "clickable_region_px": [
+        52.0,
+        1183.3333333333335,
+        272.0,
+        1263.3333333333335
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "medical",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          102.0,
+          1193.8333333333335,
+          222.0,
+          1221.8333333333335
+        ],
+        [
+          102.0,
+          1225.8333333333335,
+          222.0,
+          1254.8333333333335
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_09",
+      "text": "医疗缴费",
+      "text_lines": [
+        "医疗缴费",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        304.0,
+        1183.3333333333335,
+        524.0,
+        1263.3333333333335
+      ],
+      "clickable_region_px": [
+        304.0,
+        1183.3333333333335,
+        524.0,
+        1263.3333333333335
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "medical",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          352.0,
+          1192.8333333333335,
+          476.0,
+          1220.8333333333335
+        ],
+        [
+          352.0,
+          1224.8333333333335,
+          476.0,
+          1254.8333333333335
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_10",
+      "text": "疫苗接种",
+      "text_lines": [
+        "疫苗接种",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        556.0,
+        1183.3333333333335,
+        776.0,
+        1263.3333333333335
+      ],
+      "clickable_region_px": [
+        556.0,
+        1183.3333333333335,
+        776.0,
+        1263.3333333333335
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "medical",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          606.0,
+          1192.8333333333335,
+          726.0,
+          1220.8333333333335
+        ],
+        [
+          606.0,
+          1225.8333333333335,
+          726.0,
+          1254.8333333333335
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_11",
+      "text": "出院小结",
+      "text_lines": [
+        "出院小结",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        808.0,
+        1183.3333333333335,
+        1028.0,
+        1263.3333333333335
+      ],
+      "clickable_region_px": [
+        808.0,
+        1183.3333333333335,
+        1028.0,
+        1263.3333333333335
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "medical",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          860.0,
+          1192.8333333333335,
+          976.0,
+          1220.8333333333335
+        ],
+        [
+          860.0,
+          1225.8333333333335,
+          976.0,
+          1253.8333333333335
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    }
+  ],
+  "reconstruction_kind": "reference_font_not_android_pixel_identical",
+  "image_sha256": "9a6d0ce2b298f423bd2936e3e5eb80ea4cc5f6ecb8fb70da3f8e2c2e2d0c072c",
+  "render_timestamp_ns": null
+}

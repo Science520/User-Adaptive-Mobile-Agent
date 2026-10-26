@@ -1,0 +1,86 @@
+{
+  "trial": {
+    "trial_id": "A_r00_p15",
+    "task": "fixation",
+    "page_id": "fixation",
+    "base_size_px": [
+      1080,
+      1920
+    ],
+    "instruction": "请自然注视圆点",
+    "target_element_id": "fixation",
+    "target_position_px": [
+      108.0,
+      1324.8000000000002
+    ],
+    "fixation_duration_ms": 1500,
+    "timeout_ms": 1500,
+    "correct_action_path": [],
+    "conditions": {
+      "grid": [
+        5,
+        5
+      ],
+      "repeat": 0,
+      "label_kind": "instructed_target_not_eye_tracker_truth"
+    },
+    "elements": [
+      {
+        "element_id": "fixation",
+        "text": "●",
+        "text_lines": [
+          "●"
+        ],
+        "bounding_box_px": [
+          96.0,
+          1312.8000000000002,
+          120.0,
+          1336.8000000000002
+        ],
+        "clickable_region_px": [
+          84.0,
+          1300.8000000000002,
+          132.0,
+          1348.8000000000002
+        ],
+        "font_glyph_height_px": 24,
+        "role": "target",
+        "foreground_gray": 0,
+        "visual_contrast": 21.0,
+        "page_id": "fixation",
+        "navigation_transition": null
+      }
+    ],
+    "template_id": "68ec5a63b36892ae63ff4b1ed982b4352b1756e567d0514c15a94b8bfc388dc6"
+  },
+  "rendered_elements": [
+    {
+      "element_id": "fixation",
+      "text": "●",
+      "text_lines": [
+        "●"
+      ],
+      "bounding_box_px": [
+        96.0,
+        1312.8000000000002,
+        120.0,
+        1336.8000000000002
+      ],
+      "clickable_region_px": [
+        84.0,
+        1300.8000000000002,
+        132.0,
+        1348.8000000000002
+      ],
+      "font_glyph_height_px": 24,
+      "role": "target",
+      "foreground_gray": 0,
+      "visual_contrast": 21.0,
+      "page_id": "fixation",
+      "navigation_transition": null
+    }
+  ],
+  "reconstruction_kind": "reference_font_not_android_pixel_identical",
+  "image_sha256": "ab2a02b636b6e930471e63460f6335a814ba990e7f5724a098783fe65058b3d2",
+  "render_timestamp_ns": null
+}

@@ -1,0 +1,1684 @@
+{
+  "trial": {
+    "trial_id": "B_002",
+    "task": "visual_search",
+    "page_id": "utilities",
+    "base_size_px": [
+      1080,
+      1920
+    ],
+    "instruction": "请找到并点击「暖气缴费」",
+    "target_element_id": "service_03",
+    "timeout_ms": 30000,
+    "correct_action_path": [
+      "service_03"
+    ],
+    "conditions": {
+      "factor_levels": {
+        "glyph": 0,
+        "button": 0,
+        "count": 1,
+        "eccentricity": 1,
+        "contrast": 0,
+        "semantic_similarity": 0,
+        "information_density": 1,
+        "target_side": 1
+      },
+      "domain": "utilities",
+      "glyph_height_px": 22,
+      "button_size_px": [
+        220,
+        80
+      ],
+      "element_count": 24,
+      "target_eccentricity_normalized": 0.44629473922643126,
+      "contrast_ratio": 15.716827493476563,
+      "semantic_similarity": 0,
+      "information_density": 1,
+      "target_location_px": [
+        918.0,
+        428.3333333333333
+      ]
+    },
+    "elements": [
+      {
+        "element_id": "service_00",
+        "text": "物业服务",
+        "text_lines": [
+          "物业服务",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          52.0,
+          388.3333333333333,
+          272.0,
+          468.3333333333333
+        ],
+        "clickable_region_px": [
+          52.0,
+          388.3333333333333,
+          272.0,
+          468.3333333333333
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_01",
+        "text": "扫码点餐",
+        "text_lines": [
+          "扫码点餐",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          304.0,
+          388.3333333333333,
+          524.0,
+          468.3333333333333
+        ],
+        "clickable_region_px": [
+          304.0,
+          388.3333333333333,
+          524.0,
+          468.3333333333333
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_02",
+        "text": "用药咨询",
+        "text_lines": [
+          "用药咨询",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          556.0,
+          388.3333333333333,
+          776.0,
+          468.3333333333333
+        ],
+        "clickable_region_px": [
+          556.0,
+          388.3333333333333,
+          776.0,
+          468.3333333333333
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_03",
+        "text": "暖气缴费",
+        "text_lines": [
+          "暖气缴费",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          808.0,
+          388.3333333333333,
+          1028.0,
+          468.3333333333333
+        ],
+        "clickable_region_px": [
+          808.0,
+          388.3333333333333,
+          1028.0,
+          468.3333333333333
+        ],
+        "font_glyph_height_px": 22,
+        "role": "target",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": "task_complete"
+      },
+      {
+        "element_id": "service_04",
+        "text": "住址管理",
+        "text_lines": [
+          "住址管理",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          52.0,
+          565.0,
+          272.0,
+          645.0
+        ],
+        "clickable_region_px": [
+          52.0,
+          565.0,
+          272.0,
+          645.0
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_05",
+        "text": "健康档案",
+        "text_lines": [
+          "健康档案",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          304.0,
+          565.0,
+          524.0,
+          645.0
+        ],
+        "clickable_region_px": [
+          304.0,
+          565.0,
+          524.0,
+          645.0
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_06",
+        "text": "医保结算",
+        "text_lines": [
+          "医保结算",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          556.0,
+          565.0,
+          776.0,
+          645.0
+        ],
+        "clickable_region_px": [
+          556.0,
+          565.0,
+          776.0,
+          645.0
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_07",
+        "text": "扫码打印",
+        "text_lines": [
+          "扫码打印",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          808.0,
+          565.0,
+          1028.0,
+          645.0
+        ],
+        "clickable_region_px": [
+          808.0,
+          565.0,
+          1028.0,
+          645.0
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_08",
+        "text": "检查预约",
+        "text_lines": [
+          "检查预约",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          52.0,
+          741.6666666666667,
+          272.0,
+          821.6666666666667
+        ],
+        "clickable_region_px": [
+          52.0,
+          741.6666666666667,
+          272.0,
+          821.6666666666667
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_09",
+        "text": "账单查询",
+        "text_lines": [
+          "账单查询",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          304.0,
+          741.6666666666667,
+          524.0,
+          821.6666666666667
+        ],
+        "clickable_region_px": [
+          304.0,
+          741.6666666666667,
+          524.0,
+          821.6666666666667
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_10",
+        "text": "码上服务",
+        "text_lines": [
+          "码上服务",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          556.0,
+          741.6666666666667,
+          776.0,
+          821.6666666666667
+        ],
+        "clickable_region_px": [
+          556.0,
+          741.6666666666667,
+          776.0,
+          821.6666666666667
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_11",
+        "text": "扫一扫",
+        "text_lines": [
+          "扫一扫",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          808.0,
+          741.6666666666667,
+          1028.0,
+          821.6666666666667
+        ],
+        "clickable_region_px": [
+          808.0,
+          741.6666666666667,
+          1028.0,
+          821.6666666666667
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_12",
+        "text": "充电服务",
+        "text_lines": [
+          "充电服务",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          52.0,
+          918.3333333333334,
+          272.0,
+          998.3333333333334
+        ],
+        "clickable_region_px": [
+          52.0,
+          918.3333333333334,
+          272.0,
+          998.3333333333334
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_13",
+        "text": "失物招领",
+        "text_lines": [
+          "失物招领",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          304.0,
+          918.3333333333334,
+          524.0,
+          998.3333333333334
+        ],
+        "clickable_region_px": [
+          304.0,
+          918.3333333333334,
+          524.0,
+          998.3333333333334
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_14",
+        "text": "无障碍出行",
+        "text_lines": [
+          "无障碍出行",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          556.0,
+          918.3333333333334,
+          776.0,
+          998.3333333333334
+        ],
+        "clickable_region_px": [
+          556.0,
+          918.3333333333334,
+          776.0,
+          998.3333333333334
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_15",
+        "text": "就诊人管理",
+        "text_lines": [
+          "就诊人管理",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          808.0,
+          918.3333333333334,
+          1028.0,
+          998.3333333333334
+        ],
+        "clickable_region_px": [
+          808.0,
+          918.3333333333334,
+          1028.0,
+          998.3333333333334
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_16",
+        "text": "场馆入场",
+        "text_lines": [
+          "场馆入场",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          52.0,
+          1095.0,
+          272.0,
+          1175.0
+        ],
+        "clickable_region_px": [
+          52.0,
+          1095.0,
+          272.0,
+          1175.0
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_17",
+        "text": "扫码报修",
+        "text_lines": [
+          "扫码报修",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          304.0,
+          1095.0,
+          524.0,
+          1175.0
+        ],
+        "clickable_region_px": [
+          304.0,
+          1095.0,
+          524.0,
+          1175.0
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_18",
+        "text": "火车时刻",
+        "text_lines": [
+          "火车时刻",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          556.0,
+          1095.0,
+          776.0,
+          1175.0
+        ],
+        "clickable_region_px": [
+          556.0,
+          1095.0,
+          776.0,
+          1175.0
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_19",
+        "text": "身份核验",
+        "text_lines": [
+          "身份核验",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          808.0,
+          1095.0,
+          1028.0,
+          1175.0
+        ],
+        "clickable_region_px": [
+          808.0,
+          1095.0,
+          1028.0,
+          1175.0
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_20",
+        "text": "电子票券",
+        "text_lines": [
+          "电子票券",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          52.0,
+          1271.6666666666665,
+          272.0,
+          1351.6666666666665
+        ],
+        "clickable_region_px": [
+          52.0,
+          1271.6666666666665,
+          272.0,
+          1351.6666666666665
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_21",
+        "text": "电费缴纳",
+        "text_lines": [
+          "电费缴纳",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          304.0,
+          1271.6666666666665,
+          524.0,
+          1351.6666666666665
+        ],
+        "clickable_region_px": [
+          304.0,
+          1271.6666666666665,
+          524.0,
+          1351.6666666666665
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_22",
+        "text": "城际客运",
+        "text_lines": [
+          "城际客运",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          556.0,
+          1271.6666666666665,
+          776.0,
+          1351.6666666666665
+        ],
+        "clickable_region_px": [
+          556.0,
+          1271.6666666666665,
+          776.0,
+          1351.6666666666665
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_23",
+        "text": "待付款",
+        "text_lines": [
+          "待付款",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          808.0,
+          1271.6666666666665,
+          1028.0,
+          1351.6666666666665
+        ],
+        "clickable_region_px": [
+          808.0,
+          1271.6666666666665,
+          1028.0,
+          1351.6666666666665
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      }
+    ],
+    "template_id": "eb86f207495ac953cccb8e8e72fed6cd9113b2f193455b00437ff46af942c1b2"
+  },
+  "rendered_elements": [
+    {
+      "element_id": "service_00",
+      "text": "物业服务",
+      "text_lines": [
+        "物业服务",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        52.0,
+        388.3333333333333,
+        272.0,
+        468.3333333333333
+      ],
+      "clickable_region_px": [
+        52.0,
+        388.3333333333333,
+        272.0,
+        468.3333333333333
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          116.0,
+          403.8333333333333,
+          208.0,
+          425.8333333333333
+        ],
+        [
+          116.0,
+          430.8333333333333,
+          208.0,
+          452.8333333333333
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_01",
+      "text": "扫码点餐",
+      "text_lines": [
+        "扫码点餐",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        304.0,
+        388.3333333333333,
+        524.0,
+        468.3333333333333
+      ],
+      "clickable_region_px": [
+        304.0,
+        388.3333333333333,
+        524.0,
+        468.3333333333333
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          370.0,
+          403.8333333333333,
+          458.0,
+          425.8333333333333
+        ],
+        [
+          370.0,
+          431.8333333333333,
+          458.0,
+          452.8333333333333
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_02",
+      "text": "用药咨询",
+      "text_lines": [
+        "用药咨询",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        556.0,
+        388.3333333333333,
+        776.0,
+        468.3333333333333
+      ],
+      "clickable_region_px": [
+        556.0,
+        388.3333333333333,
+        776.0,
+        468.3333333333333
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          620.0,
+          403.8333333333333,
+          712.0,
+          425.8333333333333
+        ],
+        [
+          620.0,
+          430.8333333333333,
+          712.0,
+          452.8333333333333
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_03",
+      "text": "暖气缴费",
+      "text_lines": [
+        "暖气缴费",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        808.0,
+        388.3333333333333,
+        1028.0,
+        468.3333333333333
+      ],
+      "clickable_region_px": [
+        808.0,
+        388.3333333333333,
+        1028.0,
+        468.3333333333333
+      ],
+      "font_glyph_height_px": 22,
+      "role": "target",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": "task_complete",
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          874.0,
+          403.8333333333333,
+          962.0,
+          425.8333333333333
+        ],
+        [
+          874.0,
+          431.8333333333333,
+          962.0,
+          452.8333333333333
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_04",
+      "text": "住址管理",
+      "text_lines": [
+        "住址管理",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        52.0,
+        565.0,
+        272.0,
+        645.0
+      ],
+      "clickable_region_px": [
+        52.0,
+        565.0,
+        272.0,
+        645.0
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          116.0,
+          580.5,
+          208.0,
+          602.5
+        ],
+        [
+          116.0,
+          607.5,
+          208.0,
+          629.5
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_05",
+      "text": "健康档案",
+      "text_lines": [
+        "健康档案",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        304.0,
+        565.0,
+        524.0,
+        645.0
+      ],
+      "clickable_region_px": [
+        304.0,
+        565.0,
+        524.0,
+        645.0
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          368.0,
+          580.5,
+          460.0,
+          602.5
+        ],
+        [
+          368.0,
+          607.5,
+          460.0,
+          629.5
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_06",
+      "text": "医保结算",
+      "text_lines": [
+        "医保结算",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        556.0,
+        565.0,
+        776.0,
+        645.0
+      ],
+      "clickable_region_px": [
+        556.0,
+        565.0,
+        776.0,
+        645.0
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          622.0,
+          580.5,
+          710.0,
+          602.5
+        ],
+        [
+          622.0,
+          608.5,
+          710.0,
+          629.5
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_07",
+      "text": "扫码打印",
+      "text_lines": [
+        "扫码打印",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        808.0,
+        565.0,
+        1028.0,
+        645.0
+      ],
+      "clickable_region_px": [
+        808.0,
+        565.0,
+        1028.0,
+        645.0
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          872.0,
+          580.5,
+          964.0,
+          602.5
+        ],
+        [
+          872.0,
+          607.5,
+          964.0,
+          629.5
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_08",
+      "text": "检查预约",
+      "text_lines": [
+        "检查预约",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        52.0,
+        741.6666666666667,
+        272.0,
+        821.6666666666667
+      ],
+      "clickable_region_px": [
+        52.0,
+        741.6666666666667,
+        272.0,
+        821.6666666666667
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          116.0,
+          756.1666666666667,
+          208.0,
+          778.1666666666667
+        ],
+        [
+          116.0,
+          784.1666666666667,
+          208.0,
+          806.1666666666667
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_09",
+      "text": "账单查询",
+      "text_lines": [
+        "账单查询",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        304.0,
+        741.6666666666667,
+        524.0,
+        821.6666666666667
+      ],
+      "clickable_region_px": [
+        304.0,
+        741.6666666666667,
+        524.0,
+        821.6666666666667
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 23,
+      "ink_bounding_boxes_px": [
+        [
+          368.0,
+          756.1666666666667,
+          460.0,
+          779.1666666666667
+        ],
+        [
+          368.0,
+          784.1666666666667,
+          460.0,
+          806.1666666666667
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_10",
+      "text": "码上服务",
+      "text_lines": [
+        "码上服务",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        556.0,
+        741.6666666666667,
+        776.0,
+        821.6666666666667
+      ],
+      "clickable_region_px": [
+        556.0,
+        741.6666666666667,
+        776.0,
+        821.6666666666667
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          620.0,
+          757.1666666666667,
+          712.0,
+          779.1666666666667
+        ],
+        [
+          620.0,
+          784.1666666666667,
+          712.0,
+          806.1666666666667
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_11",
+      "text": "扫一扫",
+      "text_lines": [
+        "扫一扫",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        808.0,
+        741.6666666666667,
+        1028.0,
+        821.6666666666667
+      ],
+      "clickable_region_px": [
+        808.0,
+        741.6666666666667,
+        1028.0,
+        821.6666666666667
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          883.0,
+          757.1666666666667,
+          952.0,
+          779.1666666666667
+        ],
+        [
+          872.0,
+          784.1666666666667,
+          964.0,
+          806.1666666666667
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_12",
+      "text": "充电服务",
+      "text_lines": [
+        "充电服务",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        52.0,
+        918.3333333333334,
+        272.0,
+        998.3333333333334
+      ],
+      "clickable_region_px": [
+        52.0,
+        918.3333333333334,
+        272.0,
+        998.3333333333334
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          118.0,
+          933.8333333333334,
+          206.0,
+          955.8333333333334
+        ],
+        [
+          118.0,
+          961.8333333333334,
+          206.0,
+          982.8333333333334
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_13",
+      "text": "失物招领",
+      "text_lines": [
+        "失物招领",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        304.0,
+        918.3333333333334,
+        524.0,
+        998.3333333333334
+      ],
+      "clickable_region_px": [
+        304.0,
+        918.3333333333334,
+        524.0,
+        998.3333333333334
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          368.0,
+          933.8333333333334,
+          460.0,
+          955.8333333333334
+        ],
+        [
+          368.0,
+          960.8333333333334,
+          460.0,
+          982.8333333333334
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_14",
+      "text": "无障碍出行",
+      "text_lines": [
+        "无障碍出行",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        556.0,
+        918.3333333333334,
+        776.0,
+        998.3333333333334
+      ],
+      "clickable_region_px": [
+        556.0,
+        918.3333333333334,
+        776.0,
+        998.3333333333334
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          608.0,
+          933.8333333333334,
+          723.0,
+          955.8333333333334
+        ],
+        [
+          620.0,
+          960.8333333333334,
+          712.0,
+          982.8333333333334
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_15",
+      "text": "就诊人管理",
+      "text_lines": [
+        "就诊人管理",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        808.0,
+        918.3333333333334,
+        1028.0,
+        998.3333333333334
+      ],
+      "clickable_region_px": [
+        808.0,
+        918.3333333333334,
+        1028.0,
+        998.3333333333334
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          860.0,
+          933.8333333333334,
+          975.0,
+          955.8333333333334
+        ],
+        [
+          872.0,
+          960.8333333333334,
+          964.0,
+          982.8333333333334
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_16",
+      "text": "场馆入场",
+      "text_lines": [
+        "场馆入场",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        52.0,
+        1095.0,
+        272.0,
+        1175.0
+      ],
+      "clickable_region_px": [
+        52.0,
+        1095.0,
+        272.0,
+        1175.0
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          114.0,
+          1111.5,
+          210.0,
+          1133.5
+        ],
+        [
+          114.0,
+          1137.5,
+          210.0,
+          1160.5
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_17",
+      "text": "扫码报修",
+      "text_lines": [
+        "扫码报修",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        304.0,
+        1095.0,
+        524.0,
+        1175.0
+      ],
+      "clickable_region_px": [
+        304.0,
+        1095.0,
+        524.0,
+        1175.0
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          370.0,
+          1110.5,
+          458.0,
+          1132.5
+        ],
+        [
+          370.0,
+          1138.5,
+          458.0,
+          1159.5
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_18",
+      "text": "火车时刻",
+      "text_lines": [
+        "火车时刻",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        556.0,
+        1095.0,
+        776.0,
+        1175.0
+      ],
+      "clickable_region_px": [
+        556.0,
+        1095.0,
+        776.0,
+        1175.0
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          622.0,
+          1110.5,
+          710.0,
+          1132.5
+        ],
+        [
+          622.0,
+          1138.5,
+          710.0,
+          1159.5
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_19",
+      "text": "身份核验",
+      "text_lines": [
+        "身份核验",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        808.0,
+        1095.0,
+        1028.0,
+        1175.0
+      ],
+      "clickable_region_px": [
+        808.0,
+        1095.0,
+        1028.0,
+        1175.0
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          872.0,
+          1110.5,
+          964.0,
+          1132.5
+        ],
+        [
+          872.0,
+          1137.5,
+          964.0,
+          1159.5
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_20",
+      "text": "电子票券",
+      "text_lines": [
+        "电子票券",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        52.0,
+        1271.6666666666665,
+        272.0,
+        1351.6666666666665
+      ],
+      "clickable_region_px": [
+        52.0,
+        1271.6666666666665,
+        272.0,
+        1351.6666666666665
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          118.0,
+          1287.1666666666665,
+          206.0,
+          1309.1666666666665
+        ],
+        [
+          118.0,
+          1315.1666666666665,
+          206.0,
+          1336.1666666666665
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_21",
+      "text": "电费缴纳",
+      "text_lines": [
+        "电费缴纳",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        304.0,
+        1271.6666666666665,
+        524.0,
+        1351.6666666666665
+      ],
+      "clickable_region_px": [
+        304.0,
+        1271.6666666666665,
+        524.0,
+        1351.6666666666665
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 23,
+      "ink_bounding_boxes_px": [
+        [
+          368.0,
+          1286.1666666666665,
+          460.0,
+          1309.1666666666665
+        ],
+        [
+          368.0,
+          1314.1666666666665,
+          460.0,
+          1336.1666666666665
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_22",
+      "text": "城际客运",
+      "text_lines": [
+        "城际客运",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        556.0,
+        1271.6666666666665,
+        776.0,
+        1351.6666666666665
+      ],
+      "clickable_region_px": [
+        556.0,
+        1271.6666666666665,
+        776.0,
+        1351.6666666666665
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          622.0,
+          1287.1666666666665,
+          710.0,
+          1309.1666666666665
+        ],
+        [
+          622.0,
+          1315.1666666666665,
+          710.0,
+          1336.1666666666665
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_23",
+      "text": "待付款",
+      "text_lines": [
+        "待付款",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        808.0,
+        1271.6666666666665,
+        1028.0,
+        1351.6666666666665
+      ],
+      "clickable_region_px": [
+        808.0,
+        1271.6666666666665,
+        1028.0,
+        1351.6666666666665
+      ],
+      "font_glyph_height_px": 22,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "utilities",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 22,
+      "ink_bounding_boxes_px": [
+        [
+          885.0,
+          1287.1666666666665,
+          951.0,
+          1309.1666666666665
+        ],
+        [
+          874.0,
+          1315.1666666666665,
+          962.0,
+          1336.1666666666665
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    }
+  ],
+  "reconstruction_kind": "reference_font_not_android_pixel_identical",
+  "image_sha256": "1ee1b055738d9a24b51d7a68297f8dab4218adeb051aca9e8670835eaade0d46",
+  "render_timestamp_ns": null
+}

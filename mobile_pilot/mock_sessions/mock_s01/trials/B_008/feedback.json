@@ -1,0 +1,9 @@
+{
+  "status": "provided",
+  "timestamp_ns": 295000000000,
+  "label_source": "mock_self_report_fixture",
+  "difficulty_rating": 1,
+  "difficulty_type": "visual",
+  "wants_help": true,
+  "preferred_assistance": "highlight"
+}

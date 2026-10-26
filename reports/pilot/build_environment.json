@@ -1,0 +1,12 @@
+{
+  "sdk_path": "/Users/audrey/Library/Android/sdk",
+  "android_sdk_found": false,
+  "gradle_executable": null,
+  "java_home_configured": false,
+  "wrapper_present": true,
+  "apk_compiled": false,
+  "device_capture_tested": false,
+  "build_status": "not_compiled_in_this_environment; no SDK35 or usable JDK detected during task",
+  "python": "3.9.6",
+  "build_attempt_log": "android_build_attempt.log"
+}

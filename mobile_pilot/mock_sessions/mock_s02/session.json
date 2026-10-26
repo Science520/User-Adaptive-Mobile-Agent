@@ -1,0 +1,37 @@
+{
+  "schema_version": "temporal-pilot-v1",
+  "participant_id": "mock_person",
+  "session_id": "mock_s02",
+  "evidence_tier": "mock",
+  "clock": "elapsed_realtime_ns",
+  "trial_ids": [
+    "A_r00_p13",
+    "B_000",
+    "B_001",
+    "B_002",
+    "B_003",
+    "B_004",
+    "B_005",
+    "B_006",
+    "B_007",
+    "B_008",
+    "B_009"
+  ],
+  "status": "stopped",
+  "created_ns": 300000000000,
+  "stopped_ns": 410000000000,
+  "device": {
+    "model": "NON_HUMAN_TEST_FIXTURE",
+    "screen_size_px": [
+      1080,
+      1920
+    ],
+    "density": 3.0,
+    "camera_orientation": 0
+  },
+  "camera": {
+    "available": true,
+    "format": "jpeg_frame_sequence",
+    "target_saved_fps": 5
+  }
+}

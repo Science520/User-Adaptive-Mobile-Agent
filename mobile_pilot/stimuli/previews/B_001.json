@@ -1,0 +1,1492 @@
+{
+  "trial": {
+    "trial_id": "B_001",
+    "task": "visual_search",
+    "page_id": "transport",
+    "base_size_px": [
+      1080,
+      1920
+    ],
+    "instruction": "请找到并点击「疫苗接种」",
+    "target_element_id": "service_10",
+    "timeout_ms": 30000,
+    "correct_action_path": [
+      "service_10"
+    ],
+    "conditions": {
+      "factor_levels": {
+        "glyph": 1,
+        "button": 1,
+        "count": 1,
+        "eccentricity": 0,
+        "contrast": 0,
+        "semantic_similarity": 0,
+        "information_density": 0,
+        "target_side": 1
+      },
+      "domain": "transport",
+      "glyph_height_px": 28,
+      "button_size_px": [
+        244,
+        128
+      ],
+      "element_count": 24,
+      "target_eccentricity_normalized": 0.12359465109666677,
+      "contrast_ratio": 15.716827493476563,
+      "semantic_similarity": 0,
+      "information_density": 0,
+      "target_location_px": [
+        666.0,
+        881.6666666666666
+      ]
+    },
+    "elements": [
+      {
+        "element_id": "service_00",
+        "text": "用量查询",
+        "text_lines": [
+          "用量查询"
+        ],
+        "bounding_box_px": [
+          40.0,
+          384.3333333333333,
+          284.0,
+          512.3333333333333
+        ],
+        "clickable_region_px": [
+          40.0,
+          384.3333333333333,
+          284.0,
+          512.3333333333333
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_01",
+        "text": "燃气缴费",
+        "text_lines": [
+          "燃气缴费"
+        ],
+        "bounding_box_px": [
+          292.0,
+          384.3333333333333,
+          536.0,
+          512.3333333333333
+        ],
+        "clickable_region_px": [
+          292.0,
+          384.3333333333333,
+          536.0,
+          512.3333333333333
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_02",
+        "text": "价格保护",
+        "text_lines": [
+          "价格保护"
+        ],
+        "bounding_box_px": [
+          544.0,
+          384.3333333333333,
+          788.0,
+          512.3333333333333
+        ],
+        "clickable_region_px": [
+          544.0,
+          384.3333333333333,
+          788.0,
+          512.3333333333333
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_03",
+        "text": "余额查询",
+        "text_lines": [
+          "余额查询"
+        ],
+        "bounding_box_px": [
+          796.0,
+          384.3333333333333,
+          1040.0,
+          512.3333333333333
+        ],
+        "clickable_region_px": [
+          796.0,
+          384.3333333333333,
+          1040.0,
+          512.3333333333333
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_04",
+        "text": "水费缴纳",
+        "text_lines": [
+          "水费缴纳"
+        ],
+        "bounding_box_px": [
+          40.0,
+          601.0,
+          284.0,
+          729.0
+        ],
+        "clickable_region_px": [
+          40.0,
+          601.0,
+          284.0,
+          729.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_05",
+        "text": "停车缴费",
+        "text_lines": [
+          "停车缴费"
+        ],
+        "bounding_box_px": [
+          292.0,
+          601.0,
+          536.0,
+          729.0
+        ],
+        "clickable_region_px": [
+          292.0,
+          601.0,
+          536.0,
+          729.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_06",
+        "text": "到站提醒",
+        "text_lines": [
+          "到站提醒"
+        ],
+        "bounding_box_px": [
+          544.0,
+          601.0,
+          788.0,
+          729.0
+        ],
+        "clickable_region_px": [
+          544.0,
+          601.0,
+          788.0,
+          729.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_07",
+        "text": "候诊查询",
+        "text_lines": [
+          "候诊查询"
+        ],
+        "bounding_box_px": [
+          796.0,
+          601.0,
+          1040.0,
+          729.0
+        ],
+        "clickable_region_px": [
+          796.0,
+          601.0,
+          1040.0,
+          729.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_08",
+        "text": "医疗缴费",
+        "text_lines": [
+          "医疗缴费"
+        ],
+        "bounding_box_px": [
+          40.0,
+          817.6666666666666,
+          284.0,
+          945.6666666666666
+        ],
+        "clickable_region_px": [
+          40.0,
+          817.6666666666666,
+          284.0,
+          945.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_09",
+        "text": "扫码打印",
+        "text_lines": [
+          "扫码打印"
+        ],
+        "bounding_box_px": [
+          292.0,
+          817.6666666666666,
+          536.0,
+          945.6666666666666
+        ],
+        "clickable_region_px": [
+          292.0,
+          817.6666666666666,
+          536.0,
+          945.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_10",
+        "text": "疫苗接种",
+        "text_lines": [
+          "疫苗接种"
+        ],
+        "bounding_box_px": [
+          544.0,
+          817.6666666666666,
+          788.0,
+          945.6666666666666
+        ],
+        "clickable_region_px": [
+          544.0,
+          817.6666666666666,
+          788.0,
+          945.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "target",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": "task_complete"
+      },
+      {
+        "element_id": "service_11",
+        "text": "场馆入场",
+        "text_lines": [
+          "场馆入场"
+        ],
+        "bounding_box_px": [
+          796.0,
+          817.6666666666666,
+          1040.0,
+          945.6666666666666
+        ],
+        "clickable_region_px": [
+          796.0,
+          817.6666666666666,
+          1040.0,
+          945.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_12",
+        "text": "机场巴士",
+        "text_lines": [
+          "机场巴士"
+        ],
+        "bounding_box_px": [
+          40.0,
+          1034.3333333333335,
+          284.0,
+          1162.3333333333335
+        ],
+        "clickable_region_px": [
+          40.0,
+          1034.3333333333335,
+          284.0,
+          1162.3333333333335
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_13",
+        "text": "用药咨询",
+        "text_lines": [
+          "用药咨询"
+        ],
+        "bounding_box_px": [
+          292.0,
+          1034.3333333333335,
+          536.0,
+          1162.3333333333335
+        ],
+        "clickable_region_px": [
+          292.0,
+          1034.3333333333335,
+          536.0,
+          1162.3333333333335
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_14",
+        "text": "会员中心",
+        "text_lines": [
+          "会员中心"
+        ],
+        "bounding_box_px": [
+          544.0,
+          1034.3333333333335,
+          788.0,
+          1162.3333333333335
+        ],
+        "clickable_region_px": [
+          544.0,
+          1034.3333333333335,
+          788.0,
+          1162.3333333333335
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_15",
+        "text": "待发货",
+        "text_lines": [
+          "待发货"
+        ],
+        "bounding_box_px": [
+          796.0,
+          1034.3333333333335,
+          1040.0,
+          1162.3333333333335
+        ],
+        "clickable_region_px": [
+          796.0,
+          1034.3333333333335,
+          1040.0,
+          1162.3333333333335
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_16",
+        "text": "交通卡充值",
+        "text_lines": [
+          "交通卡充值"
+        ],
+        "bounding_box_px": [
+          40.0,
+          1251.0,
+          284.0,
+          1379.0
+        ],
+        "clickable_region_px": [
+          40.0,
+          1251.0,
+          284.0,
+          1379.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_17",
+        "text": "电费缴纳",
+        "text_lines": [
+          "电费缴纳"
+        ],
+        "bounding_box_px": [
+          292.0,
+          1251.0,
+          536.0,
+          1379.0
+        ],
+        "clickable_region_px": [
+          292.0,
+          1251.0,
+          536.0,
+          1379.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_18",
+        "text": "电子健康卡",
+        "text_lines": [
+          "电子健康卡"
+        ],
+        "bounding_box_px": [
+          544.0,
+          1251.0,
+          788.0,
+          1379.0
+        ],
+        "clickable_region_px": [
+          544.0,
+          1251.0,
+          788.0,
+          1379.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_19",
+        "text": "地铁线路",
+        "text_lines": [
+          "地铁线路"
+        ],
+        "bounding_box_px": [
+          796.0,
+          1251.0,
+          1040.0,
+          1379.0
+        ],
+        "clickable_region_px": [
+          796.0,
+          1251.0,
+          1040.0,
+          1379.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_20",
+        "text": "无障碍出行",
+        "text_lines": [
+          "无障碍出行"
+        ],
+        "bounding_box_px": [
+          40.0,
+          1467.6666666666667,
+          284.0,
+          1595.6666666666667
+        ],
+        "clickable_region_px": [
+          40.0,
+          1467.6666666666667,
+          284.0,
+          1595.6666666666667
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_21",
+        "text": "扫一扫",
+        "text_lines": [
+          "扫一扫"
+        ],
+        "bounding_box_px": [
+          292.0,
+          1467.6666666666667,
+          536.0,
+          1595.6666666666667
+        ],
+        "clickable_region_px": [
+          292.0,
+          1467.6666666666667,
+          536.0,
+          1595.6666666666667
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_22",
+        "text": "服务网点",
+        "text_lines": [
+          "服务网点"
+        ],
+        "bounding_box_px": [
+          544.0,
+          1467.6666666666667,
+          788.0,
+          1595.6666666666667
+        ],
+        "clickable_region_px": [
+          544.0,
+          1467.6666666666667,
+          788.0,
+          1595.6666666666667
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_23",
+        "text": "码上服务",
+        "text_lines": [
+          "码上服务"
+        ],
+        "bounding_box_px": [
+          796.0,
+          1467.6666666666667,
+          1040.0,
+          1595.6666666666667
+        ],
+        "clickable_region_px": [
+          796.0,
+          1467.6666666666667,
+          1040.0,
+          1595.6666666666667
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      }
+    ],
+    "template_id": "e3159ab9dc39ce925a197848a31a2b7b0b9e3da3959a0b6e4da91b7fa0f9e30a"
+  },
+  "rendered_elements": [
+    {
+      "element_id": "service_00",
+      "text": "用量查询",
+      "text_lines": [
+        "用量查询"
+      ],
+      "bounding_box_px": [
+        40.0,
+        384.3333333333333,
+        284.0,
+        512.3333333333333
+      ],
+      "clickable_region_px": [
+        40.0,
+        384.3333333333333,
+        284.0,
+        512.3333333333333
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          102.0,
+          434.33333333333326,
+          222.0,
+          462.33333333333326
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_01",
+      "text": "燃气缴费",
+      "text_lines": [
+        "燃气缴费"
+      ],
+      "bounding_box_px": [
+        292.0,
+        384.3333333333333,
+        536.0,
+        512.3333333333333
+      ],
+      "clickable_region_px": [
+        292.0,
+        384.3333333333333,
+        536.0,
+        512.3333333333333
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          356.0,
+          434.33333333333326,
+          472.0,
+          462.33333333333326
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_02",
+      "text": "价格保护",
+      "text_lines": [
+        "价格保护"
+      ],
+      "bounding_box_px": [
+        544.0,
+        384.3333333333333,
+        788.0,
+        512.3333333333333
+      ],
+      "clickable_region_px": [
+        544.0,
+        384.3333333333333,
+        788.0,
+        512.3333333333333
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          608.0,
+          434.33333333333326,
+          724.0,
+          462.33333333333326
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_03",
+      "text": "余额查询",
+      "text_lines": [
+        "余额查询"
+      ],
+      "bounding_box_px": [
+        796.0,
+        384.3333333333333,
+        1040.0,
+        512.3333333333333
+      ],
+      "clickable_region_px": [
+        796.0,
+        384.3333333333333,
+        1040.0,
+        512.3333333333333
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          858.0,
+          434.33333333333326,
+          978.0,
+          462.33333333333326
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_04",
+      "text": "水费缴纳",
+      "text_lines": [
+        "水费缴纳"
+      ],
+      "bounding_box_px": [
+        40.0,
+        601.0,
+        284.0,
+        729.0
+      ],
+      "clickable_region_px": [
+        40.0,
+        601.0,
+        284.0,
+        729.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          102.0,
+          651.0,
+          222.0,
+          679.0
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_05",
+      "text": "停车缴费",
+      "text_lines": [
+        "停车缴费"
+      ],
+      "bounding_box_px": [
+        292.0,
+        601.0,
+        536.0,
+        729.0
+      ],
+      "clickable_region_px": [
+        292.0,
+        601.0,
+        536.0,
+        729.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          354.0,
+          652.0,
+          474.0,
+          680.0
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_06",
+      "text": "到站提醒",
+      "text_lines": [
+        "到站提醒"
+      ],
+      "bounding_box_px": [
+        544.0,
+        601.0,
+        788.0,
+        729.0
+      ],
+      "clickable_region_px": [
+        544.0,
+        601.0,
+        788.0,
+        729.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          604.0,
+          651.0,
+          728.0,
+          679.0
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_07",
+      "text": "候诊查询",
+      "text_lines": [
+        "候诊查询"
+      ],
+      "bounding_box_px": [
+        796.0,
+        601.0,
+        1040.0,
+        729.0
+      ],
+      "clickable_region_px": [
+        796.0,
+        601.0,
+        1040.0,
+        729.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          858.0,
+          651.0,
+          978.0,
+          679.0
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_08",
+      "text": "医疗缴费",
+      "text_lines": [
+        "医疗缴费"
+      ],
+      "bounding_box_px": [
+        40.0,
+        817.6666666666666,
+        284.0,
+        945.6666666666666
+      ],
+      "clickable_region_px": [
+        40.0,
+        817.6666666666666,
+        284.0,
+        945.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          100.0,
+          867.6666666666666,
+          224.0,
+          895.6666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_09",
+      "text": "扫码打印",
+      "text_lines": [
+        "扫码打印"
+      ],
+      "bounding_box_px": [
+        292.0,
+        817.6666666666666,
+        536.0,
+        945.6666666666666
+      ],
+      "clickable_region_px": [
+        292.0,
+        817.6666666666666,
+        536.0,
+        945.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          354.0,
+          867.6666666666666,
+          474.0,
+          895.6666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_10",
+      "text": "疫苗接种",
+      "text_lines": [
+        "疫苗接种"
+      ],
+      "bounding_box_px": [
+        544.0,
+        817.6666666666666,
+        788.0,
+        945.6666666666666
+      ],
+      "clickable_region_px": [
+        544.0,
+        817.6666666666666,
+        788.0,
+        945.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "target",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": "task_complete",
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          606.0,
+          867.6666666666666,
+          726.0,
+          895.6666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_11",
+      "text": "场馆入场",
+      "text_lines": [
+        "场馆入场"
+      ],
+      "bounding_box_px": [
+        796.0,
+        817.6666666666666,
+        1040.0,
+        945.6666666666666
+      ],
+      "clickable_region_px": [
+        796.0,
+        817.6666666666666,
+        1040.0,
+        945.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          856.0,
+          867.6666666666666,
+          980.0,
+          895.6666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_12",
+      "text": "机场巴士",
+      "text_lines": [
+        "机场巴士"
+      ],
+      "bounding_box_px": [
+        40.0,
+        1034.3333333333335,
+        284.0,
+        1162.3333333333335
+      ],
+      "clickable_region_px": [
+        40.0,
+        1034.3333333333335,
+        284.0,
+        1162.3333333333335
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          102.0,
+          1084.3333333333335,
+          222.0,
+          1112.3333333333335
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_13",
+      "text": "用药咨询",
+      "text_lines": [
+        "用药咨询"
+      ],
+      "bounding_box_px": [
+        292.0,
+        1034.3333333333335,
+        536.0,
+        1162.3333333333335
+      ],
+      "clickable_region_px": [
+        292.0,
+        1034.3333333333335,
+        536.0,
+        1162.3333333333335
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          356.0,
+          1084.3333333333335,
+          472.0,
+          1112.3333333333335
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_14",
+      "text": "会员中心",
+      "text_lines": [
+        "会员中心"
+      ],
+      "bounding_box_px": [
+        544.0,
+        1034.3333333333335,
+        788.0,
+        1162.3333333333335
+      ],
+      "clickable_region_px": [
+        544.0,
+        1034.3333333333335,
+        788.0,
+        1162.3333333333335
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          604.0,
+          1084.3333333333335,
+          728.0,
+          1112.3333333333335
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_15",
+      "text": "待发货",
+      "text_lines": [
+        "待发货"
+      ],
+      "bounding_box_px": [
+        796.0,
+        1034.3333333333335,
+        1040.0,
+        1162.3333333333335
+      ],
+      "clickable_region_px": [
+        796.0,
+        1034.3333333333335,
+        1040.0,
+        1162.3333333333335
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 27,
+      "ink_bounding_boxes_px": [
+        [
+          874.0,
+          1084.3333333333335,
+          961.0,
+          1111.3333333333335
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_16",
+      "text": "交通卡充值",
+      "text_lines": [
+        "交通卡充值"
+      ],
+      "bounding_box_px": [
+        40.0,
+        1251.0,
+        284.0,
+        1379.0
+      ],
+      "clickable_region_px": [
+        40.0,
+        1251.0,
+        284.0,
+        1379.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          87.0,
+          1301.0,
+          237.0,
+          1329.0
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_17",
+      "text": "电费缴纳",
+      "text_lines": [
+        "电费缴纳"
+      ],
+      "bounding_box_px": [
+        292.0,
+        1251.0,
+        536.0,
+        1379.0
+      ],
+      "clickable_region_px": [
+        292.0,
+        1251.0,
+        536.0,
+        1379.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          354.0,
+          1301.0,
+          474.0,
+          1329.0
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_18",
+      "text": "电子健康卡",
+      "text_lines": [
+        "电子健康卡"
+      ],
+      "bounding_box_px": [
+        544.0,
+        1251.0,
+        788.0,
+        1379.0
+      ],
+      "clickable_region_px": [
+        544.0,
+        1251.0,
+        788.0,
+        1379.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 27,
+      "ink_bounding_boxes_px": [
+        [
+          593.0,
+          1301.0,
+          738.0,
+          1328.0
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_19",
+      "text": "地铁线路",
+      "text_lines": [
+        "地铁线路"
+      ],
+      "bounding_box_px": [
+        796.0,
+        1251.0,
+        1040.0,
+        1379.0
+      ],
+      "clickable_region_px": [
+        796.0,
+        1251.0,
+        1040.0,
+        1379.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          860.0,
+          1301.0,
+          976.0,
+          1329.0
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_20",
+      "text": "无障碍出行",
+      "text_lines": [
+        "无障碍出行"
+      ],
+      "bounding_box_px": [
+        40.0,
+        1467.6666666666667,
+        284.0,
+        1595.6666666666667
+      ],
+      "clickable_region_px": [
+        40.0,
+        1467.6666666666667,
+        284.0,
+        1595.6666666666667
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          89.0,
+          1517.6666666666667,
+          234.0,
+          1545.6666666666667
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_21",
+      "text": "扫一扫",
+      "text_lines": [
+        "扫一扫"
+      ],
+      "bounding_box_px": [
+        292.0,
+        1467.6666666666667,
+        536.0,
+        1595.6666666666667
+      ],
+      "clickable_region_px": [
+        292.0,
+        1467.6666666666667,
+        536.0,
+        1595.6666666666667
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          369.0,
+          1517.6666666666667,
+          459.0,
+          1545.6666666666667
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_22",
+      "text": "服务网点",
+      "text_lines": [
+        "服务网点"
+      ],
+      "bounding_box_px": [
+        544.0,
+        1467.6666666666667,
+        788.0,
+        1595.6666666666667
+      ],
+      "clickable_region_px": [
+        544.0,
+        1467.6666666666667,
+        788.0,
+        1595.6666666666667
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          606.0,
+          1517.6666666666667,
+          726.0,
+          1545.6666666666667
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_23",
+      "text": "码上服务",
+      "text_lines": [
+        "码上服务"
+      ],
+      "bounding_box_px": [
+        796.0,
+        1467.6666666666667,
+        1040.0,
+        1595.6666666666667
+      ],
+      "clickable_region_px": [
+        796.0,
+        1467.6666666666667,
+        1040.0,
+        1595.6666666666667
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "transport",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          858.0,
+          1517.6666666666667,
+          978.0,
+          1545.6666666666667
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    }
+  ],
+  "reconstruction_kind": "reference_font_not_android_pixel_identical",
+  "image_sha256": "48fa2603a38abc99ca1666ea3b1871a0df1a10226df95e03b658b7d9cf0b841a",
+  "render_timestamp_ns": null
+}

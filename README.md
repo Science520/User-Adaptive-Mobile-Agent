@@ -1,10 +1,28 @@
 # User-Camera Stream：公开数据与合成验证
 
-本项目是 `thought2.md` / `thought3.md` 的第一阶段实验实现。原文档保留不变，文档里的完整 Agent、招募、后训练等设想没有作为本次开发指令执行。本次范围是：真实公开数据取样、质量检查、图像基线、合成代理任务、分组消融和可复现报告。
+本项目从 `thought2.md` / `thought3.md` 的第一阶段公开数据与合成验证扩展到受控手机时序Pilot。原文档保留不变，其中完整Agent、招募、后训练等设想没有作为开发指令执行。当前范围包括公开数据验证、手机采集原型、离线质量检查、因果时序基线和可复现报告。
 
-**当前优先：MPIIFaceGaze 越界审计、严格 LOSO 模型对照与粗粒度 user-state 评估。** 查看[本轮结果](reports/MPII_NEXT_RESULTS.md)、[越界审计](reports/mpii_audit/outlier_summary.md)；此前[几何结果](reports/RESULTS.md)和[30 个真实样本可视化](reports/mpii_geometry/visualizations/index.html)保留。原始第一阶段 H1/报告归档于 `reports/archive_phase1/`；H2/H3 合成预测与结果原文件保留。
+**当前优先：Phase2 Temporal User–Screen Mobile Interaction Pilot。** 入口为 [mobile_pilot/README.md](mobile_pilot/README.md)、[采集协议](mobile_pilot/PILOT_PROTOCOL.md)、[数据Schema](mobile_pilot/SCHEMA.md)、[Pilot运行结果](reports/pilot/RESULTS.md)和[MPII720扩展对照](reports/mpii_expansion/RESULTS.md)。Android工程源码已生成；本机缺JDK/SDK，APK未编译、未真机验证。Python闭环已在明确标记mock的Session上测试，不能作为真实H2/H3证据。
 
-## 本轮执行入口
+已下载的扩展360张已整合到独立 `data/views/mpii_v2_720`，旧360样本、manifest、splits和历史报告不变。本轮不重新下载数据。新增命令：
+
+```bash
+.venv/bin/python -m usercamera mpii-integrate-expansion
+.venv/bin/python -m usercamera mpii-eval-expanded
+# 先查看reports/mpii_expansion/neural_resource_estimate.json；显式启用15折部分微调
+.venv/bin/python -m usercamera mpii-eval-expanded --run-neural --max-epochs 12
+.venv/bin/python -m usercamera pilot-build-stimuli
+.venv/bin/python -m usercamera pilot-verify-session mobile_pilot/mock_sessions/mock_s00 --allow-mock
+.venv/bin/python -m usercamera pilot-extract-features mobile_pilot/mock_sessions --backend mock --allow-mock
+.venv/bin/python -m usercamera pilot-evaluate --allow-mock
+.venv/bin/python -m usercamera pilot-report
+```
+
+真实导出Session使用另一个输出目录并移除 `--allow-mock`，feature backend换为mediapipe；完整构建/采集/导出/回放命令见mobile_pilot说明。默认不上传人脸数据；Manifest无网络权限。本轮采用带原始sensor/arrival时间的JPEG序列，不将MP4播放PTS当作单调时钟。没有可靠gaze时输出null，单目距离只为relative-scale proxy。
+
+**上一轮：MPIIFaceGaze 越界审计、严格 LOSO 对照与粗粒度 user-state。** [结果](reports/MPII_NEXT_RESULTS.md)、[越界审计](reports/mpii_audit/outlier_summary.md)、此前[几何结果](reports/RESULTS.md)和[30个真实样本可视化](reports/mpii_geometry/visualizations/index.html)均保留。原始第一阶段H1/报告归档于 `reports/archive_phase1/`；H2/H3合成结果原文件保留。
+
+## 上一轮 MPII 审计与模型入口（保留）
 
 复用本地 360 张图像、15 人完整标注/calibration、已缓存 ImageNet 权重；默认不下载数据。四步共享 `reports/mpii_next/splits.json`：15折 LOSO，每折训练13人、验证1人、测试1人；所有 scaler/PCA 与超参选择仅使用训练/验证人。
 
@@ -27,7 +45,7 @@ PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 .venv/bin/python -m p
 
 全部新结果在 `reports/mpii_next/`。`strong/strong_results.json` 包含逐人指标/超参选择/成本，`prediction_errors.jsonl`、`invalid_rays.jsonl`、`worst20.jsonl`保留异常预测。ray使用预测origin，不用测试官方face center冒充预测；无效ray保留并报告覆盖率/失败惩罚，绝不只给有效子集平均。没有几何loss消融、完整骨干微调、gaze-specific架构或手机同步困难实验；局限和实际运行结果见本轮报告。
 
-## 当前几何验证入口
+## 此前几何验证入口（保留）
 
 现有数据全部复用，无需执行 `download`。本机隔离环境已安装 PyTorch 2.2.2 / torchvision 0.17.2，ImageNet ResNet18 权重已缓存。
 

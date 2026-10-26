@@ -1,0 +1,373 @@
+{
+  "trial_id": "B_002",
+  "participant_id": "mock_person",
+  "session_id": "mock_s02",
+  "task": "visual_search",
+  "template_id": "9731d0227f29fcf581857d6c66a4d0afc692505b8b9c943220ff79745558f646",
+  "onset_ns": 330000000000,
+  "offset_ns": 334000000000,
+  "status": "completed",
+  "stimulus": {
+    "trial_id": "B_002",
+    "task": "visual_search",
+    "page_id": "utilities",
+    "base_size_px": [
+      1080,
+      1920
+    ],
+    "instruction": "请找到并点击「户号管理」",
+    "target_element_id": "service_05",
+    "timeout_ms": 30000,
+    "correct_action_path": [
+      "service_05"
+    ],
+    "conditions": {
+      "factor_levels": {
+        "glyph": 1,
+        "button": 0,
+        "count": 0,
+        "eccentricity": 0,
+        "contrast": 0,
+        "semantic_similarity": 1,
+        "information_density": 1,
+        "target_side": 0
+      },
+      "domain": "utilities",
+      "glyph_height_px": 28,
+      "button_size_px": [
+        220,
+        80
+      ],
+      "element_count": 12,
+      "target_eccentricity_normalized": 0.12573136735163232,
+      "contrast_ratio": 15.716827493476563,
+      "semantic_similarity": 1,
+      "information_density": 1,
+      "target_location_px": [
+        414.0,
+        870.0
+      ]
+    },
+    "elements": [
+      {
+        "element_id": "service_00",
+        "text": "余额查询",
+        "text_lines": [
+          "余额查询",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          52.0,
+          476.66666666666663,
+          272.0,
+          556.6666666666666
+        ],
+        "clickable_region_px": [
+          52.0,
+          476.66666666666663,
+          272.0,
+          556.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_01",
+        "text": "服务网点",
+        "text_lines": [
+          "服务网点",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          304.0,
+          476.66666666666663,
+          524.0,
+          556.6666666666666
+        ],
+        "clickable_region_px": [
+          304.0,
+          476.66666666666663,
+          524.0,
+          556.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_02",
+        "text": "充电服务",
+        "text_lines": [
+          "充电服务",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          556.0,
+          476.66666666666663,
+          776.0,
+          556.6666666666666
+        ],
+        "clickable_region_px": [
+          556.0,
+          476.66666666666663,
+          776.0,
+          556.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_03",
+        "text": "宽带续费",
+        "text_lines": [
+          "宽带续费",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          808.0,
+          476.66666666666663,
+          1028.0,
+          556.6666666666666
+        ],
+        "clickable_region_px": [
+          808.0,
+          476.66666666666663,
+          1028.0,
+          556.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_04",
+        "text": "报修申请",
+        "text_lines": [
+          "报修申请",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          52.0,
+          830.0,
+          272.0,
+          910.0
+        ],
+        "clickable_region_px": [
+          52.0,
+          830.0,
+          272.0,
+          910.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_05",
+        "text": "户号管理",
+        "text_lines": [
+          "户号管理",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          304.0,
+          830.0,
+          524.0,
+          910.0
+        ],
+        "clickable_region_px": [
+          304.0,
+          830.0,
+          524.0,
+          910.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "target",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": "task_complete"
+      },
+      {
+        "element_id": "service_06",
+        "text": "缴费记录",
+        "text_lines": [
+          "缴费记录",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          556.0,
+          830.0,
+          776.0,
+          910.0
+        ],
+        "clickable_region_px": [
+          556.0,
+          830.0,
+          776.0,
+          910.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_07",
+        "text": "燃气缴费",
+        "text_lines": [
+          "燃气缴费",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          808.0,
+          830.0,
+          1028.0,
+          910.0
+        ],
+        "clickable_region_px": [
+          808.0,
+          830.0,
+          1028.0,
+          910.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_08",
+        "text": "小区公告",
+        "text_lines": [
+          "小区公告",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          52.0,
+          1183.3333333333335,
+          272.0,
+          1263.3333333333335
+        ],
+        "clickable_region_px": [
+          52.0,
+          1183.3333333333335,
+          272.0,
+          1263.3333333333335
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_09",
+        "text": "垃圾分类",
+        "text_lines": [
+          "垃圾分类",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          304.0,
+          1183.3333333333335,
+          524.0,
+          1263.3333333333335
+        ],
+        "clickable_region_px": [
+          304.0,
+          1183.3333333333335,
+          524.0,
+          1263.3333333333335
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_10",
+        "text": "电费缴纳",
+        "text_lines": [
+          "电费缴纳",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          556.0,
+          1183.3333333333335,
+          776.0,
+          1263.3333333333335
+        ],
+        "clickable_region_px": [
+          556.0,
+          1183.3333333333335,
+          776.0,
+          1263.3333333333335
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_11",
+        "text": "手机充值",
+        "text_lines": [
+          "手机充值",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          808.0,
+          1183.3333333333335,
+          1028.0,
+          1263.3333333333335
+        ],
+        "clickable_region_px": [
+          808.0,
+          1183.3333333333335,
+          1028.0,
+          1263.3333333333335
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "utilities",
+        "navigation_transition": null
+      }
+    ],
+    "template_id": "9731d0227f29fcf581857d6c66a4d0afc692505b8b9c943220ff79745558f646"
+  },
+  "outcome": {
+    "success": true,
+    "completion_time_ms": 4000,
+    "misclicks": 0,
+    "help_requests": 0
+  }
+}

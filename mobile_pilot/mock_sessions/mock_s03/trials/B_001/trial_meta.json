@@ -1,0 +1,361 @@
+{
+  "trial_id": "B_001",
+  "participant_id": "mock_person",
+  "session_id": "mock_s03",
+  "task": "visual_search",
+  "template_id": "7fb4afa0dde9fbc25beb0e76da357ecdc4bf3a53487480598e9e6eaa672b0d2e",
+  "onset_ns": 420000000000,
+  "offset_ns": 424000000000,
+  "status": "completed",
+  "stimulus": {
+    "trial_id": "B_001",
+    "task": "visual_search",
+    "page_id": "transport",
+    "base_size_px": [
+      1080,
+      1920
+    ],
+    "instruction": "请找到并点击「火车时刻」",
+    "target_element_id": "service_08",
+    "timeout_ms": 30000,
+    "correct_action_path": [
+      "service_08"
+    ],
+    "conditions": {
+      "factor_levels": {
+        "glyph": 0,
+        "button": 1,
+        "count": 0,
+        "eccentricity": 1,
+        "contrast": 0,
+        "semantic_similarity": 1,
+        "information_density": 0,
+        "target_side": 0
+      },
+      "domain": "transport",
+      "glyph_height_px": 22,
+      "button_size_px": [
+        244,
+        128
+      ],
+      "element_count": 12,
+      "target_eccentricity_normalized": 0.4251294794141842,
+      "contrast_ratio": 15.716827493476563,
+      "semantic_similarity": 1,
+      "information_density": 0,
+      "target_location_px": [
+        162.0,
+        1423.3333333333333
+      ]
+    },
+    "elements": [
+      {
+        "element_id": "service_00",
+        "text": "客服咨询",
+        "text_lines": [
+          "客服咨询"
+        ],
+        "bounding_box_px": [
+          40.0,
+          492.66666666666663,
+          284.0,
+          620.6666666666666
+        ],
+        "clickable_region_px": [
+          40.0,
+          492.66666666666663,
+          284.0,
+          620.6666666666666
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_01",
+        "text": "骑行服务",
+        "text_lines": [
+          "骑行服务"
+        ],
+        "bounding_box_px": [
+          292.0,
+          492.66666666666663,
+          536.0,
+          620.6666666666666
+        ],
+        "clickable_region_px": [
+          292.0,
+          492.66666666666663,
+          536.0,
+          620.6666666666666
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_02",
+        "text": "出行计划",
+        "text_lines": [
+          "出行计划"
+        ],
+        "bounding_box_px": [
+          544.0,
+          492.66666666666663,
+          788.0,
+          620.6666666666666
+        ],
+        "clickable_region_px": [
+          544.0,
+          492.66666666666663,
+          788.0,
+          620.6666666666666
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_03",
+        "text": "车票预订",
+        "text_lines": [
+          "车票预订"
+        ],
+        "bounding_box_px": [
+          796.0,
+          492.66666666666663,
+          1040.0,
+          620.6666666666666
+        ],
+        "clickable_region_px": [
+          796.0,
+          492.66666666666663,
+          1040.0,
+          620.6666666666666
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_04",
+        "text": "地铁线路",
+        "text_lines": [
+          "地铁线路"
+        ],
+        "bounding_box_px": [
+          40.0,
+          926.0,
+          284.0,
+          1054.0
+        ],
+        "clickable_region_px": [
+          40.0,
+          926.0,
+          284.0,
+          1054.0
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_05",
+        "text": "退票申请",
+        "text_lines": [
+          "退票申请"
+        ],
+        "bounding_box_px": [
+          292.0,
+          926.0,
+          536.0,
+          1054.0
+        ],
+        "clickable_region_px": [
+          292.0,
+          926.0,
+          536.0,
+          1054.0
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_06",
+        "text": "城际客运",
+        "text_lines": [
+          "城际客运"
+        ],
+        "bounding_box_px": [
+          544.0,
+          926.0,
+          788.0,
+          1054.0
+        ],
+        "clickable_region_px": [
+          544.0,
+          926.0,
+          788.0,
+          1054.0
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_07",
+        "text": "通勤路线",
+        "text_lines": [
+          "通勤路线"
+        ],
+        "bounding_box_px": [
+          796.0,
+          926.0,
+          1040.0,
+          1054.0
+        ],
+        "clickable_region_px": [
+          796.0,
+          926.0,
+          1040.0,
+          1054.0
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_08",
+        "text": "火车时刻",
+        "text_lines": [
+          "火车时刻"
+        ],
+        "bounding_box_px": [
+          40.0,
+          1359.3333333333333,
+          284.0,
+          1487.3333333333333
+        ],
+        "clickable_region_px": [
+          40.0,
+          1359.3333333333333,
+          284.0,
+          1487.3333333333333
+        ],
+        "font_glyph_height_px": 22,
+        "role": "target",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": "task_complete"
+      },
+      {
+        "element_id": "service_09",
+        "text": "长途汽车",
+        "text_lines": [
+          "长途汽车"
+        ],
+        "bounding_box_px": [
+          292.0,
+          1359.3333333333333,
+          536.0,
+          1487.3333333333333
+        ],
+        "clickable_region_px": [
+          292.0,
+          1359.3333333333333,
+          536.0,
+          1487.3333333333333
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_10",
+        "text": "实时公交",
+        "text_lines": [
+          "实时公交"
+        ],
+        "bounding_box_px": [
+          544.0,
+          1359.3333333333333,
+          788.0,
+          1487.3333333333333
+        ],
+        "clickable_region_px": [
+          544.0,
+          1359.3333333333333,
+          788.0,
+          1487.3333333333333
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_11",
+        "text": "站点查询",
+        "text_lines": [
+          "站点查询"
+        ],
+        "bounding_box_px": [
+          796.0,
+          1359.3333333333333,
+          1040.0,
+          1487.3333333333333
+        ],
+        "clickable_region_px": [
+          796.0,
+          1359.3333333333333,
+          1040.0,
+          1487.3333333333333
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "transport",
+        "navigation_transition": null
+      }
+    ],
+    "template_id": "7fb4afa0dde9fbc25beb0e76da357ecdc4bf3a53487480598e9e6eaa672b0d2e"
+  },
+  "outcome": {
+    "success": true,
+    "completion_time_ms": 4000,
+    "misclicks": 0,
+    "help_requests": 0
+  }
+}

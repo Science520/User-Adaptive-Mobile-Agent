@@ -1,0 +1,86 @@
+{
+  "trial": {
+    "trial_id": "A_r00_p22",
+    "task": "fixation",
+    "page_id": "fixation",
+    "base_size_px": [
+      1080,
+      1920
+    ],
+    "instruction": "请自然注视圆点",
+    "target_element_id": "fixation",
+    "target_position_px": [
+      540.0,
+      1689.6
+    ],
+    "fixation_duration_ms": 1500,
+    "timeout_ms": 1500,
+    "correct_action_path": [],
+    "conditions": {
+      "grid": [
+        5,
+        5
+      ],
+      "repeat": 0,
+      "label_kind": "instructed_target_not_eye_tracker_truth"
+    },
+    "elements": [
+      {
+        "element_id": "fixation",
+        "text": "●",
+        "text_lines": [
+          "●"
+        ],
+        "bounding_box_px": [
+          528.0,
+          1677.6,
+          552.0,
+          1701.6
+        ],
+        "clickable_region_px": [
+          516.0,
+          1665.6,
+          564.0,
+          1713.6
+        ],
+        "font_glyph_height_px": 24,
+        "role": "target",
+        "foreground_gray": 0,
+        "visual_contrast": 21.0,
+        "page_id": "fixation",
+        "navigation_transition": null
+      }
+    ],
+    "template_id": "e074af505a695ffe226fbf6fc41006f5e9ef6a80ada3817b073bbd7e6f21a062"
+  },
+  "rendered_elements": [
+    {
+      "element_id": "fixation",
+      "text": "●",
+      "text_lines": [
+        "●"
+      ],
+      "bounding_box_px": [
+        528.0,
+        1677.6,
+        552.0,
+        1701.6
+      ],
+      "clickable_region_px": [
+        516.0,
+        1665.6,
+        564.0,
+        1713.6
+      ],
+      "font_glyph_height_px": 24,
+      "role": "target",
+      "foreground_gray": 0,
+      "visual_contrast": 21.0,
+      "page_id": "fixation",
+      "navigation_transition": null
+    }
+  ],
+  "reconstruction_kind": "reference_font_not_android_pixel_identical",
+  "image_sha256": "4d5f7345161f5e80fb448f989ea29bf4edc9f18564073e19e4579b87a879b480",
+  "render_timestamp_ns": null
+}

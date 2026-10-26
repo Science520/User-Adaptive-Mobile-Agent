@@ -1,0 +1,1499 @@
+{
+  "files": [
+    {
+      "path": "session.json",
+      "bytes": 684,
+      "sha256": "becd2a090b33ed93f78440cb6a1bafee942970911113b9ec7668464f4e15a119"
+    },
+    {
+      "path": "session_events.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "trials/A_r00_p13/camera_frames.jsonl",
+      "bytes": 6983,
+      "sha256": "b39ab7eff62e1ef2e68f1a3014cb881bc57883c806b9a511c1550891b9f9c20c"
+    },
+    {
+      "path": "trials/A_r00_p13/feedback.json",
+      "bytes": 33,
+      "sha256": "90a604aca928e5a1443130f40b9e8ce670e3c07b7de298ed69fa180a77783cea"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000000.jpg",
+      "bytes": 875,
+      "sha256": "34e94af120a3500b3039978d1678bcfb0aa886de1a8273920f7b040c3b372bb0"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000001.jpg",
+      "bytes": 960,
+      "sha256": "379533445ba597df5370df98b88cf3a2f74135618bf59ba27a36ed09967187fb"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000002.jpg",
+      "bytes": 966,
+      "sha256": "8851a2cc3f1efe5c7b1dcb90d3078b3a8d4ebc0dc49586446a089bb1b19be45c"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000003.jpg",
+      "bytes": 981,
+      "sha256": "3865249b5373ebaa83f45e02c819eb13bcc60537433aa5205a2de31b56748bcc"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000004.jpg",
+      "bytes": 956,
+      "sha256": "f964f2556afeed4472bca09e35599be7a45f455ca2bb1ba81628cd8311b9ecba"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000005.jpg",
+      "bytes": 985,
+      "sha256": "86111481ce223ef7e742df1037e8c8c97d6195733a137f8d786f4036992679e1"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000006.jpg",
+      "bytes": 970,
+      "sha256": "5a7cc2da4c87e7beebb0b36e5f4f0560912f863b48e48f7384ffde0615c9ef90"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000008.jpg",
+      "bytes": 880,
+      "sha256": "87f36a4b68ed1d6414e3297214a9c0e01c2003cd3d2bc565920f7f8ee7343952"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000009.jpg",
+      "bytes": 978,
+      "sha256": "d35dce666875d491d0e7fbe1431ead40a42c751e38d0b68351f48a56ce52738f"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000010.jpg",
+      "bytes": 973,
+      "sha256": "ce370046d8ff70fcd0f531ed1e17b5f151bd127f5732de981a6b798d6a1b29e0"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000011.jpg",
+      "bytes": 985,
+      "sha256": "0c149322c64ac64a4f17ea04652dc1cfcff7f35364125d9318c35389f4edc12d"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000012.jpg",
+      "bytes": 958,
+      "sha256": "7be95fe9d9d5474bd091ce26c35e0e0626c627e9246b59e21f555fe523ecc6ee"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000013.jpg",
+      "bytes": 981,
+      "sha256": "7ad838a7434970e93aeb902a1c51bb3e0822904702493747a97fddd1f09d8b8e"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000014.jpg",
+      "bytes": 969,
+      "sha256": "710be8d0201df59ef8eb270fabfb16a9b54b09325f147c6f93a00f559506c331"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000015.jpg",
+      "bytes": 958,
+      "sha256": "94909ceabe8f522be9640489bfe702a62198b7a423ecabaa36d7ebd5734015e8"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000016.jpg",
+      "bytes": 876,
+      "sha256": "e5706b0d27dd426ebef2df8053fda79688e2e02e666e268ff52ba49fa24e88a3"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000017.jpg",
+      "bytes": 962,
+      "sha256": "10bfe7cf07de291a700a40c6ac81963dc1f05a0d771963018df98c6c8dcd73de"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000018.jpg",
+      "bytes": 967,
+      "sha256": "1f245030cc298b07612772bb6dc3d9fa1bb43ce239eee3378f0f3fe9d0ec922e"
+    },
+    {
+      "path": "trials/A_r00_p13/frames/000019.jpg",
+      "bytes": 982,
+      "sha256": "5a350f31161ebf83da5732548356671f0277f85be10b9734add42b107c171ee1"
+    },
+    {
+      "path": "trials/A_r00_p13/mock_camera_observations.jsonl",
+      "bytes": 9040,
+      "sha256": "42614c1839258d7c78d06f8238ad71e784575b5e6bbbe495c84a65526c5dd067"
+    },
+    {
+      "path": "trials/A_r00_p13/stimulus.json",
+      "bytes": 1996,
+      "sha256": "1b8e9b6f724a57760f2b69e4b931f6c164908b9974c66fab865f50d914777720"
+    },
+    {
+      "path": "trials/A_r00_p13/stimulus.png",
+      "bytes": 18885,
+      "sha256": "804418a305863514a8e103686ae1da48021b9a7f3f2488e2877b37453a36f015"
+    },
+    {
+      "path": "trials/A_r00_p13/touch_events.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "trials/A_r00_p13/trial_meta.json",
+      "bytes": 1642,
+      "sha256": "86382cbab57f4ac994e83a36c8c56c5af7377eb2c095fad7596ac387d9d0142e"
+    },
+    {
+      "path": "trials/A_r00_p13/ui_states.jsonl",
+      "bytes": 639,
+      "sha256": "d317c64ed60132161649b32bddc547f9fddce41c60f5553546a5dc5a30e401c4"
+    },
+    {
+      "path": "trials/B_000/camera_frames.jsonl",
+      "bytes": 6983,
+      "sha256": "bc42d13d1c74a508d38b9a3a90ba07640be4ef7bc894d23a5d90801b769e7913"
+    },
+    {
+      "path": "trials/B_000/feedback.json",
+      "bytes": 223,
+      "sha256": "ee5bd4a71b54fad28796d3a1ff66c7c376748a3bc350c43781ac78b282c9b591"
+    },
+    {
+      "path": "trials/B_000/frames/000000.jpg",
+      "bytes": 875,
+      "sha256": "34e94af120a3500b3039978d1678bcfb0aa886de1a8273920f7b040c3b372bb0"
+    },
+    {
+      "path": "trials/B_000/frames/000001.jpg",
+      "bytes": 960,
+      "sha256": "379533445ba597df5370df98b88cf3a2f74135618bf59ba27a36ed09967187fb"
+    },
+    {
+      "path": "trials/B_000/frames/000002.jpg",
+      "bytes": 966,
+      "sha256": "8851a2cc3f1efe5c7b1dcb90d3078b3a8d4ebc0dc49586446a089bb1b19be45c"
+    },
+    {
+      "path": "trials/B_000/frames/000003.jpg",
+      "bytes": 981,
+      "sha256": "3865249b5373ebaa83f45e02c819eb13bcc60537433aa5205a2de31b56748bcc"
+    },
+    {
+      "path": "trials/B_000/frames/000004.jpg",
+      "bytes": 956,
+      "sha256": "f964f2556afeed4472bca09e35599be7a45f455ca2bb1ba81628cd8311b9ecba"
+    },
+    {
+      "path": "trials/B_000/frames/000005.jpg",
+      "bytes": 985,
+      "sha256": "86111481ce223ef7e742df1037e8c8c97d6195733a137f8d786f4036992679e1"
+    },
+    {
+      "path": "trials/B_000/frames/000006.jpg",
+      "bytes": 970,
+      "sha256": "5a7cc2da4c87e7beebb0b36e5f4f0560912f863b48e48f7384ffde0615c9ef90"
+    },
+    {
+      "path": "trials/B_000/frames/000008.jpg",
+      "bytes": 880,
+      "sha256": "87f36a4b68ed1d6414e3297214a9c0e01c2003cd3d2bc565920f7f8ee7343952"
+    },
+    {
+      "path": "trials/B_000/frames/000009.jpg",
+      "bytes": 978,
+      "sha256": "d35dce666875d491d0e7fbe1431ead40a42c751e38d0b68351f48a56ce52738f"
+    },
+    {
+      "path": "trials/B_000/frames/000010.jpg",
+      "bytes": 973,
+      "sha256": "ce370046d8ff70fcd0f531ed1e17b5f151bd127f5732de981a6b798d6a1b29e0"
+    },
+    {
+      "path": "trials/B_000/frames/000011.jpg",
+      "bytes": 985,
+      "sha256": "0c149322c64ac64a4f17ea04652dc1cfcff7f35364125d9318c35389f4edc12d"
+    },
+    {
+      "path": "trials/B_000/frames/000012.jpg",
+      "bytes": 958,
+      "sha256": "7be95fe9d9d5474bd091ce26c35e0e0626c627e9246b59e21f555fe523ecc6ee"
+    },
+    {
+      "path": "trials/B_000/frames/000013.jpg",
+      "bytes": 981,
+      "sha256": "7ad838a7434970e93aeb902a1c51bb3e0822904702493747a97fddd1f09d8b8e"
+    },
+    {
+      "path": "trials/B_000/frames/000014.jpg",
+      "bytes": 969,
+      "sha256": "710be8d0201df59ef8eb270fabfb16a9b54b09325f147c6f93a00f559506c331"
+    },
+    {
+      "path": "trials/B_000/frames/000015.jpg",
+      "bytes": 958,
+      "sha256": "94909ceabe8f522be9640489bfe702a62198b7a423ecabaa36d7ebd5734015e8"
+    },
+    {
+      "path": "trials/B_000/frames/000016.jpg",
+      "bytes": 876,
+      "sha256": "e5706b0d27dd426ebef2df8053fda79688e2e02e666e268ff52ba49fa24e88a3"
+    },
+    {
+      "path": "trials/B_000/frames/000017.jpg",
+      "bytes": 962,
+      "sha256": "10bfe7cf07de291a700a40c6ac81963dc1f05a0d771963018df98c6c8dcd73de"
+    },
+    {
+      "path": "trials/B_000/frames/000018.jpg",
+      "bytes": 967,
+      "sha256": "1f245030cc298b07612772bb6dc3d9fa1bb43ce239eee3378f0f3fe9d0ec922e"
+    },
+    {
+      "path": "trials/B_000/frames/000019.jpg",
+      "bytes": 982,
+      "sha256": "5a350f31161ebf83da5732548356671f0277f85be10b9734add42b107c171ee1"
+    },
+    {
+      "path": "trials/B_000/mock_camera_observations.jsonl",
+      "bytes": 9038,
+      "sha256": "aa6b26ec59b6da5248053e913fd7f3845e5b26a38634c34312e97e1fe7445504"
+    },
+    {
+      "path": "trials/B_000/stimulus.json",
+      "bytes": 38887,
+      "sha256": "fea6cd344f6136c99aa5888606df4dfe5517473fc68f26e9c300d7a7b4c79c8b"
+    },
+    {
+      "path": "trials/B_000/stimulus.png",
+      "bytes": 114074,
+      "sha256": "7694dd55608460c23ffe6a6450caf79847f3d4a44c677e84cd1a1a1005939f57"
+    },
+    {
+      "path": "trials/B_000/touch_events.jsonl",
+      "bytes": 292,
+      "sha256": "5643ed26aa2e19052623005efa2e59bfcf1bbaea1bc90585325160e4bd196dcf"
+    },
+    {
+      "path": "trials/B_000/trial_meta.json",
+      "bytes": 16714,
+      "sha256": "ee9de7d22c7bbec73cd80dd3442587d2d2df7628280c2b800b2c5e3db7f65a87"
+    },
+    {
+      "path": "trials/B_000/ui_states.jsonl",
+      "bytes": 10779,
+      "sha256": "195a8cd9bd95b24650356814bff081c5212fb7401ae9e15559ecd7348c961708"
+    },
+    {
+      "path": "trials/B_001/camera_frames.jsonl",
+      "bytes": 6983,
+      "sha256": "568df9a7593ccd1ae66c89e0093f31e0b374b4e8326fbee6bd171624725da445"
+    },
+    {
+      "path": "trials/B_001/feedback.json",
+      "bytes": 219,
+      "sha256": "7f0ae6a749b90b41edb6a8c568108c8ba65d6e83790da0976184a4936ee9ed96"
+    },
+    {
+      "path": "trials/B_001/frames/000000.jpg",
+      "bytes": 875,
+      "sha256": "34e94af120a3500b3039978d1678bcfb0aa886de1a8273920f7b040c3b372bb0"
+    },
+    {
+      "path": "trials/B_001/frames/000001.jpg",
+      "bytes": 960,
+      "sha256": "379533445ba597df5370df98b88cf3a2f74135618bf59ba27a36ed09967187fb"
+    },
+    {
+      "path": "trials/B_001/frames/000002.jpg",
+      "bytes": 966,
+      "sha256": "8851a2cc3f1efe5c7b1dcb90d3078b3a8d4ebc0dc49586446a089bb1b19be45c"
+    },
+    {
+      "path": "trials/B_001/frames/000003.jpg",
+      "bytes": 981,
+      "sha256": "3865249b5373ebaa83f45e02c819eb13bcc60537433aa5205a2de31b56748bcc"
+    },
+    {
+      "path": "trials/B_001/frames/000004.jpg",
+      "bytes": 956,
+      "sha256": "f964f2556afeed4472bca09e35599be7a45f455ca2bb1ba81628cd8311b9ecba"
+    },
+    {
+      "path": "trials/B_001/frames/000005.jpg",
+      "bytes": 985,
+      "sha256": "86111481ce223ef7e742df1037e8c8c97d6195733a137f8d786f4036992679e1"
+    },
+    {
+      "path": "trials/B_001/frames/000006.jpg",
+      "bytes": 970,
+      "sha256": "5a7cc2da4c87e7beebb0b36e5f4f0560912f863b48e48f7384ffde0615c9ef90"
+    },
+    {
+      "path": "trials/B_001/frames/000008.jpg",
+      "bytes": 880,
+      "sha256": "87f36a4b68ed1d6414e3297214a9c0e01c2003cd3d2bc565920f7f8ee7343952"
+    },
+    {
+      "path": "trials/B_001/frames/000009.jpg",
+      "bytes": 978,
+      "sha256": "d35dce666875d491d0e7fbe1431ead40a42c751e38d0b68351f48a56ce52738f"
+    },
+    {
+      "path": "trials/B_001/frames/000010.jpg",
+      "bytes": 973,
+      "sha256": "ce370046d8ff70fcd0f531ed1e17b5f151bd127f5732de981a6b798d6a1b29e0"
+    },
+    {
+      "path": "trials/B_001/frames/000011.jpg",
+      "bytes": 985,
+      "sha256": "0c149322c64ac64a4f17ea04652dc1cfcff7f35364125d9318c35389f4edc12d"
+    },
+    {
+      "path": "trials/B_001/frames/000012.jpg",
+      "bytes": 958,
+      "sha256": "7be95fe9d9d5474bd091ce26c35e0e0626c627e9246b59e21f555fe523ecc6ee"
+    },
+    {
+      "path": "trials/B_001/frames/000013.jpg",
+      "bytes": 981,
+      "sha256": "7ad838a7434970e93aeb902a1c51bb3e0822904702493747a97fddd1f09d8b8e"
+    },
+    {
+      "path": "trials/B_001/frames/000014.jpg",
+      "bytes": 969,
+      "sha256": "710be8d0201df59ef8eb270fabfb16a9b54b09325f147c6f93a00f559506c331"
+    },
+    {
+      "path": "trials/B_001/frames/000015.jpg",
+      "bytes": 958,
+      "sha256": "94909ceabe8f522be9640489bfe702a62198b7a423ecabaa36d7ebd5734015e8"
+    },
+    {
+      "path": "trials/B_001/frames/000016.jpg",
+      "bytes": 876,
+      "sha256": "e5706b0d27dd426ebef2df8053fda79688e2e02e666e268ff52ba49fa24e88a3"
+    },
+    {
+      "path": "trials/B_001/frames/000017.jpg",
+      "bytes": 962,
+      "sha256": "10bfe7cf07de291a700a40c6ac81963dc1f05a0d771963018df98c6c8dcd73de"
+    },
+    {
+      "path": "trials/B_001/frames/000018.jpg",
+      "bytes": 967,
+      "sha256": "1f245030cc298b07612772bb6dc3d9fa1bb43ce239eee3378f0f3fe9d0ec922e"
+    },
+    {
+      "path": "trials/B_001/frames/000019.jpg",
+      "bytes": 982,
+      "sha256": "5a350f31161ebf83da5732548356671f0277f85be10b9734add42b107c171ee1"
+    },
+    {
+      "path": "trials/B_001/mock_camera_observations.jsonl",
+      "bytes": 9033,
+      "sha256": "ce58de1bc719824301f5a04513340e9d6dc36c30a9f2233348b7f207ac0d8add"
+    },
+    {
+      "path": "trials/B_001/stimulus.json",
+      "bytes": 35374,
+      "sha256": "e60888cc754473630536052bf5c776ebc4bcec3fc68c2e4c474e751f87952cc1"
+    },
+    {
+      "path": "trials/B_001/stimulus.png",
+      "bytes": 82519,
+      "sha256": "ccfa1bf05ece7014146f706dc9694ad70b2583e17f2908ddde23b1b56a0bd30f"
+    },
+    {
+      "path": "trials/B_001/touch_events.jsonl",
+      "bytes": 292,
+      "sha256": "688a585ffdd259e29ca47e67a8292875205ef67ab49d84479421e9c9f3cd80c0"
+    },
+    {
+      "path": "trials/B_001/trial_meta.json",
+      "bytes": 16187,
+      "sha256": "efed68cbc23bb0e289bf98dc3f68a7681e27ae3a8f0340d2143161fe0f05cf58"
+    },
+    {
+      "path": "trials/B_001/ui_states.jsonl",
+      "bytes": 10491,
+      "sha256": "496ab687f83c5aebbc38663f5b801aaa946fb5891be515f42d167386155c2bce"
+    },
+    {
+      "path": "trials/B_002/camera_frames.jsonl",
+      "bytes": 6983,
+      "sha256": "f188bc53992fb46994dc0061f9ff9fc1a63801ff24d09b50c06ca7c908f815cf"
+    },
+    {
+      "path": "trials/B_002/feedback.json",
+      "bytes": 223,
+      "sha256": "d7d9ea87e2c76835b01f90a97663d15a16955490381ab348c6b7df5b022edef7"
+    },
+    {
+      "path": "trials/B_002/frames/000000.jpg",
+      "bytes": 875,
+      "sha256": "34e94af120a3500b3039978d1678bcfb0aa886de1a8273920f7b040c3b372bb0"
+    },
+    {
+      "path": "trials/B_002/frames/000001.jpg",
+      "bytes": 960,
+      "sha256": "379533445ba597df5370df98b88cf3a2f74135618bf59ba27a36ed09967187fb"
+    },
+    {
+      "path": "trials/B_002/frames/000002.jpg",
+      "bytes": 966,
+      "sha256": "8851a2cc3f1efe5c7b1dcb90d3078b3a8d4ebc0dc49586446a089bb1b19be45c"
+    },
+    {
+      "path": "trials/B_002/frames/000003.jpg",
+      "bytes": 981,
+      "sha256": "3865249b5373ebaa83f45e02c819eb13bcc60537433aa5205a2de31b56748bcc"
+    },
+    {
+      "path": "trials/B_002/frames/000004.jpg",
+      "bytes": 956,
+      "sha256": "f964f2556afeed4472bca09e35599be7a45f455ca2bb1ba81628cd8311b9ecba"
+    },
+    {
+      "path": "trials/B_002/frames/000005.jpg",
+      "bytes": 985,
+      "sha256": "86111481ce223ef7e742df1037e8c8c97d6195733a137f8d786f4036992679e1"
+    },
+    {
+      "path": "trials/B_002/frames/000006.jpg",
+      "bytes": 970,
+      "sha256": "5a7cc2da4c87e7beebb0b36e5f4f0560912f863b48e48f7384ffde0615c9ef90"
+    },
+    {
+      "path": "trials/B_002/frames/000008.jpg",
+      "bytes": 880,
+      "sha256": "87f36a4b68ed1d6414e3297214a9c0e01c2003cd3d2bc565920f7f8ee7343952"
+    },
+    {
+      "path": "trials/B_002/frames/000009.jpg",
+      "bytes": 978,
+      "sha256": "d35dce666875d491d0e7fbe1431ead40a42c751e38d0b68351f48a56ce52738f"
+    },
+    {
+      "path": "trials/B_002/frames/000010.jpg",
+      "bytes": 973,
+      "sha256": "ce370046d8ff70fcd0f531ed1e17b5f151bd127f5732de981a6b798d6a1b29e0"
+    },
+    {
+      "path": "trials/B_002/frames/000011.jpg",
+      "bytes": 985,
+      "sha256": "0c149322c64ac64a4f17ea04652dc1cfcff7f35364125d9318c35389f4edc12d"
+    },
+    {
+      "path": "trials/B_002/frames/000012.jpg",
+      "bytes": 958,
+      "sha256": "7be95fe9d9d5474bd091ce26c35e0e0626c627e9246b59e21f555fe523ecc6ee"
+    },
+    {
+      "path": "trials/B_002/frames/000013.jpg",
+      "bytes": 981,
+      "sha256": "7ad838a7434970e93aeb902a1c51bb3e0822904702493747a97fddd1f09d8b8e"
+    },
+    {
+      "path": "trials/B_002/frames/000014.jpg",
+      "bytes": 969,
+      "sha256": "710be8d0201df59ef8eb270fabfb16a9b54b09325f147c6f93a00f559506c331"
+    },
+    {
+      "path": "trials/B_002/frames/000015.jpg",
+      "bytes": 958,
+      "sha256": "94909ceabe8f522be9640489bfe702a62198b7a423ecabaa36d7ebd5734015e8"
+    },
+    {
+      "path": "trials/B_002/frames/000016.jpg",
+      "bytes": 876,
+      "sha256": "e5706b0d27dd426ebef2df8053fda79688e2e02e666e268ff52ba49fa24e88a3"
+    },
+    {
+      "path": "trials/B_002/frames/000017.jpg",
+      "bytes": 962,
+      "sha256": "10bfe7cf07de291a700a40c6ac81963dc1f05a0d771963018df98c6c8dcd73de"
+    },
+    {
+      "path": "trials/B_002/frames/000018.jpg",
+      "bytes": 967,
+      "sha256": "1f245030cc298b07612772bb6dc3d9fa1bb43ce239eee3378f0f3fe9d0ec922e"
+    },
+    {
+      "path": "trials/B_002/frames/000019.jpg",
+      "bytes": 982,
+      "sha256": "5a350f31161ebf83da5732548356671f0277f85be10b9734add42b107c171ee1"
+    },
+    {
+      "path": "trials/B_002/mock_camera_observations.jsonl",
+      "bytes": 9039,
+      "sha256": "f3ecbdf78ce6d3dcfbdee5a302f65a23e22cca7a4144d16e462e5108efbe5dcf"
+    },
+    {
+      "path": "trials/B_002/stimulus.json",
+      "bytes": 20179,
+      "sha256": "089254bc491d54b1e76e1b3e724fdc89b7301acfc3a1f175d289c2a68ecf54e7"
+    },
+    {
+      "path": "trials/B_002/stimulus.png",
+      "bytes": 82036,
+      "sha256": "87d021e75a3bc516da8a174ef445ac88fd1a176fe0e875acd3c6337424e87ba5"
+    },
+    {
+      "path": "trials/B_002/touch_events.jsonl",
+      "bytes": 268,
+      "sha256": "208681e4e59be3542b9df0fb3a7b402cc74a1983d17cb8655822fb4c42106f45"
+    },
+    {
+      "path": "trials/B_002/trial_meta.json",
+      "bytes": 9138,
+      "sha256": "5edb0201905871b8896bd89f5f9cd79e28df5278d5e61d3043a6590bc735fdb4"
+    },
+    {
+      "path": "trials/B_002/ui_states.jsonl",
+      "bytes": 5553,
+      "sha256": "72eff0d6e08c5977564e8d281f8311ee6d2225b2a754b0f7cfcb1dfa8c354d1d"
+    },
+    {
+      "path": "trials/B_003/camera_frames.jsonl",
+      "bytes": 6983,
+      "sha256": "e2dd4dd17e329b61045ef4514ebc684aa5fcf34998968221b522140cf7a662ea"
+    },
+    {
+      "path": "trials/B_003/feedback.json",
+      "bytes": 219,
+      "sha256": "1e54367e77dccb8394b7e376777cbdf83d1021214d24de39fb429a9c8d6da54f"
+    },
+    {
+      "path": "trials/B_003/frames/000000.jpg",
+      "bytes": 875,
+      "sha256": "34e94af120a3500b3039978d1678bcfb0aa886de1a8273920f7b040c3b372bb0"
+    },
+    {
+      "path": "trials/B_003/frames/000001.jpg",
+      "bytes": 960,
+      "sha256": "379533445ba597df5370df98b88cf3a2f74135618bf59ba27a36ed09967187fb"
+    },
+    {
+      "path": "trials/B_003/frames/000002.jpg",
+      "bytes": 966,
+      "sha256": "8851a2cc3f1efe5c7b1dcb90d3078b3a8d4ebc0dc49586446a089bb1b19be45c"
+    },
+    {
+      "path": "trials/B_003/frames/000003.jpg",
+      "bytes": 981,
+      "sha256": "3865249b5373ebaa83f45e02c819eb13bcc60537433aa5205a2de31b56748bcc"
+    },
+    {
+      "path": "trials/B_003/frames/000004.jpg",
+      "bytes": 956,
+      "sha256": "f964f2556afeed4472bca09e35599be7a45f455ca2bb1ba81628cd8311b9ecba"
+    },
+    {
+      "path": "trials/B_003/frames/000005.jpg",
+      "bytes": 985,
+      "sha256": "86111481ce223ef7e742df1037e8c8c97d6195733a137f8d786f4036992679e1"
+    },
+    {
+      "path": "trials/B_003/frames/000006.jpg",
+      "bytes": 970,
+      "sha256": "5a7cc2da4c87e7beebb0b36e5f4f0560912f863b48e48f7384ffde0615c9ef90"
+    },
+    {
+      "path": "trials/B_003/frames/000008.jpg",
+      "bytes": 880,
+      "sha256": "87f36a4b68ed1d6414e3297214a9c0e01c2003cd3d2bc565920f7f8ee7343952"
+    },
+    {
+      "path": "trials/B_003/frames/000009.jpg",
+      "bytes": 978,
+      "sha256": "d35dce666875d491d0e7fbe1431ead40a42c751e38d0b68351f48a56ce52738f"
+    },
+    {
+      "path": "trials/B_003/frames/000010.jpg",
+      "bytes": 973,
+      "sha256": "ce370046d8ff70fcd0f531ed1e17b5f151bd127f5732de981a6b798d6a1b29e0"
+    },
+    {
+      "path": "trials/B_003/frames/000011.jpg",
+      "bytes": 985,
+      "sha256": "0c149322c64ac64a4f17ea04652dc1cfcff7f35364125d9318c35389f4edc12d"
+    },
+    {
+      "path": "trials/B_003/frames/000012.jpg",
+      "bytes": 958,
+      "sha256": "7be95fe9d9d5474bd091ce26c35e0e0626c627e9246b59e21f555fe523ecc6ee"
+    },
+    {
+      "path": "trials/B_003/frames/000013.jpg",
+      "bytes": 981,
+      "sha256": "7ad838a7434970e93aeb902a1c51bb3e0822904702493747a97fddd1f09d8b8e"
+    },
+    {
+      "path": "trials/B_003/frames/000014.jpg",
+      "bytes": 969,
+      "sha256": "710be8d0201df59ef8eb270fabfb16a9b54b09325f147c6f93a00f559506c331"
+    },
+    {
+      "path": "trials/B_003/frames/000015.jpg",
+      "bytes": 958,
+      "sha256": "94909ceabe8f522be9640489bfe702a62198b7a423ecabaa36d7ebd5734015e8"
+    },
+    {
+      "path": "trials/B_003/frames/000016.jpg",
+      "bytes": 876,
+      "sha256": "e5706b0d27dd426ebef2df8053fda79688e2e02e666e268ff52ba49fa24e88a3"
+    },
+    {
+      "path": "trials/B_003/frames/000017.jpg",
+      "bytes": 962,
+      "sha256": "10bfe7cf07de291a700a40c6ac81963dc1f05a0d771963018df98c6c8dcd73de"
+    },
+    {
+      "path": "trials/B_003/frames/000018.jpg",
+      "bytes": 967,
+      "sha256": "1f245030cc298b07612772bb6dc3d9fa1bb43ce239eee3378f0f3fe9d0ec922e"
+    },
+    {
+      "path": "trials/B_003/frames/000019.jpg",
+      "bytes": 982,
+      "sha256": "5a350f31161ebf83da5732548356671f0277f85be10b9734add42b107c171ee1"
+    },
+    {
+      "path": "trials/B_003/mock_camera_observations.jsonl",
+      "bytes": 9032,
+      "sha256": "b4ac9dc0b0604af5508ce659db0b0082d8550d08080f9e983824ca74b950abe0"
+    },
+    {
+      "path": "trials/B_003/stimulus.json",
+      "bytes": 20126,
+      "sha256": "cd2a8c1287f9b1da151096acf96e3726fbb9e81589de4ad20f1159a280b046c3"
+    },
+    {
+      "path": "trials/B_003/stimulus.png",
+      "bytes": 81241,
+      "sha256": "d2f8f31b7415edcdb3285b40499cce604e0b7e910bd7bd6ef1d5539348be1663"
+    },
+    {
+      "path": "trials/B_003/touch_events.jsonl",
+      "bytes": 268,
+      "sha256": "9d79409259001e2d6d904d2937ac9257825c9f9f90f8381257c31b4c10287c6c"
+    },
+    {
+      "path": "trials/B_003/trial_meta.json",
+      "bytes": 9109,
+      "sha256": "18d20411e3d0e1f4bd0f8696ec69c78f9e10c35a74a940c3476d399323c5036b"
+    },
+    {
+      "path": "trials/B_003/ui_states.jsonl",
+      "bytes": 5528,
+      "sha256": "7af627794d61f7b18b3039e4af64ff6ea4c0d80c4f0b6d89d388acae29f5b4cd"
+    },
+    {
+      "path": "trials/B_004/camera_frames.jsonl",
+      "bytes": 6983,
+      "sha256": "01eaac679e88d9f56b34723a355ab839b26b787b0a176e006b849caac4470ca0"
+    },
+    {
+      "path": "trials/B_004/feedback.json",
+      "bytes": 223,
+      "sha256": "82adb8f9aa1b12b6f465d0b44e5efd91e01e2445b090f07c6e5dca3b5f6548f9"
+    },
+    {
+      "path": "trials/B_004/frames/000000.jpg",
+      "bytes": 875,
+      "sha256": "34e94af120a3500b3039978d1678bcfb0aa886de1a8273920f7b040c3b372bb0"
+    },
+    {
+      "path": "trials/B_004/frames/000001.jpg",
+      "bytes": 960,
+      "sha256": "379533445ba597df5370df98b88cf3a2f74135618bf59ba27a36ed09967187fb"
+    },
+    {
+      "path": "trials/B_004/frames/000002.jpg",
+      "bytes": 966,
+      "sha256": "8851a2cc3f1efe5c7b1dcb90d3078b3a8d4ebc0dc49586446a089bb1b19be45c"
+    },
+    {
+      "path": "trials/B_004/frames/000003.jpg",
+      "bytes": 981,
+      "sha256": "3865249b5373ebaa83f45e02c819eb13bcc60537433aa5205a2de31b56748bcc"
+    },
+    {
+      "path": "trials/B_004/frames/000004.jpg",
+      "bytes": 956,
+      "sha256": "f964f2556afeed4472bca09e35599be7a45f455ca2bb1ba81628cd8311b9ecba"
+    },
+    {
+      "path": "trials/B_004/frames/000005.jpg",
+      "bytes": 985,
+      "sha256": "86111481ce223ef7e742df1037e8c8c97d6195733a137f8d786f4036992679e1"
+    },
+    {
+      "path": "trials/B_004/frames/000006.jpg",
+      "bytes": 970,
+      "sha256": "5a7cc2da4c87e7beebb0b36e5f4f0560912f863b48e48f7384ffde0615c9ef90"
+    },
+    {
+      "path": "trials/B_004/frames/000008.jpg",
+      "bytes": 880,
+      "sha256": "87f36a4b68ed1d6414e3297214a9c0e01c2003cd3d2bc565920f7f8ee7343952"
+    },
+    {
+      "path": "trials/B_004/frames/000009.jpg",
+      "bytes": 978,
+      "sha256": "d35dce666875d491d0e7fbe1431ead40a42c751e38d0b68351f48a56ce52738f"
+    },
+    {
+      "path": "trials/B_004/frames/000010.jpg",
+      "bytes": 973,
+      "sha256": "ce370046d8ff70fcd0f531ed1e17b5f151bd127f5732de981a6b798d6a1b29e0"
+    },
+    {
+      "path": "trials/B_004/frames/000011.jpg",
+      "bytes": 985,
+      "sha256": "0c149322c64ac64a4f17ea04652dc1cfcff7f35364125d9318c35389f4edc12d"
+    },
+    {
+      "path": "trials/B_004/frames/000012.jpg",
+      "bytes": 958,
+      "sha256": "7be95fe9d9d5474bd091ce26c35e0e0626c627e9246b59e21f555fe523ecc6ee"
+    },
+    {
+      "path": "trials/B_004/frames/000013.jpg",
+      "bytes": 981,
+      "sha256": "7ad838a7434970e93aeb902a1c51bb3e0822904702493747a97fddd1f09d8b8e"
+    },
+    {
+      "path": "trials/B_004/frames/000014.jpg",
+      "bytes": 969,
+      "sha256": "710be8d0201df59ef8eb270fabfb16a9b54b09325f147c6f93a00f559506c331"
+    },
+    {
+      "path": "trials/B_004/frames/000015.jpg",
+      "bytes": 958,
+      "sha256": "94909ceabe8f522be9640489bfe702a62198b7a423ecabaa36d7ebd5734015e8"
+    },
+    {
+      "path": "trials/B_004/frames/000016.jpg",
+      "bytes": 876,
+      "sha256": "e5706b0d27dd426ebef2df8053fda79688e2e02e666e268ff52ba49fa24e88a3"
+    },
+    {
+      "path": "trials/B_004/frames/000017.jpg",
+      "bytes": 962,
+      "sha256": "10bfe7cf07de291a700a40c6ac81963dc1f05a0d771963018df98c6c8dcd73de"
+    },
+    {
+      "path": "trials/B_004/frames/000018.jpg",
+      "bytes": 967,
+      "sha256": "1f245030cc298b07612772bb6dc3d9fa1bb43ce239eee3378f0f3fe9d0ec922e"
+    },
+    {
+      "path": "trials/B_004/frames/000019.jpg",
+      "bytes": 982,
+      "sha256": "5a350f31161ebf83da5732548356671f0277f85be10b9734add42b107c171ee1"
+    },
+    {
+      "path": "trials/B_004/mock_camera_observations.jsonl",
+      "bytes": 9029,
+      "sha256": "b2c58f33bcb607042661088c74d32ba375f539eb708e6f05c30a00cd1d90a5e2"
+    },
+    {
+      "path": "trials/B_004/stimulus.json",
+      "bytes": 19997,
+      "sha256": "42bfe5da753e2e97bd956d2b38163b5855b9fe2647f943fe8bee3f9ba4d8f9bc"
+    },
+    {
+      "path": "trials/B_004/stimulus.png",
+      "bytes": 69709,
+      "sha256": "df16b0c9f2818131f793a4adf99f5e49f9bf82b734ba1e37be1116541038c562"
+    },
+    {
+      "path": "trials/B_004/touch_events.jsonl",
+      "bytes": 268,
+      "sha256": "cba1d5d0931a3305e4e2fdee293492d5ea01a485e2f551a5d3d978005341d31e"
+    },
+    {
+      "path": "trials/B_004/trial_meta.json",
+      "bytes": 9040,
+      "sha256": "d0e80b382d4c6498cf0df61ca30031eb25b0e83f0acd56d76e492844b498b886"
+    },
+    {
+      "path": "trials/B_004/ui_states.jsonl",
+      "bytes": 5462,
+      "sha256": "ec21680d78459207c77fea72c30c11be14ed0c53319a92bdbcc879a7fa89423f"
+    },
+    {
+      "path": "trials/B_005/camera_frames.jsonl",
+      "bytes": 6983,
+      "sha256": "0c863b181b9bc9d94b70b57a72266ebd583bca8f6817d6bedac103c2cb9addb3"
+    },
+    {
+      "path": "trials/B_005/feedback.json",
+      "bytes": 219,
+      "sha256": "2fb21c46760891ab2e3d1737b7cc241a59d59b08ed3738645253e3a67d164bb2"
+    },
+    {
+      "path": "trials/B_005/frames/000000.jpg",
+      "bytes": 875,
+      "sha256": "34e94af120a3500b3039978d1678bcfb0aa886de1a8273920f7b040c3b372bb0"
+    },
+    {
+      "path": "trials/B_005/frames/000001.jpg",
+      "bytes": 960,
+      "sha256": "379533445ba597df5370df98b88cf3a2f74135618bf59ba27a36ed09967187fb"
+    },
+    {
+      "path": "trials/B_005/frames/000002.jpg",
+      "bytes": 966,
+      "sha256": "8851a2cc3f1efe5c7b1dcb90d3078b3a8d4ebc0dc49586446a089bb1b19be45c"
+    },
+    {
+      "path": "trials/B_005/frames/000003.jpg",
+      "bytes": 981,
+      "sha256": "3865249b5373ebaa83f45e02c819eb13bcc60537433aa5205a2de31b56748bcc"
+    },
+    {
+      "path": "trials/B_005/frames/000004.jpg",
+      "bytes": 956,
+      "sha256": "f964f2556afeed4472bca09e35599be7a45f455ca2bb1ba81628cd8311b9ecba"
+    },
+    {
+      "path": "trials/B_005/frames/000005.jpg",
+      "bytes": 985,
+      "sha256": "86111481ce223ef7e742df1037e8c8c97d6195733a137f8d786f4036992679e1"
+    },
+    {
+      "path": "trials/B_005/frames/000006.jpg",
+      "bytes": 970,
+      "sha256": "5a7cc2da4c87e7beebb0b36e5f4f0560912f863b48e48f7384ffde0615c9ef90"
+    },
+    {
+      "path": "trials/B_005/frames/000008.jpg",
+      "bytes": 880,
+      "sha256": "87f36a4b68ed1d6414e3297214a9c0e01c2003cd3d2bc565920f7f8ee7343952"
+    },
+    {
+      "path": "trials/B_005/frames/000009.jpg",
+      "bytes": 978,
+      "sha256": "d35dce666875d491d0e7fbe1431ead40a42c751e38d0b68351f48a56ce52738f"
+    },
+    {
+      "path": "trials/B_005/frames/000010.jpg",
+      "bytes": 973,
+      "sha256": "ce370046d8ff70fcd0f531ed1e17b5f151bd127f5732de981a6b798d6a1b29e0"
+    },
+    {
+      "path": "trials/B_005/frames/000011.jpg",
+      "bytes": 985,
+      "sha256": "0c149322c64ac64a4f17ea04652dc1cfcff7f35364125d9318c35389f4edc12d"
+    },
+    {
+      "path": "trials/B_005/frames/000012.jpg",
+      "bytes": 958,
+      "sha256": "7be95fe9d9d5474bd091ce26c35e0e0626c627e9246b59e21f555fe523ecc6ee"
+    },
+    {
+      "path": "trials/B_005/frames/000013.jpg",
+      "bytes": 981,
+      "sha256": "7ad838a7434970e93aeb902a1c51bb3e0822904702493747a97fddd1f09d8b8e"
+    },
+    {
+      "path": "trials/B_005/frames/000014.jpg",
+      "bytes": 969,
+      "sha256": "710be8d0201df59ef8eb270fabfb16a9b54b09325f147c6f93a00f559506c331"
+    },
+    {
+      "path": "trials/B_005/frames/000015.jpg",
+      "bytes": 958,
+      "sha256": "94909ceabe8f522be9640489bfe702a62198b7a423ecabaa36d7ebd5734015e8"
+    },
+    {
+      "path": "trials/B_005/frames/000016.jpg",
+      "bytes": 876,
+      "sha256": "e5706b0d27dd426ebef2df8053fda79688e2e02e666e268ff52ba49fa24e88a3"
+    },
+    {
+      "path": "trials/B_005/frames/000017.jpg",
+      "bytes": 962,
+      "sha256": "10bfe7cf07de291a700a40c6ac81963dc1f05a0d771963018df98c6c8dcd73de"
+    },
+    {
+      "path": "trials/B_005/frames/000018.jpg",
+      "bytes": 967,
+      "sha256": "1f245030cc298b07612772bb6dc3d9fa1bb43ce239eee3378f0f3fe9d0ec922e"
+    },
+    {
+      "path": "trials/B_005/frames/000019.jpg",
+      "bytes": 982,
+      "sha256": "5a350f31161ebf83da5732548356671f0277f85be10b9734add42b107c171ee1"
+    },
+    {
+      "path": "trials/B_005/mock_camera_observations.jsonl",
+      "bytes": 9028,
+      "sha256": "9d2396d667deea24201327608f66230fc58215f822015e5f0861be85d15fe2b7"
+    },
+    {
+      "path": "trials/B_005/stimulus.json",
+      "bytes": 38951,
+      "sha256": "92e4cb9ea74ce046d96fb81c0982771077ee8d20775c5474598c9dd0b85fca19"
+    },
+    {
+      "path": "trials/B_005/stimulus.png",
+      "bytes": 138060,
+      "sha256": "6512f921042c9c5beca6b79305521e8086c78727132dec22c758b31d85427347"
+    },
+    {
+      "path": "trials/B_005/touch_events.jsonl",
+      "bytes": 292,
+      "sha256": "63b2f027352318a5a64520b32b972d99eca81fca4f9089bb0313fb4ec98c31a3"
+    },
+    {
+      "path": "trials/B_005/trial_meta.json",
+      "bytes": 16746,
+      "sha256": "e1d979a8de2c7a2adcc120893fbca5de6305c357866912de02a2f6c3b193713a"
+    },
+    {
+      "path": "trials/B_005/ui_states.jsonl",
+      "bytes": 10811,
+      "sha256": "add5fa77ad7534decbafb49aa47891efe7ef933f022b49948b5d974d7add5997"
+    },
+    {
+      "path": "trials/B_006/camera_frames.jsonl",
+      "bytes": 6983,
+      "sha256": "af48b48224630a139230ad6420f7e8a5fef1038369270bdf8008cde9e66ce012"
+    },
+    {
+      "path": "trials/B_006/feedback.json",
+      "bytes": 223,
+      "sha256": "eb6e993d03edf2d1716759d3611f6d3e7fc82e94e800f1de60d6f92cae607229"
+    },
+    {
+      "path": "trials/B_006/frames/000000.jpg",
+      "bytes": 875,
+      "sha256": "34e94af120a3500b3039978d1678bcfb0aa886de1a8273920f7b040c3b372bb0"
+    },
+    {
+      "path": "trials/B_006/frames/000001.jpg",
+      "bytes": 960,
+      "sha256": "379533445ba597df5370df98b88cf3a2f74135618bf59ba27a36ed09967187fb"
+    },
+    {
+      "path": "trials/B_006/frames/000002.jpg",
+      "bytes": 966,
+      "sha256": "8851a2cc3f1efe5c7b1dcb90d3078b3a8d4ebc0dc49586446a089bb1b19be45c"
+    },
+    {
+      "path": "trials/B_006/frames/000003.jpg",
+      "bytes": 981,
+      "sha256": "3865249b5373ebaa83f45e02c819eb13bcc60537433aa5205a2de31b56748bcc"
+    },
+    {
+      "path": "trials/B_006/frames/000004.jpg",
+      "bytes": 956,
+      "sha256": "f964f2556afeed4472bca09e35599be7a45f455ca2bb1ba81628cd8311b9ecba"
+    },
+    {
+      "path": "trials/B_006/frames/000005.jpg",
+      "bytes": 985,
+      "sha256": "86111481ce223ef7e742df1037e8c8c97d6195733a137f8d786f4036992679e1"
+    },
+    {
+      "path": "trials/B_006/frames/000006.jpg",
+      "bytes": 970,
+      "sha256": "5a7cc2da4c87e7beebb0b36e5f4f0560912f863b48e48f7384ffde0615c9ef90"
+    },
+    {
+      "path": "trials/B_006/frames/000008.jpg",
+      "bytes": 880,
+      "sha256": "87f36a4b68ed1d6414e3297214a9c0e01c2003cd3d2bc565920f7f8ee7343952"
+    },
+    {
+      "path": "trials/B_006/frames/000009.jpg",
+      "bytes": 978,
+      "sha256": "d35dce666875d491d0e7fbe1431ead40a42c751e38d0b68351f48a56ce52738f"
+    },
+    {
+      "path": "trials/B_006/frames/000010.jpg",
+      "bytes": 973,
+      "sha256": "ce370046d8ff70fcd0f531ed1e17b5f151bd127f5732de981a6b798d6a1b29e0"
+    },
+    {
+      "path": "trials/B_006/frames/000011.jpg",
+      "bytes": 985,
+      "sha256": "0c149322c64ac64a4f17ea04652dc1cfcff7f35364125d9318c35389f4edc12d"
+    },
+    {
+      "path": "trials/B_006/frames/000012.jpg",
+      "bytes": 958,
+      "sha256": "7be95fe9d9d5474bd091ce26c35e0e0626c627e9246b59e21f555fe523ecc6ee"
+    },
+    {
+      "path": "trials/B_006/frames/000013.jpg",
+      "bytes": 981,
+      "sha256": "7ad838a7434970e93aeb902a1c51bb3e0822904702493747a97fddd1f09d8b8e"
+    },
+    {
+      "path": "trials/B_006/frames/000014.jpg",
+      "bytes": 969,
+      "sha256": "710be8d0201df59ef8eb270fabfb16a9b54b09325f147c6f93a00f559506c331"
+    },
+    {
+      "path": "trials/B_006/frames/000015.jpg",
+      "bytes": 958,
+      "sha256": "94909ceabe8f522be9640489bfe702a62198b7a423ecabaa36d7ebd5734015e8"
+    },
+    {
+      "path": "trials/B_006/frames/000016.jpg",
+      "bytes": 876,
+      "sha256": "e5706b0d27dd426ebef2df8053fda79688e2e02e666e268ff52ba49fa24e88a3"
+    },
+    {
+      "path": "trials/B_006/frames/000017.jpg",
+      "bytes": 962,
+      "sha256": "10bfe7cf07de291a700a40c6ac81963dc1f05a0d771963018df98c6c8dcd73de"
+    },
+    {
+      "path": "trials/B_006/frames/000018.jpg",
+      "bytes": 967,
+      "sha256": "1f245030cc298b07612772bb6dc3d9fa1bb43ce239eee3378f0f3fe9d0ec922e"
+    },
+    {
+      "path": "trials/B_006/frames/000019.jpg",
+      "bytes": 982,
+      "sha256": "5a350f31161ebf83da5732548356671f0277f85be10b9734add42b107c171ee1"
+    },
+    {
+      "path": "trials/B_006/mock_camera_observations.jsonl",
+      "bytes": 9040,
+      "sha256": "5296247248e7c22a3a0411bc8fde39a7dcd8bcbf6ad47e9154fa427bde4dac35"
+    },
+    {
+      "path": "trials/B_006/stimulus.json",
+      "bytes": 18346,
+      "sha256": "e9926393196511c586a933658f3e0de5476e87000face5b833e65d4b1a59f814"
+    },
+    {
+      "path": "trials/B_006/stimulus.png",
+      "bytes": 58759,
+      "sha256": "6a88e189d3e590c566fa2c27839f615c37bb8e508b6ac3d453769a02ce489240"
+    },
+    {
+      "path": "trials/B_006/touch_events.jsonl",
+      "bytes": 294,
+      "sha256": "ccb1e7e4dbb6a497de3fbfdd3f67002aced2eefcab5888d835ff76b8d0540318"
+    },
+    {
+      "path": "trials/B_006/trial_meta.json",
+      "bytes": 8843,
+      "sha256": "79050558ebd0dab1afc4bf45b5255a03d7cbffc063fbe5118b6f1dad10780320"
+    },
+    {
+      "path": "trials/B_006/ui_states.jsonl",
+      "bytes": 5367,
+      "sha256": "f46834504b3fe57253ea55c85420d4e23ddb31274cf452e8bd4c8db3186139c9"
+    },
+    {
+      "path": "trials/B_007/camera_frames.jsonl",
+      "bytes": 6983,
+      "sha256": "225b359d406acb660d253157f5bc79b343cd426b43c455e6b17ecd55c21f3eb2"
+    },
+    {
+      "path": "trials/B_007/feedback.json",
+      "bytes": 219,
+      "sha256": "8b1e6166b8fc8ae7ee7d2dd6adcc0e641a4325cbd5eacbb68991db59dca3cc3a"
+    },
+    {
+      "path": "trials/B_007/frames/000000.jpg",
+      "bytes": 875,
+      "sha256": "34e94af120a3500b3039978d1678bcfb0aa886de1a8273920f7b040c3b372bb0"
+    },
+    {
+      "path": "trials/B_007/frames/000001.jpg",
+      "bytes": 960,
+      "sha256": "379533445ba597df5370df98b88cf3a2f74135618bf59ba27a36ed09967187fb"
+    },
+    {
+      "path": "trials/B_007/frames/000002.jpg",
+      "bytes": 966,
+      "sha256": "8851a2cc3f1efe5c7b1dcb90d3078b3a8d4ebc0dc49586446a089bb1b19be45c"
+    },
+    {
+      "path": "trials/B_007/frames/000003.jpg",
+      "bytes": 981,
+      "sha256": "3865249b5373ebaa83f45e02c819eb13bcc60537433aa5205a2de31b56748bcc"
+    },
+    {
+      "path": "trials/B_007/frames/000004.jpg",
+      "bytes": 956,
+      "sha256": "f964f2556afeed4472bca09e35599be7a45f455ca2bb1ba81628cd8311b9ecba"
+    },
+    {
+      "path": "trials/B_007/frames/000005.jpg",
+      "bytes": 985,
+      "sha256": "86111481ce223ef7e742df1037e8c8c97d6195733a137f8d786f4036992679e1"
+    },
+    {
+      "path": "trials/B_007/frames/000006.jpg",
+      "bytes": 970,
+      "sha256": "5a7cc2da4c87e7beebb0b36e5f4f0560912f863b48e48f7384ffde0615c9ef90"
+    },
+    {
+      "path": "trials/B_007/frames/000008.jpg",
+      "bytes": 880,
+      "sha256": "87f36a4b68ed1d6414e3297214a9c0e01c2003cd3d2bc565920f7f8ee7343952"
+    },
+    {
+      "path": "trials/B_007/frames/000009.jpg",
+      "bytes": 978,
+      "sha256": "d35dce666875d491d0e7fbe1431ead40a42c751e38d0b68351f48a56ce52738f"
+    },
+    {
+      "path": "trials/B_007/frames/000010.jpg",
+      "bytes": 973,
+      "sha256": "ce370046d8ff70fcd0f531ed1e17b5f151bd127f5732de981a6b798d6a1b29e0"
+    },
+    {
+      "path": "trials/B_007/frames/000011.jpg",
+      "bytes": 985,
+      "sha256": "0c149322c64ac64a4f17ea04652dc1cfcff7f35364125d9318c35389f4edc12d"
+    },
+    {
+      "path": "trials/B_007/frames/000012.jpg",
+      "bytes": 958,
+      "sha256": "7be95fe9d9d5474bd091ce26c35e0e0626c627e9246b59e21f555fe523ecc6ee"
+    },
+    {
+      "path": "trials/B_007/frames/000013.jpg",
+      "bytes": 981,
+      "sha256": "7ad838a7434970e93aeb902a1c51bb3e0822904702493747a97fddd1f09d8b8e"
+    },
+    {
+      "path": "trials/B_007/frames/000014.jpg",
+      "bytes": 969,
+      "sha256": "710be8d0201df59ef8eb270fabfb16a9b54b09325f147c6f93a00f559506c331"
+    },
+    {
+      "path": "trials/B_007/frames/000015.jpg",
+      "bytes": 958,
+      "sha256": "94909ceabe8f522be9640489bfe702a62198b7a423ecabaa36d7ebd5734015e8"
+    },
+    {
+      "path": "trials/B_007/frames/000016.jpg",
+      "bytes": 876,
+      "sha256": "e5706b0d27dd426ebef2df8053fda79688e2e02e666e268ff52ba49fa24e88a3"
+    },
+    {
+      "path": "trials/B_007/frames/000017.jpg",
+      "bytes": 962,
+      "sha256": "10bfe7cf07de291a700a40c6ac81963dc1f05a0d771963018df98c6c8dcd73de"
+    },
+    {
+      "path": "trials/B_007/frames/000018.jpg",
+      "bytes": 967,
+      "sha256": "1f245030cc298b07612772bb6dc3d9fa1bb43ce239eee3378f0f3fe9d0ec922e"
+    },
+    {
+      "path": "trials/B_007/frames/000019.jpg",
+      "bytes": 982,
+      "sha256": "5a350f31161ebf83da5732548356671f0277f85be10b9734add42b107c171ee1"
+    },
+    {
+      "path": "trials/B_007/mock_camera_observations.jsonl",
+      "bytes": 9031,
+      "sha256": "6a0e9d5b98dc1507189bbbf307be867d3c1aabc9d839795a442ee56fe1608308"
+    },
+    {
+      "path": "trials/B_007/stimulus.json",
+      "bytes": 18358,
+      "sha256": "418e149f4a6bd03275419cf87ab4c7c96d1444281e7332e235b099d4cbb346b9"
+    },
+    {
+      "path": "trials/B_007/stimulus.png",
+      "bytes": 61015,
+      "sha256": "fcda72d1f5f43a7ff6b0d03c3626836805f0c16064726ee8d5a3bcd9c347b28a"
+    },
+    {
+      "path": "trials/B_007/touch_events.jsonl",
+      "bytes": 294,
+      "sha256": "4737ac6a248304ccef5f8f35bb50a7a9e1bcf2d6d598de8911ea6d803470b47d"
+    },
+    {
+      "path": "trials/B_007/trial_meta.json",
+      "bytes": 8849,
+      "sha256": "b19f34fd00108a644ba11065911c3f5d4968dab9368439ba4763096d98c05217"
+    },
+    {
+      "path": "trials/B_007/ui_states.jsonl",
+      "bytes": 5373,
+      "sha256": "9a3146eae2dbb584d393a4fb1adfacfb8f748d48fb4f426d3198fedaae02d6fc"
+    },
+    {
+      "path": "trials/B_008/camera_frames.jsonl",
+      "bytes": 6983,
+      "sha256": "3786c17634989c0b014ef7f2d12eec17277222347572bb3da46c4000b491bda3"
+    },
+    {
+      "path": "trials/B_008/feedback.json",
+      "bytes": 223,
+      "sha256": "bdb94097b12590f5315e3fdc951878caf1044df9a8ef1be2a8d0f7083e1722d8"
+    },
+    {
+      "path": "trials/B_008/frames/000000.jpg",
+      "bytes": 875,
+      "sha256": "34e94af120a3500b3039978d1678bcfb0aa886de1a8273920f7b040c3b372bb0"
+    },
+    {
+      "path": "trials/B_008/frames/000001.jpg",
+      "bytes": 960,
+      "sha256": "379533445ba597df5370df98b88cf3a2f74135618bf59ba27a36ed09967187fb"
+    },
+    {
+      "path": "trials/B_008/frames/000002.jpg",
+      "bytes": 966,
+      "sha256": "8851a2cc3f1efe5c7b1dcb90d3078b3a8d4ebc0dc49586446a089bb1b19be45c"
+    },
+    {
+      "path": "trials/B_008/frames/000003.jpg",
+      "bytes": 981,
+      "sha256": "3865249b5373ebaa83f45e02c819eb13bcc60537433aa5205a2de31b56748bcc"
+    },
+    {
+      "path": "trials/B_008/frames/000004.jpg",
+      "bytes": 956,
+      "sha256": "f964f2556afeed4472bca09e35599be7a45f455ca2bb1ba81628cd8311b9ecba"
+    },
+    {
+      "path": "trials/B_008/frames/000005.jpg",
+      "bytes": 985,
+      "sha256": "86111481ce223ef7e742df1037e8c8c97d6195733a137f8d786f4036992679e1"
+    },
+    {
+      "path": "trials/B_008/frames/000006.jpg",
+      "bytes": 970,
+      "sha256": "5a7cc2da4c87e7beebb0b36e5f4f0560912f863b48e48f7384ffde0615c9ef90"
+    },
+    {
+      "path": "trials/B_008/frames/000008.jpg",
+      "bytes": 880,
+      "sha256": "87f36a4b68ed1d6414e3297214a9c0e01c2003cd3d2bc565920f7f8ee7343952"
+    },
+    {
+      "path": "trials/B_008/frames/000009.jpg",
+      "bytes": 978,
+      "sha256": "d35dce666875d491d0e7fbe1431ead40a42c751e38d0b68351f48a56ce52738f"
+    },
+    {
+      "path": "trials/B_008/frames/000010.jpg",
+      "bytes": 973,
+      "sha256": "ce370046d8ff70fcd0f531ed1e17b5f151bd127f5732de981a6b798d6a1b29e0"
+    },
+    {
+      "path": "trials/B_008/frames/000011.jpg",
+      "bytes": 985,
+      "sha256": "0c149322c64ac64a4f17ea04652dc1cfcff7f35364125d9318c35389f4edc12d"
+    },
+    {
+      "path": "trials/B_008/frames/000012.jpg",
+      "bytes": 958,
+      "sha256": "7be95fe9d9d5474bd091ce26c35e0e0626c627e9246b59e21f555fe523ecc6ee"
+    },
+    {
+      "path": "trials/B_008/frames/000013.jpg",
+      "bytes": 981,
+      "sha256": "7ad838a7434970e93aeb902a1c51bb3e0822904702493747a97fddd1f09d8b8e"
+    },
+    {
+      "path": "trials/B_008/frames/000014.jpg",
+      "bytes": 969,
+      "sha256": "710be8d0201df59ef8eb270fabfb16a9b54b09325f147c6f93a00f559506c331"
+    },
+    {
+      "path": "trials/B_008/frames/000015.jpg",
+      "bytes": 958,
+      "sha256": "94909ceabe8f522be9640489bfe702a62198b7a423ecabaa36d7ebd5734015e8"
+    },
+    {
+      "path": "trials/B_008/frames/000016.jpg",
+      "bytes": 876,
+      "sha256": "e5706b0d27dd426ebef2df8053fda79688e2e02e666e268ff52ba49fa24e88a3"
+    },
+    {
+      "path": "trials/B_008/frames/000017.jpg",
+      "bytes": 962,
+      "sha256": "10bfe7cf07de291a700a40c6ac81963dc1f05a0d771963018df98c6c8dcd73de"
+    },
+    {
+      "path": "trials/B_008/frames/000018.jpg",
+      "bytes": 967,
+      "sha256": "1f245030cc298b07612772bb6dc3d9fa1bb43ce239eee3378f0f3fe9d0ec922e"
+    },
+    {
+      "path": "trials/B_008/frames/000019.jpg",
+      "bytes": 982,
+      "sha256": "5a350f31161ebf83da5732548356671f0277f85be10b9734add42b107c171ee1"
+    },
+    {
+      "path": "trials/B_008/mock_camera_observations.jsonl",
+      "bytes": 9033,
+      "sha256": "11347faaebf60d7a17468aadfd06d324c91c64fafa1af82f3fc113db664de904"
+    },
+    {
+      "path": "trials/B_008/stimulus.json",
+      "bytes": 35225,
+      "sha256": "b70f43a3c1dd1eadc4b6ac1181392982f14d82ef56451c424062e5f4e10ea0ba"
+    },
+    {
+      "path": "trials/B_008/stimulus.png",
+      "bytes": 75721,
+      "sha256": "af06067ed3b931da1514a70576cf981a7e1636d82c6cfc5253f31e0d0e9bab19"
+    },
+    {
+      "path": "trials/B_008/touch_events.jsonl",
+      "bytes": 292,
+      "sha256": "07c1a878a78424cb5b7c826c97fe3d3d34f4c5e7478f6fce78878d20152a0f93"
+    },
+    {
+      "path": "trials/B_008/trial_meta.json",
+      "bytes": 16110,
+      "sha256": "e9dcdaaea693f4af4cd5880b4232e586c78160c7bff5816862a9640829ae8e58"
+    },
+    {
+      "path": "trials/B_008/ui_states.jsonl",
+      "bytes": 10418,
+      "sha256": "9ab35603d74a642c6b55e6309e2fa6af2b324a3aa960f5c9e30da12f029b9b2d"
+    },
+    {
+      "path": "trials/B_009/camera_frames.jsonl",
+      "bytes": 6983,
+      "sha256": "382080233d2d62fd0f3b4d43c9ce69032a46b846e297067c6a828ad7364c2f2a"
+    },
+    {
+      "path": "trials/B_009/feedback.json",
+      "bytes": 219,
+      "sha256": "5e0112be2b6a63758725fd799b4f27655f1c7a40fb6bedbeb910aedc062519cb"
+    },
+    {
+      "path": "trials/B_009/frames/000000.jpg",
+      "bytes": 875,
+      "sha256": "34e94af120a3500b3039978d1678bcfb0aa886de1a8273920f7b040c3b372bb0"
+    },
+    {
+      "path": "trials/B_009/frames/000001.jpg",
+      "bytes": 960,
+      "sha256": "379533445ba597df5370df98b88cf3a2f74135618bf59ba27a36ed09967187fb"
+    },
+    {
+      "path": "trials/B_009/frames/000002.jpg",
+      "bytes": 966,
+      "sha256": "8851a2cc3f1efe5c7b1dcb90d3078b3a8d4ebc0dc49586446a089bb1b19be45c"
+    },
+    {
+      "path": "trials/B_009/frames/000003.jpg",
+      "bytes": 981,
+      "sha256": "3865249b5373ebaa83f45e02c819eb13bcc60537433aa5205a2de31b56748bcc"
+    },
+    {
+      "path": "trials/B_009/frames/000004.jpg",
+      "bytes": 956,
+      "sha256": "f964f2556afeed4472bca09e35599be7a45f455ca2bb1ba81628cd8311b9ecba"
+    },
+    {
+      "path": "trials/B_009/frames/000005.jpg",
+      "bytes": 985,
+      "sha256": "86111481ce223ef7e742df1037e8c8c97d6195733a137f8d786f4036992679e1"
+    },
+    {
+      "path": "trials/B_009/frames/000006.jpg",
+      "bytes": 970,
+      "sha256": "5a7cc2da4c87e7beebb0b36e5f4f0560912f863b48e48f7384ffde0615c9ef90"
+    },
+    {
+      "path": "trials/B_009/frames/000008.jpg",
+      "bytes": 880,
+      "sha256": "87f36a4b68ed1d6414e3297214a9c0e01c2003cd3d2bc565920f7f8ee7343952"
+    },
+    {
+      "path": "trials/B_009/frames/000009.jpg",
+      "bytes": 978,
+      "sha256": "d35dce666875d491d0e7fbe1431ead40a42c751e38d0b68351f48a56ce52738f"
+    },
+    {
+      "path": "trials/B_009/frames/000010.jpg",
+      "bytes": 973,
+      "sha256": "ce370046d8ff70fcd0f531ed1e17b5f151bd127f5732de981a6b798d6a1b29e0"
+    },
+    {
+      "path": "trials/B_009/frames/000011.jpg",
+      "bytes": 985,
+      "sha256": "0c149322c64ac64a4f17ea04652dc1cfcff7f35364125d9318c35389f4edc12d"
+    },
+    {
+      "path": "trials/B_009/frames/000012.jpg",
+      "bytes": 958,
+      "sha256": "7be95fe9d9d5474bd091ce26c35e0e0626c627e9246b59e21f555fe523ecc6ee"
+    },
+    {
+      "path": "trials/B_009/frames/000013.jpg",
+      "bytes": 981,
+      "sha256": "7ad838a7434970e93aeb902a1c51bb3e0822904702493747a97fddd1f09d8b8e"
+    },
+    {
+      "path": "trials/B_009/frames/000014.jpg",
+      "bytes": 969,
+      "sha256": "710be8d0201df59ef8eb270fabfb16a9b54b09325f147c6f93a00f559506c331"
+    },
+    {
+      "path": "trials/B_009/frames/000015.jpg",
+      "bytes": 958,
+      "sha256": "94909ceabe8f522be9640489bfe702a62198b7a423ecabaa36d7ebd5734015e8"
+    },
+    {
+      "path": "trials/B_009/frames/000016.jpg",
+      "bytes": 876,
+      "sha256": "e5706b0d27dd426ebef2df8053fda79688e2e02e666e268ff52ba49fa24e88a3"
+    },
+    {
+      "path": "trials/B_009/frames/000017.jpg",
+      "bytes": 962,
+      "sha256": "10bfe7cf07de291a700a40c6ac81963dc1f05a0d771963018df98c6c8dcd73de"
+    },
+    {
+      "path": "trials/B_009/frames/000018.jpg",
+      "bytes": 967,
+      "sha256": "1f245030cc298b07612772bb6dc3d9fa1bb43ce239eee3378f0f3fe9d0ec922e"
+    },
+    {
+      "path": "trials/B_009/frames/000019.jpg",
+      "bytes": 982,
+      "sha256": "5a350f31161ebf83da5732548356671f0277f85be10b9734add42b107c171ee1"
+    },
+    {
+      "path": "trials/B_009/mock_camera_observations.jsonl",
+      "bytes": 9037,
+      "sha256": "0ec5e6ef7cd57dac80620b305fdd4b73f8eee1ee8d23013d155aff6106318b42"
+    },
+    {
+      "path": "trials/B_009/stimulus.json",
+      "bytes": 18152,
+      "sha256": "86b4aa60d451942b95b0f7a40866e61423cac2984566385898ba71f86ab969ae"
+    },
+    {
+      "path": "trials/B_009/stimulus.png",
+      "bytes": 57214,
+      "sha256": "7b9d091fa94f7486483fae52adc713a73cd563ec07a96265f88f26aa13428a02"
+    },
+    {
+      "path": "trials/B_009/touch_events.jsonl",
+      "bytes": 294,
+      "sha256": "c9b10100f77b930a1bc4cfaf4715c3671ab7ae8d86b1bcd7a5f58cceada2b437"
+    },
+    {
+      "path": "trials/B_009/trial_meta.json",
+      "bytes": 8739,
+      "sha256": "df32b8f0a45120059de12924878a31c6a455d08e8d648a9107921851b576f69c"
+    },
+    {
+      "path": "trials/B_009/ui_states.jsonl",
+      "bytes": 5270,
+      "sha256": "643ce903267d45cb3221cdc564aafa059a12251f5f94cfa7e099d6b68428de5b"
+    }
+  ]
+}

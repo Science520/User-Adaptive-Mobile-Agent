@@ -1,0 +1,772 @@
+{
+  "trial": {
+    "trial_id": "B_009",
+    "task": "visual_search",
+    "page_id": "qr",
+    "base_size_px": [
+      1080,
+      1920
+    ],
+    "instruction": "请找到并点击「预约记录」",
+    "target_element_id": "service_11",
+    "timeout_ms": 30000,
+    "correct_action_path": [
+      "service_11"
+    ],
+    "conditions": {
+      "factor_levels": {
+        "glyph": 1,
+        "button": 0,
+        "count": 0,
+        "eccentricity": 1,
+        "contrast": 1,
+        "semantic_similarity": 0,
+        "information_density": 0,
+        "target_side": 1
+      },
+      "domain": "qr",
+      "glyph_height_px": 28,
+      "button_size_px": [
+        220,
+        80
+      ],
+      "element_count": 12,
+      "target_eccentricity_normalized": 0.4251294794141842,
+      "contrast_ratio": 3.151745369485037,
+      "semantic_similarity": 0,
+      "information_density": 0,
+      "target_location_px": [
+        918.0,
+        1423.3333333333333
+      ]
+    },
+    "elements": [
+      {
+        "element_id": "service_00",
+        "text": "水费缴纳",
+        "text_lines": [
+          "水费缴纳"
+        ],
+        "bounding_box_px": [
+          52.0,
+          516.6666666666666,
+          272.0,
+          596.6666666666666
+        ],
+        "clickable_region_px": [
+          52.0,
+          516.6666666666666,
+          272.0,
+          596.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_01",
+        "text": "设备配网",
+        "text_lines": [
+          "设备配网"
+        ],
+        "bounding_box_px": [
+          304.0,
+          516.6666666666666,
+          524.0,
+          596.6666666666666
+        ],
+        "clickable_region_px": [
+          304.0,
+          516.6666666666666,
+          524.0,
+          596.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_02",
+        "text": "停车缴费",
+        "text_lines": [
+          "停车缴费"
+        ],
+        "bounding_box_px": [
+          556.0,
+          516.6666666666666,
+          776.0,
+          596.6666666666666
+        ],
+        "clickable_region_px": [
+          556.0,
+          516.6666666666666,
+          776.0,
+          596.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_03",
+        "text": "出行计划",
+        "text_lines": [
+          "出行计划"
+        ],
+        "bounding_box_px": [
+          808.0,
+          516.6666666666666,
+          1028.0,
+          596.6666666666666
+        ],
+        "clickable_region_px": [
+          808.0,
+          516.6666666666666,
+          1028.0,
+          596.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_04",
+        "text": "价格保护",
+        "text_lines": [
+          "价格保护"
+        ],
+        "bounding_box_px": [
+          52.0,
+          950.0,
+          272.0,
+          1030.0
+        ],
+        "clickable_region_px": [
+          52.0,
+          950.0,
+          272.0,
+          1030.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_05",
+        "text": "收货地址",
+        "text_lines": [
+          "收货地址"
+        ],
+        "bounding_box_px": [
+          304.0,
+          950.0,
+          524.0,
+          1030.0
+        ],
+        "clickable_region_px": [
+          304.0,
+          950.0,
+          524.0,
+          1030.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_06",
+        "text": "扫码点餐",
+        "text_lines": [
+          "扫码点餐"
+        ],
+        "bounding_box_px": [
+          556.0,
+          950.0,
+          776.0,
+          1030.0
+        ],
+        "clickable_region_px": [
+          556.0,
+          950.0,
+          776.0,
+          1030.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_07",
+        "text": "我的订单",
+        "text_lines": [
+          "我的订单"
+        ],
+        "bounding_box_px": [
+          808.0,
+          950.0,
+          1028.0,
+          1030.0
+        ],
+        "clickable_region_px": [
+          808.0,
+          950.0,
+          1028.0,
+          1030.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_08",
+        "text": "医保结算",
+        "text_lines": [
+          "医保结算"
+        ],
+        "bounding_box_px": [
+          52.0,
+          1383.3333333333333,
+          272.0,
+          1463.3333333333333
+        ],
+        "clickable_region_px": [
+          52.0,
+          1383.3333333333333,
+          272.0,
+          1463.3333333333333
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_09",
+        "text": "体检报告",
+        "text_lines": [
+          "体检报告"
+        ],
+        "bounding_box_px": [
+          304.0,
+          1383.3333333333333,
+          524.0,
+          1463.3333333333333
+        ],
+        "clickable_region_px": [
+          304.0,
+          1383.3333333333333,
+          524.0,
+          1463.3333333333333
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_10",
+        "text": "客服咨询",
+        "text_lines": [
+          "客服咨询"
+        ],
+        "bounding_box_px": [
+          556.0,
+          1383.3333333333333,
+          776.0,
+          1463.3333333333333
+        ],
+        "clickable_region_px": [
+          556.0,
+          1383.3333333333333,
+          776.0,
+          1463.3333333333333
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_11",
+        "text": "预约记录",
+        "text_lines": [
+          "预约记录"
+        ],
+        "bounding_box_px": [
+          808.0,
+          1383.3333333333333,
+          1028.0,
+          1463.3333333333333
+        ],
+        "clickable_region_px": [
+          808.0,
+          1383.3333333333333,
+          1028.0,
+          1463.3333333333333
+        ],
+        "font_glyph_height_px": 28,
+        "role": "target",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": "task_complete"
+      }
+    ],
+    "template_id": "5c856fb4aebdc7b104224e40a15837b3530b7eb8cae9d11970a73f653c8c5070"
+  },
+  "rendered_elements": [
+    {
+      "element_id": "service_00",
+      "text": "水费缴纳",
+      "text_lines": [
+        "水费缴纳"
+      ],
+      "bounding_box_px": [
+        52.0,
+        516.6666666666666,
+        272.0,
+        596.6666666666666
+      ],
+      "clickable_region_px": [
+        52.0,
+        516.6666666666666,
+        272.0,
+        596.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          102.0,
+          542.6666666666666,
+          222.0,
+          570.6666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_01",
+      "text": "设备配网",
+      "text_lines": [
+        "设备配网"
+      ],
+      "bounding_box_px": [
+        304.0,
+        516.6666666666666,
+        524.0,
+        596.6666666666666
+      ],
+      "clickable_region_px": [
+        304.0,
+        516.6666666666666,
+        524.0,
+        596.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          354.0,
+          542.6666666666666,
+          474.0,
+          570.6666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_02",
+      "text": "停车缴费",
+      "text_lines": [
+        "停车缴费"
+      ],
+      "bounding_box_px": [
+        556.0,
+        516.6666666666666,
+        776.0,
+        596.6666666666666
+      ],
+      "clickable_region_px": [
+        556.0,
+        516.6666666666666,
+        776.0,
+        596.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          606.0,
+          543.6666666666666,
+          726.0,
+          571.6666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_03",
+      "text": "出行计划",
+      "text_lines": [
+        "出行计划"
+      ],
+      "bounding_box_px": [
+        808.0,
+        516.6666666666666,
+        1028.0,
+        596.6666666666666
+      ],
+      "clickable_region_px": [
+        808.0,
+        516.6666666666666,
+        1028.0,
+        596.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          860.0,
+          542.6666666666666,
+          976.0,
+          570.6666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_04",
+      "text": "价格保护",
+      "text_lines": [
+        "价格保护"
+      ],
+      "bounding_box_px": [
+        52.0,
+        950.0,
+        272.0,
+        1030.0
+      ],
+      "clickable_region_px": [
+        52.0,
+        950.0,
+        272.0,
+        1030.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          104.0,
+          976.0,
+          220.0,
+          1004.0
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_05",
+      "text": "收货地址",
+      "text_lines": [
+        "收货地址"
+      ],
+      "bounding_box_px": [
+        304.0,
+        950.0,
+        524.0,
+        1030.0
+      ],
+      "clickable_region_px": [
+        304.0,
+        950.0,
+        524.0,
+        1030.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          354.0,
+          976.0,
+          474.0,
+          1004.0
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_06",
+      "text": "扫码点餐",
+      "text_lines": [
+        "扫码点餐"
+      ],
+      "bounding_box_px": [
+        556.0,
+        950.0,
+        776.0,
+        1030.0
+      ],
+      "clickable_region_px": [
+        556.0,
+        950.0,
+        776.0,
+        1030.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          608.0,
+          976.0,
+          724.0,
+          1004.0
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_07",
+      "text": "我的订单",
+      "text_lines": [
+        "我的订单"
+      ],
+      "bounding_box_px": [
+        808.0,
+        950.0,
+        1028.0,
+        1030.0
+      ],
+      "clickable_region_px": [
+        808.0,
+        950.0,
+        1028.0,
+        1030.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 27,
+      "ink_bounding_boxes_px": [
+        [
+          860.0,
+          976.0,
+          976.0,
+          1003.0
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_08",
+      "text": "医保结算",
+      "text_lines": [
+        "医保结算"
+      ],
+      "bounding_box_px": [
+        52.0,
+        1383.3333333333333,
+        272.0,
+        1463.3333333333333
+      ],
+      "clickable_region_px": [
+        52.0,
+        1383.3333333333333,
+        272.0,
+        1463.3333333333333
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          104.0,
+          1409.3333333333333,
+          220.0,
+          1437.3333333333333
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_09",
+      "text": "体检报告",
+      "text_lines": [
+        "体检报告"
+      ],
+      "bounding_box_px": [
+        304.0,
+        1383.3333333333333,
+        524.0,
+        1463.3333333333333
+      ],
+      "clickable_region_px": [
+        304.0,
+        1383.3333333333333,
+        524.0,
+        1463.3333333333333
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          354.0,
+          1409.3333333333333,
+          474.0,
+          1437.3333333333333
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_10",
+      "text": "客服咨询",
+      "text_lines": [
+        "客服咨询"
+      ],
+      "bounding_box_px": [
+        556.0,
+        1383.3333333333333,
+        776.0,
+        1463.3333333333333
+      ],
+      "clickable_region_px": [
+        556.0,
+        1383.3333333333333,
+        776.0,
+        1463.3333333333333
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          608.0,
+          1409.3333333333333,
+          724.0,
+          1437.3333333333333
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_11",
+      "text": "预约记录",
+      "text_lines": [
+        "预约记录"
+      ],
+      "bounding_box_px": [
+        808.0,
+        1383.3333333333333,
+        1028.0,
+        1463.3333333333333
+      ],
+      "clickable_region_px": [
+        808.0,
+        1383.3333333333333,
+        1028.0,
+        1463.3333333333333
+      ],
+      "font_glyph_height_px": 28,
+      "role": "target",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": "task_complete",
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          856.0,
+          1409.3333333333333,
+          980.0,
+          1437.3333333333333
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    }
+  ],
+  "reconstruction_kind": "reference_font_not_android_pixel_identical",
+  "image_sha256": "1384090d31c3d98396b170029e73c2b28eb0d8c9f8afbf0a1dc1933ad4db7ea5",
+  "render_timestamp_ns": null
+}

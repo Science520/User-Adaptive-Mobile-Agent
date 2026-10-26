@@ -1,0 +1,8 @@
+{
+  "completed_folds": 15,
+  "candidate_fits": 30,
+  "actual_fit_elapsed_seconds_sum_on_cpu": 3024.1703270419994,
+  "actual_fit_elapsed_minutes_sum_on_cpu": 50.40283878403332,
+  "scope": "sum of first-executed training+cached-head benchmark timers; excludes initial embedding/stem extraction and orchestration; not CPU core-seconds",
+  "partial_finetuning": "layer4+head; same architecture and nested validation as v1"
+}

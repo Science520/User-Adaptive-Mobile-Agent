@@ -1,0 +1,772 @@
+{
+  "trial": {
+    "trial_id": "B_009",
+    "task": "visual_search",
+    "page_id": "qr",
+    "base_size_px": [
+      1080,
+      1920
+    ],
+    "instruction": "请找到并点击「车票预订」",
+    "target_element_id": "service_08",
+    "timeout_ms": 30000,
+    "correct_action_path": [
+      "service_08"
+    ],
+    "conditions": {
+      "factor_levels": {
+        "glyph": 1,
+        "button": 0,
+        "count": 0,
+        "eccentricity": 1,
+        "contrast": 1,
+        "semantic_similarity": 0,
+        "information_density": 0,
+        "target_side": 0
+      },
+      "domain": "qr",
+      "glyph_height_px": 28,
+      "button_size_px": [
+        220,
+        80
+      ],
+      "element_count": 12,
+      "target_eccentricity_normalized": 0.4251294794141842,
+      "contrast_ratio": 3.151745369485037,
+      "semantic_similarity": 0,
+      "information_density": 0,
+      "target_location_px": [
+        162.0,
+        1423.3333333333333
+      ]
+    },
+    "elements": [
+      {
+        "element_id": "service_00",
+        "text": "住址管理",
+        "text_lines": [
+          "住址管理"
+        ],
+        "bounding_box_px": [
+          52.0,
+          516.6666666666666,
+          272.0,
+          596.6666666666666
+        ],
+        "clickable_region_px": [
+          52.0,
+          516.6666666666666,
+          272.0,
+          596.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_01",
+        "text": "共享单车",
+        "text_lines": [
+          "共享单车"
+        ],
+        "bounding_box_px": [
+          304.0,
+          516.6666666666666,
+          524.0,
+          596.6666666666666
+        ],
+        "clickable_region_px": [
+          304.0,
+          516.6666666666666,
+          524.0,
+          596.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_02",
+        "text": "水费缴纳",
+        "text_lines": [
+          "水费缴纳"
+        ],
+        "bounding_box_px": [
+          556.0,
+          516.6666666666666,
+          776.0,
+          596.6666666666666
+        ],
+        "clickable_region_px": [
+          556.0,
+          516.6666666666666,
+          776.0,
+          596.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_03",
+        "text": "发票管理",
+        "text_lines": [
+          "发票管理"
+        ],
+        "bounding_box_px": [
+          808.0,
+          516.6666666666666,
+          1028.0,
+          596.6666666666666
+        ],
+        "clickable_region_px": [
+          808.0,
+          516.6666666666666,
+          1028.0,
+          596.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_04",
+        "text": "宽带续费",
+        "text_lines": [
+          "宽带续费"
+        ],
+        "bounding_box_px": [
+          52.0,
+          950.0,
+          272.0,
+          1030.0
+        ],
+        "clickable_region_px": [
+          52.0,
+          950.0,
+          272.0,
+          1030.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_05",
+        "text": "服务签到",
+        "text_lines": [
+          "服务签到"
+        ],
+        "bounding_box_px": [
+          304.0,
+          950.0,
+          524.0,
+          1030.0
+        ],
+        "clickable_region_px": [
+          304.0,
+          950.0,
+          524.0,
+          1030.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_06",
+        "text": "电子票券",
+        "text_lines": [
+          "电子票券"
+        ],
+        "bounding_box_px": [
+          556.0,
+          950.0,
+          776.0,
+          1030.0
+        ],
+        "clickable_region_px": [
+          556.0,
+          950.0,
+          776.0,
+          1030.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_07",
+        "text": "火车时刻",
+        "text_lines": [
+          "火车时刻"
+        ],
+        "bounding_box_px": [
+          808.0,
+          950.0,
+          1028.0,
+          1030.0
+        ],
+        "clickable_region_px": [
+          808.0,
+          950.0,
+          1028.0,
+          1030.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_08",
+        "text": "车票预订",
+        "text_lines": [
+          "车票预订"
+        ],
+        "bounding_box_px": [
+          52.0,
+          1383.3333333333333,
+          272.0,
+          1463.3333333333333
+        ],
+        "clickable_region_px": [
+          52.0,
+          1383.3333333333333,
+          272.0,
+          1463.3333333333333
+        ],
+        "font_glyph_height_px": 28,
+        "role": "target",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": "task_complete"
+      },
+      {
+        "element_id": "service_09",
+        "text": "预约核销",
+        "text_lines": [
+          "预约核销"
+        ],
+        "bounding_box_px": [
+          304.0,
+          1383.3333333333333,
+          524.0,
+          1463.3333333333333
+        ],
+        "clickable_region_px": [
+          304.0,
+          1383.3333333333333,
+          524.0,
+          1463.3333333333333
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_10",
+        "text": "电费缴纳",
+        "text_lines": [
+          "电费缴纳"
+        ],
+        "bounding_box_px": [
+          556.0,
+          1383.3333333333333,
+          776.0,
+          1463.3333333333333
+        ],
+        "clickable_region_px": [
+          556.0,
+          1383.3333333333333,
+          776.0,
+          1463.3333333333333
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_11",
+        "text": "商品收藏",
+        "text_lines": [
+          "商品收藏"
+        ],
+        "bounding_box_px": [
+          808.0,
+          1383.3333333333333,
+          1028.0,
+          1463.3333333333333
+        ],
+        "clickable_region_px": [
+          808.0,
+          1383.3333333333333,
+          1028.0,
+          1463.3333333333333
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      }
+    ],
+    "template_id": "6d368e62f32eb455f82dc31b8596de15f79a9cc78edcd3644a76d834a8806f81"
+  },
+  "rendered_elements": [
+    {
+      "element_id": "service_00",
+      "text": "住址管理",
+      "text_lines": [
+        "住址管理"
+      ],
+      "bounding_box_px": [
+        52.0,
+        516.6666666666666,
+        272.0,
+        596.6666666666666
+      ],
+      "clickable_region_px": [
+        52.0,
+        516.6666666666666,
+        272.0,
+        596.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          102.0,
+          542.6666666666666,
+          222.0,
+          570.6666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_01",
+      "text": "共享单车",
+      "text_lines": [
+        "共享单车"
+      ],
+      "bounding_box_px": [
+        304.0,
+        516.6666666666666,
+        524.0,
+        596.6666666666666
+      ],
+      "clickable_region_px": [
+        304.0,
+        516.6666666666666,
+        524.0,
+        596.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          356.0,
+          542.6666666666666,
+          472.0,
+          570.6666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_02",
+      "text": "水费缴纳",
+      "text_lines": [
+        "水费缴纳"
+      ],
+      "bounding_box_px": [
+        556.0,
+        516.6666666666666,
+        776.0,
+        596.6666666666666
+      ],
+      "clickable_region_px": [
+        556.0,
+        516.6666666666666,
+        776.0,
+        596.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          606.0,
+          542.6666666666666,
+          726.0,
+          570.6666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_03",
+      "text": "发票管理",
+      "text_lines": [
+        "发票管理"
+      ],
+      "bounding_box_px": [
+        808.0,
+        516.6666666666666,
+        1028.0,
+        596.6666666666666
+      ],
+      "clickable_region_px": [
+        808.0,
+        516.6666666666666,
+        1028.0,
+        596.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          858.0,
+          542.6666666666666,
+          978.0,
+          570.6666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_04",
+      "text": "宽带续费",
+      "text_lines": [
+        "宽带续费"
+      ],
+      "bounding_box_px": [
+        52.0,
+        950.0,
+        272.0,
+        1030.0
+      ],
+      "clickable_region_px": [
+        52.0,
+        950.0,
+        272.0,
+        1030.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          104.0,
+          976.0,
+          220.0,
+          1004.0
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_05",
+      "text": "服务签到",
+      "text_lines": [
+        "服务签到"
+      ],
+      "bounding_box_px": [
+        304.0,
+        950.0,
+        524.0,
+        1030.0
+      ],
+      "clickable_region_px": [
+        304.0,
+        950.0,
+        524.0,
+        1030.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          354.0,
+          976.0,
+          474.0,
+          1004.0
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_06",
+      "text": "电子票券",
+      "text_lines": [
+        "电子票券"
+      ],
+      "bounding_box_px": [
+        556.0,
+        950.0,
+        776.0,
+        1030.0
+      ],
+      "clickable_region_px": [
+        556.0,
+        950.0,
+        776.0,
+        1030.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          606.0,
+          976.0,
+          726.0,
+          1004.0
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_07",
+      "text": "火车时刻",
+      "text_lines": [
+        "火车时刻"
+      ],
+      "bounding_box_px": [
+        808.0,
+        950.0,
+        1028.0,
+        1030.0
+      ],
+      "clickable_region_px": [
+        808.0,
+        950.0,
+        1028.0,
+        1030.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 27,
+      "ink_bounding_boxes_px": [
+        [
+          860.0,
+          976.0,
+          976.0,
+          1003.0
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_08",
+      "text": "车票预订",
+      "text_lines": [
+        "车票预订"
+      ],
+      "bounding_box_px": [
+        52.0,
+        1383.3333333333333,
+        272.0,
+        1463.3333333333333
+      ],
+      "clickable_region_px": [
+        52.0,
+        1383.3333333333333,
+        272.0,
+        1463.3333333333333
+      ],
+      "font_glyph_height_px": 28,
+      "role": "target",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": "task_complete",
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          102.0,
+          1410.3333333333333,
+          222.0,
+          1438.3333333333333
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_09",
+      "text": "预约核销",
+      "text_lines": [
+        "预约核销"
+      ],
+      "bounding_box_px": [
+        304.0,
+        1383.3333333333333,
+        524.0,
+        1463.3333333333333
+      ],
+      "clickable_region_px": [
+        304.0,
+        1383.3333333333333,
+        524.0,
+        1463.3333333333333
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          354.0,
+          1409.3333333333333,
+          474.0,
+          1437.3333333333333
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_10",
+      "text": "电费缴纳",
+      "text_lines": [
+        "电费缴纳"
+      ],
+      "bounding_box_px": [
+        556.0,
+        1383.3333333333333,
+        776.0,
+        1463.3333333333333
+      ],
+      "clickable_region_px": [
+        556.0,
+        1383.3333333333333,
+        776.0,
+        1463.3333333333333
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          606.0,
+          1409.3333333333333,
+          726.0,
+          1437.3333333333333
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_11",
+      "text": "商品收藏",
+      "text_lines": [
+        "商品收藏"
+      ],
+      "bounding_box_px": [
+        808.0,
+        1383.3333333333333,
+        1028.0,
+        1463.3333333333333
+      ],
+      "clickable_region_px": [
+        808.0,
+        1383.3333333333333,
+        1028.0,
+        1463.3333333333333
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 145,
+      "visual_contrast": 3.151745369485037,
+      "page_id": "qr",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          860.0,
+          1409.3333333333333,
+          976.0,
+          1437.3333333333333
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    }
+  ],
+  "reconstruction_kind": "reference_font_not_android_pixel_identical",
+  "image_sha256": "7b9d091fa94f7486483fae52adc713a73cd563ec07a96265f88f26aa13428a02",
+  "render_timestamp_ns": null
+}

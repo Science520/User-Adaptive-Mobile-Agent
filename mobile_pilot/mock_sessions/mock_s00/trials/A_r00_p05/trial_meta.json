@@ -1,0 +1,70 @@
+{
+  "trial_id": "A_r00_p05",
+  "participant_id": "mock_person",
+  "session_id": "mock_s00",
+  "task": "fixation",
+  "template_id": "af5243387a47ca89096bd41a181c2efa68765943b32da447b725da533e25315a",
+  "onset_ns": 100000000000,
+  "offset_ns": 104000000000,
+  "status": "completed",
+  "stimulus": {
+    "trial_id": "A_r00_p05",
+    "task": "fixation",
+    "page_id": "fixation",
+    "base_size_px": [
+      1080,
+      1920
+    ],
+    "instruction": "请自然注视圆点",
+    "target_element_id": "fixation",
+    "target_position_px": [
+      108.0,
+      595.2
+    ],
+    "fixation_duration_ms": 1500,
+    "timeout_ms": 1500,
+    "correct_action_path": [],
+    "conditions": {
+      "grid": [
+        5,
+        5
+      ],
+      "repeat": 0,
+      "label_kind": "instructed_target_not_eye_tracker_truth"
+    },
+    "elements": [
+      {
+        "element_id": "fixation",
+        "text": "●",
+        "text_lines": [
+          "●"
+        ],
+        "bounding_box_px": [
+          96.0,
+          583.2,
+          120.0,
+          607.2
+        ],
+        "clickable_region_px": [
+          84.0,
+          571.2,
+          132.0,
+          619.2
+        ],
+        "font_glyph_height_px": 24,
+        "role": "target",
+        "foreground_gray": 0,
+        "visual_contrast": 21.0,
+        "page_id": "fixation",
+        "navigation_transition": null
+      }
+    ],
+    "template_id": "af5243387a47ca89096bd41a181c2efa68765943b32da447b725da533e25315a"
+  },
+  "outcome": {
+    "success": true,
+    "completion_time_ms": 4000,
+    "misclicks": 0,
+    "help_requests": 0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "successful_commands": [
+    ".venv/bin/python -m usercamera mpii-integrate-expansion",
+    ".venv/bin/python -m usercamera mpii-eval-expanded --run-neural --max-epochs 12",
+    ".venv/bin/python -m usercamera pilot-build-stimuli",
+    ".venv/bin/python -m usercamera pilot-verify-session mobile_pilot/mock_sessions/mock_s00 --allow-mock",
+    ".venv/bin/python -m usercamera pilot-extract-features mobile_pilot/mock_sessions --backend mock --allow-mock",
+    ".venv/bin/python -m usercamera pilot-evaluate --allow-mock",
+    ".venv/bin/python -m usercamera pilot-build-stimuli --session mobile_pilot/mock_sessions/mock_s00 --allow-mock --output reports/pilot/replay_export",
+    ".venv/bin/python -m usercamera pilot-report",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 .venv/bin/python -m pytest -q"
+  ],
+  "failed_command": {
+    "command": "./gradlew --offline testDebugUnitTest assembleDebug",
+    "exit_code": 1,
+    "reason": "No Java Runtime; Android SDK also absent"
+  },
+  "data_downloads": 0,
+  "mediapipe_runtime_smoke": "single existing MPII image, CPU inference with required local graphics context; not phone accuracy"
+}

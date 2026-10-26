@@ -15,6 +15,12 @@ DEFAULT_CONFIG = Path(__file__).resolve().parents[1] / "configs/synthetic.json"
 
 
 def run_mpii_command(args):
+    if args.command == "mpii-integrate-expansion":
+        from .mpii_expansion import integrate_expansion
+        return integrate_expansion(args.data,args.expansion,args.output)
+    if args.command == "mpii-eval-expanded":
+        from .mpii_expansion import evaluate_expanded
+        return evaluate_expanded(args.data,args.output,args.run_neural,args.max_epochs)
     if args.command == "mpii-audit-outliers":
         from .mpii_outlier_audit import audit_outliers
         return audit_outliers(args.data, args.output)
@@ -89,6 +95,28 @@ def run_mpii_command(args):
         return {"report": path, "data_downloads": 0, "successful_models": list(models["models"]), "visualizations": figures}
 
 
+def run_temporal_command(args):
+    if args.command == "pilot-build-stimuli":
+        from .pilot_stimuli import build_stimuli,export_recorded_ui
+        if args.session:return export_recorded_ui(args.session,args.output,args.allow_mock)
+        return build_stimuli(args.output,args.seed,args.repetitions,args.previews,args.mock_output)
+    if args.command == "pilot-verify-session":
+        from .pilot_session import verify_session
+        return verify_session(args.path,args.output,args.allow_mock,args.allow_estimated_clock)
+    if args.command == "pilot-extract-features":
+        from .pilot_features import extract_features
+        path=Path(args.path)
+        paths=[path] if path.is_file() or (path/'session.json').exists() else sorted(p.parent for p in path.rglob('session.json'))
+        if not paths:raise ValueError('No sessions found')
+        return [extract_features(p,args.output,args.backend,args.model,args.detector_model,args.allow_mock,args.allow_estimated_clock) for p in paths]
+    if args.command == "pilot-evaluate":
+        from .pilot_temporal import evaluate_temporal
+        return evaluate_temporal(args.features,args.output,args.allow_mock,tuple(args.algorithms.split(',')))
+    if args.command == "pilot-report":
+        from .pilot_report import generate_pilot_report
+        return generate_pilot_report(args.output,args.expansion_output)
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description="User-camera public-data validation (no GUI agent deployment)")
     parser.add_argument("--version", action="version", version=__version__)
@@ -148,6 +176,31 @@ def main(argv=None):
             p.add_argument("--strong-output", default="reports/mpii_next/strong")
             p.add_argument("--audit-output", default="reports/mpii_audit")
             p.add_argument("--cleaning-output", default="reports/mpii_next/cleaning")
+    for name in ("mpii-integrate-expansion","mpii-eval-expanded"):
+        p=sub.add_parser(name,help="Isolated MPII720 view and fixed-original-test scale comparison")
+        p.add_argument('--data',default='data');p.add_argument('--output',default='reports/mpii_expansion')
+        if name=='mpii-integrate-expansion':p.add_argument('--expansion',default='data/expansions/mpii_v1')
+        else:
+            p.add_argument('--run-neural',action='store_true',help='Run estimated CPU workload explicitly; default lightweight Ridge only')
+            p.add_argument('--max-epochs',type=int,default=12)
+    for name in ('pilot-build-stimuli','pilot-verify-session','pilot-extract-features','pilot-evaluate','pilot-report'):
+        p=sub.add_parser(name,help='Temporal mobile pilot; mock evidence is never real H2/H3')
+        p.add_argument('--output',default='mobile_pilot/stimuli' if name=='pilot-build-stimuli' else 'reports/pilot')
+        if name=='pilot-build-stimuli':
+            p.add_argument('--seed',type=int,default=42);p.add_argument('--repetitions',type=int,default=2)
+            p.add_argument('--previews',type=int,default=6);p.add_argument('--mock-output')
+            p.add_argument('--session',help='Export exact recorded app PNG+measured metadata instead of generating new tasks')
+            p.add_argument('--allow-mock',action='store_true')
+        if name in ('pilot-verify-session','pilot-extract-features'):
+            p.add_argument('path');p.add_argument('--allow-mock',action='store_true');p.add_argument('--allow-estimated-clock',action='store_true')
+        if name=='pilot-extract-features':
+            p.add_argument('--backend',choices=['mediapipe','mock'],default='mediapipe')
+            p.add_argument('--model',default='data/models/face_landmarker.task')
+            p.add_argument('--detector-model',default=None,help='Optional separate FaceDetector .tflite for actual confidence scores')
+        if name=='pilot-evaluate':
+            p.add_argument('--features',default='reports/pilot/features');p.add_argument('--allow-mock',action='store_true')
+            p.add_argument('--algorithms',default='logistic,hist_gradient_boosting,gru')
+        if name=='pilot-report':p.add_argument('--expansion-output',default='reports/mpii_expansion')
     p = sub.add_parser("pilot", help="Validate/score future synchronized feature windows")
     p.add_argument("path")
     p.add_argument("--validate-only", action="store_true")
@@ -155,7 +208,9 @@ def main(argv=None):
     p.add_argument("--output", default="reports")
     args = parser.parse_args(argv)
     try:
-        if args.command.startswith("mpii-"):
+        if args.command.startswith("pilot-"):
+            result = run_temporal_command(args)
+        elif args.command.startswith("mpii-"):
             result = run_mpii_command(args)
         elif args.command == "download":
             if args.screens <= 0 or args.per_subject <= 0:

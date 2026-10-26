@@ -1,0 +1,9 @@
+{
+  "previous_312_train_cpu_seconds": 1563.828771163,
+  "expanded_624_train_cpu_seconds_estimate": 3127.657542326,
+  "estimate_scope": "15 folds, same two lr/wd candidates, up to12 epochs; scale linearly by training size; early stopping/host load vary",
+  "cached_720_stem_float32_mib": 33.75,
+  "rough_process_ram_mib": 600,
+  "training_enabled": true,
+  "max_epochs": 12
+}

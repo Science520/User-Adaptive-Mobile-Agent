@@ -1,0 +1,557 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/usercamera/temporal-pilot-v1.schema.json",
+  "$defs": {
+    "element": {
+      "type": "object",
+      "required": [
+        "element_id",
+        "text",
+        "bounding_box_px",
+        "clickable_region_px",
+        "font_glyph_height_px",
+        "role",
+        "visual_contrast",
+        "page_id",
+        "navigation_transition",
+        "render_timestamp_ns"
+      ],
+      "properties": {
+        "element_id": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "bounding_box_px": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "clickable_region_px": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "font_glyph_height_px": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "actual_glyph_height_px": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "role": {
+          "enum": [
+            "target",
+            "distractor"
+          ]
+        },
+        "visual_contrast": {
+          "type": "number",
+          "minimum": 1
+        },
+        "page_id": {
+          "type": "string"
+        },
+        "navigation_transition": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "render_timestamp_ns": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "session": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "participant_id",
+        "session_id",
+        "evidence_tier",
+        "clock",
+        "trial_ids",
+        "device",
+        "camera",
+        "status"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "temporal-pilot-v1"
+        },
+        "participant_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "session_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_tier": {
+          "enum": [
+            "mock",
+            "real_device_recording"
+          ]
+        },
+        "clock": {
+          "const": "elapsed_realtime_ns"
+        },
+        "trial_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "device": {
+          "type": "object"
+        },
+        "camera": {
+          "type": "object"
+        },
+        "status": {
+          "enum": [
+            "running",
+            "paused",
+            "stopped",
+            "interrupted"
+          ]
+        },
+        "created_ns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "stopped_ns": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "trial_meta": {
+      "type": "object",
+      "required": [
+        "participant_id",
+        "session_id",
+        "trial_id",
+        "task",
+        "template_id",
+        "onset_ns",
+        "offset_ns",
+        "status",
+        "stimulus",
+        "outcome"
+      ],
+      "properties": {
+        "participant_id": {
+          "type": "string"
+        },
+        "session_id": {
+          "type": "string"
+        },
+        "trial_id": {
+          "type": "string"
+        },
+        "task": {
+          "enum": [
+            "fixation",
+            "visual_search"
+          ]
+        },
+        "template_id": {
+          "type": "string"
+        },
+        "onset_ns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "offset_ns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "status": {
+          "type": "string"
+        },
+        "stimulus": {
+          "type": "object"
+        },
+        "outcome": {
+          "type": "object"
+        }
+      }
+    },
+    "camera_frame": {
+      "type": "object",
+      "required": [
+        "frame_id",
+        "sensor_timestamp_ns",
+        "arrival_elapsed_ns",
+        "mapped_timestamp_ns",
+        "clock_source",
+        "status",
+        "width",
+        "height",
+        "rotation_degrees"
+      ],
+      "properties": {
+        "frame_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sensor_timestamp_ns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "arrival_elapsed_ns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mapped_timestamp_ns": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "clock_source": {
+          "enum": [
+            "REALTIME",
+            "UNKNOWN"
+          ]
+        },
+        "status": {
+          "enum": [
+            "recorded",
+            "sampled_out",
+            "pre_onset",
+            "write_error"
+          ]
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rotation_degrees": {
+          "enum": [
+            0,
+            90,
+            180,
+            270
+          ]
+        },
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "stored_elapsed_ns": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "recorded"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "path",
+              "sha256"
+            ]
+          }
+        }
+      ]
+    },
+    "ui_state": {
+      "type": "object",
+      "required": [
+        "timestamp_ns",
+        "timestamp_kind",
+        "view_size_px",
+        "view_origin_screen_px",
+        "page_id",
+        "elements",
+        "target_element_id",
+        "screenshot_path"
+      ],
+      "properties": {
+        "timestamp_ns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "timestamp_kind": {
+          "type": "string"
+        },
+        "view_size_px": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "view_origin_screen_px": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "page_id": {
+          "type": "string"
+        },
+        "elements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/element"
+          },
+          "minItems": 1
+        },
+        "target_element_id": {
+          "type": "string"
+        },
+        "screenshot_path": {
+          "type": "string"
+        }
+      }
+    },
+    "touch_event": {
+      "type": "object",
+      "required": [
+        "timestamp_ns",
+        "action"
+      ],
+      "properties": {
+        "timestamp_ns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "action": {
+          "enum": [
+            "down",
+            "up",
+            "cancel",
+            "help_request"
+          ]
+        },
+        "x_px": {
+          "type": "number"
+        },
+        "y_px": {
+          "type": "number"
+        },
+        "element_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "correct_target_hit": {
+          "type": "boolean"
+        },
+        "raw_uptime_ms": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "event_clock_offset_ns": {
+          "type": "integer"
+        },
+        "mapping_uncertainty_ns": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "feedback": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "provided",
+            "missing",
+            "not_applicable"
+          ]
+        },
+        "timestamp_ns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "label_source": {
+          "enum": [
+            "self_report",
+            "mock_self_report_fixture"
+          ]
+        },
+        "difficulty_rating": {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "difficulty_type": {
+          "enum": [
+            "visual",
+            "motor",
+            "navigation",
+            "semantic",
+            "none"
+          ]
+        },
+        "wants_help": {
+          "type": "boolean"
+        },
+        "preferred_assistance": {
+          "enum": [
+            "zoom",
+            "highlight",
+            "explain",
+            "none"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "provided"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "timestamp_ns",
+              "label_source",
+              "difficulty_rating",
+              "difficulty_type",
+              "wants_help",
+              "preferred_assistance"
+            ]
+          }
+        }
+      ]
+    },
+    "feature_window": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "id",
+        "participant_id",
+        "session_id",
+        "trial_id",
+        "mode",
+        "template_id",
+        "evidence_tier",
+        "input_start_ns",
+        "input_end_ns",
+        "label_time_ns",
+        "label_resolution",
+        "screen",
+        "actions",
+        "user",
+        "sequence",
+        "difficulty_label_source"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "pilot-window-v2"
+        },
+        "id": {
+          "type": "string"
+        },
+        "participant_id": {
+          "type": "string"
+        },
+        "session_id": {
+          "type": "string"
+        },
+        "trial_id": {
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "trial",
+            "prefix_1s",
+            "prefix_2s",
+            "prefix_3s"
+          ]
+        },
+        "template_id": {
+          "type": "string"
+        },
+        "evidence_tier": {
+          "enum": [
+            "mock",
+            "real_device_recording"
+          ]
+        },
+        "input_start_ns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "input_end_ns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "label_time_ns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "label_resolution": {
+          "const": "trial_only"
+        },
+        "screen": {
+          "type": "object"
+        },
+        "actions": {
+          "type": "object"
+        },
+        "user": {
+          "type": "object"
+        },
+        "sequence": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "minItems": 6,
+          "maxItems": 6
+        },
+        "difficulty_label_source": {
+          "enum": [
+            "self_report",
+            "mock_self_report_fixture"
+          ]
+        }
+      }
+    }
+  }
+}

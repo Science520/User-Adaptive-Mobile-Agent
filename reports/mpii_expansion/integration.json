@@ -1,0 +1,44 @@
+{
+  "view": "data/views/mpii_v2_720",
+  "n_original": 360,
+  "n_expansion": 360,
+  "n_total": 720,
+  "original_file_hashes_verified": 465,
+  "new_file_hashes_and_decode_verified": 360,
+  "expansion_membership": {
+    "Original": 360,
+    "On-screen": 357,
+    "Day-filtered": 344
+  },
+  "combined_membership": {
+    "Original": 720,
+    "On-screen": 717,
+    "Day-filtered": 694
+  },
+  "outside_expansion_ids": [
+    "Data/p07/day12/0226.jpg",
+    "Data/p07/day19/0168.jpg",
+    "Data/p07/day47/0799.jpg"
+  ],
+  "bad_day_expansion_ids": [
+    "Data/p02/day21/0234.jpg",
+    "Data/p02/day21/0658.jpg",
+    "Data/p07/day11/0074.jpg",
+    "Data/p07/day12/0226.jpg",
+    "Data/p07/day19/0022.jpg",
+    "Data/p07/day19/0168.jpg",
+    "Data/p07/day19/0343.jpg",
+    "Data/p07/day19/0486.jpg",
+    "Data/p07/day38/0062.jpg",
+    "Data/p07/day47/0425.jpg",
+    "Data/p07/day47/0799.jpg",
+    "Data/p07/day55/0008.jpg",
+    "Data/p07/day56/0010.jpg",
+    "Data/p10/day05/0177.jpg",
+    "Data/p10/day05/0270.jpg",
+    "Data/p10/day05/0275.jpg"
+  ],
+  "view_manifest_sha256": "7d577c98f7cbdbf6d50608b5ef2e888b0b3ef54bb9c4f6b662db378dc1d032b0",
+  "dataset_downloads": 0,
+  "temporal": false
+}

@@ -1,0 +1,27 @@
+{
+  "single_static_image_only": true,
+  "image_id": "Data/p00/day02/0017.jpg",
+  "features": {
+    "face_present": true,
+    "face_detection_confidence": 0.9559445977210999,
+    "eye_landmark_visibility": null,
+    "eye_in_frame_fraction_proxy": 1.0,
+    "gaze_region": null,
+    "gaze_confidence": null,
+    "gaze_unavailable_reason": "no independently validated screen-gaze mapping",
+    "frame_quality_laplacian": 68.9772211106316,
+    "feature_source": "mediapipe_face_landmarker",
+    "distance_kind": "relative_face_scale_proxy_not_absolute_mm",
+    "visibility_note": "FaceLandmarker does not expose reliable per-eye visibility; in-frame fraction is a separate proxy",
+    "confidence_note": "FaceLandmarker thresholds are not returned detection scores; score null unless separate FaceDetector supplied",
+    "face_scale": 0.20469880104064941,
+    "head_x": 0.5143280029296875,
+    "head_y": 0.6987977027893066,
+    "yaw_deg": -2.9875223317812956,
+    "pitch_deg": -5.50523483733758,
+    "roll_deg": 2.265314170106505,
+    "pose_convention": "MediaPipe canonical-face transform; extrinsic yxz, degrees; not motion-capture truth"
+  },
+  "runtime": "explicit CPU delegate; macOS graphics-context access needed during MediaPipe initialization",
+  "note": "Backend smoke only; no phone accuracy, no static-photo temporal claims."
+}

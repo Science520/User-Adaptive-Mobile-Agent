@@ -1,0 +1,373 @@
+{
+  "trial_id": "B_004",
+  "participant_id": "mock_person",
+  "session_id": "mock_s02",
+  "task": "visual_search",
+  "template_id": "d5643011fc882efc72c8bb9bef507f0c586f65979a4fb1043f43d83fbfa7ec3d",
+  "onset_ns": 350000000000,
+  "offset_ns": 354000000000,
+  "status": "completed",
+  "stimulus": {
+    "trial_id": "B_004",
+    "task": "visual_search",
+    "page_id": "qr",
+    "base_size_px": [
+      1080,
+      1920
+    ],
+    "instruction": "请找到并点击「商品收藏」",
+    "target_element_id": "service_05",
+    "timeout_ms": 30000,
+    "correct_action_path": [
+      "service_05"
+    ],
+    "conditions": {
+      "factor_levels": {
+        "glyph": 0,
+        "button": 1,
+        "count": 0,
+        "eccentricity": 0,
+        "contrast": 1,
+        "semantic_similarity": 0,
+        "information_density": 1,
+        "target_side": 0
+      },
+      "domain": "qr",
+      "glyph_height_px": 22,
+      "button_size_px": [
+        244,
+        128
+      ],
+      "element_count": 12,
+      "target_eccentricity_normalized": 0.12573136735163232,
+      "contrast_ratio": 3.151745369485037,
+      "semantic_similarity": 0,
+      "information_density": 1,
+      "target_location_px": [
+        414.0,
+        870.0
+      ]
+    },
+    "elements": [
+      {
+        "element_id": "service_00",
+        "text": "评价管理",
+        "text_lines": [
+          "评价管理",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          40.0,
+          452.66666666666663,
+          284.0,
+          580.6666666666666
+        ],
+        "clickable_region_px": [
+          40.0,
+          452.66666666666663,
+          284.0,
+          580.6666666666666
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_01",
+        "text": "交通卡充值",
+        "text_lines": [
+          "交通卡充值",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          292.0,
+          452.66666666666663,
+          536.0,
+          580.6666666666666
+        ],
+        "clickable_region_px": [
+          292.0,
+          452.66666666666663,
+          536.0,
+          580.6666666666666
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_02",
+        "text": "地铁线路",
+        "text_lines": [
+          "地铁线路",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          544.0,
+          452.66666666666663,
+          788.0,
+          580.6666666666666
+        ],
+        "clickable_region_px": [
+          544.0,
+          452.66666666666663,
+          788.0,
+          580.6666666666666
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_03",
+        "text": "检查预约",
+        "text_lines": [
+          "检查预约",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          796.0,
+          452.66666666666663,
+          1040.0,
+          580.6666666666666
+        ],
+        "clickable_region_px": [
+          796.0,
+          452.66666666666663,
+          1040.0,
+          580.6666666666666
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_04",
+        "text": "常购清单",
+        "text_lines": [
+          "常购清单",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          40.0,
+          806.0,
+          284.0,
+          934.0
+        ],
+        "clickable_region_px": [
+          40.0,
+          806.0,
+          284.0,
+          934.0
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_05",
+        "text": "商品收藏",
+        "text_lines": [
+          "商品收藏",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          292.0,
+          806.0,
+          536.0,
+          934.0
+        ],
+        "clickable_region_px": [
+          292.0,
+          806.0,
+          536.0,
+          934.0
+        ],
+        "font_glyph_height_px": 22,
+        "role": "target",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": "task_complete"
+      },
+      {
+        "element_id": "service_06",
+        "text": "车票预订",
+        "text_lines": [
+          "车票预订",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          544.0,
+          806.0,
+          788.0,
+          934.0
+        ],
+        "clickable_region_px": [
+          544.0,
+          806.0,
+          788.0,
+          934.0
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_07",
+        "text": "联系客服",
+        "text_lines": [
+          "联系客服",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          796.0,
+          806.0,
+          1040.0,
+          934.0
+        ],
+        "clickable_region_px": [
+          796.0,
+          806.0,
+          1040.0,
+          934.0
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_08",
+        "text": "收款码",
+        "text_lines": [
+          "收款码",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          40.0,
+          1159.3333333333335,
+          284.0,
+          1287.3333333333335
+        ],
+        "clickable_region_px": [
+          40.0,
+          1159.3333333333335,
+          284.0,
+          1287.3333333333335
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_09",
+        "text": "会员中心",
+        "text_lines": [
+          "会员中心",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          292.0,
+          1159.3333333333335,
+          536.0,
+          1287.3333333333335
+        ],
+        "clickable_region_px": [
+          292.0,
+          1159.3333333333335,
+          536.0,
+          1287.3333333333335
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_10",
+        "text": "通勤路线",
+        "text_lines": [
+          "通勤路线",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          544.0,
+          1159.3333333333335,
+          788.0,
+          1287.3333333333335
+        ],
+        "clickable_region_px": [
+          544.0,
+          1159.3333333333335,
+          788.0,
+          1287.3333333333335
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_11",
+        "text": "预约记录",
+        "text_lines": [
+          "预约记录",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          796.0,
+          1159.3333333333335,
+          1040.0,
+          1287.3333333333335
+        ],
+        "clickable_region_px": [
+          796.0,
+          1159.3333333333335,
+          1040.0,
+          1287.3333333333335
+        ],
+        "font_glyph_height_px": 22,
+        "role": "distractor",
+        "foreground_gray": 145,
+        "visual_contrast": 3.151745369485037,
+        "page_id": "qr",
+        "navigation_transition": null
+      }
+    ],
+    "template_id": "d5643011fc882efc72c8bb9bef507f0c586f65979a4fb1043f43d83fbfa7ec3d"
+  },
+  "outcome": {
+    "success": true,
+    "completion_time_ms": 4000,
+    "misclicks": 0,
+    "help_requests": 0
+  }
+}

@@ -1,0 +1,868 @@
+{
+  "trial": {
+    "trial_id": "B_003",
+    "task": "visual_search",
+    "page_id": "shopping",
+    "base_size_px": [
+      1080,
+      1920
+    ],
+    "instruction": "请找到并点击「待付款」",
+    "target_element_id": "service_06",
+    "timeout_ms": 30000,
+    "correct_action_path": [
+      "service_06"
+    ],
+    "conditions": {
+      "factor_levels": {
+        "glyph": 1,
+        "button": 0,
+        "count": 0,
+        "eccentricity": 0,
+        "contrast": 0,
+        "semantic_similarity": 1,
+        "information_density": 1,
+        "target_side": 1
+      },
+      "domain": "shopping",
+      "glyph_height_px": 28,
+      "button_size_px": [
+        220,
+        80
+      ],
+      "element_count": 12,
+      "target_eccentricity_normalized": 0.12573136735163232,
+      "contrast_ratio": 15.716827493476563,
+      "semantic_similarity": 1,
+      "information_density": 1,
+      "target_location_px": [
+        666.0,
+        870.0
+      ]
+    },
+    "elements": [
+      {
+        "element_id": "service_00",
+        "text": "待发货",
+        "text_lines": [
+          "待发货",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          52.0,
+          476.66666666666663,
+          272.0,
+          556.6666666666666
+        ],
+        "clickable_region_px": [
+          52.0,
+          476.66666666666663,
+          272.0,
+          556.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "shopping",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_01",
+        "text": "我的订单",
+        "text_lines": [
+          "我的订单",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          304.0,
+          476.66666666666663,
+          524.0,
+          556.6666666666666
+        ],
+        "clickable_region_px": [
+          304.0,
+          476.66666666666663,
+          524.0,
+          556.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "shopping",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_02",
+        "text": "评价管理",
+        "text_lines": [
+          "评价管理",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          556.0,
+          476.66666666666663,
+          776.0,
+          556.6666666666666
+        ],
+        "clickable_region_px": [
+          556.0,
+          476.66666666666663,
+          776.0,
+          556.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "shopping",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_03",
+        "text": "浏览记录",
+        "text_lines": [
+          "浏览记录",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          808.0,
+          476.66666666666663,
+          1028.0,
+          556.6666666666666
+        ],
+        "clickable_region_px": [
+          808.0,
+          476.66666666666663,
+          1028.0,
+          556.6666666666666
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "shopping",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_04",
+        "text": "退款售后",
+        "text_lines": [
+          "退款售后",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          52.0,
+          830.0,
+          272.0,
+          910.0
+        ],
+        "clickable_region_px": [
+          52.0,
+          830.0,
+          272.0,
+          910.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "shopping",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_05",
+        "text": "商品分类",
+        "text_lines": [
+          "商品分类",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          304.0,
+          830.0,
+          524.0,
+          910.0
+        ],
+        "clickable_region_px": [
+          304.0,
+          830.0,
+          524.0,
+          910.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "shopping",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_06",
+        "text": "待付款",
+        "text_lines": [
+          "待付款",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          556.0,
+          830.0,
+          776.0,
+          910.0
+        ],
+        "clickable_region_px": [
+          556.0,
+          830.0,
+          776.0,
+          910.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "target",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "shopping",
+        "navigation_transition": "task_complete"
+      },
+      {
+        "element_id": "service_07",
+        "text": "退货进度",
+        "text_lines": [
+          "退货进度",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          808.0,
+          830.0,
+          1028.0,
+          910.0
+        ],
+        "clickable_region_px": [
+          808.0,
+          830.0,
+          1028.0,
+          910.0
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "shopping",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_08",
+        "text": "常购清单",
+        "text_lines": [
+          "常购清单",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          52.0,
+          1183.3333333333335,
+          272.0,
+          1263.3333333333335
+        ],
+        "clickable_region_px": [
+          52.0,
+          1183.3333333333335,
+          272.0,
+          1263.3333333333335
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "shopping",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_09",
+        "text": "价格保护",
+        "text_lines": [
+          "价格保护",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          304.0,
+          1183.3333333333335,
+          524.0,
+          1263.3333333333335
+        ],
+        "clickable_region_px": [
+          304.0,
+          1183.3333333333335,
+          524.0,
+          1263.3333333333335
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "shopping",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_10",
+        "text": "购物清单",
+        "text_lines": [
+          "购物清单",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          556.0,
+          1183.3333333333335,
+          776.0,
+          1263.3333333333335
+        ],
+        "clickable_region_px": [
+          556.0,
+          1183.3333333333335,
+          776.0,
+          1263.3333333333335
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "shopping",
+        "navigation_transition": null
+      },
+      {
+        "element_id": "service_11",
+        "text": "会员中心",
+        "text_lines": [
+          "会员中心",
+          "便民服务"
+        ],
+        "bounding_box_px": [
+          808.0,
+          1183.3333333333335,
+          1028.0,
+          1263.3333333333335
+        ],
+        "clickable_region_px": [
+          808.0,
+          1183.3333333333335,
+          1028.0,
+          1263.3333333333335
+        ],
+        "font_glyph_height_px": 28,
+        "role": "distractor",
+        "foreground_gray": 35,
+        "visual_contrast": 15.716827493476563,
+        "page_id": "shopping",
+        "navigation_transition": null
+      }
+    ],
+    "template_id": "2910b1b36b57c746f0ac322cdeefe5cb8453da21800069abe03ba4efb492970c"
+  },
+  "rendered_elements": [
+    {
+      "element_id": "service_00",
+      "text": "待发货",
+      "text_lines": [
+        "待发货",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        52.0,
+        476.66666666666663,
+        272.0,
+        556.6666666666666
+      ],
+      "clickable_region_px": [
+        52.0,
+        476.66666666666663,
+        272.0,
+        556.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "shopping",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 27,
+      "ink_bounding_boxes_px": [
+        [
+          118.0,
+          486.16666666666663,
+          205.0,
+          513.1666666666666
+        ],
+        [
+          104.0,
+          519.1666666666666,
+          220.0,
+          547.1666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_01",
+      "text": "我的订单",
+      "text_lines": [
+        "我的订单",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        304.0,
+        476.66666666666663,
+        524.0,
+        556.6666666666666
+      ],
+      "clickable_region_px": [
+        304.0,
+        476.66666666666663,
+        524.0,
+        556.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "shopping",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 27,
+      "ink_bounding_boxes_px": [
+        [
+          356.0,
+          486.16666666666663,
+          472.0,
+          513.1666666666666
+        ],
+        [
+          356.0,
+          519.1666666666666,
+          472.0,
+          547.1666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_02",
+      "text": "评价管理",
+      "text_lines": [
+        "评价管理",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        556.0,
+        476.66666666666663,
+        776.0,
+        556.6666666666666
+      ],
+      "clickable_region_px": [
+        556.0,
+        476.66666666666663,
+        776.0,
+        556.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "shopping",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          606.0,
+          487.16666666666663,
+          726.0,
+          515.1666666666666
+        ],
+        [
+          606.0,
+          519.1666666666666,
+          726.0,
+          548.1666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_03",
+      "text": "浏览记录",
+      "text_lines": [
+        "浏览记录",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        808.0,
+        476.66666666666663,
+        1028.0,
+        556.6666666666666
+      ],
+      "clickable_region_px": [
+        808.0,
+        476.66666666666663,
+        1028.0,
+        556.6666666666666
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "shopping",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          858.0,
+          486.16666666666663,
+          978.0,
+          514.1666666666666
+        ],
+        [
+          858.0,
+          519.1666666666666,
+          978.0,
+          548.1666666666666
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_04",
+      "text": "退款售后",
+      "text_lines": [
+        "退款售后",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        52.0,
+        830.0,
+        272.0,
+        910.0
+      ],
+      "clickable_region_px": [
+        52.0,
+        830.0,
+        272.0,
+        910.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "shopping",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 29,
+      "ink_bounding_boxes_px": [
+        [
+          102.0,
+          839.5,
+          222.0,
+          868.5
+        ],
+        [
+          102.0,
+          872.5,
+          222.0,
+          901.5
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_05",
+      "text": "商品分类",
+      "text_lines": [
+        "商品分类",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        304.0,
+        830.0,
+        524.0,
+        910.0
+      ],
+      "clickable_region_px": [
+        304.0,
+        830.0,
+        524.0,
+        910.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "shopping",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          352.0,
+          839.5,
+          476.0,
+          867.5
+        ],
+        [
+          352.0,
+          871.5,
+          476.0,
+          901.5
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_06",
+      "text": "待付款",
+      "text_lines": [
+        "待付款",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        556.0,
+        830.0,
+        776.0,
+        910.0
+      ],
+      "clickable_region_px": [
+        556.0,
+        830.0,
+        776.0,
+        910.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "target",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "shopping",
+      "navigation_transition": "task_complete",
+      "actual_glyph_height_px": 27,
+      "ink_bounding_boxes_px": [
+        [
+          622.0,
+          839.5,
+          709.0,
+          866.5
+        ],
+        [
+          608.0,
+          872.5,
+          724.0,
+          900.5
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_07",
+      "text": "退货进度",
+      "text_lines": [
+        "退货进度",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        808.0,
+        830.0,
+        1028.0,
+        910.0
+      ],
+      "clickable_region_px": [
+        808.0,
+        830.0,
+        1028.0,
+        910.0
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "shopping",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          858.0,
+          839.5,
+          978.0,
+          867.5
+        ],
+        [
+          858.0,
+          872.5,
+          978.0,
+          901.5
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_08",
+      "text": "常购清单",
+      "text_lines": [
+        "常购清单",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        52.0,
+        1183.3333333333335,
+        272.0,
+        1263.3333333333335
+      ],
+      "clickable_region_px": [
+        52.0,
+        1183.3333333333335,
+        272.0,
+        1263.3333333333335
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "shopping",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          104.0,
+          1192.8333333333335,
+          220.0,
+          1220.8333333333335
+        ],
+        [
+          104.0,
+          1225.8333333333335,
+          220.0,
+          1253.8333333333335
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_09",
+      "text": "价格保护",
+      "text_lines": [
+        "价格保护",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        304.0,
+        1183.3333333333335,
+        524.0,
+        1263.3333333333335
+      ],
+      "clickable_region_px": [
+        304.0,
+        1183.3333333333335,
+        524.0,
+        1263.3333333333335
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "shopping",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          356.0,
+          1192.8333333333335,
+          472.0,
+          1220.8333333333335
+        ],
+        [
+          356.0,
+          1225.8333333333335,
+          472.0,
+          1253.8333333333335
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_10",
+      "text": "购物清单",
+      "text_lines": [
+        "购物清单",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        556.0,
+        1183.3333333333335,
+        776.0,
+        1263.3333333333335
+      ],
+      "clickable_region_px": [
+        556.0,
+        1183.3333333333335,
+        776.0,
+        1263.3333333333335
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "shopping",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          608.0,
+          1192.8333333333335,
+          724.0,
+          1220.8333333333335
+        ],
+        [
+          608.0,
+          1225.8333333333335,
+          724.0,
+          1253.8333333333335
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    },
+    {
+      "element_id": "service_11",
+      "text": "会员中心",
+      "text_lines": [
+        "会员中心",
+        "便民服务"
+      ],
+      "bounding_box_px": [
+        808.0,
+        1183.3333333333335,
+        1028.0,
+        1263.3333333333335
+      ],
+      "clickable_region_px": [
+        808.0,
+        1183.3333333333335,
+        1028.0,
+        1263.3333333333335
+      ],
+      "font_glyph_height_px": 28,
+      "role": "distractor",
+      "foreground_gray": 35,
+      "visual_contrast": 15.716827493476563,
+      "page_id": "shopping",
+      "navigation_transition": null,
+      "actual_glyph_height_px": 28,
+      "ink_bounding_boxes_px": [
+        [
+          856.0,
+          1192.8333333333335,
+          980.0,
+          1220.8333333333335
+        ],
+        [
+          856.0,
+          1224.8333333333335,
+          980.0,
+          1254.8333333333335
+        ]
+      ],
+      "font_path": "/System/Library/Fonts/STHeiti Medium.ttc"
+    }
+  ],
+  "reconstruction_kind": "reference_font_not_android_pixel_identical",
+  "image_sha256": "d2f8f31b7415edcdb3285b40499cce604e0b7e910bd7bd6ef1d5539348be1663",
+  "render_timestamp_ns": null
+}
