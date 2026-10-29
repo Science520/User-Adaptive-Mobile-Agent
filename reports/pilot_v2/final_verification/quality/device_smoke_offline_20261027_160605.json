@@ -1,0 +1,253 @@
+{
+  "schema_version": "temporal-pilot-v2",
+  "session_id": "device_smoke_offline_20261027_160605",
+  "participant_id": "device_smoke_offline",
+  "evidence_tier": "device_automated_smoke",
+  "manifest_files_checked": 53,
+  "videos": [
+    {
+      "type": "file_summary",
+      "timestamp_ns": 808216663841581,
+      "path": "front_camera.mp4",
+      "sha256": "806a55ea935918c0998f85104ff08c0884e04b993d27a4b966352c6436176a20",
+      "bytes": 35255123,
+      "frame_count": 693,
+      "first_pts_us": 0,
+      "last_pts_us": 25695344,
+      "effective_fps": 26.930949046644404,
+      "gap_count_over_75ms": 0,
+      "maximum_pts_gap_us": 47133,
+      "exact_dropped_frames": null,
+      "width": 720,
+      "height": 1280,
+      "rotation_degrees": 0,
+      "mime": "video/avc",
+      "encoder_format": "{track-id=1, level=512, mime=video/avc, frame-count=693, profile=65536, language=```, color-standard=1, display-width=720, csd-1=java.nio.HeapByteBuffer[pos=0 lim=8 cap=8], color-transfer=3, durationUs=25732388, display-height=1280, width=720, color-range=2, max-input-size=172213, frame-rate=27, height=1280, csd-0=java.nio.HeapByteBuffer[pos=0 lim=21 cap=21]}",
+      "mirrored": false,
+      "display_size_px": [
+        720,
+        1280
+      ],
+      "decoded_frames": 693,
+      "decoded_duration_s": 25.695344,
+      "decoded_fps": 26.930949046644404,
+      "estimated_elapsed_start_ns": 808190175388460,
+      "estimated_elapsed_end_ns": 808215870732460,
+      "mapping_anchors": [
+        {
+          "type": "start",
+          "timestamp_ns": 808190175388460,
+          "path": "front_camera.mp4",
+          "recording_request_ns": 808190105934814,
+          "recorded_duration_ns": 0,
+          "bytes": 0,
+          "mapping_status": "estimated_unverified",
+          "sync_uncertainty_ns": null,
+          "timeline_reference": "Recorder callback arrival and accumulated recorded duration; not capture anchor"
+        }
+      ],
+      "physical_sync_status": "unverified",
+      "sync_uncertainty_ns": null,
+      "orientation_status": "container_metadata_checked; physical_upright_and_mirroring_require_visual_check",
+      "count_matches": true
+    }
+  ],
+  "trials": [
+    {
+      "jpeg_saved_frames": 0,
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "A_r00_p00_attempt1",
+      "task": "fixation",
+      "status": "completed",
+      "estimated_video_frames": 40,
+      "fixation_sufficient_frame_count": true,
+      "gaze_truth": "instructed_target_only",
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 808197427798354,
+          "nearest_estimated_frame_delta_ms": 14.878106,
+          "video_path": "front_camera.mp4",
+          "pts_us": 7267288,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 808198928703042,
+          "nearest_estimated_frame_delta_ms": 0.096418,
+          "video_path": "front_camera.mp4",
+          "pts_us": 8753411,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    },
+    {
+      "jpeg_saved_frames": 0,
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "A_r00_p01_attempt2",
+      "task": "fixation",
+      "status": "completed",
+      "estimated_video_frames": 41,
+      "fixation_sufficient_frame_count": true,
+      "gaze_truth": "instructed_target_only",
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 808198957810333,
+          "nearest_estimated_frame_delta_ms": 8.144127,
+          "video_path": "front_camera.mp4",
+          "pts_us": 8790566,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 808200458860333,
+          "nearest_estimated_frame_delta_ms": 6.783873,
+          "video_path": "front_camera.mp4",
+          "pts_us": 10276688,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    },
+    {
+      "jpeg_saved_frames": 0,
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "A_r00_p02_attempt3",
+      "task": "fixation",
+      "status": "completed",
+      "estimated_video_frames": 40,
+      "fixation_sufficient_frame_count": true,
+      "gaze_truth": "instructed_target_only",
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 808200493615021,
+          "nearest_estimated_frame_delta_ms": 4.382561,
+          "video_path": "front_camera.mp4",
+          "pts_us": 10313844,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 808201994314500,
+          "nearest_estimated_frame_delta_ms": 18.19596,
+          "video_path": "front_camera.mp4",
+          "pts_us": 11837122,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    },
+    {
+      "jpeg_saved_frames": 0,
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "A_r00_p03_attempt4",
+      "task": "fixation",
+      "status": "completed",
+      "estimated_video_frames": 40,
+      "fixation_sufficient_frame_count": true,
+      "gaze_truth": "instructed_target_only",
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 808202023422833,
+          "nearest_estimated_frame_delta_ms": 10.912373,
+          "video_path": "front_camera.mp4",
+          "pts_us": 11837122,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 808203524490541,
+          "nearest_estimated_frame_delta_ms": 11.297919,
+          "video_path": "front_camera.mp4",
+          "pts_us": 13360400,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    },
+    {
+      "jpeg_saved_frames": 0,
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "A_r00_p04_attempt5",
+      "task": "fixation",
+      "status": "completed",
+      "estimated_video_frames": 40,
+      "fixation_sufficient_frame_count": true,
+      "gaze_truth": "instructed_target_only",
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 808203551398874,
+          "nearest_estimated_frame_delta_ms": 15.610414,
+          "video_path": "front_camera.mp4",
+          "pts_us": 13360400,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 808205052748874,
+          "nearest_estimated_frame_delta_ms": 6.316586,
+          "video_path": "front_camera.mp4",
+          "pts_us": 14883677,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    },
+    {
+      "jpeg_saved_frames": 0,
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "B_v2_050_attempt6",
+      "task": "visual_search",
+      "status": "aborted_stop",
+      "estimated_video_frames": 191,
+      "fixation_sufficient_frame_count": null,
+      "gaze_truth": null,
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 808208799204603,
+          "nearest_estimated_frame_delta_ms": 12.371857,
+          "video_path": "front_camera.mp4",
+          "pts_us": 18636188,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 808216235761372,
+          "nearest_estimated_frame_delta_ms": 365.028912,
+          "video_path": "front_camera.mp4",
+          "pts_us": 25695344,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "help_request",
+          "timestamp_ns": 808211137632727,
+          "nearest_estimated_frame_delta_ms": 14.543733,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20976788,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    }
+  ],
+  "physical_sync_status": "unverified",
+  "sync_uncertainty_ns": null,
+  "interpretation": "Nearest-frame residual checks estimated coverage only. They are not measured video/touch physical sync error.",
+  "missing_live_features": false,
+  "live_feature_count": 59,
+  "live_face_present_count": 59,
+  "live_inference_latency_ms_mean": 59.804519779661014,
+  "supports_cross_user_generalization": false
+}

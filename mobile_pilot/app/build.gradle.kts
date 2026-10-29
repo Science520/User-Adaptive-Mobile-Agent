@@ -10,8 +10,8 @@ android {
         applicationId = "org.usercamera.mobilepilot"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "0.2.0-pilot"
+        versionCode = 2
+        versionName = "0.3.0-video-pilot"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     buildFeatures { compose = true }
@@ -27,6 +27,9 @@ dependencies {
     implementation("androidx.compose.foundation:foundation")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
+    implementation("androidx.camera:camera-video:1.4.1")
+    implementation("androidx.camera:camera-view:1.4.1")
+    implementation("com.google.mediapipe:tasks-vision:0.10.21")
     implementation("androidx.camera:camera-core:1.4.1")
     implementation("androidx.camera:camera-camera2:1.4.1")
     implementation("androidx.camera:camera-lifecycle:1.4.1")

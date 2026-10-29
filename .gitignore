@@ -4,3 +4,7 @@ __pycache__/
 *.egg-info/
 /data/
 *.part
+
+.DS_Store
+/1_20261027_141730/
+/reports/pilot_v2/private/

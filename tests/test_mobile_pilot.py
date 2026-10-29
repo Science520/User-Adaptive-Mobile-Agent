@@ -243,7 +243,9 @@ def test_exact_app_screenshot_export(fixtures,tmp_path):
 
 def test_native_project_no_network_upload_permission():
     manifest=ET.parse('mobile_pilot/app/src/main/AndroidManifest.xml').getroot();android='{http://schemas.android.com/apk/res/android}'
-    assert {e.attrib[android+'name'] for e in manifest.findall('uses-permission')}=={'android.permission.CAMERA'}
+    # Libraries can add permissions; explicit tools:node=remove declarations are not requests.
+    tools='{http://schemas.android.com/tools}'
+    assert {e.attrib[android+'name'] for e in manifest.findall('uses-permission') if e.get(tools+'node')!='remove'}=={'android.permission.CAMERA'}
     for p in ['settings.gradle.kts','build.gradle.kts','app/build.gradle.kts','gradlew','gradle/wrapper/gradle-wrapper.jar']:assert (Path('mobile_pilot')/p).is_file()
     assert 'distributionSha256Sum=' in Path('mobile_pilot/gradle/wrapper/gradle-wrapper.properties').read_text()
 

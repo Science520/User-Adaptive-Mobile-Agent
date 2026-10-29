@@ -1,3 +1,5 @@
+本轮移动端视频升级：[Mobile Pilot v2](mobile_pilot/VIDEO_V2.md) · [构建与真机结果](reports/pilot_v2/RESULTS.md)。MPIIFaceGaze 既有结果保持不变。
+
 # User-Camera Stream：公开数据与合成验证
 
 本项目从 `thought2.md` / `thought3.md` 的第一阶段公开数据与合成验证扩展到受控手机时序Pilot。原文档保留不变，其中完整Agent、招募、后训练等设想没有作为开发指令执行。当前范围包括公开数据验证、手机采集原型、离线质量检查、因果时序基线和可复现报告。

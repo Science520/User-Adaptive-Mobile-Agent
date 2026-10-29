@@ -1,0 +1,176 @@
+{
+  "date": "2026-10-27 Asia/Shanghai",
+  "samples": [
+    {
+      "session_id": "device_smoke_v2_20261027_154431",
+      "evidence_tier": "device_automated_smoke",
+      "zip_path": "data/private/pilot_v2/device_smoke_v2_20261027_154431.zip",
+      "zip_bytes": 194032709,
+      "zip_sha256": "472ebdb59a132724c08f5d3b4d14ddd6c7c72139ea622ba65e7e0ebcb00ff19c",
+      "decoded_frames": 3805,
+      "decoded_fps": 28.518894386039896,
+      "duration_pts_s": 133.385255,
+      "video_bytes": 190568392,
+      "video_sha256": "9be82112c18d3c9b1348a8f3b3546f23fdf00ce42f5f5ea0a4163a3dd482843d",
+      "mime": "video/avc",
+      "resolution": [
+        720,
+        1280
+      ],
+      "gaps_over_75ms": 1,
+      "max_pts_gap_us": 101956,
+      "recorder_events": {
+        "start": 1,
+        "pause": 1,
+        "resume": 1,
+        "finalize": 1
+      },
+      "touch_events": {
+        "down": 10,
+        "up": 10,
+        "help_request": 1
+      },
+      "delivered_actions": [
+        "highlight",
+        "zoom"
+      ],
+      "assistance_intervals_balanced": true,
+      "live_features": 297,
+      "face_present_observations": 296,
+      "inference_latency_ms_mean": 52.902890040404046,
+      "fixation_trials": 5,
+      "fixation_full_face_valid_observations": 0,
+      "semantic_explanation_observed": false,
+      "physical_sync_status": "unverified",
+      "physical_sync_error_ms": null,
+      "max_nearest_frame_estimate_residual_ms": 368.720454,
+      "video_analysis_bound": "bound_pending_device_measurement",
+      "human_research_metrics": false
+    },
+    {
+      "session_id": "device_smoke_touch_20261027_155850",
+      "evidence_tier": "device_automated_smoke",
+      "zip_path": "data/private/pilot_v2/device_smoke_touch_20261027_155850.zip",
+      "zip_bytes": 150953516,
+      "zip_sha256": "bc91c9347f9d914ca4ce4ca5766bb3db0866ce0b38f074c3989ab7396913865e",
+      "decoded_frames": 2950,
+      "decoded_fps": 29.326161480823778,
+      "duration_pts_s": 100.558677,
+      "video_bytes": 147985596,
+      "video_sha256": "bcf0bf2a3abb445a641d1f76973ca94b3427f3cfc5e8d2cc8d187a3c9384dde7",
+      "mime": "video/avc",
+      "resolution": [
+        720,
+        1280
+      ],
+      "gaps_over_75ms": 0,
+      "max_pts_gap_us": 43556,
+      "recorder_events": {
+        "start": 1,
+        "finalize": 1
+      },
+      "touch_events": {
+        "down": 9,
+        "move": 98,
+        "up": 9,
+        "help_request": 8
+      },
+      "delivered_actions": [
+        "contrast",
+        "enlarge_touch",
+        "explain",
+        "highlight",
+        "none",
+        "zoom"
+      ],
+      "assistance_intervals_balanced": true,
+      "live_features": 209,
+      "face_present_observations": 206,
+      "inference_latency_ms_mean": 55.53613435885167,
+      "fixation_trials": 5,
+      "fixation_full_face_valid_observations": 0,
+      "semantic_explanation_observed": false,
+      "physical_sync_status": "unverified",
+      "physical_sync_error_ms": null,
+      "max_nearest_frame_estimate_residual_ms": 367.310484,
+      "video_analysis_bound": "bound_pending_device_measurement",
+      "human_research_metrics": false
+    },
+    {
+      "session_id": "device_smoke_offline_20261027_160605",
+      "evidence_tier": "device_automated_smoke",
+      "zip_path": "data/private/pilot_v2/device_smoke_offline_20261027_160605.zip",
+      "zip_bytes": 35645926,
+      "zip_sha256": "021476c7b2d23f95e1e605434282c280f73dc8b6968848c40fe71b6ef84f6f6a",
+      "decoded_frames": 693,
+      "decoded_fps": 26.930949046644404,
+      "duration_pts_s": 25.695344,
+      "video_bytes": 35255123,
+      "video_sha256": "806a55ea935918c0998f85104ff08c0884e04b993d27a4b966352c6436176a20",
+      "mime": "video/avc",
+      "resolution": [
+        720,
+        1280
+      ],
+      "gaps_over_75ms": 0,
+      "max_pts_gap_us": 47133,
+      "recorder_events": {
+        "start": 1,
+        "finalize": 1
+      },
+      "touch_events": {
+        "help_request": 1
+      },
+      "delivered_actions": [
+        "explain"
+      ],
+      "assistance_intervals_balanced": true,
+      "live_features": 59,
+      "face_present_observations": 59,
+      "inference_latency_ms_mean": 59.804519779661014,
+      "fixation_trials": 5,
+      "fixation_full_face_valid_observations": 0,
+      "semantic_explanation_observed": true,
+      "physical_sync_status": "unverified",
+      "physical_sync_error_ms": null,
+      "max_nearest_frame_estimate_residual_ms": 365.028912,
+      "video_analysis_bound": "bound_pending_device_measurement",
+      "human_research_metrics": false
+    }
+  ],
+  "final_apk_sha256": "65bb11eaa49ce53ccf30045eb0f811e22525df63919d3bb4308fa1fcecd2f4d2",
+  "installed_matches_local": true,
+  "device": "HUAWEI BLK-AL00 / API31",
+  "physical_sync_verified": false,
+  "raw_faces_uploaded": false,
+  "complete_quick_test": "device_smoke_v2_20261027_154431",
+  "touch_assistance_regression": "device_smoke_touch_20261027_155850",
+  "final_offline_apk_smoke": "device_smoke_offline_20261027_160605",
+  "final_apk_sample_caveat": "Final APK short smoke includes fixation + one aborted search; complete Quick Test and all-six-actions regression came from earlier APK revisions. APK hashes are recorded separately.",
+  "tests": "86 passed in 4.52s",
+  "jvm_tests": 6,
+  "model_training": "not run on this single-person, clock-unverified dataset; evaluator blocks fusion metrics",
+  "orientation_mirroring": "portrait container/decode metadata checked; no independent physical mirror validation",
+  "fixation_quality": "all strict full-face proxies false despite visible eyes; not accepted as verified gaze calibration",
+  "error_cases": [
+    "early device_smoke_20261027_153830 was interrupted before metadata inspection completed; retained pending export marker",
+    "initial automation matched resume text instead of button; adaptive selector fixed; original aborted trials retained",
+    "UI export-complete text watcher failed on scrolled page; actual SAF ZIP passed CRC/hash/decode",
+    "semantic explanation probe during mixed phone operation failed; isolated final offline smoke succeeded",
+    "dependency merged network permissions detected and explicitly removed; final merged manifest and device APK checked"
+  ],
+  "remaining": [
+    "Independent encoded PTS↔sensor/exposure mapping and physical sync uncertainty",
+    "Validated phone head-pose/eye visibility/gaze/distance accuracy",
+    "Fixation compliance and full-face quality review",
+    "Multi-participant synchronized dataset and intervention efficacy study",
+    "Video encoder training",
+    "MediaProjection optional module",
+    "v2 JPEG-to-v2 model-window extraction (v1 JPEG extraction retained)",
+    "Forced hardware fallback, storage-full and process-death recovery tests on device"
+  ],
+  "current_release_date": "2026-10-29 Asia/Shanghai",
+  "current_release_apk_sha256": "073aace529c88f7177814a787b889edec1f967358b7bad537c5abd034f0eab56",
+  "current_release_metadata_regression": "passed camera-free",
+  "current_release_video_remeasured": false
+}

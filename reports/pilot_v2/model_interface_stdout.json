@@ -1,0 +1,16 @@
+{
+  "models": {
+    "M0": "Screen",
+    "M1": "Screen + Actions",
+    "M2": "Screen + Actions + Single User Frame",
+    "M3": "Screen + Actions + Temporal User Features",
+    "M4": "Screen + Actions + Video Encoder",
+    "M5": "Screen + Actions + mismatched User Stream"
+  },
+  "participants": 1,
+  "supports_cross_user_generalization": false,
+  "modes": {},
+  "M4_status": "not_run; no trained video encoder",
+  "status": "blocked_unverified_sync",
+  "reason": "Diagnostic PTS estimates cannot support synchronized fusion metrics"
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "command": "cd mobile_pilot && ./gradlew testDebugUnitTest assembleDebug",
+    "status": "passed",
+    "log": "reports/pilot_v2/build.log",
+    "jvm_tests": 6
+  },
+  {
+    "command": "adb install -r mobile_pilot/app/build/outputs/apk/debug/app-debug.apk",
+    "status": "passed",
+    "note": "Final installed SHA256 equals local build; no original Session deleted"
+  },
+  {
+    "command": "adb shell am start -n org.usercamera.mobilepilot/.MainActivity",
+    "status": "passed"
+  },
+  {
+    "command": ".venv/bin/python -m usercamera.pilot_design_v2",
+    "status": "passed"
+  },
+  {
+    "command": ".venv/bin/python -m usercamera pilot-video-verify 1_20261027_141730 --output reports/pilot_v2",
+    "status": "passed_after_ignore_os_metadata_in_readonly_copy"
+  },
+  {
+    "command": ".venv/bin/python -m usercamera pilot-video-verify data/private/pilot_v2/device_smoke_v2_20261027_154431.zip --output reports/pilot_v2",
+    "status": "passed"
+  },
+  {
+    "command": ".venv/bin/python -m usercamera pilot-video-verify data/private/pilot_v2/device_smoke_touch_20261027_155850.zip --output reports/pilot_v2",
+    "status": "passed"
+  },
+  {
+    "command": ".venv/bin/python -m usercamera pilot-video-verify data/private/pilot_v2/device_smoke_offline_20261027_160605.zip --output reports/pilot_v2",
+    "status": "passed"
+  },
+  {
+    "command": ".venv/bin/python -m usercamera pilot-replay data/private/pilot_v2/device_smoke_v2_20261027_154431.zip --output reports/pilot_v2/private/replay --allow-estimated-clock",
+    "status": "passed; browser MP4 playback and UI state observed"
+  },
+  {
+    "command": ".venv/bin/python -m usercamera pilot-replay data/private/pilot_v2/device_smoke_offline_20261027_160605.zip --output reports/pilot_v2/private/replay_final --allow-estimated-clock",
+    "status": "passed"
+  },
+  {
+    "command": ".venv/bin/python -m usercamera pilot-prepare-inputs-v2 data/private/pilot_v2/device_smoke_v2_20261027_154431.zip --output reports/pilot_v2/private/inputs_smoke --allow-estimated-clock",
+    "status": "passed; local CPU MediaPipe and 1/2/3/5s strict pre-help windows"
+  },
+  {
+    "command": ".venv/bin/python -m usercamera pilot-evaluate-v2 --features reports/pilot_v2/private/inputs_smoke --output reports/pilot_v2/model_interface",
+    "status": "completed with expected blocked_unverified_sync; no models trained"
+  },
+  {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 .venv/bin/python -m pytest -q",
+    "status": "passed",
+    "tests": 86
+  },
+  {
+    "command": ".venv/bin/python -m pip install --only-binary=:all: av==12.3.0",
+    "status": "passed"
+  },
+  {
+    "command": ".venv/bin/python -m pip install av==14.4.0",
+    "status": "failed: Python3.9 wheel unavailable, source build lacks FFmpeg7; replaced with pinned av12.3.0 binary"
+  },
+  {
+    "command": "Private ADB UI automation scripts (retained under reports/pilot_v2/private/validation_scripts/)",
+    "status": "mixed automation failures and successful isolated final smoke; all failed raw Sessions retained"
+  },
+  {
+    "command": "Original-device Session tar backup before/after install",
+    "status": "passed; 1043 files equal SHA256"
+  },
+  {
+    "date": "2026-10-29",
+    "command": "./mobile_pilot/gradlew -p mobile_pilot testDebugUnitTest assembleDebug",
+    "status": "passed",
+    "log": "reports/pilot_v2/build_release.log"
+  },
+  {
+    "date": "2026-10-29",
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 .venv/bin/python -m pytest -q",
+    "status": "passed",
+    "tests": 89,
+    "log": "reports/pilot_v2/python_release_tests.log"
+  },
+  {
+    "date": "2026-10-29",
+    "command": "adb install -r mobile_pilot/app/build/outputs/apk/debug/app-debug.apk",
+    "status": "passed; current release APK installed"
+  },
+  {
+    "date": "2026-10-29",
+    "command": "Camera-free device UI metadata regression via private validation script",
+    "status": "passed; camera disabled; no video"
+  },
+  {
+    "date": "2026-10-29",
+    "command": "PYTHONPATH=. .venv/bin/python /tmp/finalize_pilot_v2.py",
+    "status": "passed; all 3 real ZIPs decoded/verified; subsequent release checks separately fingerprinted"
+  }
+]

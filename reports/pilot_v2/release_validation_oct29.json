@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-29 Asia/Shanghai",
+  "three_real_sessions": [
+    {
+      "session_id": "device_smoke_v2_20261027_154431",
+      "files_verified": 129,
+      "decoded_frames": 3805,
+      "status": "passed",
+      "physical_sync_status": "unverified"
+    },
+    {
+      "session_id": "device_smoke_touch_20261027_155850",
+      "files_verified": 110,
+      "decoded_frames": 2950,
+      "status": "passed",
+      "physical_sync_status": "unverified"
+    },
+    {
+      "session_id": "device_smoke_offline_20261027_160605",
+      "files_verified": 53,
+      "decoded_frames": 693,
+      "status": "passed",
+      "physical_sync_status": "unverified"
+    }
+  ],
+  "historical_files_checked": 1286,
+  "historical_changed": [],
+  "host_tests": "........................................................................ [ 80%]\n.................                                                        [100%]\n89 passed in 4.42s\n",
+  "jvm_tests": 6,
+  "camera_free_metadata_check": {
+    "date": "2026-10-29 Asia/Shanghai",
+    "session_id": "device_smoke_metadata_20261029_181428",
+    "camera_available": false,
+    "video_recorded": false,
+    "metadata_check": "passed",
+    "rendered_gray": 0,
+    "rendered_contrast": 21,
+    "planned_gray_preserved": true,
+    "evidence_tier": "device_automated_smoke"
+  },
+  "source_sha256": {
+    "usercamera/pilot_stimuli.py": "5d06a606d96ae2a3c74d32ed81bcd5f895e55332ec86a08fe0454b53ed40ae9e",
+    "usercamera/pilot_design_v2.py": "014a298b5222542fd62e6a840553020685d68dbd597756c562211eda59d2a0e3",
+    "usercamera/pilot.py": "0e8181a19e9a026daa8d3b077876d67d003864a3e586e27c4b6a7ff4e9c2a822",
+    "usercamera/pilot_inputs_v2.py": "914274bee26e29f73937e0af10c366c4190ea461ce4629121699dd0230bbc2fb",
+    "usercamera/pilot_temporal.py": "a6d284b7a9b47668a804d9de7dab1c4a2de8db4f4db934d9c59d1fabea739151",
+    "usercamera/pilot_report.py": "b1865aa7ef61d2e39924bc4221e1394d20e4e3b4ef1ff41c127a2f906626dbd7",
+    "usercamera/pilot_video.py": "b7d319c7caf929c22d148f10b84221b2db1dcd262aeda21518d2d6f91aa6ab19",
+    "usercamera/pilot_session.py": "dbe2e78398733b87d2a368e78b2a79ab0859836200b31bbd8a20398d18e1f677",
+    "usercamera/pilot_features.py": "539695da2ca1106f0c876b16275bf4ab04ecc413a662723e0133daa2128a3f4e",
+    "tests/test_pilot_video_v2.py": "02cc4e408dfd4adc54ce63290ff2e05d43d24c9c43331eb202ad373d1d95b941",
+    "tests/test_mobile_pilot.py": "bdcbc4d9568233094610415308edbd0c0a78807606e5a1a081ea2d80ab96ed04"
+  }
+}

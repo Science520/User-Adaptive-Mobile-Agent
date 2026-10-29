@@ -1,0 +1,63 @@
+{
+  "session_id": "1_20261027_141730",
+  "device": {
+    "model": "HUAWEI BLK-AL00",
+    "sdk_int": 31,
+    "screen_size_px": [
+      1084,
+      2302
+    ],
+    "density": 3,
+    "density_dpi": 480,
+    "font_scale": 1
+  },
+  "trials": [
+    {
+      "trial_id": "B_000_attempt73",
+      "outcome": {
+        "success": true,
+        "completion_time_ms": 13297.809893,
+        "misclicks": 0,
+        "help_requests": 2
+      },
+      "feedback": {
+        "status": "provided",
+        "label_source": "self_report",
+        "timestamp_ns": 802199165627916,
+        "difficulty_rating": 3,
+        "difficulty_type": "navigation",
+        "wants_help": true,
+        "preferred_assistance": "highlight"
+      },
+      "saved_frames": 30,
+      "effective_saved_fps": 2.25601059433043,
+      "actual_help_events": 2,
+      "label_audit": "legacy difficulty_type=navigation is self-report; single-screen search has no observed navigation transition"
+    },
+    {
+      "trial_id": "B_020_attempt83",
+      "outcome": {
+        "success": true,
+        "completion_time_ms": 11318.687498,
+        "misclicks": 0,
+        "help_requests": 0
+      },
+      "feedback": {
+        "status": "provided",
+        "label_source": "self_report",
+        "timestamp_ns": 802335645556541,
+        "difficulty_rating": 3,
+        "difficulty_type": "navigation",
+        "wants_help": true,
+        "preferred_assistance": "highlight"
+      },
+      "saved_frames": 25,
+      "effective_saved_fps": 2.2087366582404075,
+      "actual_help_events": 0,
+      "label_audit": "legacy difficulty_type=navigation is self-report; single-screen search has no observed navigation transition"
+    }
+  ],
+  "causal_contrast": false,
+  "reason": "Different targets, conditions, order and previous exposure; not a strictly matched causal contrast",
+  "raw_labels_modified": false
+}

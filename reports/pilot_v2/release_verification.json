@@ -1,0 +1,40 @@
+{
+  "real_sessions": [
+    {
+      "session_id": "device_smoke_v2_20261027_154431",
+      "status": "passed",
+      "checked_files": 129,
+      "decoded_frames": 3805,
+      "physical_sync_status": "unverified"
+    },
+    {
+      "session_id": "device_smoke_touch_20261027_155850",
+      "status": "passed",
+      "checked_files": 110,
+      "decoded_frames": 2950,
+      "physical_sync_status": "unverified"
+    },
+    {
+      "session_id": "device_smoke_offline_20261027_160605",
+      "status": "passed",
+      "checked_files": 53,
+      "decoded_frames": 693,
+      "physical_sync_status": "unverified"
+    }
+  ],
+  "python_tests": "........................................................................ [ 83%]\n..............                                                           [100%]\n86 passed in 4.52s\n",
+  "source_sha256": {
+    "usercamera/pilot_stimuli.py": "5d06a606d96ae2a3c74d32ed81bcd5f895e55332ec86a08fe0454b53ed40ae9e",
+    "usercamera/pilot_design_v2.py": "014a298b5222542fd62e6a840553020685d68dbd597756c562211eda59d2a0e3",
+    "usercamera/pilot.py": "0e8181a19e9a026daa8d3b077876d67d003864a3e586e27c4b6a7ff4e9c2a822",
+    "usercamera/pilot_inputs_v2.py": "5edd03401382431660975d774d3c8add76c9691bf85c6b6897193397f0da2f0c",
+    "usercamera/pilot_temporal.py": "a6d284b7a9b47668a804d9de7dab1c4a2de8db4f4db934d9c59d1fabea739151",
+    "usercamera/pilot_report.py": "b1865aa7ef61d2e39924bc4221e1394d20e4e3b4ef1ff41c127a2f906626dbd7",
+    "usercamera/pilot_video.py": "b7d319c7caf929c22d148f10b84221b2db1dcd262aeda21518d2d6f91aa6ab19",
+    "usercamera/pilot_session.py": "dbe2e78398733b87d2a368e78b2a79ab0859836200b31bbd8a20398d18e1f677",
+    "usercamera/pilot_features.py": "539695da2ca1106f0c876b16275bf4ab04ecc413a662723e0133daa2128a3f4e",
+    "usercamera/cli.py": "100e9039c7561faf62aa14ea4704f78b9d90f4ab54e2bdee19d8d72c97983922",
+    "tests/test_pilot_video_v2.py": "8ccb8cdc75ebabe1841bba845dbcb8273cd223aa62118466dcb53767ea25c774",
+    "tests/test_mobile_pilot.py": "bdcbc4d9568233094610415308edbd0c0a78807606e5a1a081ea2d80ab96ed04"
+  }
+}

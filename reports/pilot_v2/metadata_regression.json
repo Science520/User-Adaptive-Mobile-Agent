@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-29 Asia/Shanghai",
+  "session_id": "device_smoke_metadata_20261029_181428",
+  "camera_available": false,
+  "video_recorded": false,
+  "metadata_check": "passed",
+  "rendered_gray": 0,
+  "rendered_contrast": 21,
+  "planned_gray_preserved": true,
+  "evidence_tier": "device_automated_smoke"
+}

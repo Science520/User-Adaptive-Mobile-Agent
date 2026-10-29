@@ -96,6 +96,17 @@ def run_mpii_command(args):
 
 
 def run_temporal_command(args):
+    if args.command=='pilot-prepare-inputs-v2':
+        from .pilot_inputs_v2 import prepare_inputs
+        return prepare_inputs(args.path,args.output,args.model,args.allow_estimated_clock,not args.no_face)
+    if args.command=='pilot-evaluate-v2':
+        from .pilot_inputs_v2 import evaluate_v2
+        return evaluate_v2(args.features,args.output,tuple(args.algorithms.split(',')))
+
+    if args.command in ('pilot-video-verify','pilot-replay'):
+        from .pilot_video import verify_video,replay
+        return verify_video(args.path,args.output) if args.command=='pilot-video-verify' else replay(args.path,args.output,args.allow_estimated_clock)
+
     if args.command == "pilot-build-stimuli":
         from .pilot_stimuli import build_stimuli,export_recorded_ui
         if args.session:return export_recorded_ui(args.session,args.output,args.allow_mock)
@@ -176,6 +187,15 @@ def main(argv=None):
             p.add_argument("--strong-output", default="reports/mpii_next/strong")
             p.add_argument("--audit-output", default="reports/mpii_audit")
             p.add_argument("--cleaning-output", default="reports/mpii_next/cleaning")
+    p=sub.add_parser('pilot-prepare-inputs-v2',help='Offline single-frame, sequence and face feature interfaces, strict prefixes')
+    p.add_argument('path');p.add_argument('--output',required=True);p.add_argument('--model',default='data/models/face_landmarker.task')
+    p.add_argument('--allow-estimated-clock',action='store_true');p.add_argument('--no-face',action='store_true')
+    p=sub.add_parser('pilot-evaluate-v2',help='v2 M0–M5; unverified synchronization blocks fusion metrics')
+    p.add_argument('--features',required=True);p.add_argument('--output',required=True);p.add_argument('--algorithms',default='logistic,hist_gradient_boosting,gru')
+    for name in ('pilot-video-verify','pilot-replay'):
+        p=sub.add_parser(name,help='Local MP4 validation and diagnostic synchronized replay; v1 compatible')
+        p.add_argument('path');p.add_argument('--output',default='reports/pilot_v2' if name=='pilot-video-verify' else 'reports/pilot_v2/private/replay')
+        p.add_argument('--allow-estimated-clock',action='store_true')
     for name in ("mpii-integrate-expansion","mpii-eval-expanded"):
         p=sub.add_parser(name,help="Isolated MPII720 view and fixed-original-test scale comparison")
         p.add_argument('--data',default='data');p.add_argument('--output',default='reports/mpii_expansion')

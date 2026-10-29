@@ -1,0 +1,17 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "$id":"urn:usercamera:temporal-pilot-v2",
+ "type":"object", "required":["schema_version","participant_id","session_id","evidence_tier","clock","trial_ids","capture_mode"],
+ "properties":{
+  "schema_version":{"const":"temporal-pilot-v2"},"participant_id":{"type":"string"},"session_id":{"type":"string"},
+  "clock":{"const":"elapsed_realtime_ns"},"evidence_tier":{"enum":["real_device_recording","device_automated_smoke"]},
+  "capture_mode":{"enum":["video","jpeg"]},"screen_recording_mode":{"const":"reconstructed_ui_timeline"},
+  "trial_ids":{"type":"array","uniqueItems":true,"items":{"type":"string"}}
+ },
+ "$defs":{
+  "video_event":{"type":"object","required":["type"],"properties":{"type":{"enum":["start","pause","resume","status","finalize","encoded_frame","file_summary","analysis_sensor_frame","inspection_error"]},"timestamp_ns":{"type":"integer","minimum":0},"mapping_status":{"enum":["estimated_unverified","unverified","shared_clock","estimated_unvalidated","unavailable"]},"sync_uncertainty_ns":{"type":["null","integer"]}}},
+  "touch":{"type":"object","required":["action","timestamp_ns"],"properties":{"timestamp_ns":{"type":"integer","minimum":0},"action":{"enum":["down","up","move","cancel","pointer_down","pointer_up","help_request"]},"pointer_id":{"type":"integer"},"ui_state_version":{"type":"integer","minimum":0}},"allOf":[{"if":{"properties":{"action":{"not":{"const":"help_request"}}}},"then":{"required":["x_px","y_px","screen_x_px","screen_y_px","normalized_x","normalized_y","view_origin_screen_px","coordinate_system","page_id","ui_state_version","pointer_id"]}}]},
+  "ui":{"type":"object","required":["timestamp_ns","page_id","ui_state_version","screenshot_path","view_size_px","view_origin_screen_px","elements"],"properties":{"timestamp_ns":{"type":"integer"},"ui_state_version":{"type":"integer"},"elements":{"type":"array"}}},
+  "live_feature":{"type":"object","required":["timestamp_ns","available_ns","face_present","inference_latency_ns"],"properties":{"timestamp_ns":{"type":["null","integer"]},"available_ns":{"type":"integer"},"inference_latency_ns":{"type":"integer","minimum":0},"inference_confidence":{"type":["null","number"]}}}
+ }
+}

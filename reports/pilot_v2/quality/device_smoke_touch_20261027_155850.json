@@ -1,0 +1,1401 @@
+{
+  "schema_version": "temporal-pilot-v2",
+  "session_id": "device_smoke_touch_20261027_155850",
+  "participant_id": "device_smoke_touch",
+  "evidence_tier": "device_automated_smoke",
+  "manifest_files_checked": 110,
+  "videos": [
+    {
+      "type": "file_summary",
+      "timestamp_ns": 807865144781218,
+      "path": "front_camera.mp4",
+      "sha256": "bcf0bf2a3abb445a641d1f76973ca94b3427f3cfc5e8d2cc8d187a3c9384dde7",
+      "bytes": 147985596,
+      "frame_count": 2950,
+      "first_pts_us": 0,
+      "last_pts_us": 100558677,
+      "effective_fps": 29.326161480823778,
+      "gap_count_over_75ms": 0,
+      "maximum_pts_gap_us": 43556,
+      "exact_dropped_frames": null,
+      "width": 720,
+      "height": 1280,
+      "rotation_degrees": 0,
+      "mime": "video/avc",
+      "encoder_format": "{track-id=1, level=512, mime=video/avc, frame-count=2950, profile=65536, language=```, color-standard=1, display-width=720, csd-1=java.nio.HeapByteBuffer[pos=0 lim=8 cap=8], color-transfer=3, durationUs=100597044, display-height=1280, width=720, color-range=2, max-input-size=215414, frame-rate=29, height=1280, csd-0=java.nio.HeapByteBuffer[pos=0 lim=21 cap=21]}",
+      "mirrored": false,
+      "decoded_frames": 2950,
+      "decoded_duration_s": 100.558677,
+      "decoded_fps": 29.326161480823778,
+      "estimated_elapsed_start_ns": 807763486514567,
+      "estimated_elapsed_end_ns": 807864045191567,
+      "mapping_anchors": [
+        {
+          "type": "start",
+          "timestamp_ns": 807763486514567,
+          "path": "front_camera.mp4",
+          "recording_request_ns": 807763407996858,
+          "recorded_duration_ns": 0,
+          "bytes": 0,
+          "mapping_status": "estimated_unverified",
+          "sync_uncertainty_ns": null,
+          "timeline_reference": "Recorder callback arrival and accumulated recorded duration; not capture anchor"
+        }
+      ],
+      "physical_sync_status": "unverified",
+      "sync_uncertainty_ns": null,
+      "orientation_status": "container_metadata_checked; physical_upright_and_mirroring_require_visual_check",
+      "count_matches": true
+    }
+  ],
+  "trials": [
+    {
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "A_r00_p00_attempt1",
+      "task": "fixation",
+      "status": "completed",
+      "estimated_video_frames": 45,
+      "fixation_sufficient_frame_count": true,
+      "gaze_truth": "instructed_target_only",
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 807771768432274,
+          "nearest_estimated_frame_delta_ms": 4.037293,
+          "video_path": "front_camera.mp4",
+          "pts_us": 8285955,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 807773269558836,
+          "nearest_estimated_frame_delta_ms": 8.166731,
+          "video_path": "front_camera.mp4",
+          "pts_us": 9791211,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    },
+    {
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "A_r00_p01_attempt2",
+      "task": "fixation",
+      "status": "completed",
+      "estimated_video_frames": 45,
+      "fixation_sufficient_frame_count": true,
+      "gaze_truth": "instructed_target_only",
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 807773301639565,
+          "nearest_estimated_frame_delta_ms": 9.530002,
+          "video_path": "front_camera.mp4",
+          "pts_us": 9824655,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 807774802594252,
+          "nearest_estimated_frame_delta_ms": 13.875315,
+          "video_path": "front_camera.mp4",
+          "pts_us": 11329955,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    },
+    {
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "A_r00_p02_attempt3",
+      "task": "fixation",
+      "status": "completed",
+      "estimated_video_frames": 45,
+      "fixation_sufficient_frame_count": true,
+      "gaze_truth": "instructed_target_only",
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 807774839625502,
+          "nearest_estimated_frame_delta_ms": 10.289065,
+          "video_path": "front_camera.mp4",
+          "pts_us": 11363400,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 807776340033315,
+          "nearest_estimated_frame_delta_ms": 15.103252,
+          "video_path": "front_camera.mp4",
+          "pts_us": 12868622,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    },
+    {
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "A_r00_p03_attempt4",
+      "task": "fixation",
+      "status": "completed",
+      "estimated_video_frames": 45,
+      "fixation_sufficient_frame_count": true,
+      "gaze_truth": "instructed_target_only",
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 807776372298419,
+          "nearest_estimated_frame_delta_ms": 16.393148,
+          "video_path": "front_camera.mp4",
+          "pts_us": 12902177,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 807777873103627,
+          "nearest_estimated_frame_delta_ms": 12.53406,
+          "video_path": "front_camera.mp4",
+          "pts_us": 14374055,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    },
+    {
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "A_r00_p04_attempt5",
+      "task": "fixation",
+      "status": "completed",
+      "estimated_video_frames": 45,
+      "fixation_sufficient_frame_count": true,
+      "gaze_truth": "instructed_target_only",
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 807777903569252,
+          "nearest_estimated_frame_delta_ms": 9.543685,
+          "video_path": "front_camera.mp4",
+          "pts_us": 14407511,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 807779403844252,
+          "nearest_estimated_frame_delta_ms": 4.552685,
+          "video_path": "front_camera.mp4",
+          "pts_us": 15912777,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    },
+    {
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "B_v2_054_attempt6",
+      "task": "visual_search",
+      "status": "completed",
+      "estimated_video_frames": 214,
+      "fixation_sufficient_frame_count": null,
+      "gaze_truth": null,
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 807783095860918,
+          "nearest_estimated_frame_delta_ms": 16.508649,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19625855,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 807790261158833,
+          "nearest_estimated_frame_delta_ms": 9.666734,
+          "video_path": "front_camera.mp4",
+          "pts_us": 26784311,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "down",
+          "timestamp_ns": 807783135807272,
+          "nearest_estimated_frame_delta_ms": 10.007295,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19659300,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783248968990,
+          "nearest_estimated_frame_delta_ms": 2.821423,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19759633,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783276473678,
+          "nearest_estimated_frame_delta_ms": 3.117889,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19793077,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783294429407,
+          "nearest_estimated_frame_delta_ms": 14.83784,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19793077,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783302429407,
+          "nearest_estimated_frame_delta_ms": 10.60716,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19826522,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783310557272,
+          "nearest_estimated_frame_delta_ms": 2.479295,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19826522,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783318557272,
+          "nearest_estimated_frame_delta_ms": 5.520705,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19826522,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783327365865,
+          "nearest_estimated_frame_delta_ms": 14.329298,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19826522,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783335365865,
+          "nearest_estimated_frame_delta_ms": 11.114702,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19859966,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783343998157,
+          "nearest_estimated_frame_delta_ms": 2.48241,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19859966,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783351998157,
+          "nearest_estimated_frame_delta_ms": 5.51759,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19859966,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783361248939,
+          "nearest_estimated_frame_delta_ms": 14.768372,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19859966,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783369248939,
+          "nearest_estimated_frame_delta_ms": 10.676628,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19893411,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783378415605,
+          "nearest_estimated_frame_delta_ms": 1.509962,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19893411,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783385415605,
+          "nearest_estimated_frame_delta_ms": 5.490038,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19893411,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783394336178,
+          "nearest_estimated_frame_delta_ms": 14.410611,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19893411,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783402336178,
+          "nearest_estimated_frame_delta_ms": 11.033389,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19926855,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783410709094,
+          "nearest_estimated_frame_delta_ms": 2.660473,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19926855,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783418709094,
+          "nearest_estimated_frame_delta_ms": 5.339527,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19926855,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783426833834,
+          "nearest_estimated_frame_delta_ms": 13.464267,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19926855,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783434833834,
+          "nearest_estimated_frame_delta_ms": 11.980733,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19960300,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783445117168,
+          "nearest_estimated_frame_delta_ms": 1.697399,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19960300,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783452117168,
+          "nearest_estimated_frame_delta_ms": 5.302601,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19960300,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783461542168,
+          "nearest_estimated_frame_delta_ms": 14.727601,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19960300,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783468542168,
+          "nearest_estimated_frame_delta_ms": 11.716399,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19993744,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783477496334,
+          "nearest_estimated_frame_delta_ms": 2.762233,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19993744,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783485496334,
+          "nearest_estimated_frame_delta_ms": 5.237767,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19993744,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783494273678,
+          "nearest_estimated_frame_delta_ms": 14.015111,
+          "video_path": "front_camera.mp4",
+          "pts_us": 19993744,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783502273678,
+          "nearest_estimated_frame_delta_ms": 11.428889,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20027188,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783511870032,
+          "nearest_estimated_frame_delta_ms": 1.832535,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20027188,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783518870032,
+          "nearest_estimated_frame_delta_ms": 5.167465,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20027188,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783526552584,
+          "nearest_estimated_frame_delta_ms": 12.850017,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20027188,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783533552584,
+          "nearest_estimated_frame_delta_ms": 13.594983,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20060633,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783544366647,
+          "nearest_estimated_frame_delta_ms": 2.78092,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20060633,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783552366647,
+          "nearest_estimated_frame_delta_ms": 5.21908,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20060633,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783561027063,
+          "nearest_estimated_frame_delta_ms": 13.879496,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20060633,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783569027063,
+          "nearest_estimated_frame_delta_ms": 11.564504,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20094077,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783577965865,
+          "nearest_estimated_frame_delta_ms": 2.625702,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20094077,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783585965865,
+          "nearest_estimated_frame_delta_ms": 5.374298,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20094077,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783593805709,
+          "nearest_estimated_frame_delta_ms": 13.214142,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20094077,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783601805709,
+          "nearest_estimated_frame_delta_ms": 12.230858,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20127522,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783612161438,
+          "nearest_estimated_frame_delta_ms": 1.875129,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20127522,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783619161438,
+          "nearest_estimated_frame_delta_ms": 5.124871,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20127522,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783628212480,
+          "nearest_estimated_frame_delta_ms": 14.175913,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20127522,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807783636212480,
+          "nearest_estimated_frame_delta_ms": 11.268087,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20160966,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "up",
+          "timestamp_ns": 807783644878105,
+          "nearest_estimated_frame_delta_ms": 2.602462,
+          "video_path": "front_camera.mp4",
+          "pts_us": 20160966,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "help_request",
+          "timestamp_ns": 807786009995292,
+          "nearest_estimated_frame_delta_ms": 12.563275,
+          "video_path": "front_camera.mp4",
+          "pts_us": 22536044,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "down",
+          "timestamp_ns": 807790157615604,
+          "nearest_estimated_frame_delta_ms": 12.875963,
+          "video_path": "front_camera.mp4",
+          "pts_us": 26683977,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "up",
+          "timestamp_ns": 807790254300239,
+          "nearest_estimated_frame_delta_ms": 16.525328,
+          "video_path": "front_camera.mp4",
+          "pts_us": 26784311,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    },
+    {
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "B_v2_058_attempt7",
+      "task": "visual_search",
+      "status": "completed",
+      "estimated_video_frames": 74,
+      "fixation_sufficient_frame_count": null,
+      "gaze_truth": null,
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 807799411750499,
+          "nearest_estimated_frame_delta_ms": 1.308068,
+          "video_path": "front_camera.mp4",
+          "pts_us": 35926544,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 807801859587998,
+          "nearest_estimated_frame_delta_ms": 14.718431,
+          "video_path": "front_camera.mp4",
+          "pts_us": 38358355,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "down",
+          "timestamp_ns": 807801787948936,
+          "nearest_estimated_frame_delta_ms": 9.790369,
+          "video_path": "front_camera.mp4",
+          "pts_us": 38291644,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "up",
+          "timestamp_ns": 807801852878362,
+          "nearest_estimated_frame_delta_ms": 8.008795,
+          "video_path": "front_camera.mp4",
+          "pts_us": 38358355,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    },
+    {
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "B_v2_057_attempt8",
+      "task": "visual_search",
+      "status": "completed",
+      "estimated_video_frames": 39,
+      "fixation_sufficient_frame_count": null,
+      "gaze_truth": null,
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 807810310682268,
+          "nearest_estimated_frame_delta_ms": 2.579701,
+          "video_path": "front_camera.mp4",
+          "pts_us": 46821588,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 807811633742684,
+          "nearest_estimated_frame_delta_ms": 11.106117,
+          "video_path": "front_camera.mp4",
+          "pts_us": 48136122,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "down",
+          "timestamp_ns": 807811547133830,
+          "nearest_estimated_frame_delta_ms": 8.613737,
+          "video_path": "front_camera.mp4",
+          "pts_us": 48069233,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "up",
+          "timestamp_ns": 807811627419768,
+          "nearest_estimated_frame_delta_ms": 4.783201,
+          "video_path": "front_camera.mp4",
+          "pts_us": 48136122,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    },
+    {
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "B_v2_056_attempt9",
+      "task": "visual_search",
+      "status": "completed",
+      "estimated_video_frames": 100,
+      "fixation_sufficient_frame_count": null,
+      "gaze_truth": null,
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 807818875589037,
+          "nearest_estimated_frame_delta_ms": 4.05247,
+          "video_path": "front_camera.mp4",
+          "pts_us": 55385022,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 807822226794766,
+          "nearest_estimated_frame_delta_ms": 10.203199,
+          "video_path": "front_camera.mp4",
+          "pts_us": 58730077,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "down",
+          "timestamp_ns": 807822153518463,
+          "nearest_estimated_frame_delta_ms": 3.815896,
+          "video_path": "front_camera.mp4",
+          "pts_us": 58663188,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "up",
+          "timestamp_ns": 807822219044245,
+          "nearest_estimated_frame_delta_ms": 2.452678,
+          "video_path": "front_camera.mp4",
+          "pts_us": 58730077,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    },
+    {
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "B_v2_051_attempt10",
+      "task": "visual_search",
+      "status": "completed",
+      "estimated_video_frames": 65,
+      "fixation_sufficient_frame_count": null,
+      "gaze_truth": null,
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 807832109202056,
+          "nearest_estimated_frame_delta_ms": 8.923511,
+          "video_path": "front_camera.mp4",
+          "pts_us": 68631611,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 807834280596327,
+          "nearest_estimated_frame_delta_ms": 11.78424,
+          "video_path": "front_camera.mp4",
+          "pts_us": 70805866,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "down",
+          "timestamp_ns": 807834196877055,
+          "nearest_estimated_frame_delta_ms": 4.829488,
+          "video_path": "front_camera.mp4",
+          "pts_us": 70705533,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "up",
+          "timestamp_ns": 807834275941639,
+          "nearest_estimated_frame_delta_ms": 16.438928,
+          "video_path": "front_camera.mp4",
+          "pts_us": 70805866,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    },
+    {
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "B_v2_053_attempt11",
+      "task": "visual_search",
+      "status": "completed",
+      "estimated_video_frames": 239,
+      "fixation_sufficient_frame_count": null,
+      "gaze_truth": null,
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 807845405801012,
+          "nearest_estimated_frame_delta_ms": 11.598445,
+          "video_path": "front_camera.mp4",
+          "pts_us": 81907688,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 807854302731219,
+          "nearest_estimated_frame_delta_ms": 8.305348,
+          "video_path": "front_camera.mp4",
+          "pts_us": 90824522,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "help_request",
+          "timestamp_ns": 807851717186428,
+          "nearest_estimated_frame_delta_ms": 6.838861,
+          "video_path": "front_camera.mp4",
+          "pts_us": 88223833,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "down",
+          "timestamp_ns": 807854233458824,
+          "nearest_estimated_frame_delta_ms": 3.266743,
+          "video_path": "front_camera.mp4",
+          "pts_us": 90750211,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "up",
+          "timestamp_ns": 807854298808563,
+          "nearest_estimated_frame_delta_ms": 12.228004,
+          "video_path": "front_camera.mp4",
+          "pts_us": 90824522,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    },
+    {
+      "valid_live_face_observations": 0,
+      "fixation_face_validity": "unverified_or_face_missing",
+      "trial_id": "B_v2_050_attempt12",
+      "task": "visual_search",
+      "status": "aborted_stop",
+      "estimated_video_frames": 203,
+      "fixation_sufficient_frame_count": null,
+      "gaze_truth": null,
+      "failure_reason": null,
+      "events": [
+        {
+          "event": "onset",
+          "timestamp_ns": 807856505793198,
+          "nearest_estimated_frame_delta_ms": 2.678631,
+          "video_path": "front_camera.mp4",
+          "pts_us": 93016600,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "offset",
+          "timestamp_ns": 807864412502051,
+          "nearest_estimated_frame_delta_ms": 367.310484,
+          "video_path": "front_camera.mp4",
+          "pts_us": 100558677,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "down",
+          "timestamp_ns": 807856707520802,
+          "nearest_estimated_frame_delta_ms": 18.526765,
+          "video_path": "front_camera.mp4",
+          "pts_us": 93239533,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "up",
+          "timestamp_ns": 807856756616896,
+          "nearest_estimated_frame_delta_ms": 6.585671,
+          "video_path": "front_camera.mp4",
+          "pts_us": 93276688,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "down",
+          "timestamp_ns": 807858810201791,
+          "nearest_estimated_frame_delta_ms": 3.643224,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95320044,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858815984344,
+          "nearest_estimated_frame_delta_ms": 9.425777,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95320044,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858818984344,
+          "nearest_estimated_frame_delta_ms": 12.425777,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95320044,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858847204135,
+          "nearest_estimated_frame_delta_ms": 3.489568,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95357200,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858866273406,
+          "nearest_estimated_frame_delta_ms": 14.596161,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95394355,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858874273406,
+          "nearest_estimated_frame_delta_ms": 6.596161,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95394355,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858882610385,
+          "nearest_estimated_frame_delta_ms": 1.740818,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95394355,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858890610385,
+          "nearest_estimated_frame_delta_ms": 9.740818,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95394355,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858898483562,
+          "nearest_estimated_frame_delta_ms": 17.613995,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95394355,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858906483562,
+          "nearest_estimated_frame_delta_ms": 11.542005,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95431511,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858915685124,
+          "nearest_estimated_frame_delta_ms": 2.340443,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95431511,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858923685124,
+          "nearest_estimated_frame_delta_ms": 5.659557,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95431511,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858932949448,
+          "nearest_estimated_frame_delta_ms": 14.923881,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95431511,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858940949448,
+          "nearest_estimated_frame_delta_ms": 14.231119,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95468666,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858949346323,
+          "nearest_estimated_frame_delta_ms": 5.834244,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95468666,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858957346323,
+          "nearest_estimated_frame_delta_ms": 2.165756,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95468666,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858966254916,
+          "nearest_estimated_frame_delta_ms": 11.074349,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95468666,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858974254916,
+          "nearest_estimated_frame_delta_ms": 18.081651,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95505822,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858984570802,
+          "nearest_estimated_frame_delta_ms": 7.765765,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95505822,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807858992570802,
+          "nearest_estimated_frame_delta_ms": 0.234235,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95505822,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859016081739,
+          "nearest_estimated_frame_delta_ms": 13.409828,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95542977,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859031998927,
+          "nearest_estimated_frame_delta_ms": 2.50736,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95542977,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859039998927,
+          "nearest_estimated_frame_delta_ms": 10.50736,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95542977,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859048550489,
+          "nearest_estimated_frame_delta_ms": 18.097078,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95580133,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859056550489,
+          "nearest_estimated_frame_delta_ms": 10.097078,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95580133,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859066316635,
+          "nearest_estimated_frame_delta_ms": 0.330932,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95580133,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859074316635,
+          "nearest_estimated_frame_delta_ms": 7.669068,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95580133,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859085356999,
+          "nearest_estimated_frame_delta_ms": 18.445568,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95617288,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859092356999,
+          "nearest_estimated_frame_delta_ms": 11.445568,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95617288,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859101515073,
+          "nearest_estimated_frame_delta_ms": 2.287494,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95617288,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859107515073,
+          "nearest_estimated_frame_delta_ms": 3.712506,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95617288,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859116333041,
+          "nearest_estimated_frame_delta_ms": 12.530474,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95617288,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859123333041,
+          "nearest_estimated_frame_delta_ms": 17.625526,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95654444,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859133046844,
+          "nearest_estimated_frame_delta_ms": 7.911723,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95654444,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859141046844,
+          "nearest_estimated_frame_delta_ms": 0.088277,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95654444,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859148983041,
+          "nearest_estimated_frame_delta_ms": 8.024474,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95654444,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859156983041,
+          "nearest_estimated_frame_delta_ms": 16.024474,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95654444,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859166401010,
+          "nearest_estimated_frame_delta_ms": 11.713557,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95691600,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859174401010,
+          "nearest_estimated_frame_delta_ms": 3.713557,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95691600,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859182522885,
+          "nearest_estimated_frame_delta_ms": 4.408318,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95691600,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859190522885,
+          "nearest_estimated_frame_delta_ms": 12.408318,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95691600,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859199766635,
+          "nearest_estimated_frame_delta_ms": 15.502932,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95728755,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859207766635,
+          "nearest_estimated_frame_delta_ms": 7.502932,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95728755,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859215703094,
+          "nearest_estimated_frame_delta_ms": 0.433527,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95728755,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859223703094,
+          "nearest_estimated_frame_delta_ms": 8.433527,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95728755,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859233481739,
+          "nearest_estimated_frame_delta_ms": 18.212172,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95728755,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859241481739,
+          "nearest_estimated_frame_delta_ms": 10.943828,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95765911,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859249964552,
+          "nearest_estimated_frame_delta_ms": 2.461015,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95765911,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859257964552,
+          "nearest_estimated_frame_delta_ms": 5.538985,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95765911,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859266031739,
+          "nearest_estimated_frame_delta_ms": 13.606172,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95765911,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859274031739,
+          "nearest_estimated_frame_delta_ms": 15.548828,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95803066,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859284200489,
+          "nearest_estimated_frame_delta_ms": 5.380078,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95803066,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859292200489,
+          "nearest_estimated_frame_delta_ms": 2.619922,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95803066,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859299033302,
+          "nearest_estimated_frame_delta_ms": 9.452735,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95803066,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "move",
+          "timestamp_ns": 807859306033302,
+          "nearest_estimated_frame_delta_ms": 16.452735,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95803066,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "up",
+          "timestamp_ns": 807859317034864,
+          "nearest_estimated_frame_delta_ms": 9.701703,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95840222,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "help_request",
+          "timestamp_ns": 807859375048927,
+          "nearest_estimated_frame_delta_ms": 11.15736,
+          "video_path": "front_camera.mp4",
+          "pts_us": 95877377,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "help_request",
+          "timestamp_ns": 807861983984343,
+          "nearest_estimated_frame_delta_ms": 17.752224,
+          "video_path": "front_camera.mp4",
+          "pts_us": 98515222,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "help_request",
+          "timestamp_ns": 807862468193197,
+          "nearest_estimated_frame_delta_ms": 16.56537,
+          "video_path": "front_camera.mp4",
+          "pts_us": 98998244,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "help_request",
+          "timestamp_ns": 807862971386947,
+          "nearest_estimated_frame_delta_ms": 3.60638,
+          "video_path": "front_camera.mp4",
+          "pts_us": 99481266,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "help_request",
+          "timestamp_ns": 807863446571843,
+          "nearest_estimated_frame_delta_ms": 4.130724,
+          "video_path": "front_camera.mp4",
+          "pts_us": 99964188,
+          "physical_sync_status": "unverified"
+        },
+        {
+          "event": "help_request",
+          "timestamp_ns": 807863926470280,
+          "nearest_estimated_frame_delta_ms": 7.255287,
+          "video_path": "front_camera.mp4",
+          "pts_us": 100447211,
+          "physical_sync_status": "unverified"
+        }
+      ]
+    }
+  ],
+  "physical_sync_status": "unverified",
+  "sync_uncertainty_ns": null,
+  "interpretation": "Nearest-frame residual checks estimated coverage only. They are not measured video/touch physical sync error.",
+  "missing_live_features": false,
+  "live_feature_count": 209,
+  "live_face_present_count": 206,
+  "live_inference_latency_ms_mean": 55.53613435885167,
+  "supports_cross_user_generalization": false
+}

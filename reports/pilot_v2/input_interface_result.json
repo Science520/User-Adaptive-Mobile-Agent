@@ -1,0 +1,128 @@
+{
+  "schema_version": "pilot-inputs-v2",
+  "models": {
+    "M0": "Screen",
+    "M1": "Screen + Actions",
+    "M2": "Screen + Actions + Single User Frame",
+    "M3": "Screen + Actions + Temporal User Features",
+    "M4": "Screen + Actions + Video Encoder",
+    "M5": "Screen + Actions + mismatched User Stream"
+  },
+  "input_configs": {
+    "A": "single_frame_user_image",
+    "B": "short_video_frame_sequence",
+    "C": "temporal_face_head_eye_features"
+  },
+  "windows": 17,
+  "excluded": [
+    {
+      "trial_id": "B_v2_054_attempt7",
+      "prefix_s": 5,
+      "reason": "trial_ended_before_or_at_prefix"
+    },
+    {
+      "trial_id": "B_v2_051_attempt8",
+      "prefix_s": 5,
+      "reason": "trial_ended_before_or_at_prefix"
+    },
+    {
+      "trial_id": "B_v2_057_attempt9",
+      "prefix_s": 2,
+      "reason": "trial_ended_before_or_at_prefix"
+    },
+    {
+      "trial_id": "B_v2_057_attempt9",
+      "prefix_s": 3,
+      "reason": "trial_ended_before_or_at_prefix"
+    },
+    {
+      "trial_id": "B_v2_057_attempt9",
+      "prefix_s": 5,
+      "reason": "trial_ended_before_or_at_prefix"
+    },
+    {
+      "trial_id": "B_v2_052_attempt11",
+      "prefix_s": 2,
+      "reason": "trial_ended_before_or_at_prefix"
+    },
+    {
+      "trial_id": "B_v2_052_attempt11",
+      "prefix_s": 3,
+      "reason": "trial_ended_before_or_at_prefix"
+    },
+    {
+      "trial_id": "B_v2_052_attempt11",
+      "prefix_s": 5,
+      "reason": "trial_ended_before_or_at_prefix"
+    },
+    {
+      "trial_id": "B_v2_050_attempt12",
+      "prefix_s": 2,
+      "reason": "trial_ended_before_or_at_prefix"
+    },
+    {
+      "trial_id": "B_v2_050_attempt12",
+      "prefix_s": 3,
+      "reason": "trial_ended_before_or_at_prefix"
+    },
+    {
+      "trial_id": "B_v2_050_attempt12",
+      "prefix_s": 5,
+      "reason": "trial_ended_before_or_at_prefix"
+    },
+    {
+      "trial_id": "B_v2_056_attempt13",
+      "prefix_s": 2,
+      "reason": "trial_ended_before_or_at_prefix"
+    },
+    {
+      "trial_id": "B_v2_056_attempt13",
+      "prefix_s": 3,
+      "reason": "trial_ended_before_or_at_prefix"
+    },
+    {
+      "trial_id": "B_v2_056_attempt13",
+      "prefix_s": 5,
+      "reason": "trial_ended_before_or_at_prefix"
+    },
+    {
+      "trial_id": "B_v2_055_attempt14",
+      "prefix_s": 3,
+      "reason": "help_at_or_before_prefix; not a pre-help prediction"
+    },
+    {
+      "trial_id": "B_v2_055_attempt14",
+      "prefix_s": 5,
+      "reason": "help_at_or_before_prefix; not a pre-help prediction"
+    },
+    {
+      "trial_id": "B_v2_058_attempt15",
+      "prefix_s": 2,
+      "reason": "trial_ended_before_or_at_prefix"
+    },
+    {
+      "trial_id": "B_v2_058_attempt15",
+      "prefix_s": 3,
+      "reason": "trial_ended_before_or_at_prefix"
+    },
+    {
+      "trial_id": "B_v2_058_attempt15",
+      "prefix_s": 5,
+      "reason": "trial_ended_before_or_at_prefix"
+    }
+  ],
+  "single_frame_encoder": "weak raw grayscale16x12; not gaze-specific or pretrained video encoder",
+  "video_encoder_status": "interface_only; not trained with insufficient synchronized independent groups",
+  "mapping_status": "estimated_unverified",
+  "physical_sync_uncertainty_ns": null,
+  "participants": 1,
+  "cross_user_generalization": false,
+  "training_status": "blocked_unverified_sync_and_insufficient_groups",
+  "fixed_prefixes_s": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "future_help_boundary": "all model inputs strictly before first observed help and prefix cutoff"
+}

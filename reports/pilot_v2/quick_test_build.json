@@ -1,0 +1,5 @@
+{
+  "apk_sha256": "ebf0df718c9927902431f7a1b89a01e44cccabb06fa4f60b2a5fdfe0c14ca75e",
+  "sample_session": "device_smoke_v2_20261027_154431",
+  "note": "Exact APK used for initial successful full Quick Test; a subsequent touch/assistance regression build is separately fingerprinted."
+}

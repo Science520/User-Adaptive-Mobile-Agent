@@ -1,0 +1,46 @@
+{
+  "apk_path": "mobile_pilot/app/build/outputs/apk/debug/app-debug.apk",
+  "apk_bytes": 59398397,
+  "apk_sha256": "65bb11eaa49ce53ccf30045eb0f811e22525df63919d3bb4308fa1fcecd2f4d2",
+  "permissions": [
+    "android.permission.CAMERA",
+    "org.usercamera.mobilepilot.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "internet_permission": false,
+  "microphone_permission": false,
+  "java_home": "/Users/audrey/Library/Java/JavaVirtualMachines/jbr-21.0.11/Contents/Home",
+  "device": "HUAWEI BLK-AL00",
+  "api": 31,
+  "build_log": "reports/pilot_v2/build.log",
+  "jvm_tests": [
+    {
+      "name": "org.usercamera.mobilepilot.CausalObservationTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "org.usercamera.mobilepilot.ClockMapperTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0"
+    }
+  ],
+  "source_sha256": {
+    "mobile_pilot/app/src/test/java/org/usercamera/mobilepilot/ClockMapperTest.kt": "338d0341d90cf56f45754e29c6cc48c6dff35fed1437f70c50adaedc9b935612",
+    "mobile_pilot/app/src/test/java/org/usercamera/mobilepilot/CausalObservationTest.kt": "b456a032764717c1e3bb44884acd1cb219087f7d0480421c8160b2e10876a0bf",
+    "mobile_pilot/app/src/main/AndroidManifest.xml": "2489c1f93c3b07ca4348a783097fb42f9b2c146ee121629e9502cd11cc5fcff4",
+    "mobile_pilot/app/src/main/java/org/usercamera/mobilepilot/MainActivity.kt": "d8108b67cb97edfe995e9beff8f06b4d99f57c90002276a44e78c4591d7ca6e1",
+    "mobile_pilot/app/src/main/java/org/usercamera/mobilepilot/ClockMapper.kt": "c93cfd466b50dfb5be1e12eb76a5f3e5f067b90710bb24d60cf40a1c59144c75",
+    "mobile_pilot/app/src/main/java/org/usercamera/mobilepilot/FrontVideoRecorder.kt": "24f8138465d230329f3d8e36fbf8f6817fdad8198a02d9885ec8acda6641ff45",
+    "mobile_pilot/app/src/main/java/org/usercamera/mobilepilot/LiveUserStateAnalyzer.kt": "1a98be97272eaf856f5a19cc13e09912fb9befa5d137f087762882dc6f8095d0",
+    "mobile_pilot/app/src/main/java/org/usercamera/mobilepilot/SessionStore.kt": "13dd4877b57a3a02df4c5fc05e639c75f69709e63c403415a7c7f3090d06caf0",
+    "mobile_pilot/app/src/main/java/org/usercamera/mobilepilot/StimulusView.kt": "69c5847ae11a200c97eb0d28e16b6a4dbcd60d8b2fdda0e3fd35b0062c569977",
+    "mobile_pilot/app/src/main/java/org/usercamera/mobilepilot/FrontCamera.kt": "e741a265d8bc5c4aed2e9c6c1fd651df4b588c2f21ffd3b8e6f2c0ef9bf080e6",
+    "mobile_pilot/app/src/main/assets/protocol_v2.json": "1323dc12963169ac4b9eeee7ca30669cbf17667efe2462b8d80d8e9fd873e851",
+    "mobile_pilot/app/src/main/assets/face_landmarker.task": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff",
+    "mobile_pilot/app/src/main/assets/protocol.json": "1285a13002f85d939687296c5f04737d79e51ec98b0df2537f7a98abe6d2f5e7"
+  },
+  "installed_apk_sha256": "65bb11eaa49ce53ccf30045eb0f811e22525df63919d3bb4308fa1fcecd2f4d2",
+  "installed_matches_local": true
+}

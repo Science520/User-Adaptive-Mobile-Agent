@@ -36,3 +36,37 @@ REALTIME要求mapped==sensor，二者与elapsedRealtime同基准。UNKNOWN默认
 提取结果每个Session独立存于`reports/.../features/<session_id>/`：camera_features.jsonl、windows.jsonl、extraction.json。窗口版本pilot-window-v2，包含participant/session/trial/template、mode、input_start/end_ns、label_time_ns、label_resolution=trial_only、screen/actions/user和六步sequence。相机特征只保存观测/估计，不写difficulty标签；trial自评只关联窗口级监督。
 
 窗口特征表采用显式白名单，见 `pilot_features.py` 的SCREEN_KEYS / ACTION_KEYS / USER_KEYS。face_scale是归一化脸宽，relative_inverse_scale_change=首个已见有效scale/当前scale−1。head rotation/velocity使用真实ns间隔，>0.5s缺口不计算连续角速度。feature_stability是姿态Euler序列展开后的平均标准差（rad），不是“困难真值”。gaze占比仅在可靠gaze_region及confidence≥0.8时计算；本轮后端没有经过验证的屏幕gaze，故为空。
+
+# temporal-pilot-v2（向后兼容读取 v1）
+
+新机器格式：[`schema/temporal-pilot-v2.schema.json`](schema/temporal-pilot-v2.schema.json)。旧 Schema/文件仍保留。旧 v1 CLI 的模型编号语义不变，v2 使用独立命令和窗口文件。示例 Session 结构：
+
+```text
+session.json                      # temporal-pilot-v2, capture_mode video/jpeg
+front_camera.mp4                   # 连续录像，暂停/恢复由分段映射解释
+front_camera_001.mp4               # 若需要重绑定设备，额外段，绝不覆盖
+video_timeline.jsonl               # Recorder/Sensor/Encoded PTS/Summary
+ui_states.jsonl                   # 跨trial索引+说明/反馈/休息/暂停截图
+page_<timestamp>.png               # 本App实际decor snapshot，不捕获其他App
+live_face_features.jsonl           # 可能为空；不伪造 unavailable 特征
+assistance_events.jsonl
+session_events.jsonl
+touch_events.jsonl                 # 各trial触摸索引
+trials/<trial_id>/
+  trial_meta.json
+  ui_states.jsonl
+  stimulus.png
+  ui_001.png                       # 实际帮助后的新版本
+  touch_events.jsonl
+  assistance_events.jsonl
+  feedback.json
+export_manifest.json               # 每个文件size+SHA256，不含自身
+```
+
+视频 Start/Status/Pause/Resume/Finalize 记录 elapsed 到达时间、Recorder 累计 duration/bytes、路径、停止错误/原因。最终 file_summary 记录编码 MIME/format、尺寸/rotation、首末PTS/帧数、有效帧率、最大帧间隔和>75ms缺口数、文件大小/hash；`exact_dropped_frames:null`。encoded_frame 每行包含 frame_index、原始 pts_us/flags，`mapped_elapsed_ns:null`、`mapping_status:unverified`；电脑回放仅使用显式同意后的估计映射。估计同步不确定度 null，不能填0。Start callback不是曝光锚点。
+
+Touch 扩展 down/up/move/cancel/pointer_down/pointer_up、pointer_id、is_action_pointer、historical、raw_uptime_ms、timestamp_ns、映射不确定度、View-local x/y、screen_x/y、normalized_x/y、view_origin_screen_px、coordinate_system、element/page/UI version、即时 interaction_success。全屏坐标=View-local+origin。保留 MotionEvent history 和多指事件；不合成缺失轨迹。
+
+Assistance 保存 requested_action、delivered_action、intervention_onset/end 和 trial ID。UI version 在每次实际改动后递增，保存真实重绘截图与扩展后的可点击区域。每trial版本从0开始，身份应使用(session_id, trial_id, ui_state_version)。Root非任务页以elapsed时间戳作唯一版本标识。
+
+Feedback 允许多个 difficulty_types（small_font/low_contrast/too_many/target_not_found/motor/semantic/next_step/other/none），none与其他互斥。difficulty_type保留逗号串便于人工查看；旧 v1 的枚举仍只适用于旧提取器。preferred_assistance与helpfulness单独保存。自动设备功能测试 participant前缀device_smoke，对应 evidence_tier=device_automated_smoke，评分保持missing，不用于研究标签或跨用户模型。原有Session不自动改写迁移。

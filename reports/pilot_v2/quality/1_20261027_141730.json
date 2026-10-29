@@ -1,0 +1,2224 @@
+{
+  "schema_version": "temporal-pilot-v1",
+  "session_id": "1_20261027_141730",
+  "legacy": {
+    "session_id": "1_20261027_141730",
+    "participant_id": "1",
+    "evidence_tier": "real_device_recording",
+    "trials": [
+      {
+        "trial_id": "A_r00_p00_attempt1",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 3,
+        "camera_records": 3,
+        "frame_statuses": {
+          "recorded": 3
+        },
+        "actual_saved_fps": 2.268401842849657,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 89.981529,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p01_attempt2",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.24296214552787,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 97.85173665,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p02_attempt3",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 3,
+        "camera_records": 3,
+        "frame_statuses": {
+          "recorded": 3
+        },
+        "actual_saved_fps": 2.242964660970284,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 94.55825540000001,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p03_attempt4",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.24296214552787,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 91.208778,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p04_attempt5",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 3,
+        "camera_records": 3,
+        "frame_statuses": {
+          "recorded": 3
+        },
+        "actual_saved_fps": 2.340481554079752,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 99.9646232,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p05_attempt6",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.24296214552787,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 94.7226735,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p06_attempt7",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 3,
+        "camera_records": 3,
+        "frame_statuses": {
+          "recorded": 3
+        },
+        "actual_saved_fps": 2.242964660970284,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 87.7746086,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p07_attempt8",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.4468662983317264,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 94.3814487,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p08_attempt9",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 3,
+        "camera_records": 3,
+        "frame_statuses": {
+          "recorded": 3
+        },
+        "actual_saved_fps": 2.24296214552787,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 97.800702,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p09_attempt10",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.4468722855010583,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 100.70538275,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p10_attempt11",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 3,
+        "camera_records": 3,
+        "frame_statuses": {
+          "recorded": 3
+        },
+        "actual_saved_fps": 2.3404842930099097,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 101.7326808,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p11_attempt12",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.4468662983317264,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 87.545484,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p12_attempt13",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 3,
+        "camera_records": 3,
+        "frame_statuses": {
+          "recorded": 3
+        },
+        "actual_saved_fps": 2.24296214552787,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 94.16924279999999,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p13_attempt14",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.4468722855010583,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 101.60991270000001,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p14_attempt15",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 3,
+        "camera_records": 3,
+        "frame_statuses": {
+          "recorded": 3
+        },
+        "actual_saved_fps": 2.340481554079752,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 90.7549186,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p15_attempt16",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.24296214552787,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 85.4970455,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p16_attempt17",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 3,
+        "camera_records": 3,
+        "frame_statuses": {
+          "recorded": 3
+        },
+        "actual_saved_fps": 2.340481554079752,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 97.629808,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p17_attempt18",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.4468722855010583,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 97.1233757,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p18_attempt19",
+        "task": "fixation",
+        "status": "aborted_pause",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.2429520838146337,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 90.1120394,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p18_attempt20",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 1.9225408299608764,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 91.5050876,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p19_attempt21",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 3,
+        "frame_statuses": {
+          "pre_onset": 1,
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.1141961931783344,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 1,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 160.10478389999997,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p20_attempt22",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.24296214552787,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 97.79153740000001,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p21_attempt23",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 90.73176865,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p22_attempt24",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704233808771555,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 85.3754887,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p23_attempt25",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 3,
+        "frame_statuses": {
+          "pre_onset": 1,
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 1,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 185.22212839999997,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r00_p24_attempt26",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 78.95526295,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p00_attempt27",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 3,
+        "frame_statuses": {
+          "pre_onset": 1,
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 1,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 182.6054572,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p01_attempt28",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 3,
+        "frame_statuses": {
+          "pre_onset": 1,
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 1,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 181.0636385,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p02_attempt29",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.24296214552787,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 92.44945225,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p03_attempt30",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 78.92538695,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p04_attempt31",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 3,
+        "frame_statuses": {
+          "pre_onset": 1,
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 1,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 185.61292479999997,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p05_attempt32",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 3,
+        "frame_statuses": {
+          "pre_onset": 1,
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 1,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 194.6956686,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p06_attempt33",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.24296214552787,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 103.65966005,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p07_attempt34",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 79.50098475,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p08_attempt35",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 3,
+        "frame_statuses": {
+          "pre_onset": 1,
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 1,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 182.9272097,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p09_attempt36",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 3,
+        "frame_statuses": {
+          "pre_onset": 1,
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 1,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 187.8928551,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p10_attempt37",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 3,
+        "frame_statuses": {
+          "pre_onset": 1,
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 1,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 191.8256025,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p11_attempt38",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 98.4261577,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p12_attempt39",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.24296214552787,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 103.6930596,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p13_attempt40",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704233808771555,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 87.91543815,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p14_attempt41",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 3,
+        "frame_statuses": {
+          "pre_onset": 1,
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 1,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 179.0937598,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p15_attempt42",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 99.812993,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p16_attempt43",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 84.49839940000001,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p17_attempt44",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 79.6430757,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p18_attempt45",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 96.9819251,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p19_attempt46",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 3,
+        "frame_statuses": {
+          "pre_onset": 1,
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 1,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 82.2651231,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p20_attempt47",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 3,
+        "frame_statuses": {
+          "pre_onset": 1,
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 1,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 176.08201939999998,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p21_attempt48",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 3,
+        "frame_statuses": {
+          "pre_onset": 1,
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 1,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 187.4238289,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p22_attempt49",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 3,
+        "frame_statuses": {
+          "pre_onset": 1,
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 1,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 184.9793001,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p23_attempt50",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 3,
+        "frame_statuses": {
+          "pre_onset": 1,
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704276675390068,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 1,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 181.36348729999997,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "A_r01_p24_attempt51",
+        "task": "fixation",
+        "status": "completed",
+        "recorded_frames": 2,
+        "camera_records": 2,
+        "frame_statuses": {
+          "recorded": 2
+        },
+        "actual_saved_fps": 2.0704233808771555,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 2
+        },
+        "capture_to_arrival_p95_ms": 104.9827068,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_046_attempt52",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 8,
+        "camera_records": 8,
+        "frame_statuses": {
+          "recorded": 8
+        },
+        "actual_saved_fps": 2.0704270551576553,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 8
+        },
+        "capture_to_arrival_p95_ms": 96.98359384999999,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_021_attempt53",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 8,
+        "camera_records": 8,
+        "frame_statuses": {
+          "recorded": 8
+        },
+        "actual_saved_fps": 2.2976711789646234,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 8
+        },
+        "capture_to_arrival_p95_ms": 96.30733575,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_003_attempt54",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 9,
+        "camera_records": 9,
+        "frame_statuses": {
+          "recorded": 9
+        },
+        "actual_saved_fps": 2.2906850723212226,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 9
+        },
+        "capture_to_arrival_p95_ms": 101.307715,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_006_attempt55",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 12,
+        "camera_records": 12,
+        "frame_statuses": {
+          "recorded": 12
+        },
+        "actual_saved_fps": 2.295124175607045,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 12
+        },
+        "capture_to_arrival_p95_ms": 106.07186665,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_023_attempt56",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 11,
+        "camera_records": 11,
+        "frame_statuses": {
+          "recorded": 11
+        },
+        "actual_saved_fps": 2.3004741277177225,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 11
+        },
+        "capture_to_arrival_p95_ms": 100.633347,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_008_attempt57",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 18,
+        "camera_records": 18,
+        "frame_statuses": {
+          "recorded": 18
+        },
+        "actual_saved_fps": 2.310931166604272,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 18
+        },
+        "capture_to_arrival_p95_ms": 101.8309838,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_045_attempt58",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 44,
+        "camera_records": 44,
+        "frame_statuses": {
+          "recorded": 44
+        },
+        "actual_saved_fps": 2.3147376818138974,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 44
+        },
+        "capture_to_arrival_p95_ms": 103.82128885,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 4,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_014_attempt59",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 6,
+        "camera_records": 6,
+        "frame_statuses": {
+          "recorded": 6
+        },
+        "actual_saved_fps": 2.2809781929360846,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 6
+        },
+        "capture_to_arrival_p95_ms": 99.9083185,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_031_attempt60",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 8,
+        "camera_records": 8,
+        "frame_statuses": {
+          "recorded": 8
+        },
+        "actual_saved_fps": 2.2976704247801787,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 8
+        },
+        "capture_to_arrival_p95_ms": 102.06834325,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_010_attempt61",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 10,
+        "camera_records": 10,
+        "frame_statuses": {
+          "recorded": 10
+        },
+        "actual_saved_fps": 2.307047517488702,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 10
+        },
+        "capture_to_arrival_p95_ms": 100.35338544999999,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_037_attempt62",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 11,
+        "camera_records": 11,
+        "frame_statuses": {
+          "recorded": 11
+        },
+        "actual_saved_fps": 2.300475186154452,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 11
+        },
+        "capture_to_arrival_p95_ms": 104.416792,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_026_attempt63",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 18,
+        "camera_records": 18,
+        "frame_statuses": {
+          "recorded": 18
+        },
+        "actual_saved_fps": 2.299319144550485,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 18
+        },
+        "capture_to_arrival_p95_ms": 103.78281055,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_019_attempt64",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 16,
+        "camera_records": 16,
+        "frame_statuses": {
+          "recorded": 16
+        },
+        "actual_saved_fps": 2.3070473992116356,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 16
+        },
+        "capture_to_arrival_p95_ms": 97.93315175,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_004_attempt65",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 16,
+        "camera_records": 16,
+        "frame_statuses": {
+          "recorded": 16
+        },
+        "actual_saved_fps": 2.3070481088742145,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 16
+        },
+        "capture_to_arrival_p95_ms": 103.110962,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_047_attempt66",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 7,
+        "camera_records": 7,
+        "frame_statuses": {
+          "recorded": 7
+        },
+        "actual_saved_fps": 2.3070489959530516,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 7
+        },
+        "capture_to_arrival_p95_ms": 94.43626470000001,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_027_attempt67",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 7,
+        "camera_records": 7,
+        "frame_statuses": {
+          "recorded": 7
+        },
+        "actual_saved_fps": 2.2745538083612598,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 7
+        },
+        "capture_to_arrival_p95_ms": 98.6890073,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_042_attempt68",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 8,
+        "camera_records": 8,
+        "frame_statuses": {
+          "recorded": 8
+        },
+        "actual_saved_fps": 2.3260350108144014,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 8
+        },
+        "capture_to_arrival_p95_ms": 100.1409385,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_028_attempt69",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 6,
+        "camera_records": 6,
+        "frame_statuses": {
+          "recorded": 6
+        },
+        "actual_saved_fps": 2.3203062061694157,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 6
+        },
+        "capture_to_arrival_p95_ms": 101.2795335,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_017_attempt70",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 7,
+        "camera_records": 7,
+        "frame_statuses": {
+          "recorded": 7
+        },
+        "actual_saved_fps": 2.307047221796059,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 7
+        },
+        "capture_to_arrival_p95_ms": 97.13147239999999,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_036_attempt71",
+        "task": "visual_search",
+        "status": "aborted_pause",
+        "recorded_frames": 0,
+        "camera_records": 0,
+        "frame_statuses": {},
+        "actual_saved_fps": null,
+        "estimated_saved_frame_gaps": null,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {},
+        "capture_to_arrival_p95_ms": null,
+        "synchronization_error_bound_ns": null,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": true,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_036_attempt72",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 19,
+        "camera_records": 19,
+        "frame_statuses": {
+          "recorded": 19
+        },
+        "actual_saved_fps": 2.3100079425773092,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 19
+        },
+        "capture_to_arrival_p95_ms": 101.88499089999999,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_000_attempt73",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 30,
+        "camera_records": 30,
+        "frame_statuses": {
+          "recorded": 30
+        },
+        "actual_saved_fps": 2.3093224320573453,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 30
+        },
+        "capture_to_arrival_p95_ms": 101.61145795,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 4,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_034_attempt74",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 9,
+        "camera_records": 9,
+        "frame_statuses": {
+          "recorded": 9
+        },
+        "actual_saved_fps": 2.290684416416648,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 9
+        },
+        "capture_to_arrival_p95_ms": 97.22493159999999,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_025_attempt75",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 5,
+        "camera_records": 5,
+        "frame_statuses": {
+          "recorded": 5
+        },
+        "actual_saved_fps": 2.290684416416648,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 5
+        },
+        "capture_to_arrival_p95_ms": 96.0198006,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_016_attempt76",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 8,
+        "camera_records": 8,
+        "frame_statuses": {
+          "recorded": 8
+        },
+        "actual_saved_fps": 2.2976696705962287,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 8
+        },
+        "capture_to_arrival_p95_ms": 106.21405,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_038_attempt77",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 22,
+        "camera_records": 22,
+        "frame_statuses": {
+          "recorded": 22
+        },
+        "actual_saved_fps": 2.3070470950706645,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 22
+        },
+        "capture_to_arrival_p95_ms": 103.7864803,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 7,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_033_attempt78",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 10,
+        "camera_records": 10,
+        "frame_statuses": {
+          "recorded": 10
+        },
+        "actual_saved_fps": 2.267418878680745,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 10
+        },
+        "capture_to_arrival_p95_ms": 125.28530249999996,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_011_attempt79",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 15,
+        "camera_records": 15,
+        "frame_statuses": {
+          "recorded": 15
+        },
+        "actual_saved_fps": 2.310804911120666,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 15
+        },
+        "capture_to_arrival_p95_ms": 100.17544039999999,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_032_attempt80",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 11,
+        "camera_records": 11,
+        "frame_statuses": {
+          "recorded": 11
+        },
+        "actual_saved_fps": 2.3014043399422763,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 11
+        },
+        "capture_to_arrival_p95_ms": 106.3278715,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_007_attempt81",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 7,
+        "camera_records": 7,
+        "frame_statuses": {
+          "recorded": 7
+        },
+        "actual_saved_fps": 2.3161802173503516,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 7
+        },
+        "capture_to_arrival_p95_ms": 103.9538513,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_018_attempt82",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 31,
+        "camera_records": 31,
+        "frame_statuses": {
+          "recorded": 31
+        },
+        "actual_saved_fps": 2.308733013496853,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 31
+        },
+        "capture_to_arrival_p95_ms": 104.597191,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 3,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_020_attempt83",
+        "task": "visual_search",
+        "status": "completed",
+        "recorded_frames": 25,
+        "camera_records": 25,
+        "frame_statuses": {
+          "recorded": 25
+        },
+        "actual_saved_fps": 2.306878689323804,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 25
+        },
+        "capture_to_arrival_p95_ms": 103.6333504,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 2,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": true,
+        "label_resolution": "trial_only"
+      },
+      {
+        "trial_id": "B_044_attempt84",
+        "task": "visual_search",
+        "status": "aborted_stop",
+        "recorded_frames": 3,
+        "camera_records": 3,
+        "frame_statuses": {
+          "recorded": 3
+        },
+        "actual_saved_fps": 2.279415284391248,
+        "estimated_saved_frame_gaps": 0,
+        "gap_count_is_exact_driver_drops": false,
+        "out_of_trial_camera_records": 0,
+        "clock_status_counts": {
+          "shared_clock": 3
+        },
+        "capture_to_arrival_p95_ms": 92.1424444,
+        "synchronization_error_bound_ns": 0,
+        "sync_bound_scope": "clock mapping only, not physical camera-display alignment",
+        "camera_interruptions": [],
+        "touch_event_count": 0,
+        "ui_state_count": 1,
+        "camera_missing": false,
+        "has_independent_trial_label": false,
+        "label_resolution": "trial_only"
+      }
+    ],
+    "errors": [],
+    "warnings": [
+      "B_036_attempt71: no recorded camera frames"
+    ],
+    "physical_sync_proven": false,
+    "clock_alignment_usable": true,
+    "note": "Clock mapping checks do not prove display photon timing, fixation compliance, consent, or true difficulty onset.",
+    "missing_camera_trial_fraction": 0.011904761904761904
+  },
+  "videos": [],
+  "ignored_os_metadata": [
+    ".DS_Store",
+    "trials/.DS_Store",
+    "trials/A_r00_p00_attempt1/.DS_Store",
+    "trials/B_000_attempt73/.DS_Store",
+    "trials/B_008_attempt57/.DS_Store",
+    "trials/B_020_attempt83/.DS_Store"
+  ],
+  "note": "Legacy JPEG format retained; original files untouched. No MP4 fabricated."
+}

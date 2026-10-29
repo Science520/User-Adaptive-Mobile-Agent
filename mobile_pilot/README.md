@@ -1,3 +1,7 @@
+# Mobile Pilot v2
+
+视频优先采集、时间映射、真机结果和完整命令见 [VIDEO_V2.md](VIDEO_V2.md) 与 [本轮结果](../reports/pilot_v2/RESULTS.md)。下面保留 v1 历史说明，v2 默认模式以 VIDEO_V2.md 为准。
+
 # Temporal User–Screen Mobile Interaction Pilot
 
 这是现有 `usercamera` 的研究原型扩展：同一台 Android 手机显示受控任务，记录前摄帧、UI状态、触摸和任务后自评。仅操作自己的实验App，无跨App自动化、MediaProjection、真实账户或支付。
