@@ -1,0 +1,118 @@
+{
+  "file_bytes": {
+    "video": 258776308,
+    "json_metadata": 3942738,
+    "screenshots": 3786355
+  },
+  "phase_estimated_payload": {
+    "feedback": {
+      "frames": 2861,
+      "effective_pts_fps": 20.433589042314978,
+      "instant_fps": {
+        "n": 2852,
+        "mean": 28.047694466614338,
+        "p05": 26.913553665626008,
+        "median": 26.914278024491992,
+        "p95": 29.900729577801698,
+        "max": 29.9805126667666
+      },
+      "gaps_over_75ms": 0,
+      "duplicates": 0,
+      "max_pts_gap_us": 37256,
+      "disjoint_category_note": "effective_pts_fps over disjoint spans is sampling density; use instant_fps for local recording rate",
+      "estimated_duration_s": 102.27523500000001,
+      "encoded_payload_bytes": 141971729
+    },
+    "fixation": {
+      "frames": 222,
+      "effective_pts_fps": 29.233361058729162,
+      "instant_fps": {
+        "n": 217,
+        "mean": 29.8948225397973,
+        "p05": 29.819414144286455,
+        "median": 29.89983555090447,
+        "p95": 29.969730572122156,
+        "max": 29.9805126667666
+      },
+      "gaps_over_75ms": 0,
+      "duplicates": 0,
+      "max_pts_gap_us": 33556,
+      "disjoint_category_note": "effective_pts_fps over disjoint spans is sampling density; use instant_fps for local recording rate",
+      "estimated_duration_s": 7.426155,
+      "encoded_payload_bytes": 10951319
+    },
+    "instruction": {
+      "frames": 120,
+      "effective_pts_fps": 10.432313310246654,
+      "instant_fps": {
+        "n": 114,
+        "mean": 29.89420037203879,
+        "p05": 29.81159074648223,
+        "median": 29.890898221491558,
+        "p95": 29.97004494620656,
+        "max": 29.9805126667666
+      },
+      "gaps_over_75ms": 0,
+      "duplicates": 0,
+      "max_pts_gap_us": 33556,
+      "disjoint_category_note": "effective_pts_fps over disjoint spans is sampling density; use instant_fps for local recording rate",
+      "estimated_duration_s": 4.014156,
+      "encoded_payload_bytes": 5998419
+    },
+    "quality_or_startup": {
+      "frames": 548,
+      "effective_pts_fps": 29.910760398787538,
+      "instant_fps": {
+        "n": 547,
+        "mean": 29.914062146536285,
+        "p05": 29.890004782400766,
+        "median": 29.89983555090447,
+        "p95": 29.900729577801698,
+        "max": 37.29812390436761
+      },
+      "gaps_over_75ms": 0,
+      "duplicates": 0,
+      "max_pts_gap_us": 33556,
+      "disjoint_category_note": "effective_pts_fps over disjoint spans is sampling density; use instant_fps for local recording rate",
+      "estimated_duration_s": 18.3211,
+      "encoded_payload_bytes": 27701679
+    },
+    "visual_search": {
+      "frames": 1422,
+      "effective_pts_fps": 9.863862660435363,
+      "instant_fps": {
+        "n": 1413,
+        "mean": 28.100554682444297,
+        "p05": 26.913553665626008,
+        "median": 26.914278024491992,
+        "p95": 29.900729577801698,
+        "max": 29.9805126667666
+      },
+      "gaps_over_75ms": 0,
+      "duplicates": 0,
+      "max_pts_gap_us": 37256,
+      "disjoint_category_note": "effective_pts_fps over disjoint spans is sampling density; use instant_fps for local recording rate",
+      "estimated_duration_s": 50.739864000000004,
+      "encoded_payload_bytes": 72123320
+    },
+    "assistance_subset": {
+      "frames": 492,
+      "effective_pts_fps": 4.965128366416442,
+      "instant_fps": {
+        "n": 488,
+        "mean": 27.489400724165318,
+        "p05": 26.913553665626008,
+        "median": 26.914278024491992,
+        "p95": 29.900729577801698,
+        "max": 29.9805126667666
+      },
+      "gaps_over_75ms": 0,
+      "duplicates": 0,
+      "max_pts_gap_us": 37256,
+      "disjoint_category_note": "effective_pts_fps over disjoint spans is sampling density; use instant_fps for local recording rate",
+      "estimated_duration_s": 17.923988,
+      "encoded_payload_bytes": 24726609
+    }
+  },
+  "container_overhead_bytes": 29842
+}

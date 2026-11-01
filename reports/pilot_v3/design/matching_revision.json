@@ -1,0 +1,8 @@
+{
+  "metadata_only": true,
+  "all384_UI_templates_and_order_unchanged": true,
+  "old_pair_id_meaning": "randomization_block",
+  "current_pair_id_meaning": "domain+semantic_group+exact_text_length match family",
+  "not_guaranteed_two_members_per_session": true,
+  "counterbalance_across_people_required": true
+}

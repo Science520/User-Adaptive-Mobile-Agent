@@ -76,7 +76,7 @@ def validate_orientation(summary,camera):
 
 def inspect_folder(root):
     session=json.loads((root/'session.json').read_text())
-    if session['schema_version']!='temporal-pilot-v2':
+    if session['schema_version'] not in ['temporal-pilot-v2','temporal-pilot-v3']:
         from .pilot_session import verify_folder
         ignored=[str(p.relative_to(root)) for p in root.rglob('.DS_Store')]
         with tempfile.TemporaryDirectory(prefix='pilot_v1_readonly_') as tmp:
@@ -184,7 +184,7 @@ def verify_video(path,output='reports/pilot_v2'):
 
 def replay(path,output='reports/pilot_v2/private/replay',allow_estimated=False):
     with session_folder(path) as root:
-        session=json.loads((root/'session.json').read_text());v2=session['schema_version']=='temporal-pilot-v2'
+        session=json.loads((root/'session.json').read_text());v2=session['schema_version'] in ['temporal-pilot-v2','temporal-pilot-v3']
         if v2 and not allow_estimated:raise ValueError('PTS mapping is unverified; explicit --allow-estimated-clock required for diagnostic replay')
         destination=Path(output)/session['session_id']
         if destination.exists():raise ValueError('Replay destination exists; no overwrite')

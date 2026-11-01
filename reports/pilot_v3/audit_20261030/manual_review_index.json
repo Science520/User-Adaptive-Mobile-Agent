@@ -1,0 +1,33 @@
+{
+  "seed": 20261030,
+  "strata_counts": {
+    "face_present=False": 3,
+    "face_present=True": 114,
+    "face_fully_in_frame_proxy=False": 87,
+    "face_fully_in_frame_proxy=True": 30
+  },
+  "chosen_frame_indices": [
+    124,
+    151,
+    381,
+    598,
+    816,
+    871,
+    925,
+    1143,
+    1469,
+    1905,
+    2395,
+    2613,
+    3212,
+    3375,
+    3756,
+    4008,
+    4192,
+    4246,
+    5008,
+    5063
+  ],
+  "private_contact_sheet": "reports/pilot_v3/private/audit_20261030/stratified_random_review.jpg",
+  "no_faces_in_public_output": true
+}

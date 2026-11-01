@@ -1,0 +1,159 @@
+# Efficient temporal preparation
+
+{
+  "windows": 39,
+  "excluded": [
+    {
+      "trial_id": "B_v2_057_attempt7",
+      "decision_prefix_s": 2,
+      "reason": "task_ended_or_help_already_occurred"
+    },
+    {
+      "trial_id": "B_v2_057_attempt7",
+      "decision_prefix_s": 3,
+      "reason": "task_ended_or_help_already_occurred"
+    },
+    {
+      "trial_id": "B_v2_057_attempt7",
+      "decision_prefix_s": 5,
+      "reason": "task_ended_or_help_already_occurred"
+    },
+    {
+      "trial_id": "B_v2_050_attempt8",
+      "decision_prefix_s": 5,
+      "reason": "task_ended_or_help_already_occurred"
+    },
+    {
+      "trial_id": "B_v2_056_attempt9",
+      "decision_prefix_s": 3,
+      "reason": "task_ended_or_help_already_occurred"
+    },
+    {
+      "trial_id": "B_v2_056_attempt9",
+      "decision_prefix_s": 5,
+      "reason": "task_ended_or_help_already_occurred"
+    },
+    {
+      "trial_id": "B_v2_054_attempt12",
+      "decision_prefix_s": 3,
+      "reason": "task_ended_or_help_already_occurred"
+    },
+    {
+      "trial_id": "B_v2_054_attempt12",
+      "decision_prefix_s": 5,
+      "reason": "task_ended_or_help_already_occurred"
+    },
+    {
+      "trial_id": "B_v2_055_attempt13",
+      "decision_prefix_s": 2,
+      "reason": "task_ended_or_help_already_occurred"
+    },
+    {
+      "trial_id": "B_v2_055_attempt13",
+      "decision_prefix_s": 3,
+      "reason": "task_ended_or_help_already_occurred"
+    },
+    {
+      "trial_id": "B_v2_055_attempt13",
+      "decision_prefix_s": 5,
+      "reason": "task_ended_or_help_already_occurred"
+    },
+    {
+      "trial_id": "B_v2_051_attempt14",
+      "decision_prefix_s": 2,
+      "reason": "task_ended_or_help_already_occurred"
+    },
+    {
+      "trial_id": "B_v2_051_attempt14",
+      "decision_prefix_s": 3,
+      "reason": "task_ended_or_help_already_occurred"
+    },
+    {
+      "trial_id": "B_v2_051_attempt14",
+      "decision_prefix_s": 5,
+      "reason": "task_ended_or_help_already_occurred"
+    }
+  ],
+  "participants": 1,
+  "sessions": 1,
+  "scope": "within-person exploratory preparation only",
+  "models": {
+    "screen_only": "not_trained",
+    "screen_touch": "not_trained",
+    "screen_touch_temporal_user": "not_trained",
+    "single_frame_face": "representation_interface",
+    "short_video_clips": "sampled_frame_refs_not_large_video_transformer"
+  },
+  "train_status": "blocked",
+  "blockers": [
+    "unverified_encoded_video_to_elapsed_mapping",
+    "one_participant_one_session; no independent train/validation/test groups"
+  ],
+  "recent_windows_s": [
+    2,
+    3,
+    5
+  ],
+  "decision_prefix_s": [
+    2,
+    3,
+    5
+  ],
+  "no_help_not_no_difficulty": true,
+  "inputs_strictly_before_cutoff": true,
+  "live_available_ns_checked": true,
+  "unavailable_observations_have_masks_not_fabricated_interpolation": true,
+  "npz_cache_bytes": 7742,
+  "raw_video_bytes": 258776308,
+  "cache_load_seconds": 0.0014502499999999863,
+  "X_shape": [
+    39,
+    21
+  ],
+  "sequence_feature_keys": [
+    "head_x",
+    "head_y",
+    "face_scale",
+    "yaw_proxy_deg",
+    "pitch_proxy_deg",
+    "roll_proxy_deg",
+    "eyeBlinkLeft",
+    "eyeBlinkRight"
+  ],
+  "feature_keys": [
+    "euler_velocity_proxy_deg_s",
+    "eyeBlinkLeft_mean",
+    "eyeBlinkLeft_std",
+    "eyeBlinkRight_mean",
+    "eyeBlinkRight_std",
+    "face_fraction",
+    "face_scale_mean",
+    "face_scale_std",
+    "head_x_mean",
+    "head_x_std",
+    "head_y_mean",
+    "head_y_std",
+    "missing",
+    "observations",
+    "pitch_proxy_deg_mean",
+    "pitch_proxy_deg_std",
+    "relative_scale_change",
+    "roll_proxy_deg_mean",
+    "roll_proxy_deg_std",
+    "yaw_proxy_deg_mean",
+    "yaw_proxy_deg_std"
+  ],
+  "blink_limit": "~2Hz Live features support blendshape dynamics proxies, not validated complete blink counts",
+  "selection_bias": "short/easily completed trials excluded at longer prefixes; report excluded list, do not claim all-trial performance",
+  "protocol_split_policy": "Do not mix v1/v2/v3 task definitions; group by protocol_version and participant/session before fitting"
+}
+
+先一次性缓存Face/Head/Eye代理，再按实际timestamp与available_ns取最近2/3/5秒；单帧用截止前的预测ROI裁剪，短视频保留原始PTS采样引用。缺失以mask/NaN表示，不插值成真实观察。原始视频不重写，每epoch读紧凑cache。当前时间映射未验证，单人单Session，未训练或报告融合性能/跨用户可靠性。
+
+本轮已实际生成39段4Hz左右的采样短片，原PTS引用逐项核对，另有39×256单帧灰度人脸表示与时序cache。合计clip约7.34MB、合并cache约12KB（见cache_cost.json）。这是采样后的训练输入，不是保留原始眼部细节的研究替代原件。
+
+固定2秒决策点、最近2秒的探索只有6个可用试次（3后续求助、3未求助），不能训练可靠分类器；6个无求助试次中5个自评≥3。没有求助不能自动标成没有困难。见pre_help_exploratory.csv/json。
+
+“早于截止”对Live通道按记录的capture/available时钟筛选；视频和appearance窗口仍依赖未验证的PTS映射，不能声称物理上已保证严格早于事件。这个区别是阻止融合指标的原因之一。
+
+实际小模型入口检查见[evaluation/results.json](evaluation/results.json)：2秒前缀/2秒近期选出的6个trial困难标签全为1。与future_help的3/3分布分开；未拟合分类器，Logistic/HGB/GRU训练路径待有独立组、有效同步且类别充分的数据再实测。

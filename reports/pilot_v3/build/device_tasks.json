@@ -1,0 +1,74 @@
+{
+  "results": [
+    {
+      "session_id": "device_smoke_v3_assigned_20261031_100924",
+      "mode": "assigned_pre_task",
+      "camera_available": false,
+      "trials": [
+        {
+          "trial_id": "S_v3_017_attempt6",
+          "task_family": "visual_search",
+          "element_count": 24,
+          "target_text": "访客登记",
+          "last_assistance": "increase_contrast"
+        },
+        {
+          "trial_id": "R_v3_007_attempt7",
+          "task_family": "readability",
+          "element_count": 6,
+          "target_text": "就诊指南",
+          "last_assistance": "zoom_text"
+        },
+        {
+          "trial_id": "M_v3_018_attempt8",
+          "task_family": "mixed",
+          "element_count": 24,
+          "target_text": "手机充值",
+          "last_assistance": "increase_contrast"
+        },
+        {
+          "trial_id": "R_v3_008_attempt9",
+          "task_family": "readability",
+          "element_count": 6,
+          "target_text": "评价管理",
+          "last_assistance": "increase_contrast"
+        },
+        {
+          "trial_id": "S_v3_001_attempt10",
+          "task_family": "visual_search",
+          "element_count": 24,
+          "target_text": "养老服务",
+          "last_assistance": "none"
+        },
+        {
+          "trial_id": "R_v3_019_attempt11",
+          "task_family": "readability",
+          "element_count": 6,
+          "target_text": "电费缴纳",
+          "last_assistance": "none"
+        },
+        {
+          "trial_id": "M_v3_006_attempt12",
+          "task_family": "mixed",
+          "element_count": 24,
+          "target_text": "机场巴士",
+          "last_assistance": "increase_contrast"
+        },
+        {
+          "trial_id": "R_v3_016_attempt13",
+          "task_family": "readability",
+          "element_count": 6,
+          "target_text": "服务网点",
+          "last_assistance": "none"
+        }
+      ],
+      "assistance_sources": [
+        "assigned_pre_task",
+        "rescue_crossover"
+      ],
+      "protocol_version": "mobile-pilot-rsm-v3"
+    }
+  ],
+  "subjective_ratings_fabricated": false,
+  "video_recorded": false
+}

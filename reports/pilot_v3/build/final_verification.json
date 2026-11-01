@@ -1,0 +1,278 @@
+{
+  "apk_path": "mobile_pilot/app/build/outputs/apk/debug/app-debug.apk",
+  "apk_bytes": 60123846,
+  "apk_sha256": "c86a60d3ce48ee30d4ad9d618cc69982f9b938d8c60a226c930e2f700e510a0f",
+  "installed_sha256": "c86a60d3ce48ee30d4ad9d618cc69982f9b938d8c60a226c930e2f700e510a0f",
+  "installed_matches": true,
+  "version_name": "0.4.1-rsm-v3",
+  "version_code": 4,
+  "protocol_version": "mobile-pilot-rsm-v3",
+  "label_schema_version": "self-report-v3.1",
+  "protocol_asset_sha256": "749af7cccbd85182ab72e5577f0ddfd63c2f06199bd54b57822188d309255578",
+  "permissions": [
+    "android.permission.CAMERA",
+    "org.usercamera.mobilepilot.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "JVM_tests": [
+    {
+      "name": "org.usercamera.mobilepilot.CausalObservationTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "org.usercamera.mobilepilot.ProtocolV3RulesTest",
+      "tests": "9",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "org.usercamera.mobilepilot.ClockMapperTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0"
+    }
+  ],
+  "python_tests": "108 passed in 4.78s",
+  "historical_files_checked": 392,
+  "historical_changed": [],
+  "core_test_apk_sha256": "948472fa390328519e70c97c6da1d9bfc4dd37018b50c4665df3671221f65a91",
+  "core_test_verification": "reports/pilot_v3/build/core_test_verification.json",
+  "core_full_quick_tests": [
+    {
+      "session_id": "device_smoke_v3_requested_20261031_100924",
+      "research_mode": "requested_only",
+      "counterbalance_group": 0,
+      "protocol_version": "mobile-pilot-rsm-v3",
+      "CRC_hash_schema_and_UI_checks": "passed",
+      "camera_available": false,
+      "video_recorded": false,
+      "targets_unique": 8,
+      "families": {
+        "readability": 4,
+        "mixed": 2,
+        "visual_search": 2
+      },
+      "sources": {
+        "self_selected": 2
+      },
+      "actual_draw_onsets_match_UI": true,
+      "trials": [
+        {
+          "trial_id": "R_v3_020_attempt6",
+          "family": "readability",
+          "target": "乘车码",
+          "status": "completed",
+          "misclicks": 0,
+          "self_report_status": "missing"
+        },
+        {
+          "trial_id": "R_v3_005_attempt7",
+          "family": "readability",
+          "target": "客服咨询",
+          "status": "completed",
+          "misclicks": 0,
+          "self_report_status": "missing"
+        },
+        {
+          "trial_id": "M_v3_003_attempt8",
+          "family": "mixed",
+          "target": "浏览记录",
+          "status": "timeout",
+          "misclicks": 1,
+          "self_report_status": "missing"
+        },
+        {
+          "trial_id": "S_v3_022_attempt9",
+          "family": "visual_search",
+          "target": "出院小结",
+          "status": "completed",
+          "misclicks": 0,
+          "self_report_status": "missing"
+        },
+        {
+          "trial_id": "R_v3_000_attempt10",
+          "family": "readability",
+          "target": "付款码",
+          "status": "completed",
+          "misclicks": 0,
+          "self_report_status": "missing"
+        },
+        {
+          "trial_id": "M_v3_023_attempt11",
+          "family": "mixed",
+          "target": "社区公告",
+          "status": "completed",
+          "misclicks": 0,
+          "self_report_status": "missing"
+        },
+        {
+          "trial_id": "S_v3_018_attempt12",
+          "family": "visual_search",
+          "target": "手机充值",
+          "status": "completed",
+          "misclicks": 0,
+          "self_report_status": "missing"
+        },
+        {
+          "trial_id": "R_v3_017_attempt13",
+          "family": "readability",
+          "target": "访客登记",
+          "status": "completed",
+          "misclicks": 0,
+          "self_report_status": "missing"
+        }
+      ],
+      "not_human_difficulty_research_data": true,
+      "zip_sha256": "a5c361d527da9e925dfe0a068958a3a5b5c10966bf3857643977e8edb5361a1b"
+    },
+    {
+      "session_id": "device_smoke_v3_assigned_20261031_100924",
+      "research_mode": "assigned_pre_task",
+      "counterbalance_group": 1,
+      "protocol_version": "mobile-pilot-rsm-v3",
+      "CRC_hash_schema_and_UI_checks": "passed",
+      "camera_available": false,
+      "video_recorded": false,
+      "targets_unique": 8,
+      "families": {
+        "visual_search": 2,
+        "readability": 4,
+        "mixed": 2
+      },
+      "sources": {
+        "assigned_pre_task": 8,
+        "rescue_crossover": 1
+      },
+      "actual_draw_onsets_match_UI": true,
+      "trials": [
+        {
+          "trial_id": "S_v3_017_attempt6",
+          "family": "visual_search",
+          "target": "访客登记",
+          "status": "completed",
+          "misclicks": 0,
+          "self_report_status": "missing"
+        },
+        {
+          "trial_id": "R_v3_007_attempt7",
+          "family": "readability",
+          "target": "就诊指南",
+          "status": "completed",
+          "misclicks": 0,
+          "self_report_status": "missing"
+        },
+        {
+          "trial_id": "M_v3_018_attempt8",
+          "family": "mixed",
+          "target": "手机充值",
+          "status": "completed",
+          "misclicks": 0,
+          "self_report_status": "missing"
+        },
+        {
+          "trial_id": "R_v3_008_attempt9",
+          "family": "readability",
+          "target": "评价管理",
+          "status": "completed",
+          "misclicks": 0,
+          "self_report_status": "missing"
+        },
+        {
+          "trial_id": "S_v3_001_attempt10",
+          "family": "visual_search",
+          "target": "养老服务",
+          "status": "completed",
+          "misclicks": 0,
+          "self_report_status": "missing"
+        },
+        {
+          "trial_id": "R_v3_019_attempt11",
+          "family": "readability",
+          "target": "电费缴纳",
+          "status": "completed",
+          "misclicks": 0,
+          "self_report_status": "missing"
+        },
+        {
+          "trial_id": "M_v3_006_attempt12",
+          "family": "mixed",
+          "target": "机场巴士",
+          "status": "completed",
+          "misclicks": 0,
+          "self_report_status": "missing"
+        },
+        {
+          "trial_id": "R_v3_016_attempt13",
+          "family": "readability",
+          "target": "服务网点",
+          "status": "completed",
+          "misclicks": 0,
+          "self_report_status": "missing"
+        }
+      ],
+      "not_human_difficulty_research_data": true,
+      "zip_sha256": "0e39ee03e051456c46fc350a8843df01b573c36bbb2226d1e9d04b8927f5b3f6"
+    }
+  ],
+  "final_matching_metadata_regression": {
+    "session_id": "device_smoke_v3_metadata_20261031_103752",
+    "metadata_check": "passed",
+    "pair_id": "match_qr_other_len3",
+    "randomization_block_id": "block_05",
+    "protocol_sha256": "749af7cccbd85182ab72e5577f0ddfd63c2f06199bd54b57822188d309255578",
+    "render_valid": true,
+    "camera_available": false,
+    "status": "aborted_stop"
+  },
+  "final_feedback_UI_regression": {
+    "session_id": "device_smoke_v3_feedback_20261031_104901",
+    "camera_available": false,
+    "video_recorded": false,
+    "subjective_answers_entered": false,
+    "render_valid": true,
+    "mandatory_helpfulness_UI_checked": true,
+    "unable_to_rate_choice_present": true,
+    "zero_as_default_help_score_removed": true,
+    "actual_deliveries": 1,
+    "feedback_status": "missing",
+    "label_schema_version": "self-report-v3.1",
+    "protocol_sha256": "749af7cccbd85182ab72e5577f0ddfd63c2f06199bd54b57822188d309255578"
+  },
+  "old_session_compatibility": [
+    {
+      "path": "1_20261027_141730",
+      "schema": "temporal-pilot-v1",
+      "result": "passed"
+    },
+    {
+      "path": "data/private/pilot_v2/device_smoke_offline_20261027_160605.zip",
+      "schema": "temporal-pilot-v2",
+      "result": "passed"
+    }
+  ],
+  "current_v3_video_newly_recorded": false,
+  "scope": "Two full no-camera modes tested on0.4.0; final0.4.1 changes matching metadata and feedback semantics, separately device checked;384 task UI templates/order unchanged",
+  "source_sha256": {
+    "usercamera/pilot_v3_cache.py": "95868bbecefe5c75eeb6814daacb86125dd18a8694ff96f2b417c72399d4bf10",
+    "usercamera/pilot_design_v3.py": "7884165ae31b29484146e9a15c071158b6b9ea19a6581c4afcac7321d78fe820",
+    "usercamera/pilot_v3_faces.py": "40a2fc07f182d9c3ee0ef8d87c36ca748f4f68d538947764ee91b09d08878c88",
+    "usercamera/pilot_v3_audit.py": "b4e7d9d5051f12d31c92f4f95d7122c7300b41ba4b59ac2ac7a1c2706065ef8a",
+    "usercamera/pilot_v3_evaluation.py": "fd411ff910e8576e996e98fccf05926e469c3c339cb8f726b415591b4ddff251",
+    "usercamera/pilot_v3_temporal.py": "b65b5ca0cb9d73fda2e84cf2d1f227826a0880bc27e99067fb487dd02d0a528c",
+    "usercamera/pilot_v3_timeline.py": "c79d87bf6e39c8d152b3dcf46341276e30c5b8a3c35a54fba853f74afd1c96e4",
+    "usercamera/pilot_v3_compression.py": "4774828d696030adf4ff89e9a300f769bb7534788a092b58742d31b530fac0cb",
+    "mobile_pilot/app/src/test/java/org/usercamera/mobilepilot/ClockMapperTest.kt": "338d0341d90cf56f45754e29c6cc48c6dff35fed1437f70c50adaedc9b935612",
+    "mobile_pilot/app/src/test/java/org/usercamera/mobilepilot/CausalObservationTest.kt": "b456a032764717c1e3bb44884acd1cb219087f7d0480421c8160b2e10876a0bf",
+    "mobile_pilot/app/src/test/java/org/usercamera/mobilepilot/ProtocolV3RulesTest.kt": "2e067a6437c0ac26cad0d9d05282d7c796c874607be9eceec2e6402e7631d403",
+    "mobile_pilot/app/src/main/java/org/usercamera/mobilepilot/MainActivity.kt": "188e40c01ab7ebcd17aa47e896a815d3966eed55badf116f480bbc0cb148555a",
+    "mobile_pilot/app/src/main/java/org/usercamera/mobilepilot/ProtocolV3Rules.kt": "8bc3dedf03906061c597afed34e1642fcbdea7f03d6e20b6eecf39e320463097",
+    "mobile_pilot/app/src/main/java/org/usercamera/mobilepilot/ClockMapper.kt": "c93cfd466b50dfb5be1e12eb76a5f3e5f067b90710bb24d60cf40a1c59144c75",
+    "mobile_pilot/app/src/main/java/org/usercamera/mobilepilot/FrontVideoRecorder.kt": "f7ca8bd041c927a680d29e71c800477cae3791ad9981353685ac684b1db4058c",
+    "mobile_pilot/app/src/main/java/org/usercamera/mobilepilot/LiveUserStateAnalyzer.kt": "145d1b37a26a8a35286165d31b96be84fb3e255090c2e456ddc71c564544a3e5",
+    "mobile_pilot/app/src/main/java/org/usercamera/mobilepilot/SessionStore.kt": "48fcdc880a302fe993b646a56084544ff309375375f30a7640e57764ad196664",
+    "mobile_pilot/app/src/main/java/org/usercamera/mobilepilot/StimulusView.kt": "f1aa567e77ad789e4b272f017dbe7994aba9b93258310c90dc5c2af958834987",
+    "mobile_pilot/app/src/main/java/org/usercamera/mobilepilot/FrontCamera.kt": "e741a265d8bc5c4aed2e9c6c1fd651df4b588c2f21ffd3b8e6f2c0ef9bf080e6",
+    "tests/test_pilot_v3.py": "978cca5aebfc98727f2288cd9ae3710e469047f82bd637caee8f6e149c4664a3"
+  }
+}

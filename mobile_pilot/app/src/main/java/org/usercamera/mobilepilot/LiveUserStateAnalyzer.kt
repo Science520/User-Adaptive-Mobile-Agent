@@ -20,6 +20,7 @@ class LiveUserStateAnalyzer(context: Context, private val store: SessionStore, p
     private var startedNs = 0L
     private var lastMs = -1L
     private var meanLuma = 0.0
+    private var inputGeometry=org.json.JSONObject()
     private val task = FaceLandmarker.createFromOptions(context, FaceLandmarker.FaceLandmarkerOptions.builder()
         .setBaseOptions(BaseOptions.builder().setModelAssetPath("face_landmarker.task").build())
         .setRunningMode(RunningMode.LIVE_STREAM).setNumFaces(2)
@@ -32,7 +33,7 @@ class LiveUserStateAnalyzer(context: Context, private val store: SessionStore, p
                     "inference_confidence" to null, "eye_landmark_visibility" to null,
                     "confidence_note" to "FaceLandmarker returns thresholds, not per-inference detection probability",
                     "mapping_status" to if(captureNs == null) "unverified" else "sensor_mapping_estimate_or_shared_clock",
-                    "mean_luma" to meanLuma, "distance_kind" to "relative_face_scale_not_mm")
+                    "mean_luma" to meanLuma,"analysis_geometry" to inputGeometry, "distance_kind" to "relative_face_scale_not_mm")
                 if(faces.isNotEmpty()) {
                     val points = faces[0]; val xs = points.map { it.x().toDouble() }; val ys = points.map { it.y().toDouble() }
                     val eyes = listOf(33,133,159,145,362,263,386,374).map { points[it] }
@@ -60,6 +61,9 @@ class LiveUserStateAnalyzer(context: Context, private val store: SessionStore, p
             val y = proxy.planes[0].buffer.duplicate(); var sum=0L; var n=0; while(y.hasRemaining()) { sum += y.get().toInt() and 255; n++ }; meanLuma=if(n>0) sum.toDouble()/n else 0.0
             val raw=proxy.toBitmap(); val matrix=Matrix().apply { postRotate(proxy.imageInfo.rotationDegrees.toFloat()) }
             val upright=Bitmap.createBitmap(raw,0,0,raw.width,raw.height,matrix,true)
+            inputGeometry=json("width" to proxy.width,"height" to proxy.height,"rotation_degrees" to proxy.imageInfo.rotationDegrees,
+                "crop_rect" to org.json.JSONArray(listOf(proxy.cropRect.left,proxy.cropRect.top,proxy.cropRect.right,proxy.cropRect.bottom)),
+                "upright_width" to upright.width,"upright_height" to upright.height,"applied_crop_rect" to false)
             captureNs=mappedNs;arrivalNs=arrival;startedNs=SystemClock.elapsedRealtimeNanos()
             task.detectAsync(BitmapImageBuilder(upright).build(),ms)
         } catch(e: Exception) { busy.set(false); store.event("live_face_error",e.toString()) }

@@ -1,0 +1,32 @@
+{
+  "n": 117,
+  "face_ratio": 0.9743589743589743,
+  "strict_full_face_proxy_ratio": 0.2564102564102564,
+  "edge_truncation_proxy_ratio": 0.6581196581196581,
+  "eyes_in_frame_proxy_ratio": 0.8717948717948718,
+  "bbox_area": {
+    "n": 114,
+    "mean": 0.5659188523456042,
+    "p05": 0.3746886142953601,
+    "median": 0.5660162523624193,
+    "p95": 0.7182285702093407,
+    "max": 0.8432347597681096
+  },
+  "bbox_edge_margin": {
+    "n": 114,
+    "mean": -0.051767331727764064,
+    "p05": -0.32689422369003296,
+    "median": -0.027196824550628662,
+    "p95": 0.10471699461340901,
+    "max": 0.16551387310028076
+  },
+  "missing_full_face_success_stratum": false,
+  "private_manual_review": "reports/pilot_v3/private/audit_20261030/face_contact_sheet.jpg",
+  "sampling_note": "96 systematic samples + Live-success/failure-stratified supplements; 117-frame pool rates are descriptive QC, not unbiased session prevalence",
+  "systematic_sample_only": {
+    "n": 96,
+    "face_ratio": 0.9791666666666666,
+    "full_face_proxy_ratio": 0.25,
+    "eyes_in_frame_proxy_ratio": 0.8958333333333334
+  }
+}

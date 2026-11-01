@@ -1,0 +1,43 @@
+[
+  {
+    "pair_id": "b0_assistance",
+    "trials": [
+      "B_v2_057_attempt7",
+      "B_v2_056_attempt9",
+      "B_v2_058_attempt10"
+    ],
+    "element_fields_changed": []
+  },
+  {
+    "pair_id": "b0_contrast",
+    "trials": [
+      "B_v2_054_attempt12",
+      "B_v2_055_attempt13"
+    ],
+    "element_fields_changed": [
+      "foreground_gray",
+      "visual_contrast"
+    ]
+  },
+  {
+    "pair_id": "b0_font",
+    "trials": [
+      "B_v2_050_attempt8",
+      "B_v2_051_attempt14"
+    ],
+    "element_fields_changed": [
+      "font_glyph_height_px"
+    ]
+  },
+  {
+    "pair_id": "b0_position",
+    "trials": [
+      "B_v2_052_attempt6",
+      "B_v2_053_attempt11"
+    ],
+    "element_fields_changed": [
+      "bounding_box_px",
+      "clickable_region_px"
+    ]
+  }
+]

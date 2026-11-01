@@ -1,0 +1,217 @@
+{
+  "session_id": "test1030_20261030_144219",
+  "codec": "h264",
+  "encoded_resolution": [
+    720,
+    1280
+  ],
+  "container_duration_s": 182.776611,
+  "video_bytes": 258776308,
+  "video_MB": 258.776308,
+  "video_MiB": 246.7883186340332,
+  "actual_bitrate_mbps": 11.326451741683734,
+  "whole_session": {
+    "frames": 5173,
+    "effective_pts_fps": 28.3025907021557,
+    "instant_fps": {
+      "n": 5172,
+      "mean": 28.381147737355803,
+      "p05": 26.913553665626008,
+      "median": 26.986911347996223,
+      "p95": 29.900729577801698,
+      "max": 37.29812390436761
+    },
+    "gaps_over_75ms": 0,
+    "duplicates": 0,
+    "max_pts_gap_us": 37256,
+    "disjoint_category_note": "effective_pts_fps over disjoint spans is sampling density; use instant_fps for local recording rate",
+    "within_period_effective_fps": 28.3025907021557
+  },
+  "phases": {
+    "feedback": {
+      "frames": 2861,
+      "effective_pts_fps": 20.433589042314978,
+      "instant_fps": {
+        "n": 2852,
+        "mean": 28.047694466614338,
+        "p05": 26.913553665626008,
+        "median": 26.914278024491992,
+        "p95": 29.900729577801698,
+        "max": 29.9805126667666
+      },
+      "gaps_over_75ms": 0,
+      "duplicates": 0,
+      "max_pts_gap_us": 37256,
+      "disjoint_category_note": "effective_pts_fps over disjoint spans is sampling density; use instant_fps for local recording rate",
+      "estimated_duration_s": 102.27523500000001,
+      "encoded_payload_bytes": 141971729,
+      "within_period_effective_fps": 27.974981891299855
+    },
+    "fixation": {
+      "frames": 222,
+      "effective_pts_fps": 29.233361058729162,
+      "instant_fps": {
+        "n": 217,
+        "mean": 29.8948225397973,
+        "p05": 29.819414144286455,
+        "median": 29.89983555090447,
+        "p95": 29.969730572122156,
+        "max": 29.9805126667666
+      },
+      "gaps_over_75ms": 0,
+      "duplicates": 0,
+      "max_pts_gap_us": 33556,
+      "disjoint_category_note": "effective_pts_fps over disjoint spans is sampling density; use instant_fps for local recording rate",
+      "estimated_duration_s": 7.426155,
+      "encoded_payload_bytes": 10951319,
+      "within_period_effective_fps": 29.894793745898937
+    },
+    "instruction": {
+      "frames": 120,
+      "effective_pts_fps": 10.432313310246654,
+      "instant_fps": {
+        "n": 114,
+        "mean": 29.89420037203879,
+        "p05": 29.81159074648223,
+        "median": 29.890898221491558,
+        "p95": 29.97004494620656,
+        "max": 29.9805126667666
+      },
+      "gaps_over_75ms": 0,
+      "duplicates": 0,
+      "max_pts_gap_us": 33556,
+      "disjoint_category_note": "effective_pts_fps over disjoint spans is sampling density; use instant_fps for local recording rate",
+      "estimated_duration_s": 4.014156,
+      "encoded_payload_bytes": 5998419,
+      "within_period_effective_fps": 29.89415894357189
+    },
+    "quality_or_startup": {
+      "frames": 548,
+      "effective_pts_fps": 29.910760398787538,
+      "instant_fps": {
+        "n": 547,
+        "mean": 29.914062146536285,
+        "p05": 29.890004782400766,
+        "median": 29.89983555090447,
+        "p95": 29.900729577801698,
+        "max": 37.29812390436761
+      },
+      "gaps_over_75ms": 0,
+      "duplicates": 0,
+      "max_pts_gap_us": 33556,
+      "disjoint_category_note": "effective_pts_fps over disjoint spans is sampling density; use instant_fps for local recording rate",
+      "estimated_duration_s": 18.3211,
+      "encoded_payload_bytes": 27701679,
+      "within_period_effective_fps": 29.910760398787538
+    },
+    "visual_search": {
+      "frames": 1422,
+      "effective_pts_fps": 9.863862660435363,
+      "instant_fps": {
+        "n": 1413,
+        "mean": 28.100554682444297,
+        "p05": 26.913553665626008,
+        "median": 26.914278024491992,
+        "p95": 29.900729577801698,
+        "max": 29.9805126667666
+      },
+      "gaps_over_75ms": 0,
+      "duplicates": 0,
+      "max_pts_gap_us": 37256,
+      "disjoint_category_note": "effective_pts_fps over disjoint spans is sampling density; use instant_fps for local recording rate",
+      "estimated_duration_s": 50.739864000000004,
+      "encoded_payload_bytes": 72123320,
+      "within_period_effective_fps": 28.02649001158111
+    },
+    "assistance_subset": {
+      "frames": 492,
+      "effective_pts_fps": 4.965128366416442,
+      "instant_fps": {
+        "n": 488,
+        "mean": 27.489400724165318,
+        "p05": 26.913553665626008,
+        "median": 26.914278024491992,
+        "p95": 29.900729577801698,
+        "max": 29.9805126667666
+      },
+      "gaps_over_75ms": 0,
+      "duplicates": 0,
+      "max_pts_gap_us": 37256,
+      "disjoint_category_note": "effective_pts_fps over disjoint spans is sampling density; use instant_fps for local recording rate",
+      "estimated_duration_s": 17.923988,
+      "encoded_payload_bytes": 24726609,
+      "within_period_effective_fps": 27.442281515295303
+    }
+  },
+  "decode_s": 9.751445958,
+  "decode_frames_per_s": 530.4854297793771,
+  "pts_timeline_matches": true,
+  "orientation_metadata": 0,
+  "mirroring": "raw false / preview true per metadata; physical mirror orientation not independently measured",
+  "recorder_events": [
+    {
+      "type": "start",
+      "timestamp_ns": 1062369812176980,
+      "path": "front_camera.mp4",
+      "recording_request_ns": 1062369682114480,
+      "recorded_duration_ns": 0,
+      "bytes": 0,
+      "mapping_status": "estimated_unverified",
+      "sync_uncertainty_ns": null,
+      "timeline_reference": "Recorder callback arrival and accumulated recorded duration; not capture anchor"
+    },
+    {
+      "type": "finalize",
+      "timestamp_ns": 1062553183781640,
+      "path": "front_camera.mp4",
+      "recording_request_ns": 1062369682114480,
+      "recorded_duration_ns": 182740655000,
+      "bytes": 258746466,
+      "mapping_status": "estimated_unverified",
+      "sync_uncertainty_ns": null,
+      "timeline_reference": "Recorder callback arrival and accumulated recorded duration; not capture anchor",
+      "error_code": 0,
+      "finalization_success": true
+    }
+  ],
+  "sensor_analysis_frames": 1328,
+  "live_inference_frames": 382,
+  "live_face_frames": 377,
+  "analysis_fps": 7.265699876665292,
+  "successful_face_fps": 2.062627148721999,
+  "inference_result_fps": 2.089982946450408,
+  "face_detection_success_ratio": 0.9869109947643979,
+  "both_eyes_in_frame_proxy_ratio": 0.9764397905759162,
+  "strict_full_face_proxy_ratio": 0.031413612565445025,
+  "inference_latency_ms": {
+    "n": 382,
+    "mean": 53.063165345549734,
+    "p05": 33.197812049999996,
+    "median": 49.775000000000006,
+    "p95": 90.11372379999999,
+    "max": 128.251042
+  },
+  "capture_to_available_ms": {
+    "n": 382,
+    "mean": 545.5015056413613,
+    "p05": 510.30771649999997,
+    "median": 543.8110915,
+    "p95": 591.0974896,
+    "max": 656.288543
+  },
+  "eye_blink_feature_ratio": 0.9869109947643979,
+  "recorder_offset_spread_ms": 296.587525,
+  "physical_sync_status": "unverified",
+  "physical_sync_uncertainty_ms": null,
+  "manifest_verified": 122,
+  "unmanifested_files": [],
+  "camera_missingness": {
+    "decoded_frames": 5173,
+    "gaps_over_75ms": 0,
+    "exact_driver_dropped_frames": null,
+    "live_face_missing_ratio": 0.01308900523560208,
+    "analysis_vs_inference_difference_is_not_video_drop_count": true,
+    "camera_error_events": 0
+  },
+  "audio_tracks": 0
+}

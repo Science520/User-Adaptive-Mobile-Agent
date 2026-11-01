@@ -70,3 +70,15 @@ Touch 扩展 down/up/move/cancel/pointer_down/pointer_up、pointer_id、is_actio
 Assistance 保存 requested_action、delivered_action、intervention_onset/end 和 trial ID。UI version 在每次实际改动后递增，保存真实重绘截图与扩展后的可点击区域。每trial版本从0开始，身份应使用(session_id, trial_id, ui_state_version)。Root非任务页以elapsed时间戳作唯一版本标识。
 
 Feedback 允许多个 difficulty_types（small_font/low_contrast/too_many/target_not_found/motor/semantic/next_step/other/none），none与其他互斥。difficulty_type保留逗号串便于人工查看；旧 v1 的枚举仍只适用于旧提取器。preferred_assistance与helpfulness单独保存。自动设备功能测试 participant前缀device_smoke，对应 evidence_tier=device_automated_smoke，评分保持missing，不用于研究标签或跨用户模型。原有Session不自动改写迁移。
+
+# temporal-pilot-v3 / mobile-pilot-rsm-v3
+
+新机器格式`schema/temporal-pilot-v3.schema.json`。v1/v2仍可列出、读取、导出，原件不做自动迁移。
+
+Session新增protocol_version、counterbalance_group、research_mode。Trial新增task_family=fixation/readability/visual_search/mixed、target_id/text、condition_id、pair_id、matched_condition_id、assigned_assistance，完整stimulus含困难操控和planned颜色/weight/字形。这些操控不是人类困难标签。
+
+Assistance记录type=assistance_requested/intervention_onset/intervention_end；source=assigned_pre_task/self_selected/rescue_crossover；assigned_assistance、requested_action（分配时null）、delivered_action（仅请求时null）、oracle_target_highlight、oracle_equivalent_single_candidate、cue_candidate_count。onset时间取实际UI draw submission，不当物理photon时间。研究模式分开，不混合解释干预收益。
+
+UI保存实际前景/背景ARGB及contrast、实际字形/换行、region_id、icon形状、task_family、research_mode、assigned/delivered以及oracle标志。ImageAnalysis新增实际width/height、cropRect、rotation和upright尺寸，明确applied_crop_rect=false；不能假设与MP4同视野。
+
+v3标签修订`label_schema_version=self-report-v3.1`：实际交付非none帮助才询问helpfulness，必须主动选择1–5或unable_to_rate；没交付帮助记not_applicable_no_delivered_help、rating=null。不再用0兼任“未回答/没帮助”。Device-smoke若填测试值，label_source必须是device_test_fixture，不是self_report。原版本字段不迁移，合并训练时必须同时检查protocol_version、label_schema_version与evidence_tier。

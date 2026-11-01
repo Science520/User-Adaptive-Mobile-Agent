@@ -1,0 +1,9 @@
+{
+  "fixed_prefix_2s_recent_2s_trials": 6,
+  "future_help_trials": 3,
+  "no_future_help_trials": 3,
+  "no_help_trials_with_self_rating_ge3": 5,
+  "no_help_trials": 6,
+  "interpretation": "Small within-person descriptive samples, not a classifier, no significance or elderly/generalization claim; no-help does not mean no difficulty. No visible predictive signal can be established from this sample.",
+  "selection_bias": "Trials ending before2s or already requesting help by2s excluded; overlapping windows are not independent training samples."
+}

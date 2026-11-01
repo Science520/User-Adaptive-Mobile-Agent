@@ -1,0 +1,8 @@
+{
+  "face_crops": 114,
+  "crop_bytes": 797167,
+  "feature_bytes": 99314,
+  "sampled_not_full_video": true,
+  "face_crops_have_reference_detector_selection_bias": true,
+  "per_missing_frame_mask_required": true
+}

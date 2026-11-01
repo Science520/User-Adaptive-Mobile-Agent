@@ -1,0 +1,35 @@
+{
+  "status": "blocked",
+  "readiness": {
+    "blockers": [
+      "unverified_video_UI_touch_alignment",
+      "fewer_than_three_independent_train_validation_test_groups",
+      "target_has_one_or_zero_classes_after_prefix_selection"
+    ],
+    "participants": 1,
+    "sessions": 1,
+    "protocols": [
+      [
+        "temporal-pilot-v2",
+        "legacy-unspecified"
+      ]
+    ],
+    "scope": "within-person/session-disjoint only",
+    "class_counts": {
+      "1": 6
+    }
+  },
+  "target": "difficulty",
+  "prefix_s": 2,
+  "recent_s": 2,
+  "eligible_trials": 6,
+  "no_help_is_not_no_difficulty": true,
+  "models": {},
+  "algorithms": [
+    "logistic",
+    "hist_gradient_boosting",
+    "gru"
+  ],
+  "one_window_per_trial": true,
+  "metrics_claim_physical_sync_validated": false
+}

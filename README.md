@@ -1,3 +1,5 @@
+本轮 v3：[真实录像审计与结果](reports/pilot_v3/RESULTS.md) · [R/S/M 协议及完整命令](mobile_pilot/VIDEO_V3.md)。
+
 本轮移动端视频升级：[Mobile Pilot v2](mobile_pilot/VIDEO_V2.md) · [构建与真机结果](reports/pilot_v2/RESULTS.md)。MPIIFaceGaze 既有结果保持不变。
 
 # User-Camera Stream：公开数据与合成验证

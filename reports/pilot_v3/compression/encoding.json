@@ -1,0 +1,12 @@
+{
+  "frames": 5173,
+  "encoding_total_s": 157.586266792,
+  "variants": [
+    "data/derivatives/pilot_v3/test1030_20261030_144219/h264_720w_1mbps.mp4",
+    "data/derivatives/pilot_v3/test1030_20261030_144219/h264_720w_2mbps.mp4",
+    "data/derivatives/pilot_v3/test1030_20261030_144219/h264_720w_4mbps.mp4",
+    "data/derivatives/pilot_v3/test1030_20261030_144219/h264_480w_1mbps.mp4",
+    "data/derivatives/pilot_v3/test1030_20261030_144219/h264_480w_2mbps.mp4",
+    "data/derivatives/pilot_v3/test1030_20261030_144219/h264_480w_4mbps.mp4"
+  ]
+}

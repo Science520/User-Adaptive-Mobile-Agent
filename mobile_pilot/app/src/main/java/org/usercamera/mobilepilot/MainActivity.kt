@@ -53,7 +53,8 @@ class MainActivity : ComponentActivity() {
         var quick by remember { mutableStateOf(true) }
         var jpeg by remember { mutableStateOf(false) }
         var live by remember { mutableStateOf(true) }
-        var preferenceMode by remember { mutableStateOf(false) }
+        var assignedMode by remember { mutableStateOf(false) }
+        var counterbalance by remember { mutableStateOf("0") }
         var manualQuality by remember { mutableStateOf(false) }
         var helpMenu by remember { mutableStateOf(false) }
         var distance by remember { mutableStateOf("") }
@@ -80,7 +81,7 @@ class MainActivity : ComponentActivity() {
                 val count = points.toInt(); require(count in listOf(5,9,25)) { "注视点数需5/9/25" }
                 val mm = distance.takeIf { it.isNotBlank() }?.toDouble()
                 require(mm == null || mm.isFinite() && mm > 0) { "独立距离需为正数，或留空" }
-                engine.start(participant, session, seed.toInt(), r, mm, withCamera, count, quick, jpeg, live, preferenceMode)
+                engine.start(participant, session, seed.toInt(), r, mm, withCamera, count, quick, jpeg, live, assignedMode, counterbalance.toInt().also { require(it in 0..15) { "平衡组需0–15" } })
             }
             result.onFailure { engine.message = it.message ?: "开始失败" }; refresh()
         }
@@ -99,7 +100,7 @@ class MainActivity : ComponentActivity() {
             }
         }
         Column(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.safeDrawing).padding(12.dp)) {
-            if (!(engine.phase == "running" && engine.writer?.stimulus?.optString("task") == "fixation")) Text("User–Screen Mobile Pilot v2", style = MaterialTheme.typography.titleLarge)
+            if (!(engine.phase == "running" && engine.writer?.stimulus?.optString("task") == "fixation")) Text("User–Screen Mobile Pilot v3", style = MaterialTheme.typography.titleLarge)
             if (engine.phase != "running") Text(engine.message, style = MaterialTheme.typography.bodySmall)
             when (engine.phase) {
                 "idle" -> Column(Modifier.weight(1f).verticalScroll(rememberScrollState())) {
@@ -107,14 +108,16 @@ class MainActivity : ComponentActivity() {
                     OutlinedTextField(participant, { participant = it }, label = { Text("Participant ID（匿名编号）") }, singleLine = true)
                     OutlinedTextField(session, { session = it }, label = { Text("Session ID（禁止覆盖）") }, singleLine = true)
                     Row {
-                        OutlinedTextField(seed, { seed = it }, label = { Text("种子") }, modifier = Modifier.weight(1f), singleLine = true)
+                        OutlinedTextField(seed, { seed = it }, label = { Text("注视顺序种子") }, modifier = Modifier.weight(1f), singleLine = true)
                         OutlinedTextField(repetitions, { repetitions = it }, label = { Text("重复1/2/3次") }, modifier = Modifier.weight(1f), singleLine = true)
                     }
                     OutlinedTextField(points, { points = it }, label = { Text("注视点数5/9/25") }, singleLine = true)
-                    Row { Switch(quick,{quick=it}); Text("Quick Test：5点+9项搜索") }
+                    Row { Switch(quick,{quick=it}); Text("Quick Test：5点+8项R/S/M") }
                     Row { Switch(jpeg,{jpeg=it}); Text("JPEG兼容模式（默认MP4）") }
                     Row { Switch(live,{live=it}); Text("尝试视频+实时人脸特征") }
-                    Row { Switch(preferenceMode,{preferenceMode=it}); Text("独立偏好适应模式（随机对照）") }
+                    OutlinedTextField(counterbalance,{counterbalance=it},label={Text("跨参与者平衡组0–15")},singleLine=true)
+                    Row { Switch(assignedMode,{assignedMode=it}); Text("任务前随机帮助（关闭=任务中自选）") }
+                    Text("R辨认文字 · S查找服务 · M组合负荷；条件不是实际困难标签。")
                     OutlinedTextField(distance, { distance = it }, label = { Text("独立量具测得距离mm（可留空，非相机估计）") }, singleLine = true)
                     Button(onClick = {
                         if (ContextCompat.checkSelfPermission(this@MainActivity, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) permission.launch(Manifest.permission.CAMERA)
@@ -132,7 +135,7 @@ class MainActivity : ComponentActivity() {
                 "running" -> {
                     val current = engine.writer
                     val fixation = current?.stimulus?.optString("task") == "fixation"
-                    if (!fixation) Text("任务 ${engine.searchCompleted + 1}/${engine.searchTotal} · 已完成${engine.searchCompleted}，剩余${engine.searchTotal-engine.searchCompleted}")
+                    if (!fixation) Text("${taskLabel(current?.stimulus?.optString("task_family", "fixation") ?: "fixation")} ${engine.searchCompleted + 1}/${engine.searchTotal} · 已完成${engine.searchCompleted}，剩余${engine.searchTotal-engine.searchCompleted}")
                     if (current != null) key(current.id) {
                         AndroidView(factory = { ctx -> StimulusView(ctx, current, engine.store, { valid -> engine.rendered(current, valid) }, { engine.complete(true) }) }, modifier = Modifier.weight(1f).fillMaxWidth().background(Color.White))
                     } else Spacer(Modifier.weight(1f))
@@ -166,12 +169,13 @@ class MainActivity : ComponentActivity() {
                 "starting" -> { Text("正在连接前摄并预热时间映射…"); Button(onClick = { engine.stop(); refresh() }) { Text("Stop") } }
                 "feedback" -> {
                     if(engine.deviceSmoke) OutlinedButton(onClick={engine.smokeContinue()}) { Text("功能测试：不填写主观评分，继续") }
-                    FeedbackForm { rating, type, wantsHelp, assistance, helpfulness -> engine.feedback(rating, type, wantsHelp, assistance, helpfulness); refresh() }
+                    OutlinedButton(onClick={engine.stop();refresh()}) { Text("退出并保存（评价留空）") }
+                    FeedbackForm(deliveredHelp=engine.deliveredHelp) { rating, type, wantsHelp, assistance, helpfulness -> engine.feedback(rating, type, wantsHelp, assistance, helpfulness); refresh() }
                 }
             }
         }
         if (helpMenu) AlertDialog(onDismissRequest={helpMenu=false},title={Text("选择本次实际帮助")},text={ Column {
-            listOf("highlight" to "突出目标", "zoom" to "放大文字", "contrast" to "增加对比度", "enlarge_touch" to "扩大点击区域", "explain" to "解释目标", "none" to "不干预").forEach { (action,label) ->
+            listOf("zoom_text" to "放大文字", "increase_contrast" to "增加对比度", "highlight_region" to "提示目标所在区域", "highlight_target" to "直接标出目标（已知答案）", "enlarge_touch" to "扩大点击区域", "explain" to "解释目标", "none" to "不干预").forEach { (action,label) ->
                 TextButton(onClick={engine.deliver(action);helpMenu=false}) {Text(label)}
             }
         } },confirmButton={})
@@ -184,7 +188,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable private fun FeedbackForm(onSubmit: (Int, String, Boolean, String, Int) -> Unit) {
+@Composable private fun FeedbackForm(deliveredHelp:Boolean, onSubmit: (Int, String, Boolean, String, Int?) -> Unit) {
     var rating by remember { mutableStateOf(0) }; var type by remember { mutableStateOf("") }
     var helpfulness by remember { mutableStateOf(0) }
     var help by remember { mutableStateOf<Boolean?>(null) }; var assistance by remember { mutableStateOf("") }
@@ -199,12 +203,16 @@ class MainActivity : ComponentActivity() {
         Text("3. 你有没有想获得帮助？")
         Row { FilterChip(selected = help == true, onClick = { help = true }, label = { Text("有") }); FilterChip(selected = help == false, onClick = { help = false }, label = { Text("没有") }) }
         Text("4. 更希望哪种帮助？偏好本身不代表帮助有效")
-        listOf("zoom" to "放大", "highlight" to "突出显示", "explain" to "解释", "none" to "不需要系统干预").forEach { (key, text) ->
+        listOf("zoom_text" to "放大文字", "increase_contrast" to "增强对比度", "highlight_region" to "区域提示", "highlight_target" to "直接标出目标", "enlarge_touch" to "扩大点击", "explain" to "解释", "none" to "不需要系统干预").forEach { (key, text) ->
             FilterChip(selected = assistance == key, onClick = { assistance = key }, label = { Text(text) })
         }
-        Text("5. 本次帮助有用吗？0=未获得帮助，1–5=无用到有用")
-        Row { (0..5).forEach { value -> FilterChip(selected=helpfulness==value,onClick={helpfulness=value},label={Text("$value")}) } }
-        Button(onClick = { onSubmit(rating, type, help!!, assistance, helpfulness) }, enabled = rating > 0 && type.isNotEmpty() && help != null && assistance.isNotEmpty()) { Text("提交并继续") }
+        if(deliveredHelp) {
+            Text("5. 本轮实际帮助有用吗？请主动评价，或选择无法评价")
+            Row { (1..5).forEach { value -> FilterChip(selected=helpfulness==value,onClick={helpfulness=value},label={Text("$value")}) } }
+            FilterChip(selected=helpfulness == -1,onClick={helpfulness = -1},label={Text("无法评价/未察觉")})
+        } else Text("本轮没有实际交付帮助：有效性评分记为不适用，不填0分。")
+        Button(onClick = { onSubmit(rating, type, help!!, assistance, if(helpfulness>0) helpfulness else null) }, enabled = rating > 0 && type.isNotEmpty() && help != null && assistance.isNotEmpty() && helpfulnessAnswerValid(deliveredHelp,helpfulness)) { Text("提交并继续") }
+
     }
 }
 
@@ -216,7 +224,7 @@ class ExperimentEngine(private val activity: ComponentActivity) {
         private set
     private var jpegMode=false
     private var liveMode=true
-    private var preferenceMode=false
+    private var assignedMode=false
     private var preferred="none"
     private var activeAssistance="none"
     private var initialDelivered=false
@@ -224,8 +232,8 @@ class ExperimentEngine(private val activity: ComponentActivity) {
     private var pausedPhase="running"
     private var qualityAccepted=false
     private var preview: PreviewView? = null
-    val searchCompleted: Int get()=specs.take(position).count{it.optString("task")=="visual_search"}
-    val searchTotal: Int get()=specs.count{it.optString("task")=="visual_search"}
+    val searchCompleted: Int get()=specs.take(position).count{it.optString("task")!="fixation"}
+    val searchTotal: Int get()=specs.count{it.optString("task")!="fixation"}
     private val handler = Handler(Looper.getMainLooper())
     var phase by mutableStateOf("idle")
         private set
@@ -235,21 +243,22 @@ class ExperimentEngine(private val activity: ComponentActivity) {
     var position by mutableStateOf(0)
         private set
     val total: Int get() = specs.size
+    val deliveredHelp:Boolean get()=(store.lastFinished?.nonNoneDeliveries ?: 0)>0
     private var specs = listOf<JSONObject>()
     private var attempt = 0
     private var withCamera = true
     private var timeout: Runnable? = null
-    fun start(participant: String, session: String, seed: Int, repetitions: Int, measuredDistance: Double?, cameraEnabled: Boolean, pointCount: Int=5, quick: Boolean=true, jpeg: Boolean=false, live: Boolean=true, adaptation: Boolean=false) {
+    fun start(participant: String, session: String, seed: Int, repetitions: Int, measuredDistance: Double?, cameraEnabled: Boolean, pointCount: Int=5, quick: Boolean=true, jpeg: Boolean=false, live: Boolean=true, assignment: Boolean=false, counterbalanceGroup: Int=0) {
         require(phase == "idle")
         activity.window.decorView.clearFocus()
         WindowCompat.getInsetsController(activity.window, activity.window.decorView).hide(WindowInsetsCompat.Type.ime())
-        val bytes = activity.assets.open("protocol_v2.json").use { it.readBytes() }; val protocol = JSONObject(String(bytes, Charsets.UTF_8))
+        val bytes = activity.assets.open("protocol_v3.json").use { it.readBytes() }; val protocol = JSONObject(String(bytes, Charsets.UTF_8))
         val effectiveSeed = seed xor (participant + "_" + session).hashCode()
-        specs = createPlan(protocol, effectiveSeed, repetitions, if(quick) 5 else pointCount, quick)
-        store.start(participant, session, effectiveSeed, sha256(bytes), measuredDistance)
+        specs = createPlan(protocol, effectiveSeed, repetitions, if(quick) 5 else pointCount, quick, counterbalanceGroup)
+        store.start(participant, session, effectiveSeed, sha256(bytes), measuredDistance, counterbalanceGroup, if(assignment) "assigned_pre_task" else "requested_only")
         deviceSmoke=participant.startsWith("device_smoke")
         store.event("independent_distance_optional", measuredDistance?.let { "$it mm; entered external measurement, not camera truth" } ?: "not measured")
-        position = 0; attempt = 0; withCamera = cameraEnabled; jpegMode=jpeg; liveMode=live; preferenceMode=adaptation; preferred="none"; qualityAccepted=false;
+        position = 0; attempt = 0; withCamera = cameraEnabled; jpegMode=jpeg; liveMode=live; assignedMode=assignment; preferred="none"; qualityAccepted=false;
         store.configureVideo(if(jpegMode) "jpeg" else "video"); phase = "starting"
         connectAndBegin()
     }
@@ -272,7 +281,7 @@ class ExperimentEngine(private val activity: ComponentActivity) {
     private fun showInstruction() {
         phase="instruction"
         store.event("ui_phase","instruction")
-        message=if(position==0) "接下来屏幕会显示黑色圆点。请自然注视圆点，不需要点击，圆点会自动移动。" else "请在页面中找到指定的文字并点击。遇到困难可以请求帮助。"
+        message=if(position==0) "接下来屏幕会显示黑色圆点。请自然注视圆点，不需要点击，圆点会自动移动。" else "R任务辨认文字，S任务查找服务，M任务组合负荷。请找到指定文字并点击；困难时可请求帮助。"
         store.event("instruction_page",message)
     }
     fun continueInstructions() { if(phase=="instruction" || phase=="break") nextAttempt() }
@@ -282,18 +291,17 @@ class ExperimentEngine(private val activity: ComponentActivity) {
     fun deliver(action:String) {
         if(phase!="running") return
         if(interventionActive) store.assistance(activeAssistance,"intervention_end")
-        activeAssistance=action;interventionActive=true;store.assistance(action,"intervention_onset");store.assistanceRenderer?.invoke(action)
+        activeAssistance=action;interventionActive=true;store.requestAssistance(action,interventionSource(if(assignedMode) "assigned_pre_task" else "requested_only"));store.assistanceRenderer?.invoke(action)
     }
     private fun nextAttempt() {
         if (position >= specs.size) { stop(); message = "全部trial完成，已本地保存，可导出ZIP"; return }
         attempt++
         val spec=JSONObject(specs[position].toString())
-        if(preferenceMode && spec.optString("task")=="visual_search") {
-            val arm=Random(spec.optInt("randomization_seed")+position).nextInt(3)
-            spec.put("adaptation_arm",listOf("no_help","preferred","other")[arm]).put("preference_known_before_trial",preferred)
-            spec.put("initial_assistance",if(arm==0) "none" else if(arm==1) preferred else if(preferred=="highlight") "zoom" else "highlight")
-        }
-        writer=store.begin(spec,attempt); activeAssistance="none";initialDelivered=false;interventionActive=false; phase="running"
+        spec.put("candidate_assistance",spec.optString("assigned_assistance","none"))
+        spec.put("research_mode",if(assignedMode) "assigned_pre_task" else "requested_only")
+        spec.put("assigned_assistance",if(assignedMode && spec.optString("task")!="fixation") spec.optString("candidate_assistance","none") else "none")
+        spec.put("initial_assistance",spec.optString("assigned_assistance","none"))
+        writer=store.begin(spec,attempt); activeAssistance=spec.optString("initial_assistance","none");initialDelivered=true;interventionActive=assignedMode && spec.optString("task")!="fixation"; phase="running"
     }
     fun rendered(value: TrialWriter, valid: Boolean) {
         if (writer !== value || phase != "running" || value.onsetNs == 0L) return
@@ -301,7 +309,7 @@ class ExperimentEngine(private val activity: ComponentActivity) {
             store.finish("aborted_render_invalid"); writer = null; if(jpegMode) camera.stop() else video.pause(); phase = "paused"
             message = "布局尺寸改变或字形超出按钮，本trial已排除；布局稳定后可重做，若持续溢出请调整刺激配置"; return
         }
-        if(!initialDelivered && value.stimulus.optString("initial_assistance","none")!="none") { val action=value.stimulus.getString("initial_assistance"); initialDelivered=true;deliver(action) }
+
         timeout?.let { handler.removeCallbacks(it) }
         timeout = Runnable { if (writer === value && phase == "running") complete(false) }
         val remainingMs = value.stimulus.getLong("timeout_ms") - (SystemClock.elapsedRealtimeNanos() - value.onsetNs) / 1_000_000L
@@ -315,9 +323,9 @@ class ExperimentEngine(private val activity: ComponentActivity) {
         val done = store.finish(if (correct || fixation) "completed" else "timeout", if (fixation) null else correct)
         writer = null
         if (done == null) { pause(); return }
-        if (done.stimulus.getString("task") == "fixation") { position++; if(position<specs.size && specs[position].getString("task")=="visual_search") showInstruction() else nextAttempt() } else { phase = "feedback";store.event("ui_phase","feedback") }
+        if (done.stimulus.getString("task") == "fixation") { position++; if(position<specs.size && specs[position].getString("task")!="fixation") showInstruction() else nextAttempt() } else { phase = "feedback";store.event("ui_phase","feedback") }
     }
-    fun feedback(rating: Int, type: String, wants: Boolean, assistance: String, helpfulness: Int) {
+    fun feedback(rating: Int, type: String, wants: Boolean, assistance: String, helpfulness: Int?) {
         store.feedback(rating, type, wants, assistance);store.helpfulness(helpfulness);preferred=assistance;position++; if(searchCompleted>0 && searchCompleted%9==0 && position<specs.size) {phase="break";message="分块休息：已完成${searchCompleted}项，可休息后继续";store.event("block_break")} else nextAttempt()
     }
     fun help() { if (phase == "running") store.touch(json("timestamp_ns" to SystemClock.elapsedRealtimeNanos(), "action" to "help_request")) }
@@ -330,16 +338,15 @@ class ExperimentEngine(private val activity: ComponentActivity) {
     fun resume() { if (phase == "paused") { store.resume(); if(!jpegMode && !video.finalized) {video.resume();if(pausedPhase=="feedback") phase="feedback" else showInstruction()} else connectAndBegin() } }
     fun stop() { timeout?.let { handler.removeCallbacks(it) };endIntervention();store.event("task_video_stop_request");video.stop();store.stop(); writer = null; camera.stop(); phase = "idle" }
     fun destroy() { if (phase != "idle") stop(); camera.destroy();video.close() }
-    private fun createPlan(protocol: JSONObject, seed: Int, repeats: Int, pointCount: Int, quick: Boolean): List<JSONObject> {
+    private fun createPlan(protocol: JSONObject, seed: Int, repeats: Int, pointCount: Int, quick: Boolean, counterbalanceGroup:Int): List<JSONObject> {
         val array = protocol.getJSONArray("trials"); val all = (0 until array.length()).map { JSONObject(array.getJSONObject(it).toString()) }
         val fixation = all.filter { it.getString("task") == "fixation" }.distinctBy { it.getJSONArray("target_position_px").toString() }.sortedWith(compareBy({it.getJSONArray("target_position_px").getDouble(1)},{it.getJSONArray("target_position_px").getDouble(0)}))
         val selected = if(pointCount==25) fixation else if(pointCount==9) fixation.filterIndexed {i,_ -> i/5 in listOf(0,2,4) && i%5 in listOf(0,2,4)} else fixation.filterIndexed{i,_ -> i in listOf(0,4,12,20,24)}
         val a = (0 until repeats).flatMap { rep -> selected.shuffled(Random(seed + rep)).mapIndexed { i, src ->
             JSONObject(src.toString()).put("trial_id", "A_r%02d_p%02d".format(rep, i)).also { it.getJSONObject("conditions").put("repeat", rep) }
         } }
-        val b = all.filter { it.getString("task") == "visual_search" }.let{if(quick) it.take(9) else it}.shuffled(Random(seed)).map { t ->
-            t.put("randomization_seed",seed)
-        }
+        val chosen=protocol.getJSONObject(if(quick) "quick_plans" else "plans").getJSONArray(counterbalanceGroup.toString())
+        val b=(0 until chosen.length()).map {JSONObject(chosen.getJSONObject(it).toString())}
         return a + b
     }
 }

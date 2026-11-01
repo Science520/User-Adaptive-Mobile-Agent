@@ -1,0 +1,10 @@
+{
+  "session_id": "device_smoke_v3_metadata_20261031_103752",
+  "metadata_check": "passed",
+  "pair_id": "match_qr_other_len3",
+  "randomization_block_id": "block_05",
+  "protocol_sha256": "749af7cccbd85182ab72e5577f0ddfd63c2f06199bd54b57822188d309255578",
+  "render_valid": true,
+  "camera_available": false,
+  "status": "aborted_stop"
+}

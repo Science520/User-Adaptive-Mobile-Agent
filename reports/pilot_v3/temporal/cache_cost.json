@@ -1,0 +1,15 @@
+{
+  "windows": 39,
+  "actual_sampled_clips": 39,
+  "clip_bytes": 7338912,
+  "feature_cache_bytes": 12352,
+  "appearance_shape": [
+    39,
+    256
+  ],
+  "extraction_seconds": 8.607945167,
+  "all_clip_PTS_match_source_references": true,
+  "video_encoder_trained": false,
+  "physical_sync_status": "unverified",
+  "private_manifest": "reports/pilot_v3/private/temporal/clip_manifest.json"
+}

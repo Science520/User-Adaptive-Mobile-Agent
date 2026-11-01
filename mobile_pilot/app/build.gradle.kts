@@ -10,8 +10,8 @@ android {
         applicationId = "org.usercamera.mobilepilot"
         minSdk = 26
         targetSdk = 35
-        versionCode = 2
-        versionName = "0.3.0-video-pilot"
+        versionCode = 4
+        versionName = "0.4.1-rsm-v3"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     buildFeatures { compose = true }

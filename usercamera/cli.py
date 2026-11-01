@@ -96,6 +96,25 @@ def run_mpii_command(args):
 
 
 def run_temporal_command(args):
+    if args.command=='pilot-v3-evaluate':
+        from .pilot_v3_evaluation import evaluate_cached
+        return evaluate_cached(args.private,args.output,args.prefix,args.recent,args.label,tuple(args.algorithms.split(',')))
+    if args.command=='pilot-v3-cache':
+        from .pilot_v3_cache import cache_training_inputs
+        return cache_training_inputs(args.private,args.video,args.derived,args.output)
+    if args.command=='pilot-v3-audit':
+        from .pilot_v3_audit import audit_session
+        return audit_session(args.path,args.output,args.private,args.offline_samples)
+    if args.command=='pilot-v3-design':
+        from .pilot_design_v3 import generate_design
+        return generate_design(args.output,args.asset,args.seed)
+    if args.command=='pilot-v3-compress':
+        from .pilot_v3_compression import compression_experiment
+        return compression_experiment(args.path,args.output,args.derived)
+    if args.command=='pilot-v3-temporal':
+        from .pilot_v3_temporal import prepare_temporal_v3
+        return prepare_temporal_v3(args.path,args.output,args.private)
+
     if args.command=='pilot-prepare-inputs-v2':
         from .pilot_inputs_v2 import prepare_inputs
         return prepare_inputs(args.path,args.output,args.model,args.allow_estimated_clock,not args.no_face)
@@ -187,6 +206,25 @@ def main(argv=None):
             p.add_argument("--strong-output", default="reports/mpii_next/strong")
             p.add_argument("--audit-output", default="reports/mpii_audit")
             p.add_argument("--cleaning-output", default="reports/mpii_next/cleaning")
+    p=sub.add_parser('pilot-v3-evaluate',help='Guarded small-model evaluation; no mixed protocols or unverified fusion metrics')
+    p.add_argument('--private',default='reports/pilot_v3/private/cache_module_recheck');p.add_argument('--output',default='reports/pilot_v3/temporal/evaluation')
+    p.add_argument('--prefix',type=int,choices=[2,3,5],default=2);p.add_argument('--recent',type=int,choices=[2,3,5],default=2)
+    p.add_argument('--label',choices=['difficulty','future_help'],default='difficulty');p.add_argument('--algorithms',default='logistic,hist_gradient_boosting,gru')
+    p=sub.add_parser('pilot-v3-cache',help='Private real-PTS sampled clip and appearance/temporal cache')
+    p.add_argument('--private',default='reports/pilot_v3/private/temporal')
+    p.add_argument('--video',default='data/derivatives/pilot_v3/test1030_20261030_144219/h264_720w_2mbps.mp4')
+    p.add_argument('--derived',default='data/derivatives/pilot_v3/test1030_20261030_144219/training_clips')
+    p.add_argument('--output',default='reports/pilot_v3/temporal')
+    for name in ('pilot-v3-audit','pilot-v3-design','pilot-v3-compress','pilot-v3-temporal'):
+        p=sub.add_parser(name,help='Read-only real video audit, R/S/M protocol design and local derived inputs')
+        p.add_argument('--output',default={'pilot-v3-audit':'reports/pilot_v3/audit_20261030','pilot-v3-design':'reports/pilot_v3/design','pilot-v3-compress':'reports/pilot_v3/compression','pilot-v3-temporal':'reports/pilot_v3/temporal'}[name])
+        if name!='pilot-v3-design':p.add_argument('path',nargs='?',default='test1030_20261030_144219')
+        if name=='pilot-v3-audit':
+            p.add_argument('--private',default='reports/pilot_v3/private/audit_20261030');p.add_argument('--offline-samples',type=int,default=96)
+        if name=='pilot-v3-design':
+            p.add_argument('--asset',default='mobile_pilot/app/src/main/assets/protocol_v3.json');p.add_argument('--seed',type=int,default=42)
+        if name=='pilot-v3-compress':p.add_argument('--derived',default='data/derivatives/pilot_v3/test1030_20261030_144219')
+        if name=='pilot-v3-temporal':p.add_argument('--private',default='reports/pilot_v3/private/temporal')
     p=sub.add_parser('pilot-prepare-inputs-v2',help='Offline single-frame, sequence and face feature interfaces, strict prefixes')
     p.add_argument('path');p.add_argument('--output',required=True);p.add_argument('--model',default='data/models/face_landmarker.task')
     p.add_argument('--allow-estimated-clock',action='store_true');p.add_argument('--no-face',action='store_true')

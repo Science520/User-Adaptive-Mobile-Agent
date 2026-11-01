@@ -1,0 +1,15 @@
+trial_id,task,target_text,target_x_norm,target_y_norm,pair_id,matched_factor,assigned_assistance
+A_r00_p00_attempt1,fixation,●,0.8999999851778656,0.8065749999999999,,,none
+A_r00_p01_attempt2,fixation,●,0.8999999851778656,0.19342500448430494,,,none
+A_r00_p02_attempt3,fixation,●,0.1,0.8065749999999999,,,none
+A_r00_p03_attempt4,fixation,●,0.5,0.5,,,none
+A_r00_p04_attempt5,fixation,●,0.1,0.19342500448430494,,,none
+B_v2_052_attempt6,visual_search,检查预约,0.38333333498023714,0.4619682901554404,b0_position,position,none
+B_v2_057_attempt7,visual_search,检查预约,0.38333333498023714,0.4619682901554404,b0_assistance,assistance,highlight
+B_v2_050_attempt8,visual_search,检查预约,0.38333333498023714,0.4619682901554404,b0_font,font,none
+B_v2_056_attempt9,visual_search,检查预约,0.38333333498023714,0.4619682901554404,b0_assistance,assistance,none
+B_v2_058_attempt10,visual_search,检查预约,0.38333333498023714,0.4619682901554404,b0_assistance,assistance,zoom
+B_v2_053_attempt11,visual_search,检查预约,0.15000000247035575,0.2515800077720207,b0_position,position,none
+B_v2_054_attempt12,visual_search,检查预约,0.38333333498023714,0.4619682901554404,b0_contrast,contrast,none
+B_v2_055_attempt13,visual_search,检查预约,0.38333333498023714,0.4619682901554404,b0_contrast,contrast,none
+B_v2_051_attempt14,visual_search,检查预约,0.38333333498023714,0.4619682901554404,b0_font,font,none

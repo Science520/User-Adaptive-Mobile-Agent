@@ -1,0 +1,6 @@
+trial_id,delivered_action,intervention_onset_ns,intervention_end_ns,source_inferred,source_is_explicit,requested_equals_delivered,post_ui_observed,post_ui_version,post_screenshot_exists,requested_vs_assignment_limit
+B_v2_052_attempt6,highlight,1062410688294682,1062412572321245,self_selected_after_help_estimate,False,True,True,1,True,v2 uses same event fields; inferred temporal classification only
+B_v2_057_attempt7,highlight,1062426241948847,1062427589641034,assigned_pre_task_estimate,False,True,True,1,True,v2 uses same event fields; inferred temporal classification only
+B_v2_058_attempt10,zoom,1062475491251964,1062488233293629,assigned_pre_task_estimate,False,True,True,1,True,v2 uses same event fields; inferred temporal classification only
+B_v2_058_attempt10,highlight,1062488234699879,1062489093306650,self_selected_after_help_estimate,False,True,True,2,True,v2 uses same event fields; inferred temporal classification only
+B_v2_053_attempt11,highlight,1062508516369147,1062509609672792,self_selected_after_help_estimate,False,True,True,1,True,v2 uses same event fields; inferred temporal classification only

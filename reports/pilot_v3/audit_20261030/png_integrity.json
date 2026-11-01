@@ -1,0 +1,185 @@
+{
+  "checked": 30,
+  "files": [
+    {
+      "path": "page_1062388323313957.png",
+      "width": 1084,
+      "height": 2412,
+      "bytes": 112829
+    },
+    {
+      "path": "page_1062398076367080.png",
+      "width": 1084,
+      "height": 2412,
+      "bytes": 100655
+    },
+    {
+      "path": "page_1062412934038432.png",
+      "width": 1084,
+      "height": 2412,
+      "bytes": 235388
+    },
+    {
+      "path": "page_1062427886221242.png",
+      "width": 1084,
+      "height": 2412,
+      "bytes": 235388
+    },
+    {
+      "path": "page_1062441769469678.png",
+      "width": 1084,
+      "height": 2412,
+      "bytes": 235388
+    },
+    {
+      "path": "page_1062463992356653.png",
+      "width": 1084,
+      "height": 2412,
+      "bytes": 235388
+    },
+    {
+      "path": "page_1062489420393629.png",
+      "width": 1084,
+      "height": 2412,
+      "bytes": 235388
+    },
+    {
+      "path": "page_1062509880623834.png",
+      "width": 1084,
+      "height": 2412,
+      "bytes": 235388
+    },
+    {
+      "path": "page_1062522987529561.png",
+      "width": 1084,
+      "height": 2412,
+      "bytes": 235388
+    },
+    {
+      "path": "page_1062533003087372.png",
+      "width": 1084,
+      "height": 2412,
+      "bytes": 235388
+    },
+    {
+      "path": "page_1062543909358725.png",
+      "width": 1084,
+      "height": 2412,
+      "bytes": 235388
+    },
+    {
+      "path": "trials/A_r00_p00_attempt1/stimulus.png",
+      "width": 1012,
+      "height": 2230,
+      "bytes": 14255
+    },
+    {
+      "path": "trials/A_r00_p01_attempt2/stimulus.png",
+      "width": 1012,
+      "height": 2230,
+      "bytes": 14120
+    },
+    {
+      "path": "trials/A_r00_p02_attempt3/stimulus.png",
+      "width": 1012,
+      "height": 2230,
+      "bytes": 14234
+    },
+    {
+      "path": "trials/A_r00_p03_attempt4/stimulus.png",
+      "width": 1012,
+      "height": 2230,
+      "bytes": 14229
+    },
+    {
+      "path": "trials/A_r00_p04_attempt5/stimulus.png",
+      "width": 1012,
+      "height": 2230,
+      "bytes": 14116
+    },
+    {
+      "path": "trials/B_v2_050_attempt8/stimulus.png",
+      "width": 1012,
+      "height": 1930,
+      "bytes": 96167
+    },
+    {
+      "path": "trials/B_v2_051_attempt14/stimulus.png",
+      "width": 1012,
+      "height": 1930,
+      "bytes": 120350
+    },
+    {
+      "path": "trials/B_v2_052_attempt6/stimulus.png",
+      "width": 1012,
+      "height": 1930,
+      "bytes": 96167
+    },
+    {
+      "path": "trials/B_v2_052_attempt6/ui_001.png",
+      "width": 1012,
+      "height": 1930,
+      "bytes": 97572
+    },
+    {
+      "path": "trials/B_v2_053_attempt11/stimulus.png",
+      "width": 1012,
+      "height": 1930,
+      "bytes": 97238
+    },
+    {
+      "path": "trials/B_v2_053_attempt11/ui_001.png",
+      "width": 1012,
+      "height": 1930,
+      "bytes": 97548
+    },
+    {
+      "path": "trials/B_v2_054_attempt12/stimulus.png",
+      "width": 1012,
+      "height": 1930,
+      "bytes": 96167
+    },
+    {
+      "path": "trials/B_v2_055_attempt13/stimulus.png",
+      "width": 1012,
+      "height": 1930,
+      "bytes": 87481
+    },
+    {
+      "path": "trials/B_v2_056_attempt9/stimulus.png",
+      "width": 1012,
+      "height": 1930,
+      "bytes": 96167
+    },
+    {
+      "path": "trials/B_v2_057_attempt7/stimulus.png",
+      "width": 1012,
+      "height": 1930,
+      "bytes": 96167
+    },
+    {
+      "path": "trials/B_v2_057_attempt7/ui_001.png",
+      "width": 1012,
+      "height": 1930,
+      "bytes": 97572
+    },
+    {
+      "path": "trials/B_v2_058_attempt10/stimulus.png",
+      "width": 1012,
+      "height": 1930,
+      "bytes": 96167
+    },
+    {
+      "path": "trials/B_v2_058_attempt10/ui_001.png",
+      "width": 1012,
+      "height": 1930,
+      "bytes": 111090
+    },
+    {
+      "path": "trials/B_v2_058_attempt10/ui_002.png",
+      "width": 1012,
+      "height": 1930,
+      "bytes": 97572
+    }
+  ]
+}

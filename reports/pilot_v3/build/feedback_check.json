@@ -1,0 +1,14 @@
+{
+  "session_id": "device_smoke_v3_feedback_20261031_104901",
+  "camera_available": false,
+  "video_recorded": false,
+  "subjective_answers_entered": false,
+  "render_valid": true,
+  "mandatory_helpfulness_UI_checked": true,
+  "unable_to_rate_choice_present": true,
+  "zero_as_default_help_score_removed": true,
+  "actual_deliveries": 1,
+  "feedback_status": "missing",
+  "label_schema_version": "self-report-v3.1",
+  "protocol_sha256": "749af7cccbd85182ab72e5577f0ddfd63c2f06199bd54b57822188d309255578"
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "variant": "h264_480w_1mbps",
+    "valid_sparse_pairs": 110,
+    "invalid_sparse_pairs": 6,
+    "RMS_pose_velocity_difference_deg_s": 1.4229821264943283,
+    "meaning": "same sparse PTS finite-difference consistency vs original model proxies; not validated high-frequency head/gaze stability"
+  },
+  {
+    "variant": "h264_480w_2mbps",
+    "valid_sparse_pairs": 110,
+    "invalid_sparse_pairs": 6,
+    "RMS_pose_velocity_difference_deg_s": 1.076875567207948,
+    "meaning": "same sparse PTS finite-difference consistency vs original model proxies; not validated high-frequency head/gaze stability"
+  },
+  {
+    "variant": "h264_480w_4mbps",
+    "valid_sparse_pairs": 110,
+    "invalid_sparse_pairs": 6,
+    "RMS_pose_velocity_difference_deg_s": 1.2092370031542732,
+    "meaning": "same sparse PTS finite-difference consistency vs original model proxies; not validated high-frequency head/gaze stability"
+  },
+  {
+    "variant": "h264_720w_1mbps",
+    "valid_sparse_pairs": 110,
+    "invalid_sparse_pairs": 6,
+    "RMS_pose_velocity_difference_deg_s": 1.1515527071733933,
+    "meaning": "same sparse PTS finite-difference consistency vs original model proxies; not validated high-frequency head/gaze stability"
+  },
+  {
+    "variant": "h264_720w_2mbps",
+    "valid_sparse_pairs": 110,
+    "invalid_sparse_pairs": 6,
+    "RMS_pose_velocity_difference_deg_s": 1.3540284520857437,
+    "meaning": "same sparse PTS finite-difference consistency vs original model proxies; not validated high-frequency head/gaze stability"
+  },
+  {
+    "variant": "h264_720w_4mbps",
+    "valid_sparse_pairs": 110,
+    "invalid_sparse_pairs": 6,
+    "RMS_pose_velocity_difference_deg_s": 1.036570164126397,
+    "meaning": "same sparse PTS finite-difference consistency vs original model proxies; not validated high-frequency head/gaze stability"
+  },
+  {
+    "variant": "original",
+    "valid_sparse_pairs": 110,
+    "invalid_sparse_pairs": 6,
+    "RMS_pose_velocity_difference_deg_s": 2.173275515672518e-16,
+    "meaning": "same sparse PTS finite-difference consistency vs original model proxies; not validated high-frequency head/gaze stability"
+  }
+]

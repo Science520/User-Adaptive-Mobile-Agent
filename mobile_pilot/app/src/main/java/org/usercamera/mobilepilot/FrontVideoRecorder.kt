@@ -70,6 +70,8 @@ class FrontVideoRecorder(private val context: Context, private val owner: Lifecy
                         store.stream("video_timeline.jsonl", json("type" to "analysis_sensor_frame", "timestamp_ns" to arrival,
                             "sensor_timestamp_ns" to image.imageInfo.timestamp, "mapped_timestamp_ns" to timestamp,
                             "mapping_status" to mapper.status(), "rotation_degrees" to image.imageInfo.rotationDegrees,
+                            "analysis_width" to image.width,"analysis_height" to image.height,
+                            "analysis_crop_rect" to org.json.JSONArray(listOf(image.cropRect.left,image.cropRect.top,image.cropRect.right,image.cropRect.bottom)),
                             "not_a_video_pts_pair" to true))
                         analyzer?.analyze(image, timestamp, arrival)
                     } catch (e: Exception) { store.event("live_analysis_error", e.toString()) }

@@ -1,0 +1,71 @@
+[
+  {
+    "command": "PYTHONPATH=. .venv/bin/python -m usercamera.pilot_v3_audit",
+    "result": "passed after exact PTS conversion; 117 offline frames; raw unchanged"
+  },
+  {
+    "command": "PYTHONPATH=. .venv/bin/python -m usercamera.pilot_design_v3",
+    "result": "passed; 16 groups, Full24/Quick8; counterbalance checks"
+  },
+  {
+    "command": "PYTHONPATH=. .venv/bin/python -m usercamera.pilot_v3_compression",
+    "result": "passed; 6 same-source full videos, all5173PTS preserved"
+  },
+  {
+    "command": "PYTHONPATH=. .venv/bin/python -m usercamera.pilot_v3_temporal",
+    "result": "39 windows; no model training; blocked sync/single independent session"
+  },
+  {
+    "command": ".venv/bin/python -m usercamera pilot-v3-cache --private reports/pilot_v3/private/cache_module_recheck --derived data/derivatives/pilot_v3/test1030_20261030_144219/training_clips_module_check --output reports/pilot_v3/temporal/cache_module_recheck",
+    "result": "passed; 39 real clips+appearance+explicit masks"
+  },
+  {
+    "command": "./mobile_pilot/gradlew -p mobile_pilot testDebugUnitTest assembleDebug",
+    "result": "passed",
+    "log": "reports/pilot_v3/build/build_final.log",
+    "JVM_tests": 15
+  },
+  {
+    "command": "adb install -r mobile_pilot/app/build/outputs/apk/debug/app-debug.apk",
+    "result": "passed; installed hash matches local"
+  },
+  {
+    "command": "Private ADB task/export validation scripts",
+    "result": "requested_only and assigned_pre_task raw ZIPs validated; failure samples preserved; no camera and no subjective scoring"
+  },
+  {
+    "command": "PYTHONPATH=. .venv/bin/python /tmp/pilot_v3_verify_release.py",
+    "result": "passed; v1/v2/v3 compatibility, original files and APK verified"
+  },
+  {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 .venv/bin/python -m pytest -q",
+    "result": "106 passed in 4.77s"
+  },
+  {
+    "command": "Audit-generated private stratified random and eye detail contact sheets",
+    "result": "reviewed locally; no public face images"
+  },
+  {
+    "command": "./mobile_pilot/gradlew -p mobile_pilot testDebugUnitTest assembleDebug",
+    "result": "final0.4.1 passed",
+    "log": "reports/pilot_v3/build/build_final.log",
+    "JVM_tests": 15
+  },
+  {
+    "command": "Final metadata and feedback camera-free device regression",
+    "result": "passed; no subjective scores; label_schema=self-report-v3.1"
+  },
+  {
+    "command": "PYTHONPATH=. .venv/bin/python /tmp/pilot_v3_final_verification.py",
+    "result": "passed; final device/local APK hash and all392 original files match"
+  },
+  {
+    "command": ".venv/bin/python -m usercamera pilot-v3-evaluate",
+    "result": "executed; status=blocked; unverified synchronization, one independent session, six positive-only difficulty labels; no models fitted"
+  },
+  {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 .venv/bin/python -m pytest -q",
+    "result": "108 passed in 4.78s",
+    "log": "reports/pilot_v3/build/python_tests.log"
+  }
+]
